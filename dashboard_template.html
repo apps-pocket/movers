@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tomorrow's Movers</title>
+<style>
+:root{--bg:#f1f4f9;--cd:#fff;--fg:#162033;--mu:#66728a;--bd:#e0e6f0;--ac:#2563eb;--ac2:#e8effd;--up:#0d9c4a;--upb:#e3f6ea;--dn:#d4303a;--dnb:#fdeaec;--am:#b7791f;--amb:#fdf3dc;--sh:0 1px 4px rgba(20,32,60,.08)}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1118;--cd:#181d27;--fg:#e9edf5;--mu:#97a3ba;--bd:#2a3140;--ac:#6b9bff;--ac2:#1c2a4a;--up:#4cd07f;--upb:#12301f;--dn:#ff7d85;--dnb:#3a1a1e;--am:#f0b94d;--amb:#3a2d12;--sh:none}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:760px;margin:0 auto;padding:14px}h1{margin:0 0 2px;font-size:24px}h3{margin:18px 2px 8px;font-size:16px}
+.mu{color:var(--mu)}.sm{font-size:12.5px}.up{color:var(--up)}.dn{color:var(--dn)}.am{color:var(--am)}
+.card{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:14px;margin:10px 0;box-shadow:var(--sh)}
+.ch{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.i{width:22px;height:22px;flex:none;border-radius:50%;border:1.5px solid var(--ac);background:none;color:var(--ac);font:italic 700 13px Georgia,serif;cursor:pointer;padding:0}
+.tip{background:var(--ac2);border-radius:10px;padding:10px 12px;margin:0 0 10px;font-size:13.5px}
+.grid{display:grid;gap:10px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.grid>.card{margin:0}
+.tile{background:var(--bg);border-radius:12px;padding:10px;text-align:center}.big{font-size:28px;font-weight:700;line-height:1.1}.big2{font-size:18px;font-weight:700}
+.pill{display:inline-block;padding:3px 9px;border-radius:99px;font-size:12.5px;font-weight:600;background:var(--ac2);margin-left:4px}
+.pill.up{background:var(--upb)}.pill.dn{background:var(--dnb)}.pill.am{background:var(--amb)}.pill.lg{font-size:17px;padding:5px 14px;margin:0 0 6px}
+.top{display:flex;align-items:center;gap:8px;cursor:pointer}.top>div:first-child{flex:1;min-width:0}.rt{text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.chip{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:3px 8px;font-size:12.5px}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}.kv div{background:var(--bg);border-radius:10px;padding:8px;font-weight:600}.kv span{display:block;font-size:12px;font-weight:400;color:var(--mu)}
+.det{margin-top:10px;border-top:1px dashed var(--bd);padding-top:8px}
+.mini{background:var(--bg);border-radius:12px;padding:10px}.mt{display:flex;justify-content:space-between;align-items:center}
+.tabs{display:flex;gap:6px;margin:12px 0}.tabs button{flex:1;padding:9px 4px;border:1px solid var(--bd);border-radius:10px;background:var(--cd);color:var(--fg);font-weight:600;font-size:14px;font-family:inherit;cursor:pointer}.tabs .on{background:var(--ac);border-color:var(--ac);color:#fff}
+input,select{width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--cd);color:var(--fg);font:inherit}
+.btn{width:100%;margin-top:10px;padding:11px;border:2px solid var(--ac);border-radius:10px;background:transparent;color:var(--ac);font-weight:700;font-size:16px;font-family:inherit;cursor:pointer}.btn:hover{background:var(--ac);color:#fff}
+#login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:14px}.lc{width:min(400px,100%);padding:22px;text-align:center}.lg{width:100%;height:auto;margin:10px 0 14px}
+.cd{transform-box:fill-box;transform-origin:50% 100%;opacity:.85;animation:pl 2.4s ease-in-out infinite}.cd.u{fill:var(--up)}.cd.d{fill:var(--dn)}
+.ln{fill:none;stroke:var(--ac);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:100;animation:dr 4.5s ease-in-out infinite}
+@keyframes pl{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1)}}@keyframes dr{0%{stroke-dashoffset:100}65%,100%{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.cd,.ln{animation:none;stroke-dashoffset:0}}
+.foot{font-size:12px;color:var(--mu);margin:18px 2px}
+</style></head><body>
+<div id="login"><div class="lc card"><h1>Tomorrow's Movers</h1><div class="mu sm">Stocks likely to move a lot on the next trading day</div>
+<svg class="lg" viewBox="0 0 320 110"><g id="bars"></g><polyline id="line" class="ln" pathLength="100"/></svg>
+<input id="pw" type="password" placeholder="Enter password" autocomplete="current-password">
+<label class="mu sm" style="display:block;margin-top:10px;text-align:left"><input type="checkbox" id="keep" style="width:auto;margin-right:6px">Keep me signed in on this device</label>
+<button class="btn" onclick="unlock()">Open</button><p id="err" class="dn sm"></p><div class="mu sm" id="up"></div><div class="mu sm">Private dashboard. For learning only.</div></div></div>
+<div id="main" class="w" hidden>
+<div class="ch"><h1>Tomorrow's Movers</h1><div><span class="pill" id="dt"></span><button class="pill" onclick="lock()" style="border:1px solid var(--bd);color:var(--fg);cursor:pointer;font-family:inherit">Lock</button></div></div>
+<div class="mu sm" id="upd" style="margin:-4px 0 4px"></div>
+<div class="tabs"><button data-t="m" onclick="show('m')">Movers</button><button data-t="g" onclick="show('g')">Gap lookup</button><button data-t="h" onclick="show('h')">History</button><button data-t="k" onclick="show('k')">Market</button></div>
+<div class="tab" id="t-m"></div><div class="tab" id="t-g"></div><div class="tab" id="t-h"></div><div class="tab" id="t-k"></div>
+<p class="foot">For learning only. Not investment advice. Past statistics do not predict the future. The list shows stocks likely to move a lot, not which direction.</p></div>
+<script>
+let D=__DATA__;const $=s=>document.querySelector(s);let S;
+const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const f=(x,d=1)=>x==null?'-':(+x).toFixed(d),sg=(x,d=1)=>x==null?'-':(x>=0?'+':'')+(+x).toFixed(d),cl=x=>x>=0?'up':'dn',ni=x=>Number(x).toLocaleString('en-IN');
+const fd=s=>new Date(s+'T00:00:00').toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+const mc={Bullish:'up',Weak:'dn',Neutral:'am'};
+const T={mood:"Market mood is the overall weather of the stock market. <b>Bullish</b>: most stocks are rising, like a sunny day. <b>Weak</b>: most are falling, like a stormy day. <b>Neutral</b>: mixed. It tells you the general feeling, not which stock to pick.",
+scan:"The list was made after the market closed on this date. It is meant for the next trading day.",
+rates:"We checked every past list. Each night we took the top 10 stocks (the ones that looked 'awake': lots of trading, big moves, wide price swings) and counted how many moved a lot the next day.<br><b>Example:</b> 3 under 'closed 4%+ up or down' means about 3 of the 10 stocks ended the next day at least 4% above or below the previous close, while only about 1 of 10 random stocks does.<br><b>Day range</b> is the highest price minus the lowest price during the day. If a stock traded between ₹100 and ₹105, its day range is 5%.<br>This is about the SIZE of the move, not the direction. A stock can move 5% up or 5% down.",
+stock:"This card is one stock from the list.<br><b>Close</b>: today's last price. <b>Today %</b>: change from yesterday's close.<br><b>Score (0 to 100)</b>: how 'awake' the stock looks. More trading, bigger moves and wider swings give a higher score. Like a shop with a big crowd: it is busy, but that does not say whether sales go up or down.<br><b>Volume 3x normal</b>: three times as many shares traded as on a usual day.<br><b>Range today</b>: highest minus lowest price today, as a %. High 105 and low 100 is about 5%. <b>Usual range</b>: its normal daily swing over the last 20 days.<br>Tap the card to see open, high and low.",
+gap:"The gap is how far a stock opens from yesterday's close.<br><b>Example:</b> yesterday it closed at ₹100 and today it opens at ₹103. The gap is +3%.<br>Pick a stock and type its opening price (or just type the gap %) to see what usually happened later that day in the past.",
+oc:"Open to close is the price change from the opening price to the closing price on the same day. <b>Example:</b> +2% means a buyer at the open saw the stock end the day 2% higher. These are past averages from official opening prices. Your own orders may be filled at different prices.",
+score:"Results of past lists, checked on the next trading day (the top 10 stocks of each list).<br><b>Closed 4%+ up or down</b>: the stock ended the day at least 4% above or below the previous close.<br><b>5%+ day range</b>: during the day the highest and lowest price were at least 5% apart (for example ₹100 and ₹105).",
+day:"Tap the card to see every stock from that day's list and what happened next.<br><b>Gap</b>: opening price vs the previous close. <b>Open to close</b>: change during the day. <b>High / Low</b>: best and worst price vs the previous close. <b>Range</b>: highest minus lowest price of the day.",
+br:"Breadth counts how many stocks are above or below their 20-day average price. <b>Blue</b> = above (doing well lately), <b>red</b> = below. When blue is above red, most stocks are rising, like most students passing an exam. When the lines cross, the market feeling is changing.",
+pct:"The share of stocks trading above their 20-day average. 64% means about 6 of every 10 stocks are above their recent average price.",
+chg:"Look at all stocks and ask: what share is trading above its own 20-day average price? <b>5 trading days ago</b> that share was one number and <b>today</b> it is another.<br><b>Example:</b> 34% to 65% means a week ago only about 3 of 10 stocks were above their recent average, and now about 6 or 7 of 10 are. The market improved fast. If the numbers go the other way, the market is weakening."};
+const card=(t,b,tip,x='')=>`<div class="card ${x}"><div class="ch"><b>${t}</b>${tip?'<button class="i" onclick="ti(event,this)">i</button>':''}</div>${tip?`<div class="tip" hidden>${tip}</div>`:''}${b}</div>`;
+function ti(e,b){e.stopPropagation();const t=b.closest('.card').querySelector('.tip');t.hidden=!t.hidden}
+const tg=id=>{const e=$('#'+id);e.hidden=!e.hidden};
+const tile=(l,v,s)=>`<div class="tile"><div class="big">${v}</div><div class="sm">${l}</div>${s?`<div class="mu sm">${s}</div>`:''}</div>`;
+async function unlock(auto){const pw=typeof auto==='string'?auto:$('#pw').value,AU=typeof auto==='string';$('#err').textContent='';try{const r=await fetch('data.json?'+Date.now(),{cache:'no-store'});if(r.ok){const j=await r.json();if(j&&j.c)D=j}}catch(e){}if(!(window.crypto&&crypto.subtle)){$('#err').textContent='This view cannot unlock the file. Open dashboard.html directly in Chrome, Edge or Safari, not inside WhatsApp, Drive or another app preview.';return}try{const km=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);
+const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(D.s),iterations:200000,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);
+const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(D.i)},key,b64(D.c));S=JSON.parse(new TextDecoder().decode(pt));
+$('#login').hidden=true;$('#main').hidden=false;$('#dt').textContent='Scan: '+fd(S.asof);$('#upd').textContent=D.g?'Data updated '+D.g:'';show('m');window.scrollTo(0,0);if(!AU){try{sessionStorage.setItem('mv',pw);if($('#keep').checked)localStorage.setItem('mv',pw)}catch(x){}}}catch(e){if(AU)lock(false);else $('#err').textContent='Wrong password, or this browser blocks secure features.'}}
+function lock(reload=true){try{sessionStorage.removeItem('mv');localStorage.removeItem('mv')}catch(x){}if(reload)location.reload()}
+function show(t){document.querySelectorAll('.tab').forEach(x=>x.hidden=x.id!=='t-'+t);document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));({m:movers,g:gap,h:hist,k:mkt})[t]()}
+function stock(x,i){return `<div class="card"><div class="top" onclick="tg('sk${i}')"><div><b>${x.symbol}</b><div class="mu sm">Close ₹${f(x.close,2)}</div></div><div class="rt"><span class="pill ${cl(x.today_ret)}">${sg(x.today_ret)}% today</span><span class="pill">Score ${f(x.score,0)}</span></div><button class="i" onclick="ti(event,this)">i</button></div>
+<div class="tip" hidden>${T.stock}</div><div class="chips"><span class="chip">Volume ${f(x.vol_ratio)}x normal</span><span class="chip">Range today ${f(x.range_today_pct)}%</span><span class="chip">Usual range ${f(x.avg_range_pct)}%</span></div>
+<div class="det" id="sk${i}" hidden><div class="kv"><div><span>Open</span>₹${f(x.open,2)}</div><div><span>High</span>₹${f(x.high,2)}</div><div><span>Low</span>₹${f(x.low,2)}</div><div><span>Close</span>₹${f(x.close,2)}</div><div><span>Previous close</span>₹${f(x.prev_close,2)}</div><div><span>Shares traded</span>${x.volume==null?'-':ni(Math.round(x.volume))}</div></div>
+<p class="mu sm">Today's high-low gap: ₹${f(x.high-x.low,2)} (${f(x.range_today_pct)}% of close). Last 6 days range: ${f(x.tight6)}%. Delivery vs average: ${f(x.delivery_ratio,2)}x. Today's close is the reference for tomorrow's gap.</p></div></div>`}
+function movers(){const m=S.market,has=!!S.stats.list_rates_10,r=has?S.stats.list_rates_10:S.stats.list_rates,nn=has?10:20,u=S.stats.universe_rates,q=k=>[f(r[k]*nn/100),'random: '+f(u[k]*nn/100)],L=S.movers;
+$('#t-m').innerHTML=`<div class="grid g2">${card('Market mood',`<span class="pill lg ${mc[m.mood]}">${m.mood}</span><div class="mu sm">${f(m.pct_above_20ema)}% of stocks above their 20-day average</div>`,T.mood)}${card('List made on',`<div class="big2">${fd(S.asof)}</div><div class="mu sm">For the next trading day</div>`,T.scan)}</div>
+${card('How often such stocks make big moves',`<div class="grid g3">${tile('closed 4%+ up or down',...q('cc>=4'))}${tile('closed 8%+ up or down',...q('cc>=8'))}${tile('had a 5%+ day range',...q('range>=5'))}</div><p class="mu sm">Average number out of the top ${nn} stocks on a typical day, from past lists.</p>`,T.rates)}
+<h3>Top 10 stocks <span class="mu sm">tap a stock for details</span></h3>`+L.slice(0,10).map(stock).join('')+(L.length>10?`<div id="more" hidden><h3>Next 10 stocks</h3>${L.slice(10).map((x,i)=>stock(x,i+10)).join('')}</div><button class="btn" id="mb" onclick="sm()">Show 10 more</button>`:'')}
+function sm(){const e=$('#more'),b=$('#mb');e.hidden=!e.hidden;b.textContent=e.hidden?'Show 10 more':'Hide the extra 10'}
+function gap(){const o=S.movers.map(x=>`<option value="${x.close}">${x.symbol}</option>`).join('');
+$('#t-g').innerHTML=card('Gap lookup',`<div class="grid g2"><select id="gs" onchange="gc()"><option value="">Pick a stock</option>${o}</select><input id="go" type="number" step="any" placeholder="Opening price" oninput="gc()"></div><div style="margin-top:10px"><input id="gp" type="number" step="any" placeholder="Or type gap % (like 2.5 or -3)" oninput="gl()"></div>`,T.gap)+'<div id="gr"></div>'}
+function gc(){const p=+$('#gs').value,o=+$('#go').value;if(p&&o){$('#gp').value=((o/p-1)*100).toFixed(2);gl()}}
+function gl(){const g=parseFloat($('#gp').value);if(isNaN(g)){$('#gr').innerHTML='';return}
+const fb=t=>(t||[]).find(b=>g>=b.lo&&g<b.hi);
+const L=(n,b)=>b?card(n,`<div class="big ${cl(b.avg_oc)}">${sg(b.avg_oc,2)}%</div><div class="mu sm">average change from open to close</div><div class="chips"><span class="chip">Gap ${b.lo<=-99?'below '+b.hi:b.hi>=99?'above '+b.lo:b.lo+' to '+b.hi}%</span><span class="chip">Up on ${b.pos_pct==null?'-':f(b.pos_pct,0)}% of days</span><span class="chip">${ni(b.n)} past cases</span></div>`,T.oc):'';
+$('#gr').innerHTML=(L('All liquid stocks',fb(S.stats.gap_table))+L('Stocks from the movers lists',fb(S.stats.movers_gap_table)))||card('No match','<p class="mu">Not enough past cases for this gap size.</p>')}
+const res=x=>x.cc==null?`<div class="mini"><b>${x.symbol}</b> <span class="mu sm">no result yet</span></div>`:`<div class="mini"><div class="mt"><b>${x.symbol}</b><span class="pill ${cl(x.cc)}">${sg(x.cc)}% for the day</span></div><div class="chips"><span class="chip">Gap ${sg(x.gap)}%</span><span class="chip">Open to close ${sg(x.oc)}%</span><span class="chip">High ${sg(x.up)}%</span><span class="chip">Low ${sg(x.down)}%</span><span class="chip">Range ${f(x.range_pct)}%</span></div></div>`;
+function hist(){const H=S.history;if(!H.length){$('#t-h').innerHTML=card('History','<p class="mu">No history yet.</p>');return}
+let n=0,a=0,r=0,nd=0;H.forEach(d=>{const k=d.rows.slice(0,10).filter(x=>x.cc!=null);if(k.length)nd++;k.forEach(x=>{n++;if(Math.abs(x.cc)>=4)a++;if(x.range_pct>=5)r++})});
+let h=card('Scorecard of past lists',`<div class="grid g3">${tile('stocks checked',ni(n),'top 10 of '+nd+' days')}${tile('closed 4%+ up or down',f(100*a/Math.max(n,1),0)+'%')}${tile('had a 5%+ day range',f(100*r/Math.max(n,1),0)+'%')}</div>`,T.score)+'<h3>Each day <span class="mu sm">tap a date to open it</span></h3>';
+H.forEach((d,i)=>{const t10=d.rows.slice(0,10),k=t10.filter(x=>x.cc!=null),rest=d.rows.slice(10);
+h+=`<div class="card"><div class="top" onclick="tg('hd${i}')"><div><b>${fd(d.date)}</b><div class="mu sm">${k.length?'Top 10: '+k.filter(x=>Math.abs(x.cc)>=4).length+' closed 4%+ up or down, '+k.filter(x=>x.range_pct>=5).length+' had a 5%+ day range':'Result not available yet'}</div></div><span class="pill ${mc[d.mood]||''}">${d.mood}</span><button class="i" onclick="ti(event,this)">i</button></div><div class="tip" hidden>${T.day}</div><div class="det" id="hd${i}" hidden><div class="grid g2">${t10.map(res).join('')}</div>${rest.length?`<button class="btn" onclick="tg('hx${i}')">Show or hide the other 10</button><div class="grid g2" id="hx${i}" hidden style="margin-top:10px">${rest.map(res).join('')}</div>`:''}</div></div>`});
+$('#t-h').innerHTML=h}
+function mkt(){const B=S.breadth,m=S.market;if(!B.length){$('#t-k').innerHTML=card('Market','<p class="mu">No breadth data.</p>');return}
+const W=360,H=210,L=40,R=12,Tp=12,Bt=26,n=B.length,m0=Math.max(...B.map(b=>Math.max(b.above,b.below))),st=m0>2500?1000:500,mx=Math.ceil(m0/st)*st;
+const X=i=>L+i*(W-L-R)/(n-1),Y=v=>Tp+(H-Tp-Bt)*(1-v/mx),P=k=>B.map((b,i)=>X(i).toFixed(1)+','+Y(b[k]).toFixed(1)).join(' '),l=B[n-1],sd=s=>fd(s).slice(0,-5);
+let g='';for(let v=0;v<=mx;v+=st)g+=`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--bd)"/><text x="${L-5}" y="${Y(v)+4}" text-anchor="end" font-size="10" fill="var(--mu)">${ni(v)}</text>`;
+[0,Math.floor(n/2),n-1].forEach((i,j)=>g+=`<text x="${X(i)}" y="${H-8}" text-anchor="${j==0?'start':j==2?'end':'middle'}" font-size="10" fill="var(--mu)">${sd(B[i].date)}</text>`);
+const ua=l.above>=l.below,b5=B[Math.max(n-6,0)],hl='paint-order="stroke" stroke="var(--cd)" stroke-width="4"';
+const svg=`<svg viewBox="0 0 ${W} ${H}" width="100%">${g}<polyline points="${P('above')}" fill="none" stroke="#2f80ed" stroke-width="2" stroke-linejoin="round"/><polyline points="${P('below')}" fill="none" stroke="#e5484d" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="${X(n-1)}" cy="${Y(l.above)}" r="3.5" fill="#2f80ed"/><circle cx="${X(n-1)}" cy="${Y(l.below)}" r="3.5" fill="#e5484d"/>
+<text x="${W-R-6}" y="${Y(l.above)+(ua?-8:15)}" text-anchor="end" font-size="11" font-weight="700" fill="#2f80ed" ${hl}>${ni(l.above)}</text><text x="${W-R-6}" y="${Y(l.below)+(ua?15:-8)}" text-anchor="end" font-size="11" font-weight="700" fill="#e5484d" ${hl}>${ni(l.below)}</text></svg>`;
+$('#t-k').innerHTML=card('Market mood today',`<span class="pill lg ${mc[m.mood]}">${m.mood}</span><div class="mu sm">As of ${fd(l.date)}</div>`,T.mood)+
+card('Stocks above and below their 20-day average',`${svg}<div class="chips"><span class="chip"><b style="color:#2f80ed">&#9679;</b> Above the average</span><span class="chip"><b style="color:#e5484d">&#9679;</b> Below the average</span><span class="chip">Last ${n} days</span></div>`,T.br)+
+`<div class="grid g3">${card('Above',`<div class="big" style="color:#2f80ed">${ni(l.above)}</div><div class="mu sm">stocks</div>`)}${card('Below',`<div class="big" style="color:#e5484d">${ni(l.below)}</div><div class="mu sm">stocks</div>`)}${card('Share above',`<div class="big">${f(l.pct,0)}%</div>`,T.pct)}</div>`+
+card('Is the market improving?',`<div class="big ${cl(l.pct-b5.pct)}">${f(b5.pct,0)}% to ${f(l.pct,0)}%</div><div class="mu sm">Share of stocks above their 20-day average: 5 trading days ago vs today (${sg(l.pct-b5.pct)} percentage points)</div>`,T.chg)}
+(function(){const n=18;let b='',p=[];for(let i=0;i<n;i++){const h=16+(i*37)%48;b+=`<rect class="cd ${(i*7)%3?'u':'d'}" x="${10+i*17}" y="${104-h}" width="9" height="${h}" rx="2" style="animation-delay:${(i*.13).toFixed(2)}s"/>`;p.push((14+i*17)+','+(70-i*2.3-Math.sin(i*1.3)*13).toFixed(1))}
+$('#bars').innerHTML=b;$('#line').setAttribute('points',p.join(' '))})();
+$('#up').textContent=D.g?'Data in this file: '+D.g+'. Newest data is checked when you press Open (online version).':'';
+try{const sp=sessionStorage.getItem('mv')||localStorage.getItem('mv');if(sp)unlock(sp)}catch(x){}
+$('#pw').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+</script></body></html>
