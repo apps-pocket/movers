@@ -19,7 +19,7 @@ Needs: pip install pandas numpy requests yfinance cryptography
 First run downloads ~260 days of NSE bhavcopy files (takes a few minutes); later runs add one day.
 """
 import argparse, base64, json, os, sys, time
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import numpy as np
@@ -48,6 +48,11 @@ URL = "https://nsearchives.nseindia.com/products/content/sec_bhavdata_full_{d}.c
 
 
 # ---------------- Data download ----------------
+def now_ist():
+    t = datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)
+    return t.strftime("%d %b %Y, %I:%M %p IST")
+
+
 def update_cache(days):
     CACHE.mkdir(parents=True, exist_ok=True)
     s = requests.Session()
@@ -59,10 +64,15 @@ def update_cache(days):
     today, d = date.today(), date.today()
     have = len(list(CACHE.glob("*.csv")))
     limit = today - timedelta(days=int(days * 1.6))
-    while d >= limit and have < days:
+    while d >= limit:
+        # Always look at the last 14 days (that is where new files appear).
+        # Older days are only fetched until we have enough history.
+        if (today - d).days > 14 and have >= days:
+            break
         if d.weekday() < 5:
             f, none = CACHE / f"{d}.csv", CACHE / f"{d}.none"
-            if not f.exists() and not none.exists():
+            retry = (today - d).days <= 3  # a recent "missing" note may only mean "not published yet"
+            if not f.exists() and (retry or not none.exists()):
                 try:
                     r = s.get(URL.format(d=d.strftime("%d%m%Y")), timeout=30)
                     if r.status_code == 200 and len(r.content) > 1000:
@@ -388,7 +398,7 @@ def save_scan(P, asof, B):
     market.update(breadth_info(B, asof))
     movers, n_liquid = movers_scan(P, asof)
     market["liquid_stocks"] = n_liquid
-    payload = {"asof": asof, "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+    payload = {"asof": asof, "generated_at": now_ist(),
                "market": market, "movers": movers, "outcomes": None}
     (OUT / "history" / f"{asof}.json").write_text(json.dumps(payload, indent=1))
     return payload
