@@ -40,6 +40,9 @@ CFG = dict(
     history_days=260,
 )
 
+# NSE equity trading holidays (market closed). Any data for these dates is ignored.
+HOLIDAYS = {"2026-01-15", "2026-05-28", "2026-06-26", "2026-09-14", "2026-10-02", "2026-10-20",
+            "2026-11-10", "2026-11-24", "2026-12-25"}
 CLOSE_FIELD = "last"  # "last" = last traded price (like most charts), "official" = NSE closing price
 BASE = Path(__file__).parent
 CACHE = BASE / "data" / "bhav"
@@ -120,8 +123,9 @@ def load_all():
     d["lf"] = np.log(ev)
     after = d.groupby("symbol")["lf"].transform(lambda x: x[::-1].cumsum()[::-1]) - d["lf"]
     m = np.exp(after)
-    for col in ["o", "h", "l", "c", "c_off", "c_last"]:
+    for col in ["o", "h", "l", "c", "c_off", "c_last", "PREV_CLOSE"]:
         d[col] = d[col] * m
+    d["pc"] = d["PREV_CLOSE"]  # NSE's official previous close (already includes special sessions like Muhurat)
     d["v"] = d["v"] / m
     print(f"Adjusted older prices for {int((ev != 1).sum())} split/bonus events.")
     return d.drop(columns=["lf"])
@@ -172,9 +176,24 @@ def load_yahoo():
         time.sleep(1)
     if not frames:
         sys.exit("Yahoo returned no data. Check your internet connection and try again.")
-    out = pd.concat(frames, ignore_index=True)
+    out = pd.concat(frames, ignore_index=True).sort_values(["symbol", "date"]).reset_index(drop=True)
+    out["c_off"] = out["c"]
+    out["pc"] = out.groupby("symbol")["c"].shift(1)
     print(f"Yahoo: got data for {out['symbol'].nunique()} stocks")
     return out
+
+
+def drop_non_trading_days(d):
+    """Remove holidays and days where almost every price is unchanged from the day before (stale data)."""
+    g = d.sort_values(["symbol", "date"])
+    prev = g.groupby("symbol")["c"].shift(1)
+    same = (g["c"] == prev).astype(float).where(prev.notna())
+    share = same.groupby(g["date"]).mean()
+    bad = set(share[share > 0.6].index) | {pd.Timestamp(x) for x in HOLIDAYS}
+    gone = sorted(str(x.date()) for x in bad if (d["date"] == x).any())
+    if gone:
+        print("Ignoring days when the market was closed or data was stale:", ", ".join(gone))
+    return d[~d["date"].isin(bad)]
 
 
 def prep(df):
@@ -184,6 +203,7 @@ def prep(df):
             "date": g["date"].values.astype("datetime64[D]"),
             "o": g["o"].values, "h": g["h"].values, "l": g["l"].values, "c": g["c"].values,
             "v": g["v"].values, "tv": g["tv"].values, "dl": g["dl"].values,
+            "pc": g["pc"].values, "c_off": g["c_off"].values,
         }
     return out
 
@@ -337,14 +357,16 @@ def movers_scan(P, asof, cfg=CFG, top=20):
         h, l, c, v, tv, dl = (a[k][:i] for k in ("h", "l", "c", "v", "tv", "dl"))
         rng = h - l
         avg = rng[-20:].mean()
+        ref = a["pc"][i - 1]
+        ref = float(ref) if np.isfinite(ref) and ref > 0 else float(c[-2])
         if c[-1] < cfg["min_price"] or np.nanmean(tv[-20:]) < cfg["min_turnover_cr"] or avg <= 0 \
                 or avg / c[-1] * 100 < cfg["min_avg_range_pct"]:
             continue
         prev_dl = dl[-21:-1]
         dlavg = np.nanmean(prev_dl) if np.isfinite(prev_dl).any() else np.nan
         rows.append({"symbol": sym, "close": float(c[-1]), "open": float(a["o"][i - 1]), "high": float(h[-1]),
-                     "low": float(l[-1]), "prev_close": float(c[-2]), "volume": float(v[-1]),
-                     "today_ret": (c[-1] / c[-2] - 1) * 100,
+                     "low": float(l[-1]), "prev_close": float(ref), "official_close": float(a["c_off"][i - 1]),
+                     "volume": float(v[-1]), "today_ret": (c[-1] / ref - 1) * 100,
                      "vol_ratio": v[-1] / max(v[-21:-1].mean(), 1), "range_ratio": rng[-1] / avg,
                      "range_today_pct": rng[-1] / c[-1] * 100, "avg_range_pct": avg / c[-1] * 100,
                      "tight6": (h[-6:].max() - l[-6:].min()) / c[-1] * 100,
@@ -371,12 +393,29 @@ def mover_outcomes(P, movers, next_date):
         i = np.searchsorted(a["date"], nd)
         if i >= len(a["date"]) or a["date"][i] != nd:
             continue
-        pc = float(a["c"][i - 1]) if i > 0 else m["close"]
+        pcn = a["pc"][i]
+        pc = float(pcn) if np.isfinite(pcn) and pcn > 0 else (float(a["c"][i - 1]) if i > 0 else m["close"])
         o, h, l, c = (float(a[k][i]) for k in ("o", "h", "l", "c"))
         res[m["symbol"]] = {"gap": round((o / pc - 1) * 100, 2), "oc": round((c / o - 1) * 100, 2),
                             "cc": round((c / pc - 1) * 100, 2), "range_pct": round((h - l) / o * 100, 2),
                             "up": round((h / pc - 1) * 100, 2), "down": round((l / pc - 1) * 100, 2)}
     return res
+
+
+def prune_history(dates):
+    """Delete saved lists for dates that are not real trading days, and redo results that point to a wrong next day."""
+    ds = [str(d) for d in dates]
+    for pf in sorted((OUT / "history").glob("*.json")):
+        old = json.loads(pf.read_text())
+        if old.get("asof") not in ds:
+            pf.unlink(); print("Removed list for non-trading day", old.get("asof")); continue
+        k = ds.index(old["asof"])
+        oc = old.get("outcomes") or {}
+        nd = oc.get("next_date")
+        # redo results that point to a wrong next day, or were measured the old way (not from NSE's previous close)
+        if oc and (k + 1 >= len(ds) or nd != ds[k + 1] or oc.get("ref") != "pc"):
+            old["outcomes"] = None
+            pf.write_text(json.dumps(old, indent=1))
 
 
 def fill_outcomes(P, dates):
@@ -389,7 +428,7 @@ def fill_outcomes(P, dates):
         k = ds.index(old["asof"])
         if k + 1 >= len(ds):
             continue
-        old["outcomes"] = {"next_date": ds[k + 1], "rows": mover_outcomes(P, old["movers"], ds[k + 1])}
+        old["outcomes"] = {"next_date": ds[k + 1], "ref": "pc", "rows": mover_outcomes(P, old["movers"], ds[k + 1])}
         pf.write_text(json.dumps(old, indent=1))
 
 
@@ -452,6 +491,7 @@ def nightly(P, dates):
     asof = str(dates[-1])
     OUT.mkdir(exist_ok=True); (OUT / "history").mkdir(exist_ok=True)
     B = breadth_series(P)
+    prune_history(dates)
     latest = save_scan(P, asof, B)
     fill_outcomes(P, dates)
     (OUT / "latest.json").write_text(json.dumps(latest, indent=1))
@@ -472,6 +512,7 @@ def nightly(P, dates):
 def backfill(P, dates, n):
     OUT.mkdir(exist_ok=True); (OUT / "history").mkdir(exist_ok=True)
     B = breadth_series(P)
+    prune_history(dates)
     for d in dates[-n - 1:-1]:
         save_scan(P, str(d), B)
     fill_outcomes(P, dates)
@@ -725,6 +766,7 @@ if __name__ == "__main__":
             data = load_yahoo()
         else:
             data = load_all()
+    data = drop_non_trading_days(data)
     P = prep(data)
     dates = sorted(data["date"].dt.date.unique())
     if a.backfill:
