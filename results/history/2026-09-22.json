@@ -334,22 +334,23 @@
  ],
  "outcomes": {
   "next_date": "2026-09-23",
+  "ref": "pc",
   "rows": {
    "PROTEAN": {
-    "gap": 0.41,
+    "gap": 1.38,
     "oc": 1.72,
-    "cc": 2.13,
+    "cc": 3.12,
     "range_pct": 6.33,
-    "up": 2.93,
-    "down": -3.42
+    "up": 3.92,
+    "down": -2.49
    },
    "MASPTOP50": {
-    "gap": 4.67,
+    "gap": 4.07,
     "oc": -2.17,
-    "cc": 2.4,
+    "cc": 1.82,
     "range_pct": 9.73,
-    "up": 5.63,
-    "down": -4.55
+    "up": 5.03,
+    "down": -5.09
    },
    "OPTIEMUS": {
     "gap": 12.85,
@@ -360,140 +361,140 @@
     "down": 10.2
    },
    "KPIGREEN": {
-    "gap": -0.07,
+    "gap": 0.0,
     "oc": 0.2,
-    "cc": 0.13,
+    "cc": 0.2,
     "range_pct": 5.61,
-    "up": 2.39,
-    "down": -3.22
+    "up": 2.47,
+    "down": -3.15
    },
    "ASTEC": {
-    "gap": -1.21,
+    "gap": -2.77,
     "oc": -1.77,
-    "cc": -2.97,
+    "cc": -4.49,
     "range_pct": 4.96,
-    "up": 0.82,
-    "down": -4.08
+    "up": -0.77,
+    "down": -5.59
    },
    "TRANSRAILL": {
-    "gap": 0.84,
+    "gap": 0.18,
     "oc": 2.82,
-    "cc": 3.69,
+    "cc": 3.01,
     "range_pct": 5.72,
-    "up": 4.64,
-    "down": -1.13
+    "up": 3.95,
+    "down": -1.78
    },
    "CHEMPLASTS": {
-    "gap": 1.04,
+    "gap": 0.14,
     "oc": 0.03,
-    "cc": 1.07,
+    "cc": 0.17,
     "range_pct": 3.71,
-    "up": 2.79,
-    "down": -0.96
-   },
-   "CAPILLARY": {
-    "gap": 0.54,
-    "oc": -1.34,
-    "cc": -0.81,
-    "range_pct": 4.06,
-    "up": 2.83,
-    "down": -1.25
-   },
-   "INDOMIM": {
-    "gap": -0.76,
-    "oc": 2.09,
-    "cc": 1.32,
-    "range_pct": 5.71,
-    "up": 4.82,
-    "down": -0.84
-   },
-   "GABRIEL": {
-    "gap": -0.17,
-    "oc": -3.29,
-    "cc": -3.45,
-    "range_pct": 5.26,
-    "up": 1.14,
-    "down": -4.11
-   },
-   "BLUESTONE": {
-    "gap": -0.01,
-    "oc": -9.76,
-    "cc": -9.77,
-    "range_pct": 15.49,
-    "up": 2.96,
-    "down": -12.53
-   },
-   "MEESHO": {
-    "gap": 1.0,
-    "oc": -2.47,
-    "cc": -1.5,
-    "range_pct": 5.53,
-    "up": 1.57,
-    "down": -4.01
-   },
-   "ROSSTECH": {
-    "gap": 0.3,
-    "oc": -3.0,
-    "cc": -2.72,
-    "range_pct": 5.01,
-    "up": 0.65,
-    "down": -4.37
-   },
-   "ZOTA": {
-    "gap": 1.11,
-    "oc": 2.2,
-    "cc": 3.33,
-    "range_pct": 4.51,
-    "up": 3.41,
-    "down": -1.15
-   },
-   "KLBRENG-B": {
-    "gap": 0.11,
-    "oc": -0.29,
-    "cc": -0.18,
-    "range_pct": 4.27,
-    "up": 3.09,
-    "down": -1.19
-   },
-   "ENGINERSIN": {
-    "gap": 0.27,
-    "oc": 1.61,
-    "cc": 1.88,
-    "range_pct": 5.52,
-    "up": 2.96,
-    "down": -2.58
-   },
-   "SANSERA": {
-    "gap": -0.57,
-    "oc": 0.65,
-    "cc": 0.08,
-    "range_pct": 4.65,
-    "up": 2.77,
+    "up": 1.87,
     "down": -1.85
    },
+   "CAPILLARY": {
+    "gap": 0.7,
+    "oc": -1.34,
+    "cc": -0.65,
+    "range_pct": 4.06,
+    "up": 3.0,
+    "down": -1.09
+   },
+   "INDOMIM": {
+    "gap": -0.59,
+    "oc": 2.09,
+    "cc": 1.49,
+    "range_pct": 5.71,
+    "up": 5.0,
+    "down": -0.67
+   },
+   "GABRIEL": {
+    "gap": 0.28,
+    "oc": -3.29,
+    "cc": -3.02,
+    "range_pct": 5.26,
+    "up": 1.6,
+    "down": -3.68
+   },
+   "BLUESTONE": {
+    "gap": 1.24,
+    "oc": -9.76,
+    "cc": -8.64,
+    "range_pct": 15.49,
+    "up": 4.25,
+    "down": -11.44
+   },
+   "MEESHO": {
+    "gap": 1.17,
+    "oc": -2.47,
+    "cc": -1.33,
+    "range_pct": 5.53,
+    "up": 1.74,
+    "down": -3.85
+   },
+   "ROSSTECH": {
+    "gap": 0.03,
+    "oc": -3.0,
+    "cc": -2.98,
+    "range_pct": 5.01,
+    "up": 0.38,
+    "down": -4.62
+   },
+   "ZOTA": {
+    "gap": 0.66,
+    "oc": 2.2,
+    "cc": 2.88,
+    "range_pct": 4.51,
+    "up": 2.95,
+    "down": -1.59
+   },
+   "KLBRENG-B": {
+    "gap": 0.0,
+    "oc": -0.29,
+    "cc": -0.29,
+    "range_pct": 4.27,
+    "up": 2.98,
+    "down": -1.29
+   },
+   "ENGINERSIN": {
+    "gap": -0.38,
+    "oc": 1.61,
+    "cc": 1.22,
+    "range_pct": 5.52,
+    "up": 2.3,
+    "down": -3.21
+   },
+   "SANSERA": {
+    "gap": 0.06,
+    "oc": 0.65,
+    "cc": 0.71,
+    "range_pct": 4.65,
+    "up": 3.42,
+    "down": -1.23
+   },
    "JSWINFRA": {
-    "gap": -0.01,
+    "gap": 0.38,
     "oc": -1.46,
-    "cc": -1.48,
+    "cc": -1.09,
     "range_pct": 2.17,
-    "up": 0.31,
-    "down": -1.86
+    "up": 0.71,
+    "down": -1.47
    },
    "PACEDIGITK": {
-    "gap": -0.24,
+    "gap": 0.49,
     "oc": 0.26,
-    "cc": 0.01,
+    "cc": 0.75,
     "range_pct": 2.85,
-    "up": 1.99,
-    "down": -0.85
+    "up": 2.75,
+    "down": -0.12
    },
    "63MOONS": {
-    "gap": 0.56,
+    "gap": 0.96,
     "oc": -0.21,
-    "cc": 0.35,
+    "cc": 0.74,
     "range_pct": 4.89,
-    "up": 3.33,
-    "down": -1.59
+    "up": 3.74,
+    "down": -1.2
    }
   }
  }
