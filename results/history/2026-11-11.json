@@ -332,5 +332,169 @@
    "score": 92.89
   }
  ],
- "outcomes": null
+ "outcomes": {
+  "next_date": "2026-11-12",
+  "rows": {
+   "KALYANKJIL": {
+    "gap": 1.69,
+    "oc": 5.32,
+    "cc": 7.1,
+    "range_pct": 7.11,
+    "up": 8.02,
+    "down": 0.79
+   },
+   "TALBROAUTO": {
+    "gap": 0.1,
+    "oc": 0.52,
+    "cc": 0.61,
+    "range_pct": 5.53,
+    "up": 4.24,
+    "down": -1.3
+   },
+   "AVANTEL": {
+    "gap": 0.18,
+    "oc": 1.69,
+    "cc": 1.87,
+    "range_pct": 4.2,
+    "up": 3.51,
+    "down": -0.7
+   },
+   "SHAKTIPUMP": {
+    "gap": -0.32,
+    "oc": -0.56,
+    "cc": -0.87,
+    "range_pct": 2.37,
+    "up": 0.25,
+    "down": -2.11
+   },
+   "BALMLAWRIE": {
+    "gap": 0.7,
+    "oc": -2.5,
+    "cc": -1.82,
+    "range_pct": 3.75,
+    "up": 1.32,
+    "down": -2.46
+   },
+   "IIFL": {
+    "gap": -0.24,
+    "oc": 0.12,
+    "cc": -0.12,
+    "range_pct": 3.11,
+    "up": 1.71,
+    "down": -1.39
+   },
+   "ALEMBICLTD": {
+    "gap": -0.09,
+    "oc": -1.56,
+    "cc": -1.65,
+    "range_pct": 3.62,
+    "up": 0.95,
+    "down": -2.67
+   },
+   "IZMO": {
+    "gap": 0.74,
+    "oc": 4.05,
+    "cc": 4.82,
+    "range_pct": 5.43,
+    "up": 5.63,
+    "down": 0.16
+   },
+   "ASHOKA": {
+    "gap": -0.18,
+    "oc": -0.35,
+    "cc": -0.53,
+    "range_pct": 3.06,
+    "up": -0.01,
+    "down": -3.06
+   },
+   "SWSOLAR": {
+    "gap": 0.59,
+    "oc": -2.65,
+    "cc": -2.08,
+    "range_pct": 4.05,
+    "up": 1.14,
+    "down": -2.94
+   },
+   "MSTCLTD": {
+    "gap": -1.47,
+    "oc": -0.17,
+    "cc": -1.64,
+    "range_pct": 4.48,
+    "up": 2.08,
+    "down": -2.34
+   },
+   "VIDYAWIRES": {
+    "gap": 1.61,
+    "oc": -1.31,
+    "cc": 0.28,
+    "range_pct": 3.56,
+    "up": 2.32,
+    "down": -1.29
+   },
+   "AONESTEELS": {
+    "gap": 1.92,
+    "oc": -2.63,
+    "cc": -0.75,
+    "range_pct": 5.63,
+    "up": 3.14,
+    "down": -2.6
+   },
+   "NELCO": {
+    "gap": -0.28,
+    "oc": -1.94,
+    "cc": -2.22,
+    "range_pct": 4.17,
+    "up": 1.22,
+    "down": -2.94
+   },
+   "FACT": {
+    "gap": 0.4,
+    "oc": -0.95,
+    "cc": -0.55,
+    "range_pct": 2.29,
+    "up": 0.81,
+    "down": -1.49
+   },
+   "CORONA": {
+    "gap": 0.55,
+    "oc": -1.76,
+    "cc": -1.22,
+    "range_pct": 3.47,
+    "up": 1.82,
+    "down": -1.67
+   },
+   "BEML": {
+    "gap": 0.14,
+    "oc": 0.71,
+    "cc": 0.85,
+    "range_pct": 2.54,
+    "up": 1.65,
+    "down": -0.9
+   },
+   "SAFARI": {
+    "gap": -1.69,
+    "oc": 0.18,
+    "cc": -1.51,
+    "range_pct": 4.52,
+    "up": 1.43,
+    "down": -3.02
+   },
+   "V2RETAIL": {
+    "gap": 0.55,
+    "oc": 1.63,
+    "cc": 2.19,
+    "range_pct": 5.89,
+    "up": 5.92,
+    "down": 0.0
+   },
+   "KPEL": {
+    "gap": -2.31,
+    "oc": -3.32,
+    "cc": -5.56,
+    "range_pct": 3.77,
+    "up": -2.31,
+    "down": -6.0
+   }
+  }
+ }
 }
