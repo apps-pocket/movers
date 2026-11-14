@@ -1,12 +1,12 @@
 {
  "asof": "2026-11-13",
- "generated_at": "14 Nov 2026, 04:18 AM IST",
+ "generated_at": "15 Nov 2026, 12:35 AM IST",
  "market": {
   "stocks_scanned": 2198,
-  "pct_above_50dma": 50.3,
+  "pct_above_50dma": 49.5,
   "pct_advancing": 33.4,
   "mood": "Weak",
-  "pct_above_20ema": 68.3,
+  "pct_above_20ema": 67.3,
   "breadth_5d_change": 4.2,
   "liquid_stocks": 947
  },
@@ -213,7 +213,7 @@
    "avg_range_pct": 5.04,
    "tight6": 18.28,
    "delivery_ratio": 0.56,
-   "score": 95.88
+   "score": 95.86
   },
   {
    "symbol": "AMBER",
@@ -264,7 +264,7 @@
    "avg_range_pct": 6.5,
    "tight6": 19.63,
    "delivery_ratio": 0.65,
-   "score": 94.59
+   "score": 94.56
   },
   {
    "symbol": "SHALPAINTS",
