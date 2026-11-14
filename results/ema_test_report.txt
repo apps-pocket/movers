@@ -1,0 +1,106 @@
+EMA 9/21 crossover test, 3-minute candles, top 10 stocks of each list, costs 0.1% per trade
+Entries between 09:30 and 14:45; every trade ends at the opposite crossover or 15:15.
+Skipped 21 lists older than 4 weeks (Yahoo has no 1-minute data): 2026-09-17 to 2026-10-16
+Test days: 16 | stock-days with a crossover: 156 | crossovers: 741
+
+1) BUY = 9 crosses above 21 (go long), SELL = 9 crosses below 21 (go short). Best/worst point = best/worst price reached after entry.
+                                 BUY    SELL    BOTH
+events                        375.00  366.00  741.00
+win %                          20.80   23.77   22.27
+avg P&L % (net)                -0.17   -0.13   -0.15
+median P&L %                   -0.37   -0.38   -0.37
+avg best point %                0.95    0.90    0.93
+avg worst point %              -0.58   -0.60   -0.59
+biggest best %                 18.10   14.48   18.10
+biggest worst %                -5.39   -4.01   -5.39
+hold to exit time avg %        -0.06   -0.08   -0.07
+best point >= 0.5% (share %)   42.93   43.17   43.05
+best point >= 1% (share %)     28.80   26.23   27.53
+best point >= 2% (share %)     12.27   13.39   12.82
+best point >= 3% (share %)      8.53    6.56    7.56
+
+2) How far did price go in our favour (best point %) and against us (worst point %)?
+                      best % BOTH  worst % BOTH
+typical small                0.10         -0.26
+median                       0.35         -0.46
+good                         1.09         -0.76
+very good / very bad         2.43         -1.14
+
+3) Average net P&L % per trade for each target and stop-loss, BOTH sides (741 trades):
+             stop 0.5%  stop 1%  stop 1.5%  stop 2%
+target 0.5%     -0.156   -0.170     -0.169   -0.173
+target 1%       -0.144   -0.168     -0.170   -0.171
+target 1.5%     -0.141   -0.169     -0.170   -0.165
+target 2%       -0.133   -0.168     -0.166   -0.156
+target 3%       -0.129   -0.155     -0.151   -0.142
+target 4%       -0.129   -0.166     -0.160   -0.149
+   best combinations: target 3 / stop 0.5: -0.129% (win 19%); target 4 / stop 0.5: -0.129% (win 19%); target 2 / stop 0.5: -0.133% (win 21%)
+
+3) Average net P&L % per trade for each target and stop-loss, BUY only (375 trades):
+             stop 0.5%  stop 1%  stop 1.5%  stop 2%
+target 0.5%     -0.172   -0.178     -0.168   -0.169
+target 1%       -0.137   -0.168     -0.151   -0.146
+target 1.5%     -0.151   -0.176     -0.152   -0.144
+target 2%       -0.163   -0.193     -0.162   -0.151
+target 3%       -0.161   -0.175     -0.136   -0.124
+target 4%       -0.165   -0.193     -0.149   -0.134
+   best combinations: target 3 / stop 2: -0.124% (win 22%); target 4 / stop 2: -0.134% (win 21%); target 3 / stop 1.5: -0.136% (win 21%)
+
+3) Average net P&L % per trade for each target and stop-loss, SELL only (366 trades):
+             stop 0.5%  stop 1%  stop 1.5%  stop 2%
+target 0.5%     -0.139   -0.161     -0.169   -0.177
+target 1%       -0.151   -0.168     -0.189   -0.196
+target 1.5%     -0.131   -0.162     -0.188   -0.186
+target 2%       -0.103   -0.143     -0.170   -0.162
+target 3%       -0.096   -0.135     -0.167   -0.160
+target 4%       -0.092   -0.137     -0.171   -0.164
+   best combinations: target 4 / stop 0.5: -0.092% (win 21%); target 3 / stop 0.5: -0.096% (win 21%); target 2 / stop 0.5: -0.103% (win 22%)
+
+4) Five best and five worst crossovers (time, side, final net P&L %):
+ test_date     symbol  time  side  entry  best_pct  worst_pct  pnl_pct
+2026-10-28  HUHTAMAKI 10:06     1 194.38     18.10      -0.45    18.00
+2026-10-30 INDSWFTLAB 10:00    -1 398.10     11.04      -0.85     7.93
+2026-10-22   DCMSRIND 10:45    -1  53.80     14.48      -0.13     6.87
+2026-10-30 EQUITASBNK 11:18     1  49.98      8.38      -1.52     6.78
+2026-10-22   INDIACEM 09:45     1 328.55      9.18      -0.41     6.66
+ test_date     symbol  time  side  entry  best_pct  worst_pct  pnl_pct
+2026-10-22   DCMSRIND 13:57     1  50.05      4.30      -5.39    -4.08
+2026-11-09      EBGNG 11:51     1 562.20      0.30      -2.85    -2.94
+2026-11-03    MENONBE 10:00    -1 309.90      1.10      -3.24    -2.83
+2026-11-03 SANGHVIMOV 09:39     1 331.00      0.21      -2.19    -2.29
+2026-10-23    EMUDHRA 09:30     1 350.70      0.07      -2.20    -2.27
+
+5) Last 3 test days, stock by stock (B = buy cross, S = sell cross):
+  2026-11-11
+    CHEMPLASTS: B 10:57 best +2.1% worst -0.8% end -0.7% | S 11:57 best +0.5% worst -0.9% end -0.8% | B 12:33 best +0.2% worst -0.7% end -0.8% | S 13:09 best +0.2% worst -0.3% end -0.3% | B 14:24 best +1.4% worst -0.3% end +1.1%
+    EBGNG: S 10:30 best +0.0% worst -0.3% end -0.3% | B 10:45 best +0.1% worst -0.2% end -0.3% | S 11:00 best +0.3% worst -0.4% end -0.4% | B 11:21 best +1.1% worst -0.3% end -0.1% | S 12:33 best +0.3% worst -1.1% end -1.2% | B 13:00 best +0.3% worst -0.6% end -0.5%
+    ENTERO: B 12:18 best -0.0% worst -0.2% end -0.2% | S 12:21 best -0.0% worst -0.1% end -0.2% | B 12:24 best +1.4% worst -0.1% end +1.0%
+    IOLCP: S 10:33 best +0.1% worst -0.9% end -0.9% | B 11:33 best +0.2% worst -0.4% end -0.3% | S 12:54 best +0.1% worst -0.3% end -0.4% | B 13:03 best +0.8% worst -0.2% end +0.1%
+    KPEL: S 09:48 best +0.4% worst -2.3% end -1.7% | B 10:06 best +0.1% worst -0.6% end -0.6% | S 10:09 best +0.2% worst -0.9% end -0.9% | B 10:15 best +3.0% worst -1.0% end +0.2% | S 11:51 best +0.0% worst -0.9% end -0.8% | B 12:06 best +1.0% worst -0.6% end -0.4% | S 12:45 best +0.2% worst -0.5% end -0.6% | B 12:51 best +0.1% worst -0.5% end -0.6% | S 13:00 best +0.2% worst -1.2% end -0.8% | B 13:18 best +1.0% worst -0.6% end +0.6%
+    KPIGREEN: S 09:57 best +0.0% worst -0.8% end -0.9% | B 10:03 best +0.2% worst -0.6% end -0.4% | S 10:12 best +0.1% worst -0.2% end -0.3% | B 10:15 best +0.4% worst -0.8% end -0.7% | S 10:30 best +1.3% worst -0.5% end -0.3% | B 12:06 best +1.3% worst -0.4% end -0.3% | S 13:00 best +0.3% worst -0.3% end -0.3% | B 13:27 best +0.1% worst -0.3% end -0.4% | S 13:30 best +0.1% worst -0.5% end -0.6% | B 13:57 best +0.6% worst -0.6% end +0.4%
+    REPCOHOME: S 10:03 best -0.3% worst -0.7% end -0.8% | B 10:06 best -0.1% worst -0.6% end -0.7% | S 10:09 best +0.8% worst -0.5% end -0.2% | B 11:03 best +0.0% worst -0.5% end -0.6% | S 11:06 best +0.1% worst -1.6% end -1.5% | B 11:15 best +0.7% worst -0.7% end -0.1% | S 13:06 best -0.1% worst -0.2% end -0.2% | B 13:09 best +0.1% worst -0.1% end -0.2% | S 13:12 best +0.0% worst -0.8% end -0.6% | B 13:24 best +0.1% worst -0.5% end -0.5% | S 14:03 best +0.0% worst -0.4% end -0.3% | B 14:15 best +0.2% worst -0.3% end -0.3%
+    RPTECH: S 11:42 best -0.0% worst -0.3% end -0.2% | B 11:48 best +0.1% worst -0.2% end -0.2% | S 12:06 best +0.0% worst -0.2% end -0.3% | B 12:09 best -0.0% worst -0.4% end -0.4% | S 12:42 best +0.0% worst -0.3% end -0.3% | B 13:09 best +0.1% worst -0.4% end -0.5% | S 13:30 best +0.4% worst -0.5% end -0.5% | B 14:18 best +0.7% worst -0.5% end -0.6%
+    SPARC: S 10:15 best +0.5% worst -0.5% end -0.3% | B 11:51 best -0.0% worst -0.4% end -0.4% | S 12:12 best +0.1% worst -0.5% end -0.5% | B 12:27 best +0.4% worst -0.2% end -0.3% | S 13:36 best +0.2% worst -0.7% end -0.7% | B 14:06 best +0.2% worst -0.7% end -0.6%
+    SUPRIYA: S 11:57 best +2.6% worst +0.0% end +2.2%
+  2026-11-12
+    ALEMBICLTD: B 10:00 best +1.6% worst -0.3% end +0.2% | S 11:21 best +2.2% worst -0.3% end +1.0% | B 13:24 best +0.9% worst -0.2% end +0.1% | S 14:39 best +0.2% worst -0.4% end -0.0%
+    ASHOKA: B 12:57 best +1.7% worst -0.1% end +1.4%
+    AVANTEL: B 10:00 best -0.1% worst -1.5% end -1.2% | S 10:18 best +0.3% worst -0.8% end -0.5% | B 10:33 best +1.9% worst -0.4% end +0.5% | S 12:06 best +0.1% worst -0.5% end -0.5% | B 12:21 best +1.7% worst -0.3% end +0.0% | S 13:27 best +1.1% worst +0.0% end +0.1%
+    BALMLAWRIE: B 14:21 best +0.7% worst -0.1% end +0.2%
+    IIFL: S 09:45 best +0.9% worst -0.8% end -0.8% | B 10:54 best +0.7% worst -0.6% end -0.6% | S 12:18 best +0.0% worst -0.8% end -0.5% | B 13:42 best +0.2% worst -0.5% end -0.5% | S 14:00 best +0.8% worst -0.4% end +0.3%
+    IZMO: S 10:36 best +0.2% worst -0.4% end -0.4% | B 10:51 best -0.1% worst -0.3% end -0.4% | S 10:54 best +0.2% worst -0.6% end -0.6% | B 10:57 best +2.3% worst +0.1% end +0.6% | S 12:18 best +0.1% worst -0.6% end -0.5% | B 12:39 best +0.4% worst -0.6% end -0.4% | S 13:18 best +0.6% worst -0.9% end -1.0%
+    KALYANKJIL: S 12:12 best +0.9% worst -0.3% end +0.1% | B 14:42 best +1.4% worst -0.1% end +1.0%
+    SHAKTIPUMP: B 10:42 best +0.2% worst -0.4% end -0.5% | S 11:00 best +0.3% worst -0.6% end -0.4% | B 11:33 best +0.2% worst -0.4% end -0.4% | S 11:51 best +0.3% worst -0.3% end -0.3% | B 12:27 best +0.0% worst -0.4% end -0.4% | S 12:36 best +0.0% worst -0.1% end -0.1% | B 12:39 best +0.1% worst -0.0% end -0.1% | S 12:42 best +0.0% worst -0.1% end -0.2% | B 12:45 best +0.6% worst -0.1% end -0.1% | S 14:36 best +0.1% worst -0.6% end -0.5%
+    SWSOLAR: B 09:39 best +0.2% worst -0.7% end -0.8% | S 09:57 best +2.7% worst -0.4% end +2.4%
+    TALBROAUTO: B 09:39 best +0.8% worst -1.8% end -1.9% | S 10:15 best +0.1% worst -1.1% end -1.1% | B 10:18 best +1.9% worst -0.5% end -0.2% | S 11:18 best +3.2% worst -0.1% end +1.7% | B 14:42 best +0.2% worst -0.6% end -0.2%
+  2026-11-13
+    ABREL: B 10:30 best +0.9% worst -0.2% end -0.3% | S 11:57 best +0.4% worst -0.9% end -0.9% | B 12:00 best +0.4% worst -0.7% end -0.6% | S 13:15 best +0.8% worst -0.6% end -0.5% | B 14:36 best +0.3% worst -0.5% end +0.1%
+    DCXINDIA: B 10:57 best +0.0% worst -0.4% end -0.5% | S 11:03 best +0.1% worst -0.6% end -0.4% | B 11:06 best +0.1% worst -0.2% end -0.2% | S 11:15 best +0.1% worst -0.1% end -0.2% | B 11:18 best +0.0% worst -0.1% end -0.2% | S 11:21 best +0.6% worst -0.1% end +0.0% | B 12:42 best +0.2% worst -0.3% end -0.2% | S 13:39 best +0.2% worst -0.2% end -0.3% | B 14:00 best +0.0% worst -0.3% end -0.3% | S 14:12 best +0.1% worst -0.2% end -0.3% | B 14:21 best +3.5% worst -0.1% end +2.8%
+    GABRIEL: B 13:06 best +0.2% worst -0.2% end -0.3% | S 13:45 best +0.2% worst -0.3% end -0.3% | B 14:06 best +1.3% worst -0.2% end +0.1%
+    HINDOILEXP: S 11:18 best +0.5% worst -0.8% end -0.7% | B 11:42 best +0.1% worst -0.9% end -0.8% | S 11:57 best +0.8% worst -1.1% end -0.8% | B 12:57 best -0.0% worst -1.1% end -1.1% | S 13:36 best +0.8% worst -1.0% end -1.1% | B 14:45 best +1.2% worst -0.5% end +0.5%
+    JARO: S 10:42 best +1.4% worst -0.8% end +0.3% | B 13:33 best +2.1% worst -0.4% end +1.0%
+    KALYANKJIL: B 10:00 best +0.1% worst -0.9% end -0.9% | S 10:36 best +0.1% worst -0.6% end -0.6% | B 11:09 best +0.4% worst -0.3% end -0.3% | S 12:03 best +1.1% worst -0.0% end +0.5% | B 14:36 best +0.0% worst -0.2% end -0.3%
+    MANAKCOAT: S 09:36 best +0.6% worst -3.0% end -1.0% | B 10:18 best +0.2% worst -0.6% end -0.6% | S 10:27 best +4.2% worst -0.2% end +2.3% | B 14:45 best +0.7% worst -0.4% end -0.3%
+    MOMSBELIEF: B 10:03 best +0.4% worst -1.7% end -1.2% | S 10:36 best +4.0% worst -0.2% end +3.3%
+    PREMEXPLN: S 11:06 best +0.1% worst -0.2% end -0.3% | B 12:06 best +0.0% worst -0.3% end -0.4% | S 12:09 best -0.0% worst -0.5% end -0.6% | B 12:21 best -0.1% worst -0.3% end -0.4% | S 12:24 best +0.2% worst -0.2% end -0.2% | B 12:30 best +0.2% worst -0.3% end -0.3% | S 13:09 best +0.1% worst -0.4% end -0.5% | B 13:45 best +0.3% worst -0.5% end -0.1%
+    ROTO: B 12:36 best +1.0% worst -0.3% end -0.2% | S 13:42 best +0.7% worst -0.4% end -0.3% | B 14:39 best +0.1% worst -0.4% end -0.5%
