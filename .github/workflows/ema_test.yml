@@ -1,1 +1,25 @@
-
+name: EMA crossover test
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run the EMA 9/21 test
+        run: python ema_test.py --top 10
+      - name: Save results
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add results/ema_test_report.txt results/ema_test_events.csv || true
+          git commit -m "EMA crossover test results" || echo "nothing new to save"
+          git pull --rebase origin main
+          git push
