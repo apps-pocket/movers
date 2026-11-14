@@ -119,7 +119,13 @@ def load_all():
     # Splits/bonuses: NSE's PREV_CLOSE is adjusted on the ex-date. If it differs from yesterday's close by
     # more than 8%, scale all earlier prices (and volumes) so the history is continuous.
     f = d["PREV_CLOSE"] / d.groupby("symbol")["c_off"].shift(1)
-    ev = np.where(np.isfinite(f) & (f > 0) & (np.abs(f - 1) > 0.08), f, 1.0)
+    # Only count it as a split/bonus when the stock also traded on the previous market day.
+    # (A stock that was missing for a few days, e.g. moved to another series, can return at a very
+    # different price without any corporate action.)
+    days = pd.Series(sorted(d["date"].unique()))
+    prev_market_day = pd.Series(days.shift(1).values, index=days.values)
+    consecutive = d.groupby("symbol")["date"].shift(1) == d["date"].map(prev_market_day)
+    ev = np.where(consecutive & np.isfinite(f) & (f > 0) & (np.abs(f - 1) > 0.08), f, 1.0)
     d["lf"] = np.log(ev)
     after = d.groupby("symbol")["lf"].transform(lambda x: x[::-1].cumsum()[::-1]) - d["lf"]
     m = np.exp(after)
