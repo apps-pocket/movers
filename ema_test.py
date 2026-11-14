@@ -21,7 +21,7 @@ import pandas as pd
 
 BASE = Path(__file__).parent
 HIST, OUT = BASE / "results" / "history", BASE / "results"
-TARGETS, STOPS = (0.5, 1, 1.5, 2, 3, 4), (0.5, 1, 1.5, 2)
+TARGETS, STOPS, TRAILS = (0.5, 1, 1.5, 2, 3, 4), (0.5, 1, 1.5, 2), (0.5, 1, 1.5, 2)
 
 
 def tm(t):
@@ -77,12 +77,33 @@ def sim(side, entry, H, L, exit_p, T, S, cost):
     return side * (exit_p / entry - 1) * 100 - cost
 
 
+def sim_trail(side, entry, H, L, exit_p, init, trail, cost):
+    """Start with an initial stop; once price moves in our favour the stop follows `trail`% behind the best price."""
+    best = entry
+    stop = entry * (1 - init / 100) if side == 1 else entry * (1 + init / 100)
+    for h, l in zip(H, L):
+        if side == 1:
+            if l <= stop:
+                return (stop / entry - 1) * 100 - cost
+            best = max(best, h)
+            stop = max(stop, best * (1 - trail / 100))
+        else:
+            if h >= stop:
+                return (1 - stop / entry) * 100 - cost
+            best = min(best, l)
+            stop = min(stop, best * (1 + trail / 100))
+    return side * (exit_p / entry - 1) * 100 - cost
+
+
 def find_events(b, sym, ld, day, a):
     if len(b) < 30:
         return []
     b = b.copy()
     b["e9"] = b.Close.ewm(span=9, adjust=False).mean()
     b["e21"] = b.Close.ewm(span=21, adjust=False).mean()
+    tp = (b.High + b.Low + b.Close) / 3
+    dkey = pd.Series(b.index.date, index=b.index)
+    b["vwap"] = (tp * b.Volume).groupby(dkey).cumsum() / b.Volume.groupby(dkey).cumsum().replace(0, np.nan)
     up = (b.e9 > b.e21).values
     idx = b.index
     mins = np.asarray(idx.hour * 60 + idx.minute)
@@ -96,10 +117,11 @@ def find_events(b, sym, ld, day, a):
         return []
     last_i = day_idx[-1]
     cross_idx = np.where(cross)[0]
-    out = []
+    out, nth = [], 0
     for i in cross_idx:
         if mins[i] < tm(a.start) or mins[i] > tm(a.last_entry) or i >= last_i:
             continue
+        nth += 1
         side = 1 if up[i] else -1
         nxt = cross_idx[cross_idx > i]
         opp = len(nxt) > 0 and nxt[0] <= last_i
@@ -114,7 +136,10 @@ def find_events(b, sym, ld, day, a):
                    entry=round(entry, 2), exit_time=idx[end].strftime("%H:%M"),
                    exit_reason="opposite cross" if opp else "time", best_pct=round(best, 2), worst_pct=round(worst, 2),
                    pnl_pct=round(side * (exit_p / entry - 1) * 100 - a.cost, 2),
-                   pnl_hold_pct=round(side * (cl[last_i] / entry - 1) * 100 - a.cost, 2))
+                   pnl_hold_pct=round(side * (cl[last_i] / entry - 1) * 100 - a.cost, 2),
+                   nth=nth, above_vwap=bool(cl[i] > b.vwap.values[i]) if np.isfinite(b.vwap.values[i]) else False)
+        for t in TRAILS:
+            row[f"TR{t}"] = round(sim_trail(side, entry, H, L, exit_p, 1.0, t, a.cost), 3)
         for T in TARGETS:
             for S in STOPS:
                 row[f"T{T}_S{S}"] = round(sim(side, entry, H, L, exit_p, T, S, a.cost), 3)
@@ -164,11 +189,39 @@ def report(ev, a, skipped):
         top = m.sort_values(ascending=False).head(3)
         w("   best combinations: " + "; ".join(f"{k.replace('_', ' / ').replace('T', 'target ', 1).replace('S', 'stop ')}: {v:+.3f}% "
           f"(win {100 * (x[k] > 0).mean():.0f}%)" for k, v in top.items()))
-    w("\n4) Five best and five worst crossovers (time, side, final net P&L %):")
+    def brief(x):
+        if x.empty:
+            return pd.Series({"trades": 0})
+        return pd.Series({"trades": len(x), "win %": (x.pnl_pct > 0).mean() * 100, "avg P&L %": x.pnl_pct.mean(),
+                          "avg best %": x.best_pct.mean(), "avg worst %": x.worst_pct.mean()}).round(2)
+    hr = ev.time.str[:2].astype(int) * 60 + ev.time.str[3:].astype(int)
+    slots = pd.cut(hr, [0, 629, 689, 749, 809, 869, 929, 1440],
+                   labels=["9:30-10:29", "10:30-11:29", "11:30-12:29", "12:30-13:29", "13:30-14:29", "14:30-14:45", "later"])
+    w("\n4) Does the time of the crossover matter? (all trades, net)")
+    w(ev.groupby(slots, observed=True).apply(brief).to_string())
+    w("\n5) Is the 1st crossover of the day better than later ones? (nth crossover of that stock that day)")
+    w(ev.groupby(ev.nth.clip(upper=4)).apply(brief).rename(index={4: "4 or more"}).to_string())
+    cnt = ev.groupby(["test_date", "symbol"]).symbol.transform("count")
+    w("\n6) Choppy days (6 or more crossovers in one stock) vs calmer days (5 or fewer). Note: you only know this at the end of the day, so it explains the result but cannot be used as a rule.")
+    w(pd.DataFrame({"6+ crossovers": brief(ev[cnt >= 6]), "5 or fewer": brief(ev[cnt < 6])}).to_string())
+    with_vwap = ev[((ev.side == 1) & ev.above_vwap) | ((ev.side == -1) & ~ev.above_vwap)]
+    against = ev.drop(with_vwap.index)
+    w("\n7) VWAP filter: buy only above VWAP, sell only below VWAP (trading with the day's average price)")
+    w(pd.DataFrame({"with VWAP": brief(with_vwap), "against VWAP": brief(against)}).to_string())
+    first = ev[ev.nth == 1]
+    w("\n8) Only the first crossover of each stock each day, and the same with the VWAP filter")
+    w(pd.DataFrame({"first cross, ends at opposite cross": brief(first),
+                    "first cross, with VWAP": brief(first.loc[first.index.intersection(with_vwap.index)])}).to_string())
+    tcols = [c for c in ev.columns if c.startswith("TR")]
+    w("\n9) Trailing stop instead of a fixed target (initial stop 1%, then the stop follows the best price). Average net P&L %:")
+    w(pd.DataFrame({"BOTH": ev[tcols].mean(), "BUY": buy[tcols].mean() if len(buy) else np.nan,
+                    "SELL": sell[tcols].mean() if len(sell) else np.nan}).round(3)
+      .rename(index={f"TR{t}": f"follows {t}% behind best price" for t in TRAILS}).to_string())
+    w("\n10) Five best and five worst crossovers (time, side, final net P&L %):")
     cs = ["test_date", "symbol", "time", "side", "entry", "best_pct", "worst_pct", "pnl_pct"]
     w(ev.sort_values("pnl_pct", ascending=False)[cs].head(5).to_string(index=False))
     w(ev.sort_values("pnl_pct")[cs].head(5).to_string(index=False))
-    w(f"\n5) Last {a.show} test days, stock by stock (B = buy cross, S = sell cross):")
+    w(f"\n11) Last {a.show} test days, stock by stock (B = buy cross, S = sell cross):")
     for d in sorted(ev.test_date.unique())[-a.show:]:
         w(f"  {d}")
         for s, g in ev[ev.test_date == d].groupby("symbol"):
