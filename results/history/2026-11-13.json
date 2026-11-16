@@ -352,5 +352,170 @@
    "score": 94.11
   }
  ],
- "outcomes": null
+ "outcomes": {
+  "next_date": "2026-11-16",
+  "ref": "pc",
+  "rows": {
+   "ANUP": {
+    "gap": -4.35,
+    "oc": 9.75,
+    "cc": 4.97,
+    "range_pct": 11.15,
+    "up": 6.32,
+    "down": -4.35
+   },
+   "MSTCLTD": {
+    "gap": 0.85,
+    "oc": -4.05,
+    "cc": -3.24,
+    "range_pct": 6.09,
+    "up": 1.95,
+    "down": -4.19
+   },
+   "V2RETAIL": {
+    "gap": 1.16,
+    "oc": -15.9,
+    "cc": -14.93,
+    "range_pct": 20.47,
+    "up": 1.64,
+    "down": -19.07
+   },
+   "ALICON": {
+    "gap": -2.68,
+    "oc": 1.48,
+    "cc": -1.24,
+    "range_pct": 4.95,
+    "up": 0.39,
+    "down": -4.42
+   },
+   "SHARDAMOTR": {
+    "gap": 0.17,
+    "oc": -3.06,
+    "cc": -2.9,
+    "range_pct": 6.2,
+    "up": 3.28,
+    "down": -2.93
+   },
+   "BFUTILITIE": {
+    "gap": -1.35,
+    "oc": -4.43,
+    "cc": -5.73,
+    "range_pct": 5.43,
+    "up": -1.21,
+    "down": -6.57
+   },
+   "STYLEBAAZA": {
+    "gap": -1.01,
+    "oc": 9.5,
+    "cc": 8.39,
+    "range_pct": 11.77,
+    "up": 9.99,
+    "down": -1.65
+   },
+   "AEGISVOPAK": {
+    "gap": 0.2,
+    "oc": -2.34,
+    "cc": -2.14,
+    "range_pct": 3.05,
+    "up": 0.37,
+    "down": -2.69
+   },
+   "KPEL": {
+    "gap": -2.68,
+    "oc": -6.06,
+    "cc": -8.58,
+    "range_pct": 8.07,
+    "up": -1.45,
+    "down": -9.3
+   },
+   "POWERINDIA": {
+    "gap": 0.95,
+    "oc": -3.17,
+    "cc": -2.25,
+    "range_pct": 4.06,
+    "up": 1.12,
+    "down": -2.98
+   },
+   "PICCADIL": {
+    "gap": 2.3,
+    "oc": -2.04,
+    "cc": 0.22,
+    "range_pct": 3.63,
+    "up": 2.48,
+    "down": -1.23
+   },
+   "KENNAMET": {
+    "gap": 0.51,
+    "oc": -2.21,
+    "cc": -1.71,
+    "range_pct": 4.59,
+    "up": 1.65,
+    "down": -2.97
+   },
+   "AMBER": {
+    "gap": -1.21,
+    "oc": -6.55,
+    "cc": -7.68,
+    "range_pct": 8.57,
+    "up": -0.65,
+    "down": -9.11
+   },
+   "SSRETAIL": {
+    "gap": -1.93,
+    "oc": -4.28,
+    "cc": -6.13,
+    "range_pct": 4.96,
+    "up": -1.92,
+    "down": -6.78
+   },
+   "MOLBIO": {
+    "gap": 1.13,
+    "oc": -1.59,
+    "cc": -0.48,
+    "range_pct": 3.63,
+    "up": 2.46,
+    "down": -1.21
+   },
+   "SHALPAINTS": {
+    "gap": 3.83,
+    "oc": 1.31,
+    "cc": 5.18,
+    "range_pct": 12.59,
+    "up": 9.24,
+    "down": -3.84
+   },
+   "SALZERELEC": {
+    "gap": 0.45,
+    "oc": 0.42,
+    "cc": 0.87,
+    "range_pct": 3.7,
+    "up": 1.32,
+    "down": -2.39
+   },
+   "MANAKCOAT": {
+    "gap": -0.38,
+    "oc": -0.4,
+    "cc": -0.79,
+    "range_pct": 3.47,
+    "up": 2.18,
+    "down": -1.28
+   },
+   "JARO": {
+    "gap": -3.66,
+    "oc": -0.98,
+    "cc": -4.61,
+    "range_pct": 4.24,
+    "up": -1.32,
+    "down": -5.41
+   },
+   "ASTRAMICRO": {
+    "gap": 1.85,
+    "oc": -1.76,
+    "cc": 0.06,
+    "range_pct": 4.26,
+    "up": 1.9,
+    "down": -2.44
+   }
+  }
+ }
 }
