@@ -1,59 +1,60 @@
 EMA 9/21 crossover test, 3-minute candles, top 20 stocks of each list, costs 0.1% per trade
 Entries between 09:30 and 14:45; PART 1 trades end at the opposite crossover or 15:15.
-Skipped 21 lists older than 4 weeks (Yahoo has no 1-minute data): 2026-09-17 to 2026-10-16
-Test days (including days saved by earlier runs): 17 | stock-days with a crossover: 332 | crossovers: 1499
+Skipped 22 lists older than 4 weeks (Yahoo has no 1-minute data): 2026-09-17 to 2026-10-19
+Newest test day in this report: 2026-11-16. A list is tested on the NEXT trading day, so the latest list is added after the next day's scan has run.
+Test days (including days saved by earlier runs): 15 | stock-days with a crossover: 293 | crossovers: 1339
 
 PART 1
 1) BUY = 9 crosses above 21 (go long), SELL = 9 crosses below 21 (go short).
                                  BUY    SELL     BOTH
-events                        763.00  736.00  1499.00
-win %                          22.15   25.68    23.88
-avg P&L % (net)                -0.13   -0.13    -0.13
-median P&L %                   -0.37   -0.35    -0.36
-avg best point %                0.90    0.80     0.85
-avg worst point %              -0.55   -0.54    -0.54
-biggest best %                 18.10   14.48    18.10
-biggest worst %                -5.39   -4.01    -5.39
-hold to exit time avg %        -0.04   -0.12    -0.08
-best point >= 0.5% (share %)   42.73   42.39    42.56
-best point >= 1% (share %)     26.74   24.59    25.68
-best point >= 2% (share %)     12.32   11.28    11.81
-best point >= 3% (share %)      7.60    4.62     6.14
+events                        677.00  662.00  1339.00
+win %                          21.42   24.77    23.08
+avg P&L % (net)                -0.13   -0.16    -0.15
+median P&L %                   -0.36   -0.35    -0.35
+avg best point %                0.86    0.74     0.80
+avg worst point %              -0.53   -0.54    -0.53
+biggest best %                 18.10   11.04    18.10
+biggest worst %                -3.74   -4.01    -4.01
+hold to exit time avg %        -0.02   -0.14    -0.08
+best point >= 0.5% (share %)   41.51   40.18    40.85
+best point >= 1% (share %)     25.70   23.26    24.50
+best point >= 2% (share %)     11.52   10.42    10.98
+best point >= 3% (share %)      6.79    3.78     5.30
 
 2) Fixed % target / stop-loss, average net P&L % per trade (all trades):
              stop 0.5%  stop 1%  stop 1.5%  stop 2%
-target 0.5%     -0.144   -0.157     -0.162   -0.166
-target 1%       -0.138   -0.160     -0.166   -0.168
-target 1.5%     -0.128   -0.151     -0.158   -0.157
-target 2%       -0.124   -0.146     -0.152   -0.148
-target 3%       -0.122   -0.140     -0.146   -0.142
-target 4%       -0.119   -0.143     -0.148   -0.143
+target 0.5%     -0.156   -0.168     -0.174   -0.179
+target 1%       -0.149   -0.172     -0.178   -0.181
+target 1.5%     -0.138   -0.161     -0.168   -0.169
+target 2%       -0.136   -0.157     -0.163   -0.162
+target 3%       -0.138   -0.156     -0.163   -0.163
+target 4%       -0.131   -0.153     -0.160   -0.159
 
 3) Time of the crossover (net, ends at opposite crossover)
              trades  win %  avg P&L %  avg best %  avg worst %
 time                                                          
-9:30-10:29    200.0  33.50       0.02        1.51        -0.79
-10:30-11:29   235.0  26.38      -0.04        1.09        -0.56
-11:30-12:29   316.0  21.20      -0.17        0.75        -0.50
-12:30-13:29   350.0  19.43      -0.17        0.66        -0.47
-13:30-14:29   297.0  21.89      -0.20        0.67        -0.52
-14:30-14:45   101.0  28.71      -0.18        0.46        -0.48
+9:30-10:29    179.0  31.28       0.01        1.45        -0.79
+10:30-11:29   213.0  25.82      -0.07        1.00        -0.55
+11:30-12:29   283.0  20.14      -0.22        0.69        -0.50
+12:30-13:29   312.0  19.55      -0.17        0.63        -0.46
+13:30-14:29   266.0  21.80      -0.20        0.63        -0.49
+14:30-14:45    86.0  25.58      -0.20        0.43        -0.47
 
 4) 1st crossover of the day vs later ones
            trades  win %  avg P&L %  avg best %  avg worst %
 nth                                                         
-1           332.0  30.72       0.05        1.31        -0.67
-2           298.0  23.15      -0.14        0.89        -0.57
-3           250.0  24.80      -0.13        0.82        -0.49
-4 or more   619.0  20.19      -0.22        0.59        -0.49
+1           293.0  29.69       0.03        1.24        -0.66
+2           265.0  23.02      -0.16        0.82        -0.55
+3           221.0  23.98      -0.16        0.76        -0.48
+4 or more   560.0  19.29      -0.23        0.57        -0.48
 
 5) VWAP filter (buy above VWAP, sell below)
              with VWAP  against VWAP
-trades          923.00        576.00
-win %            26.87         19.10
-avg P&L %        -0.10         -0.18
-avg best %        0.95          0.69
-avg worst %      -0.58         -0.49
+trades          831.00        508.00
+win %            26.23         17.91
+avg P&L %        -0.11         -0.21
+avg best %        0.91          0.62
+avg worst %      -0.57         -0.48
 
 6) Last 2 test days, stock by stock (B = buy cross, S = sell cross):
   2026-11-13
@@ -106,125 +107,146 @@ Stop rule: low (buy) / high (sell) of the candle before the crossover candle; if
 
 7) How big is the risk? (stop distance in % of price)
                                 25%   50%   75%
-your rule                       0.2  0.27  0.51
-plain previous-candle low/high  0.2  0.31  0.57
-   Big candles: 25% of crossovers. Typical cost in R: 0.37R (small stops make costs matter more).
+your rule                       0.2  0.26  0.49
+plain previous-candle low/high  0.2  0.29  0.56
+   Big candles: 25% of crossovers. Typical cost in R: 0.39R (small stops make costs matter more).
 
 8) Fixed target with your stop (win % = trades ending in profit)
                trades from target  trades  win %  avg net R  avg net %
-            All crossovers     1R    1499  44.03      -0.46      -0.13
-            All crossovers     2R    1499  29.69      -0.47      -0.14
-            All crossovers     3R    1499  24.75      -0.43      -0.13
-            All crossovers     4R    1499  22.62      -0.38      -0.11
-First crossover of the day     1R     332  46.69      -0.36      -0.07
-First crossover of the day     2R     332  34.94      -0.25       0.00
-First crossover of the day     3R     332  29.52      -0.21       0.01
-First crossover of the day     4R     332  28.01      -0.11       0.04
-    First crossover + VWAP     1R     232  49.57      -0.27      -0.02
-    First crossover + VWAP     2R     232  37.50      -0.14       0.08
-    First crossover + VWAP     3R     232  32.33      -0.08       0.09
-    First crossover + VWAP     4R     232  31.03       0.04       0.12
-   A 1R target needs a win rate above ~55% to pay (costs included); 2R needs ~38%; 3R ~30%; 4R ~25%.
+            All crossovers     1R    1339  43.39      -0.47      -0.14
+            All crossovers     2R    1339  29.35      -0.48      -0.14
+            All crossovers     3R    1339  24.42      -0.45      -0.13
+            All crossovers     4R    1339  22.33      -0.40      -0.13
+First crossover of the day     1R     293  46.08      -0.38      -0.08
+First crossover of the day     2R     293  33.79      -0.30      -0.02
+First crossover of the day     3R     293  29.01      -0.24      -0.02
+First crossover of the day     4R     293  27.30      -0.16      -0.00
+    First crossover + VWAP     1R     209  48.80      -0.29      -0.05
+    First crossover + VWAP     2R     209  35.89      -0.20       0.03
+    First crossover + VWAP     3R     209  30.62      -0.16       0.02
+    First crossover + VWAP     4R     209  29.19      -0.07       0.03
+   Break-even win rate = (1 + cost in R) / (target + 1). With your stop the typical cost is 0.39R, so a 1R target needs about 69% wins, 2R 46%, 3R 35%, 4R 28%. With a 1% stop the cost is only 0.10R: 1R needs 55%, 2R 37%, 3R 28%.
 
-9) Where to move the stop when price reaches +1R, +2R...? (First crossover of the day, 332 trades, target 4R). Average net R:
+9) Where to move the stop when price reaches +1R, +2R...? (First crossover of the day, 293 trades, target 4R). Average net R:
             stop to 0R  stop to 0.5R  stop to 1R  stop to 1.5R  stop to 2R
-reach 1R         -0.15         -0.19           -             -           -
-reach 1.5R       -0.12         -0.16       -0.15             -           -
-reach 2R         -0.12         -0.14       -0.16         -0.17           -
-reach 3R         -0.12             -       -0.17             -       -0.19
+reach 1R         -0.19         -0.24           -             -           -
+reach 1.5R       -0.17         -0.21       -0.19             -           -
+reach 2R         -0.16         -0.19       -0.22         -0.22           -
+reach 3R         -0.16             -       -0.21             -       -0.22
    (stop to 0R = break-even; compare with 'target 4R, stop never moved' and 'hold to 3:15' below)
    All rules ranked by average R (a few huge winners can distort uncapped averages, so each trade is capped at 10R). t = fixed target, bk = move stop, cd = trail under each candle after +yR, em = exit when price closes beyond EMA9 after +yR, hold = stop only until 15:15):
          win %  avg R (cap 10)  median net R  profit factor  avg net %  reached ~4R %
-hold     22.89           -0.04         -1.21           1.18       0.13          10.54
-t4       28.01           -0.11         -1.18           0.88       0.04          18.67
-bk1.5_0  22.89           -0.12         -1.12           0.85       0.04          16.57
-cd2      32.83           -0.12         -1.15           0.90       0.05           4.22
-bk3_0    26.81           -0.12         -1.18           0.86       0.04          18.07
-bk2_0    24.70           -0.12         -1.15           0.87       0.05          17.47
-bk2_0.5  31.63           -0.14         -1.15           0.83       0.02          15.96
-bk1_0    19.88           -0.15         -1.07           0.80       0.02          14.76
-bk1.5_1  39.76           -0.15         -1.12           0.81       0.02          11.14
-cd1      38.55           -0.15         -1.08           0.84       0.02           3.61
-   Reference: t1 -0.36R (win 47%); t2 -0.25R (win 35%); t3 -0.21R (win 30%); t4 -0.11R (win 28%); hold -0.04R (win 23%)
+hold     22.87           -0.04         -1.22           1.17       0.10          10.92
+t4       27.30           -0.16         -1.20           0.83      -0.00          17.75
+bk2_0    24.23           -0.16         -1.18           0.82       0.01          16.72
+bk3_0    26.28           -0.16         -1.19           0.83       0.00          17.41
+bk1.5_0  22.18           -0.17         -1.12           0.80      -0.01          15.70
+cd2      31.74           -0.18         -1.18           0.84       0.01           3.75
+bk1_0    19.45           -0.19         -1.08           0.76      -0.02          13.99
+bk2_0.5  30.72           -0.19         -1.18           0.78      -0.02          15.36
+cd1.5    34.81           -0.19         -1.13           0.81      -0.02           3.41
+cd1      37.54           -0.19         -1.08           0.80      -0.01           3.41
+   Reference: t1 -0.38R (win 46%); t2 -0.30R (win 34%); t3 -0.24R (win 29%); t4 -0.16R (win 27%); hold -0.04R (win 23%)
 
-9) Where to move the stop when price reaches +1R, +2R...? (All crossovers, 1499 trades, target 4R). Average net R:
+9) Where to move the stop when price reaches +1R, +2R...? (All crossovers, 1339 trades, target 4R). Average net R:
             stop to 0R  stop to 0.5R  stop to 1R  stop to 1.5R  stop to 2R
-reach 1R         -0.37         -0.35           -             -           -
-reach 1.5R       -0.40         -0.39       -0.38             -           -
-reach 2R         -0.39         -0.39       -0.41          -0.4           -
-reach 3R         -0.39             -       -0.40             -       -0.41
+reach 1R         -0.39         -0.37           -             -           -
+reach 1.5R       -0.42         -0.41       -0.40             -           -
+reach 2R         -0.42         -0.41       -0.43         -0.42           -
+reach 3R         -0.42             -       -0.42             -       -0.42
    (stop to 0R = break-even; compare with 'target 4R, stop never moved' and 'hold to 3:15' below)
    All rules ranked by average R (a few huge winners can distort uncapped averages, so each trade is capped at 10R). t = fixed target, bk = move stop, cd = trail under each candle after +yR, em = exit when price closes beyond EMA9 after +yR, hold = stop only until 15:15):
            win %  avg R (cap 10)  median net R  profit factor  avg net %  reached ~4R %
-bk1_0.5    31.62           -0.35         -1.12           0.53      -0.10           8.41
-cd1        34.09           -0.35         -1.12           0.56      -0.09           2.47
-bk1_0      16.08           -0.37         -1.12           0.56      -0.10          11.07
-cd2        28.55           -0.38         -1.22           0.60      -0.11           3.34
-cd1.5      31.55           -0.38         -1.19           0.58      -0.11           2.87
-bk1.5_1    35.22           -0.38         -1.19           0.56      -0.11           8.07
-t4         22.62           -0.38         -1.27           0.63      -0.11          14.88
-bk3_0      21.61           -0.39         -1.25           0.61      -0.11          14.21
-bk1.5_0.5  27.28           -0.39         -1.19           0.55      -0.11          10.74
-bk2_0      19.95           -0.39         -1.22           0.59      -0.11          13.34
-   Reference: t1 -0.46R (win 44%); t2 -0.47R (win 30%); t3 -0.43R (win 25%); t4 -0.38R (win 23%); hold -0.39R (win 18%)
+bk1_0.5    30.17           -0.37         -1.12           0.51      -0.11           8.36
+cd1        33.08           -0.37         -1.13           0.54      -0.10           2.24
+bk1_0      15.76           -0.39         -1.12           0.54      -0.12          10.98
+t4         22.33           -0.40         -1.28           0.61      -0.13          14.64
+cd1.5      31.07           -0.40         -1.20           0.55      -0.12           2.46
+bk1.5_1    34.80           -0.40         -1.20           0.53      -0.12           7.77
+hold       18.22           -0.40         -1.30           0.77      -0.09           7.69
+bk2_0.5    24.79           -0.41         -1.23           0.56      -0.13          12.40
+cd2        28.16           -0.41         -1.23           0.57      -0.12           2.91
+bk1.5_0.5  26.59           -0.41         -1.20           0.53      -0.13          10.53
+   Reference: t1 -0.47R (win 43%); t2 -0.48R (win 29%); t3 -0.45R (win 24%); t4 -0.40R (win 22%); hold -0.40R (win 18%)
 
-10) Which stop is better? Same entries, fixed targets (avg net R / win %)
-               trades from target   your rule plain candle low/high fixed 1% stop
-            All crossovers     1R -0.46 / 44%           -0.41 / 45%   -0.12 / 46%
-            All crossovers     2R -0.47 / 30%           -0.43 / 30%   -0.09 / 40%
-First crossover of the day     1R -0.36 / 47%           -0.33 / 47%   -0.04 / 53%
-First crossover of the day     2R -0.25 / 35%           -0.26 / 35%   +0.04 / 43%
+10) Which stop size works best? Same entries, fixed targets. Each cell: average net R / win %
+                    trades from                  stop   1R target   2R target   3R target
+          All crossovers (1339)    your rule (candle) -0.47 / 43% -0.48 / 29% -0.45 / 24%
+          All crossovers (1339) plain candle low/high -0.43 / 45% -0.45 / 30% -0.41 / 26%
+          All crossovers (1339)           fixed 0.75% -0.18 / 46% -0.15 / 37% -0.13 / 34%
+          All crossovers (1339)              fixed 1% -0.14 / 45% -0.11 / 39% -0.09 / 38%
+          All crossovers (1339)           fixed 1.25% -0.12 / 45% -0.09 / 40% -0.08 / 40%
+          All crossovers (1339)             1.5 x ATR -0.32 / 46% -0.27 / 33% -0.24 / 29%
+          First crossover (293)    your rule (candle) -0.38 / 46% -0.30 / 34% -0.24 / 29%
+          First crossover (293) plain candle low/high -0.36 / 46% -0.29 / 34% -0.20 / 30%
+          First crossover (293)           fixed 0.75% -0.13 / 50% -0.02 / 40% +0.04 / 36%
+          First crossover (293)              fixed 1% -0.04 / 53% +0.02 / 43% +0.08 / 40%
+          First crossover (293)           fixed 1.25% -0.06 / 51% +0.02 / 43% +0.07 / 42%
+          First crossover (293)             1.5 x ATR -0.21 / 48% -0.06 / 38% -0.01 / 33%
+             First + VWAP (209)    your rule (candle) -0.29 / 49% -0.20 / 36% -0.16 / 31%
+             First + VWAP (209) plain candle low/high -0.26 / 49% -0.20 / 36% -0.12 / 32%
+             First + VWAP (209)           fixed 0.75% -0.14 / 50% +0.05 / 43% +0.10 / 37%
+             First + VWAP (209)              fixed 1% -0.00 / 55% +0.10 / 45% +0.15 / 42%
+             First + VWAP (209)           fixed 1.25% -0.01 / 54% +0.09 / 46% +0.13 / 44%
+             First + VWAP (209)             1.5 x ATR -0.13 / 51% +0.03 / 41% +0.10 / 36%
+First + ADX>=20 + RSI3>=55 (87)    your rule (candle) -0.04 / 57% +0.12 / 45% +0.11 / 39%
+First + ADX>=20 + RSI3>=55 (87) plain candle low/high +0.03 / 60% +0.21 / 48% +0.19 / 41%
+First + ADX>=20 + RSI3>=55 (87)           fixed 0.75% -0.01 / 56% +0.21 / 48% +0.35 / 44%
+First + ADX>=20 + RSI3>=55 (87)              fixed 1% +0.01 / 54% +0.26 / 48% +0.20 / 41%
+First + ADX>=20 + RSI3>=55 (87)           fixed 1.25% +0.03 / 54% +0.25 / 49% +0.20 / 44%
+First + ADX>=20 + RSI3>=55 (87)             1.5 x ATR +0.05 / 60% +0.22 / 47% +0.17 / 39%
+   Typical stop size: your rule 0.26%, plain candle 0.29%, 1.5 x ATR 0.46%
 
 11) Indicator filters (all crossovers, your stop). 'aligned' = for sells the RSI is flipped, so high = momentum with the trade
 Daily RSI of the stock (previous day's close), aligned:
           trades  win % at 1R  win % at 2R  avg net R at 2R
 rsid_al                                                    
-below 40     509        43.03        27.31            -0.55
-40-55        345        44.06        32.46            -0.36
-55-70        405        42.22        27.16            -0.55
-above 70     229        50.22        35.37            -0.30
+below 40     447        43.40        27.52            -0.55
+40-55        308        42.21        31.17            -0.40
+55-70        371        41.51        27.22            -0.55
+above 70     202        49.50        34.65            -0.33
 3-minute RSI at the crossover, aligned:
           trades  win % at 1R  win % at 2R  avg net R at 2R
 rsi3_al                                                    
-45-55        723        43.29        29.05            -0.56
-55-65        711        44.02        29.54            -0.41
-above 65      65        52.31        38.46            -0.02
+45-55        650        43.08        28.62            -0.58
+55-65        632        42.88        29.11            -0.43
+above 65      57        52.63        40.35             0.04
 ADX (trend strength) on 3-minute candles:
           trades  win % at 1R  win % at 2R  avg net R at 2R
 adx3                                                       
-below 15     518        44.59        29.54            -0.52
-15-20        424        42.45        29.48            -0.45
-20-25        285        42.81        27.72            -0.51
-above 25     272        46.69        32.35            -0.34
+below 15     464        43.32        29.31            -0.54
+15-20        379        41.95        29.55            -0.45
+20-25        265        43.02        27.55            -0.51
+above 25     231        46.32        31.17            -0.39
 Volume of the crossover candle vs the previous 20 candles:
             trades  win % at 1R  win % at 2R  avg net R at 2R
 volx                                                         
-below 1x       924        43.18        28.46            -0.54
-1-1.5x         196        41.84        26.02            -0.54
-1.5-2.5x       182        50.00        36.81            -0.20
-above 2.5x     197        44.67        32.49            -0.32
+below 1x       822        41.97        27.74            -0.56
+1-1.5x         176        40.91        25.57            -0.56
+1.5-2.5x       157        52.23        38.85            -0.15
+above 2.5x     184        44.57        32.07            -0.34
 Opening gap in the direction of the trade (%):
                 trades  win % at 1R  win % at 2R  avg net R at 2R
 gap_al                                                           
-against            559        44.54        31.48            -0.43
-flat               425        46.12        31.53            -0.41
-with the trade     515        41.75        26.21            -0.55
+against            498        44.78        31.73            -0.43
+flat               378        45.77        30.69            -0.45
+with the trade     463        39.96        25.70            -0.57
 
-12) Combining filters, with an honest check. Rules were chosen using the first 10 days (train) and then checked on the remaining 7 days (test) that were NOT used for choosing. 64 rules tried (need 40+ train trades).
+12) Combining filters, with an honest check. Rules were chosen using the first 9 days (train) and then checked on the remaining 6 days (test) that were NOT used for choosing. 62 rules tried (need 40+ train trades).
 Best by average R at a 2R target (train), and what happened on the test days:
                            rule  train_trades  train_win1  train_win2  train_R2  test_trades  test_win1  test_win2  test_R2
-                      no filter           868       46.43       31.45     -0.40          631      40.73      27.26    -0.56
-first + before 10:30 + RSI3>=55            49       63.27       51.02      0.40           35      45.71      31.43    -0.27
- first + before 10:30 + ADX>=20            54       61.11       51.85      0.35           28      50.00      32.14    -0.29
-     first + ADX>=20 + RSI3>=55            57       57.89       50.88      0.35           42      57.14      40.48    -0.03
- VWAP + before 10:30 + RSI3>=55            60       63.33       50.00      0.28           43      44.19      27.91    -0.35
-        before 10:30 + RSI3>=55            61       62.30       49.18      0.26           44      43.18      27.27    -0.37
-  VWAP + before 10:30 + ADX>=20            63       58.73       50.79      0.26           37      43.24      24.32    -0.50
+                      no filter           800       45.25       31.00     -0.42          539      40.63      26.90    -0.57
+     first + ADX>=20 + RSI3>=55            52       61.54       51.92      0.36           35      51.43      34.29    -0.24
+first + before 10:30 + RSI3>=55            44       61.36       50.00      0.34           30      43.33      26.67    -0.42
+ first + before 10:30 + ADX>=20            50       60.00       50.00      0.29           22      45.45      22.73    -0.59
+        first + VWAP + RSI3>=55            68       58.82       47.06      0.22           46      52.17      34.78    -0.21
+         first + VWAP + ADX>=20            76       57.89       47.37      0.19           36      52.78      33.33    -0.33
+ VWAP + before 10:30 + RSI3>=55            54       61.11       48.15      0.19           36      41.67      25.00    -0.45
 Highest win rate at a 1R target (train):
-                           rule  train_trades  train_win1  train_win2  train_R2  test_trades  test_win1  test_win2  test_R2
- VWAP + before 10:30 + RSI3>=55            60       63.33       50.00      0.28           43      44.19      27.91    -0.35
-first + before 10:30 + RSI3>=55            49       63.27       51.02      0.40           35      45.71      31.43    -0.27
-        before 10:30 + RSI3>=55            61       62.30       49.18      0.26           44      43.18      27.27    -0.37
- first + before 10:30 + ADX>=20            54       61.11       51.85      0.35           28      50.00      32.14    -0.29
-  VWAP + before 10:30 + ADX>=20            63       58.73       50.79      0.26           37      43.24      24.32    -0.50
+                             rule  train_trades  train_win1  train_win2  train_R2  test_trades  test_win1  test_win2  test_R2
+    VWAP + ADX>=20 + volume>=1.5x            44       65.91       45.45      0.05           33      48.48      36.36    -0.22
+ADX>=20 + RSI3>=55 + volume>=1.5x            60       65.00       45.00      0.10           48      43.75      33.33    -0.19
+           ADX>=20 + volume>=1.5x            71       63.38       43.66      0.02           56      44.64      33.93    -0.21
+       first + ADX>=20 + RSI3>=55            52       61.54       51.92      0.36           35      51.43      34.29    -0.24
+  first + before 10:30 + RSI3>=55            44       61.36       50.00      0.34           30      43.33      26.67    -0.42
    If a rule is good on train but weak on test, it was luck. Only trust rules that hold on BOTH and keep holding on new days.
