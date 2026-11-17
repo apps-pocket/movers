@@ -29,6 +29,7 @@ for _y, _xs in ((1, (0, 0.5)), (1.5, (0, 0.5, 1)), (2, (0, 0.5, 1, 1.5)), (3, (0
 for _y in (1, 1.5, 2):
     STRATS += [(f"cd{_y}", "cd", _y, None), (f"em{_y}", "ema", _y, None)]  # candle trail / EMA9 trail after _y R
 FIXED_ONLY = [s for s in STRATS if s[0] in ("t1", "t2", "t3", "t4")]
+FIXED3 = [s for s in STRATS if s[0] in ("t1", "t2", "t3")]
 
 
 def tm(t):
@@ -204,6 +205,8 @@ def find_events(b, sym, ld, day, a, rsid=np.nan):
     b["vwap"] = (tp * b.Volume).groupby(dkey).cumsum() / b.Volume.groupby(dkey).cumsum().replace(0, np.nan)
     b["rsi3"] = rsi_series(b.Close)
     b["adx3"] = adx_series(b.High, b.Low, b.Close)
+    tr_ = pd.concat([b.High - b.Low, (b.High - b.Close.shift()).abs(), (b.Low - b.Close.shift()).abs()], axis=1).max(axis=1)
+    b["atr"] = tr_.ewm(alpha=1 / 14, adjust=False).mean()
     up = (b.e9 > b.e21).values
     idx = b.index
     mins = np.asarray(idx.hour * 60 + idx.minute)
@@ -212,7 +215,7 @@ def find_events(b, sym, ld, day, a, rsid=np.nan):
     cross[1:] = up[1:] != up[:-1]
     cross &= on_day
     hi, lo, cl, op, vol = b.High.values, b.Low.values, b.Close.values, b.Open.values, b.Volume.values
-    e9v, rsi3, adx3, vw = b.e9.values, b.rsi3.values, b.adx3.values, b.vwap.values
+    e9v, rsi3, adx3, vw, atrv = b.e9.values, b.rsi3.values, b.adx3.values, b.vwap.values, b.atr.values
     day_idx = np.where(on_day & (mins <= tm(a.exit)))[0]
     if len(day_idx) == 0:
         return []
@@ -261,6 +264,15 @@ def find_events(b, sym, ld, day, a, rsid=np.nan):
             row[f"L_{name}"] = round(run_strategy(side, entry, s_plain, Hm, Lm, Cm, Em, exit_day, a.cost, kind, p1, p2), 3)
             f_stop, f_risk = fix_stop(side, entry, entry * (1 - side * 0.01), a.min_risk)
             row[f"F_{name}"] = round(run_strategy(side, entry, f_stop, Hm, Lm, Cm, Em, exit_day, a.cost, kind, p1, p2), 3)
+        # more stop sizes: fixed 0.75% / 1.25% and 1.5 x ATR of the 3-minute candles
+        alt = {"P075": entry * (1 - side * 0.0075), "P125": entry * (1 - side * 0.0125),
+               "A15": entry - side * 1.5 * (atrv[i] if np.isfinite(atrv[i]) else 0)}
+        for tag, st in alt.items():
+            st, rk = fix_stop(side, entry, st, a.min_risk)
+            if tag == "A15":
+                row["risk_A15"] = round(rk, 3)
+            for name, kind, p1, p2 in FIXED3:
+                row[f"{tag}_{name}"] = round(run_strategy(side, entry, st, Hm, Lm, Cm, Em, exit_day, a.cost, kind, p1, p2), 3)
         out.append(row)
     return out
 
@@ -292,6 +304,8 @@ def report(ev, a, skipped):
     if ev.empty:
         w("No crossovers found (or Yahoo returned no data).")
         return "\n".join(L)
+    w(f"Newest test day in this report: {ev.test_date.max()}. A list is tested on the NEXT trading day, so the latest list is added "
+      f"after the next day's scan has run.")
     w(f"Test days (including days saved by earlier runs): {ev.test_date.nunique()} | stock-days with a crossover: "
       f"{ev.groupby(['test_date', 'symbol']).ngroups} | crossovers: {len(ev)}")
     buy, sell = ev[ev.side == 1], ev[ev.side == -1]
@@ -352,7 +366,10 @@ def part2(ev, a):
             c = f"U_t{k}"
             rows.append((nm, f"{k}R", len(x), (x[c] > 0).mean() * 100, x[c].mean(), (x[c] * x.risk_U).mean()))
     w(pd.DataFrame(rows, columns=["trades from", "target", "trades", "win %", "avg net R", "avg net %"]).round(2).to_string(index=False))
-    w("   A 1R target needs a win rate above ~55% to pay (costs included); 2R needs ~38%; 3R ~30%; 4R ~25%.")
+    cR = a.cost / ev.risk_U.median()
+    w(f"   Break-even win rate = (1 + cost in R) / (target + 1). With your stop the typical cost is {cR:.2f}R, so a 1R target needs about "
+      f"{100 * (1 + cR) / 2:.0f}% wins, 2R {100 * (1 + cR) / 3:.0f}%, 3R {100 * (1 + cR) / 4:.0f}%, 4R {100 * (1 + cR) / 5:.0f}%. "
+      f"With a 1% stop the cost is only {a.cost:.2f}R: 1R needs {100 * (1 + a.cost) / 2:.0f}%, 2R {100 * (1 + a.cost) / 3:.0f}%, 3R {100 * (1 + a.cost) / 4:.0f}%.")
     ucols = [f"U_{s[0]}" for s in STRATS]
     for nm in ("First crossover of the day", "All crossovers"):
         x = subs[nm]
@@ -380,13 +397,23 @@ def part2(ev, a):
           f"em = exit when price closes beyond EMA9 after +yR, hold = stop only until {a.exit}):")
         w(tab.sort_values("avg R (cap 10)", ascending=False).head(10).to_string())
         w("   Reference: " + "; ".join(f"{n} {tab.loc[n, 'avg R (cap 10)']:+.2f}R (win {tab.loc[n, 'win %']:.0f}%)" for n in ("t1", "t2", "t3", "t4", "hold")))
-    w("\n10) Which stop is better? Same entries, fixed targets (avg net R / win %)")
+    w("\n10) Which stop size works best? Same entries, fixed targets. Each cell: average net R / win %")
+    stop_cols = [("your rule (candle)", "U"), ("plain candle low/high", "L"), ("fixed 0.75%", "P075"), ("fixed 1%", "F"),
+                 ("fixed 1.25%", "P125"), ("1.5 x ATR", "A15")]
+    best = (ev.nth == 1) & (ev.adx3 >= 20) & (ev.rsi3_al >= 55)
+    subs10 = {"All crossovers": ev, "First crossover": ev[ev.nth == 1], "First + VWAP": subs["First crossover + VWAP"],
+              "First + ADX>=20 + RSI3>=55": ev[best]}
     rows = []
-    for nm in ("All crossovers", "First crossover of the day"):
-        x = subs[nm]
-        for k in (1, 2):
-            rows.append([nm, f"{k}R"] + [f"{x[f'{p}_t{k}'].mean():+.2f} / {100 * (x[f'{p}_t{k}'] > 0).mean():.0f}%" for p in ("U", "L", "F")])
-    w(pd.DataFrame(rows, columns=["trades from", "target", "your rule", "plain candle low/high", "fixed 1% stop"]).to_string(index=False))
+    for nm, x in subs10.items():
+        for lab, pfx in stop_cols:
+            r_ = [f"{nm} ({len(x)})", lab]
+            for k in (1, 2, 3):
+                c = f"{pfx}_t{k}"
+                r_.append(f"{x[c].mean():+.2f} / {100 * (x[c] > 0).mean():.0f}%" if c in x and len(x) else "-")
+            rows.append(r_)
+    w(pd.DataFrame(rows, columns=["trades from", "stop", "1R target", "2R target", "3R target"]).to_string(index=False))
+    if "risk_A15" in ev:
+        w(f"   Typical stop size: your rule {ev.risk_U.median():.2f}%, plain candle {ev.risk_L.median():.2f}%, 1.5 x ATR {ev.risk_A15.median():.2f}%")
 
     def bucket(series, bins, labels):
         g = ev.groupby(pd.cut(series, bins, labels=labels), observed=True)
@@ -444,9 +471,9 @@ def merge_events(new):
     if f.exists():
         try:
             old = pd.read_csv(f)
-            need = ["nth", "above_vwap", "TR0.5", "U_t1", "rsi3", "risk_U"]
+            need = ["nth", "above_vwap", "TR0.5", "U_t1", "rsi3", "risk_U", "A15_t1", "P075_t1"]
             if all(c in old.columns for c in need):
-                old = old.dropna(subset=["nth", "above_vwap", "U_t1", "risk_U"])
+                old = old.dropna(subset=["nth", "above_vwap", "U_t1", "risk_U", "A15_t1"])
                 old["above_vwap"] = old["above_vwap"].astype(str).str.lower().eq("true")
                 old["big_candle"] = old["big_candle"].astype(str).str.lower().eq("true")
                 new = pd.concat([old, new], ignore_index=True) if len(new) else old
