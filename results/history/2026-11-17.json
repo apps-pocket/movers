@@ -352,5 +352,170 @@
    "score": 93.75
   }
  ],
- "outcomes": null
+ "outcomes": {
+  "next_date": "2026-11-18",
+  "ref": "pc",
+  "rows": {
+   "KMCSHIL": {
+    "gap": 2.82,
+    "oc": -0.5,
+    "cc": 2.3,
+    "range_pct": 4.68,
+    "up": 2.82,
+    "down": -1.99
+   },
+   "KDDL": {
+    "gap": -3.27,
+    "oc": 9.49,
+    "cc": 5.91,
+    "range_pct": 18.54,
+    "up": 13.98,
+    "down": -3.96
+   },
+   "DEEPAKFERT": {
+    "gap": -1.5,
+    "oc": 4.64,
+    "cc": 3.07,
+    "range_pct": 6.33,
+    "up": 3.47,
+    "down": -2.76
+   },
+   "HINDOILEXP": {
+    "gap": -1.48,
+    "oc": 4.61,
+    "cc": 3.06,
+    "range_pct": 9.08,
+    "up": 7.47,
+    "down": -1.48
+   },
+   "SIGNATURE": {
+    "gap": 2.8,
+    "oc": -2.44,
+    "cc": 0.29,
+    "range_pct": 4.79,
+    "up": 3.22,
+    "down": -1.71
+   },
+   "GREAVESCOT": {
+    "gap": 0.62,
+    "oc": 8.33,
+    "cc": 8.99,
+    "range_pct": 10.2,
+    "up": 10.47,
+    "down": 0.21
+   },
+   "FEDDERSHOL": {
+    "gap": 1.27,
+    "oc": 1.34,
+    "cc": 2.63,
+    "range_pct": 5.22,
+    "up": 4.02,
+    "down": -1.27
+   },
+   "KPIGREEN": {
+    "gap": -0.02,
+    "oc": 1.43,
+    "cc": 1.42,
+    "range_pct": 3.36,
+    "up": 1.88,
+    "down": -1.48
+   },
+   "FIRSTCRY": {
+    "gap": -0.69,
+    "oc": -1.54,
+    "cc": -2.22,
+    "range_pct": 5.29,
+    "up": 1.92,
+    "down": -3.34
+   },
+   "FILATEX": {
+    "gap": -1.99,
+    "oc": 4.36,
+    "cc": 2.29,
+    "range_pct": 5.17,
+    "up": 2.32,
+    "down": -2.75
+   },
+   "SANDHAR": {
+    "gap": 0.2,
+    "oc": -4.07,
+    "cc": -3.88,
+    "range_pct": 4.75,
+    "up": 0.46,
+    "down": -4.29
+   },
+   "CAPLIPOINT": {
+    "gap": -0.72,
+    "oc": -6.95,
+    "cc": -7.62,
+    "range_pct": 7.51,
+    "up": -0.33,
+    "down": -7.79
+   },
+   "MSTCLTD": {
+    "gap": 0.32,
+    "oc": -3.4,
+    "cc": -3.09,
+    "range_pct": 7.85,
+    "up": 3.53,
+    "down": -4.34
+   },
+   "MAHSEAMLES": {
+    "gap": 0.37,
+    "oc": -0.03,
+    "cc": 0.34,
+    "range_pct": 2.53,
+    "up": 1.5,
+    "down": -1.04
+   },
+   "XPROINDIA": {
+    "gap": 0.08,
+    "oc": -1.42,
+    "cc": -1.34,
+    "range_pct": 4.19,
+    "up": 2.47,
+    "down": -1.72
+   },
+   "YATRA": {
+    "gap": -1.23,
+    "oc": -4.83,
+    "cc": -5.99,
+    "range_pct": 9.33,
+    "up": 1.49,
+    "down": -7.73
+   },
+   "LEAPIND": {
+    "gap": -0.57,
+    "oc": -3.0,
+    "cc": -3.55,
+    "range_pct": 4.24,
+    "up": 0.0,
+    "down": -4.22
+   },
+   "KAYNES": {
+    "gap": 0.29,
+    "oc": 0.54,
+    "cc": 0.84,
+    "range_pct": 2.84,
+    "up": 2.85,
+    "down": 0.0
+   },
+   "GLASSWALL": {
+    "gap": 0.99,
+    "oc": 0.82,
+    "cc": 1.82,
+    "range_pct": 4.18,
+    "up": 3.66,
+    "down": -0.56
+   },
+   "SGFIN": {
+    "gap": -0.73,
+    "oc": 5.36,
+    "cc": 4.59,
+    "range_pct": 8.24,
+    "up": 5.82,
+    "down": -2.36
+   }
+  }
+ }
 }
