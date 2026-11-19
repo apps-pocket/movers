@@ -1,0 +1,63 @@
+SCORECARD of Tomorrow's Movers: 60 past days, about 296 liquid stocks ranked each day.
+Universe: Nifty 500 members (501 in the list) with median daily traded value of at least Rs 40 crore, at least 10,000 trades a day, not closed at a price limit, funds and ETFs removed.
+Each list is made after the close and checked on the next trading day. 'Away' = closing price vs the previous close, up or down.
+
+1) Top 10 of each score variant vs all liquid stocks
+                                     top 10, score 'current'  top 10, score 'volatility'  top 10, score 'volatility+surge'  top 10, score 'activity'  all liquid stocks
+stock-days                                            600.00                      600.00                            600.00                    600.00           17817.00
+closed 2%+ away from prev close (%)                    41.67                       47.17                             45.50                     37.83              29.03
+closed 4%+ away (%)                                    13.83                       19.17                             19.00                     10.50               7.09
+closed 6%+ away (%)                                     5.33                        7.17                              7.67                      4.00               1.89
+day range 3%+ (%)                                      69.67                       79.67                             79.50                     60.50              38.70
+day range 5%+ (%)                                      27.83                       33.00                             35.33                     23.00               9.65
+average day range (%)                                   4.29                        4.61                              4.75                      3.96               3.00
+of the 4%+ movers, went UP (%)                         49.40                       43.48                             45.61                     52.38              57.48
+average gap at the open (%)                             0.03                        0.14                              0.10                      0.03               0.03
+average open-to-close (%)                              -0.39                       -0.39                             -0.58                     -0.36              -0.06
+average close vs prev close (%)                        -0.36                       -0.25                             -0.48                     -0.33              -0.04
+   Lift in 'closed 4%+ away': current 2.0x, volatility 2.7x, volatility+surge 2.7x, activity 1.5x
+
+2) Does the rank matter? (score 'current')
+                       ranks 1-3  ranks 4-10  ranks 11-20  all liquid
+closed 4%+ away (%)        12.78       14.29         10.5        7.09
+day range 5%+ (%)          38.89       23.10         16.0        9.65
+average day range (%)       4.77        4.08          3.6        3.00
+
+3) Liquidity and sectors of the top 10 picks
+   Median daily traded value of the picks: Rs 118 crore (10th percentile Rs 50 crore)
+   Most common sectors: Capital Goods (24%), Financial Services (23%), Automobile and Auto Components (6%), Healthcare (6%), Consumer Services (5%), Information Technology (4%)
+
+4) The three most recent lists and what happened next (today's move -> next day: gap / close / day range)
+  List of 2026-11-16:
+    KAYNES       -13.1% -> gap  -0.1% | close  -4.1% | range  5.9%
+    INOXWIND      -7.7% -> gap  +0.0% | close  +0.3% | range  3.2%
+    TMPV          -8.7% -> gap  +0.0% | close  -1.2% | range  3.6%
+    AMBER         -7.7% -> gap  +0.7% | close  -0.1% | range  1.9%
+    LAURUSLABS    -8.4% -> gap  +0.0% | close  +5.3% | range  6.0%
+    BELRISE       +9.3% -> gap  +0.5% | close  +0.2% | range  3.5%
+    PREMIERENE    -8.2% -> gap  -0.3% | close  +1.3% | range  3.6%
+    LICHSGFIN     +3.5% -> gap  -0.4% | close  +2.8% | range  4.5%
+    DIVISLAB      -3.2% -> gap  +0.1% | close  +0.6% | range  1.6%
+    CUPID         -4.1% -> gap  +0.1% | close  +1.0% | range  5.5%
+  List of 2026-11-17:
+    PNB           +3.7% -> gap  +0.1% | close  -0.3% | range  2.5%
+    KAYNES        -4.1% -> gap  +0.3% | close  +0.8% | range  2.8%
+    TATACHEM      +5.5% -> gap  -0.1% | close  -2.5% | range  2.5%
+    ASHOKLEY      -4.2% -> gap  -0.3% | close  +1.2% | range  3.9%
+    URBANCO       -5.5% -> gap  +0.0% | close  +6.7% | range  8.6%
+    LICHSGFIN     +2.8% -> gap  -1.0% | close  -2.0% | range  2.5%
+    BANKINDIA     +4.1% -> gap  -0.5% | close  -0.8% | range  1.3%
+    LAURUSLABS    +5.3% -> gap  +0.3% | close  -0.7% | range  1.9%
+    MAHABANK      +4.3% -> gap  -0.1% | close  +0.0% | range  1.9%
+    KALYANKJIL    -3.6% -> gap  +0.0% | close  -4.8% | range  6.1%
+  List of 2026-11-18:
+    POLYCAB       -5.1% -> gap  -0.1% | close  +3.3% | range  4.6%
+    ANGELONE      -3.3% -> gap  -0.4% | close  -0.6% | range  3.7%
+    VAML          -5.8% -> gap  -1.3% | close  -0.7% | range  4.3%
+    NAVINFLUOR    +4.7% -> gap  -0.4% | close  -0.7% | range  2.4%
+    SAIL          -4.3% -> gap  -1.2% | close  +0.3% | range  2.7%
+    KALYANKJIL    -4.8% -> gap  -0.8% | close  +1.7% | range  3.8%
+    MANAPPURAM    -4.6% -> gap  -0.8% | close  -0.1% | range  3.0%
+    URBANCO       +6.7% -> gap  -0.2% | close  +1.6% | range  4.5%
+    IIFL          +4.3% -> gap  +1.0% | close  -2.4% | range  5.3%
+    MUTHOOTFIN    -4.0% -> gap  -2.0% | close  -0.8% | range  3.1%
