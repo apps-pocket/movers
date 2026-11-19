@@ -1,6 +1,6 @@
 {
  "asof": "2026-11-18",
- "generated_at": "19 Nov 2026, 06:00 AM IST",
+ "generated_at": "19 Nov 2026, 10:05 AM IST",
  "market": {
   "stocks_scanned": 2220,
   "pct_above_50dma": 41.1,
@@ -301,23 +301,6 @@
    "score": 93.84
   },
   {
-   "symbol": "DEEPAKFERT",
-   "close": 1488.0,
-   "open": 1422.0,
-   "high": 1493.8,
-   "low": 1403.8,
-   "prev_close": 1443.7,
-   "official_close": 1480.5,
-   "volume": 1187154.0,
-   "today_ret": 3.07,
-   "vol_ratio": 2.09,
-   "range_today_pct": 6.05,
-   "avg_range_pct": 3.88,
-   "tight6": 21.25,
-   "delivery_ratio": 0.6,
-   "score": 93.25
-  },
-  {
    "symbol": "POLYCAB",
    "close": 7307.5,
    "open": 7650.0,
@@ -332,6 +315,23 @@
    "avg_range_pct": 3.44,
    "tight6": 13.47,
    "delivery_ratio": 0.76,
+   "score": 93.25
+  },
+  {
+   "symbol": "DEEPAKFERT",
+   "close": 1488.0,
+   "open": 1422.0,
+   "high": 1493.8,
+   "low": 1403.8,
+   "prev_close": 1443.7,
+   "official_close": 1480.5,
+   "volume": 1187154.0,
+   "today_ret": 3.07,
+   "vol_ratio": 2.09,
+   "range_today_pct": 6.05,
+   "avg_range_pct": 3.88,
+   "tight6": 21.25,
+   "delivery_ratio": 0.6,
    "score": 93.25
   },
   {
