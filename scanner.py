@@ -8,6 +8,7 @@ Usage:
   python scanner.py                 # nightly run: update data, rank movers, save results, build dashboard
   python scanner.py --check SONACOMS  # raw NSE numbers for one stock (compare with your chart)
   python scanner.py --backfill 60   # save movers lists for the last 60 past days (fills the History tab)
+  python scanner.py --evaluate 60   # scorecard: how the nightly lists really did on the next day
   python scanner.py --backtest 40   # test the rules on the last 40 trading days
   python scanner.py --study         # research: which features predict next-day moves (uses all cached data)
   python scanner.py --history 750   # download about 3 years of NSE data (slow once), for longer backtests
@@ -18,7 +19,7 @@ Data: tries NSE Bhavcopy first; if NSE downloads fail it switches to Yahoo Finan
 Needs: pip install pandas numpy requests yfinance cryptography
 First run downloads ~260 days of NSE bhavcopy files (takes a few minutes); later runs add one day.
 """
-import argparse, base64, json, os, sys, time
+import argparse, base64, io, json, os, sys, time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -38,6 +39,12 @@ CFG = dict(
     min_avg_range_pct=1.0, # 20-day average daily range; removes liquid funds / debt ETFs
     exclude_words=("ETF", "BEES", "LIQUID"),  # funds are not stocks
     history_days=260,
+    # Tomorrow's Movers universe: liquid, broadly traded stocks only
+    min_median_turnover_cr=40,  # median daily traded value over 60 days, in crore rupees
+    median_days=60,
+    min_trades=10000,           # average number of trades per day (many different buyers and sellers)
+    use_nifty500=True,          # keep only Nifty 500 members when the list can be fetched
+    variant="current",          # which score ranks the movers (see VARIANTS)
 )
 
 # NSE equity trading holidays (market closed). Any data for these dates is ignored.
@@ -108,8 +115,10 @@ def load_all():
     d = pd.concat(frames, ignore_index=True)
     d = d.rename(columns={"SYMBOL": "symbol", "OPEN_PRICE": "o", "HIGH_PRICE": "h", "LOW_PRICE": "l",
                           "CLOSE_PRICE": "c_off", "LAST_PRICE": "c_last", "TTL_TRD_QNTY": "v",
-                          "TURNOVER_LACS": "tv", "DELIV_PER": "dl"})
-    for col in ["o", "h", "l", "c_off", "c_last", "v", "tv", "dl", "PREV_CLOSE"]:
+                          "TURNOVER_LACS": "tv", "DELIV_PER": "dl", "NO_OF_TRADES": "nt"})
+    if "nt" not in d.columns:
+        d["nt"] = np.nan
+    for col in ["o", "h", "l", "c_off", "c_last", "v", "tv", "dl", "PREV_CLOSE", "nt"]:
         d[col] = pd.to_numeric(d[col], errors="coerce")
     d["symbol"] = d["symbol"].astype(str).str.strip()
     d["tv"] = d["tv"] / 100.0  # lakh -> crore
@@ -125,7 +134,11 @@ def load_all():
     days = pd.Series(sorted(d["date"].unique()))
     prev_market_day = pd.Series(days.shift(1).values, index=days.values)
     consecutive = d.groupby("symbol")["date"].shift(1) == d["date"].map(prev_market_day)
-    ev = np.where(consecutive & np.isfinite(f) & (f > 0) & (np.abs(f - 1) > 0.08), f, 1.0)
+    mismatch = consecutive & np.isfinite(f) & (f > 0) & (np.abs(f - 1) > 0.08)
+    # Splits and bonuses lower the price (ratio 0.92 or less). A consolidation raises it by a lot (1.9x or more).
+    # Smaller upward mismatches do not look like corporate actions, so they are ignored.
+    looks_real = (f <= 0.92) | (f >= 1.9)
+    ev = np.where(mismatch & looks_real, f, 1.0)
     d["lf"] = np.log(ev)
     after = d.groupby("symbol")["lf"].transform(lambda x: x[::-1].cumsum()[::-1]) - d["lf"]
     m = np.exp(after)
@@ -133,7 +146,12 @@ def load_all():
         d[col] = d[col] * m
     d["pc"] = d["PREV_CLOSE"]  # NSE's official previous close (already includes special sessions like Muhurat)
     d["v"] = d["v"] / m
-    print(f"Adjusted older prices for {int((ev != 1).sum())} split/bonus events.")
+    n_ev = int((ev != 1).sum())
+    common = pd.Series(np.round(ev[ev != 1], 2)).value_counts().head(6)
+    print(f"Adjusted older prices for {n_ev} split/bonus events ({int((ev < 1).sum())} price drops, "
+          f"{int((ev > 1).sum())} rises). Ignored {int((mismatch & ~looks_real).sum())} other mismatches.")
+    if n_ev:
+        print("Most common ratios:", ", ".join(f"{k}x ({v})" for k, v in common.items()))
     return d.drop(columns=["lf"])
 
 
@@ -184,6 +202,7 @@ def load_yahoo():
         sys.exit("Yahoo returned no data. Check your internet connection and try again.")
     out = pd.concat(frames, ignore_index=True).sort_values(["symbol", "date"]).reset_index(drop=True)
     out["c_off"] = out["c"]
+    out["nt"] = np.nan
     out["pc"] = out.groupby("symbol")["c"].shift(1)
     print(f"Yahoo: got data for {out['symbol'].nunique()} stocks")
     return out
@@ -209,7 +228,7 @@ def prep(df):
             "date": g["date"].values.astype("datetime64[D]"),
             "o": g["o"].values, "h": g["h"].values, "l": g["l"].values, "c": g["c"].values,
             "v": g["v"].values, "tv": g["tv"].values, "dl": g["dl"].values,
-            "pc": g["pc"].values, "c_off": g["c_off"].values,
+            "pc": g["pc"].values, "c_off": g["c_off"].values, "nt": g["nt"].values,
         }
     return out
 
@@ -349,43 +368,96 @@ DEFAULT_STATS = {  # from the first 3-year study; `--study` replaces these with 
 }
 
 
-def movers_scan(P, asof, cfg=CFG, top=20):
-    """Stocks most likely to move a lot tomorrow (direction NOT predicted): big volume/range/move today
-    plus high recent volatility, among liquid stocks. Percentile ranks are taken across the liquid universe."""
+SECTORS = {}
+VARIANTS = ("current", "volatility", "volatility+surge", "activity")
+
+
+def load_sectors(fetch=True):
+    """Nifty 500 members with their industry. Saved in results/sectors.csv, used as a quality filter and for sector tags."""
+    global SECTORS
+    f = OUT / "sectors.csv"
+    if fetch:
+        try:
+            r = requests.get("https://www.niftyindices.com/IndexConstituent/ind_nifty500list.csv",
+                             headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+            df = pd.read_csv(io.StringIO(r.text))
+            if len(df) > 300 and {"Symbol", "Industry"} <= set(df.columns):
+                OUT.mkdir(exist_ok=True)
+                df[["Symbol", "Industry"]].to_csv(f, index=False)
+        except Exception as e:
+            print("Could not fetch the Nifty 500 list:", str(e)[:80])
+    if f.exists():
+        d = pd.read_csv(f)
+        SECTORS = dict(zip(d["Symbol"].astype(str).str.strip(), d["Industry"].astype(str)))
+    print(f"Nifty 500 list: {len(SECTORS)} stocks." if SECTORS else "Nifty 500 list not available: using the liquidity filters only.")
+
+
+def at_price_limit(c, h, l, ret):
+    """True when the stock closed at the top or bottom of a 5%, 10% or 20% price band (often cannot be bought or sold)."""
+    if abs(ret) < 4.7:
+        return False
+    at_extreme = (ret > 0 and c >= h * 0.9995) or (ret < 0 and c <= l * 1.0005)
+    return bool(at_extreme and any(abs(abs(ret) - b) <= 0.35 for b in (5, 10, 20)))
+
+
+def movers_table(P, asof, cfg=CFG):
+    """All liquid stocks on one day with their features and scores (several score variants)."""
     asof = np.datetime64(asof)
+    use_list = cfg.get("use_nifty500", True) and len(SECTORS) >= 300
     rows = []
     for sym, a in P.items():
-        if any(w in sym for w in cfg["exclude_words"]):
+        if any(w in sym for w in cfg["exclude_words"]) or (use_list and sym not in SECTORS):
             continue
         i = np.searchsorted(a["date"], asof, side="right")
-        if i < 30 or a["date"][i - 1] != asof:
+        if i < cfg["median_days"] or a["date"][i - 1] != asof:
             continue
-        h, l, c, v, tv, dl = (a[k][:i] for k in ("h", "l", "c", "v", "tv", "dl"))
+        h, l, c, v, tv, dl, nt = (a[k][:i] for k in ("h", "l", "c", "v", "tv", "dl", "nt"))
         rng = h - l
         avg = rng[-20:].mean()
+        med_tv = np.nanmedian(tv[-cfg["median_days"]:])
+        trades = np.nanmean(nt[-20:]) if np.isfinite(nt[-20:]).any() else np.nan
         ref = a["pc"][i - 1]
         ref = float(ref) if np.isfinite(ref) and ref > 0 else float(c[-2])
-        if c[-1] < cfg["min_price"] or np.nanmean(tv[-20:]) < cfg["min_turnover_cr"] or avg <= 0 \
+        if c[-1] < cfg["min_price"] or not med_tv >= cfg["min_median_turnover_cr"] or avg <= 0 \
                 or avg / c[-1] * 100 < cfg["min_avg_range_pct"]:
+            continue
+        if np.isfinite(trades) and trades < cfg["min_trades"]:
+            continue
+        ret = (c[-1] / ref - 1) * 100
+        if at_price_limit(c[-1], h[-1], l[-1], ret):
             continue
         prev_dl = dl[-21:-1]
         dlavg = np.nanmean(prev_dl) if np.isfinite(prev_dl).any() else np.nan
         rows.append({"symbol": sym, "close": float(c[-1]), "open": float(a["o"][i - 1]), "high": float(h[-1]),
                      "low": float(l[-1]), "prev_close": float(ref), "official_close": float(a["c_off"][i - 1]),
-                     "volume": float(v[-1]), "today_ret": (c[-1] / ref - 1) * 100,
-                     "vol_ratio": v[-1] / max(v[-21:-1].mean(), 1), "range_ratio": rng[-1] / avg,
-                     "range_today_pct": rng[-1] / c[-1] * 100, "avg_range_pct": avg / c[-1] * 100,
-                     "tight6": (h[-6:].max() - l[-6:].min()) / c[-1] * 100,
+                     "volume": float(v[-1]), "today_ret": ret, "vol_ratio": v[-1] / max(v[-21:-1].mean(), 1),
+                     "range_ratio": rng[-1] / avg, "range_today_pct": rng[-1] / c[-1] * 100,
+                     "avg_range_pct": avg / c[-1] * 100, "tight6": (h[-6:].max() - l[-6:].min()) / c[-1] * 100,
+                     "median_turnover_cr": med_tv, "trades": trades, "sector": SECTORS.get(sym),
                      "delivery_ratio": dl[-1] / dlavg if np.isfinite(dl[-1]) and np.isfinite(dlavg) and dlavg > 0 else np.nan})
     if not rows:
-        return [], 0
+        return pd.DataFrame()
     df = pd.DataFrame(rows)
-    mv = df.vol_ratio.rank(pct=True) + df.range_ratio.rank(pct=True) + df.today_ret.abs().rank(pct=True)
-    df["score"] = (mv + df.tight6.rank(pct=True)) / 4 * 100
+    r = lambda col: df[col].rank(pct=True)
+    r_vol, r_rng, r_ret, r_t6, r_atr = r("vol_ratio"), r("range_ratio"), df.today_ret.abs().rank(pct=True), r("tight6"), r("avg_range_pct")
+    df["score_current"] = (r_vol + r_rng + r_ret + r_t6) / 4 * 100
+    df["score_volatility"] = r_atr * 100
+    df["score_volatility+surge"] = (2 * r_atr + r_vol + r_rng) / 4 * 100
+    df["score_activity"] = (r_vol + r_rng + r_ret) / 3 * 100
+    df["score"] = df["score_" + cfg["variant"]]
+    return df
+
+
+def movers_scan(P, asof, cfg=CFG, top=20):
+    """Liquid stocks most likely to move a lot tomorrow (direction NOT predicted)."""
+    df = movers_table(P, asof, cfg)
+    if df.empty:
+        return [], 0
     out = []
     for r in df.sort_values("score", ascending=False).head(top).to_dict("records"):
-        out.append({k: (None if (isinstance(v, float) and not np.isfinite(v)) else
-                        round(float(v), 2) if k != "symbol" else v) for k, v in r.items() if k != "range_ratio"})
+        out.append({k: (None if v is None or (isinstance(v, float) and not np.isfinite(v)) else
+                        (round(float(v), 2) if isinstance(v, (int, float, np.floating)) else v))
+                    for k, v in r.items() if k not in ("range_ratio",) and not k.startswith("score_")})
     return out, len(df)
 
 
@@ -467,7 +539,8 @@ def build_dashboard(latest, B):
             print("Dashboard skipped (no password set)."); return
         pwf.write_text(pw)
     stats = json.loads((OUT / "stats.json").read_text()) if (OUT / "stats.json").exists() else DEFAULT_STATS
-    stats.setdefault("list_rates_10", DEFAULT_STATS["list_rates_10"])
+    for k, v in DEFAULT_STATS.items():
+        stats.setdefault(k, v)
     hist = []
     for f in sorted((OUT / "history").glob("*.json"), reverse=True)[:60]:
         d = json.loads(f.read_text())
@@ -493,6 +566,105 @@ def build_dashboard(latest, B):
     print(f"Dashboard saved: {OUT / 'dashboard.html'}  (open it in a browser, password from dashboard_password.txt)")
 
 
+def _rates(rows):
+    x = pd.DataFrame(rows)
+    r = {f"cc>={t}": round(float((x.cc.abs() >= t).mean() * 100), 2) for t in (2, 4, 6, 8, 10, 15)}
+    r.update({f"range>={t}": round(float((x.range_pct >= t).mean() * 100), 2) for t in (5, 8, 12)})
+    return r
+
+
+def _metrics(rows):
+    x = pd.DataFrame(rows)
+    big = x[x.cc.abs() >= 4]
+    return pd.Series({
+        "stock-days": len(x),
+        "closed 2%+ away from prev close (%)": (x.cc.abs() >= 2).mean() * 100,
+        "closed 4%+ away (%)": (x.cc.abs() >= 4).mean() * 100,
+        "closed 6%+ away (%)": (x.cc.abs() >= 6).mean() * 100,
+        "day range 3%+ (%)": (x.range_pct >= 3).mean() * 100,
+        "day range 5%+ (%)": (x.range_pct >= 5).mean() * 100,
+        "average day range (%)": x.range_pct.mean(),
+        "of the 4%+ movers, went UP (%)": (big.cc > 0).mean() * 100 if len(big) else np.nan,
+        "average gap at the open (%)": x.gap.mean(),
+        "average open-to-close (%)": x.oc.mean(),
+        "average close vs prev close (%)": x.cc.mean()}).round(2)
+
+
+def scorecard(P, dates, n=60, quiet=False):
+    """Scorecard: how did the nightly lists really do on the NEXT day, compared with all liquid stocks?"""
+    ds = [str(d) for d in dates]
+    n = max(min(n, len(ds) - 3), 1)
+    per = {v: [] for v in VARIANTS}
+    base, sizes, picks_info, last_days = [], [], [], {}
+    for k in range(len(ds) - n - 1, len(ds) - 1):
+        d, nd = ds[k], ds[k + 1]
+        df = movers_table(P, d)
+        if df.empty:
+            continue
+        res = mover_outcomes(P, df[["symbol", "close"]].to_dict("records"), nd)
+        df = df[df.symbol.isin(res)]
+        if len(df) < 10:
+            continue
+        sizes.append(len(df))
+        base += [res[x] for x in df.symbol]
+        for v in VARIANTS:
+            top = df.sort_values("score_" + v, ascending=False, kind="mergesort").head(20)
+            for rank, sym in enumerate(top.symbol, 1):
+                per[v].append(dict(res[sym], rank=rank))
+        top10 = df.sort_values("score_" + CFG["variant"], ascending=False, kind="mergesort").head(10)
+        picks_info += list(zip(top10.median_turnover_cr, top10.sector.fillna("(no sector)")))
+        last_days[d] = [(r.symbol, r.today_ret, res[r.symbol]) for r in top10.itertuples()]
+    if not sizes:
+        return "Scorecard: not enough data yet."
+    cur = pd.DataFrame(per[CFG["variant"]])
+    L = []
+    w = L.append
+    w(f"SCORECARD of Tomorrow's Movers: {len(sizes)} past days, about {int(np.mean(sizes))} liquid stocks ranked each day.")
+    w("Universe: " + (f"Nifty 500 members ({len(SECTORS)} in the list) " if len(SECTORS) >= 300 else "all stocks ") +
+      f"with median daily traded value of at least Rs {CFG['min_median_turnover_cr']} crore, at least {CFG['min_trades']:,} trades a day, "
+      "not closed at a price limit, funds and ETFs removed.")
+    w("Each list is made after the close and checked on the next trading day. 'Away' = closing price vs the previous close, up or down.")
+    tab = {f"top 10, score '{v}'": _metrics([r for r in per[v] if r["rank"] <= 10]) for v in VARIANTS}
+    tab["all liquid stocks"] = _metrics(base)
+    w("\n1) Top 10 of each score variant vs all liquid stocks")
+    w(pd.DataFrame(tab).to_string())
+    b4 = tab["all liquid stocks"]["closed 4%+ away (%)"]
+    q = "'"
+    if b4 > 0:
+        w("   Lift in 'closed 4%+ away': " + ", ".join(f"{v} {tab[f'top 10, score {q}{v}{q}']['closed 4%+ away (%)'] / b4:.1f}x" for v in VARIANTS))
+    w(f"\n2) Does the rank matter? (score '{CFG['variant']}')")
+    rk = pd.DataFrame({nm: _metrics([r for r in per[CFG['variant']] if lo <= r['rank'] <= hi])[
+        ["closed 4%+ away (%)", "day range 5%+ (%)", "average day range (%)"]] for nm, lo, hi in
+        (("ranks 1-3", 1, 3), ("ranks 4-10", 4, 10), ("ranks 11-20", 11, 20))})
+    rk["all liquid"] = tab["all liquid stocks"][["closed 4%+ away (%)", "day range 5%+ (%)", "average day range (%)"]]
+    w(rk.to_string())
+    w("\n3) Liquidity and sectors of the top 10 picks")
+    tv = np.array([x[0] for x in picks_info])
+    w(f"   Median daily traded value of the picks: Rs {np.median(tv):.0f} crore (10th percentile Rs {np.percentile(tv, 10):.0f} crore)")
+    sec = pd.Series([x[1] for x in picks_info]).value_counts().head(6)
+    w("   Most common sectors: " + ", ".join(f"{k} ({100 * v / len(picks_info):.0f}%)" for k, v in sec.items()))
+    w("\n4) The three most recent lists and what happened next (today's move -> next day: gap / close / day range)")
+    for d in sorted(last_days)[-3:]:
+        w(f"  List of {d}:")
+        for sym, tr, o in last_days[d]:
+            w(f"    {sym:<12} {tr:+5.1f}% -> gap {o['gap']:+5.1f}% | close {o['cc']:+5.1f}% | range {o['range_pct']:4.1f}%")
+    txt = "\n".join(L)
+    OUT.mkdir(exist_ok=True)
+    (OUT / "evaluation.txt").write_text(txt, encoding="utf-8")
+    if len(sizes) >= 15:  # keep the dashboard tiles honest: numbers from the real lists of this universe
+        f = OUT / "stats.json"
+        st = json.loads(f.read_text()) if f.exists() else {}
+        for k in ("gap_table", "movers_gap_table"):
+            st.setdefault(k, DEFAULT_STATS[k])
+        st.update({"list_rates_10": _rates([r for r in per[CFG["variant"]] if r["rank"] <= 10]),
+                   "list_rates": _rates(per[CFG["variant"]]), "universe_rates": _rates(base),
+                   "source": f"scorecard of {len(sizes)} past lists, liquid universe"})
+        f.write_text(json.dumps(st, indent=1))
+    t10 = tab[f"top 10, score {q}{CFG['variant']}{q}"]["closed 4%+ away (%)"]
+    print(txt if not quiet else txt.split("\n")[0] + f" Top 10 closed 4%+ away: {t10:.1f}% vs {b4:.1f}% for all.")
+    return txt
+
+
 def nightly(P, dates):
     asof = str(dates[-1])
     OUT.mkdir(exist_ok=True); (OUT / "history").mkdir(exist_ok=True)
@@ -512,6 +684,10 @@ def nightly(P, dates):
     for x in latest["movers"]:
         print(f"  {x['symbol']:<12} close {x['close']:>9}  today {x['today_ret']:+5.1f}%  vol {x['vol_ratio']:.1f}x  "
               f"usual range {x['avg_range_pct']:.1f}%  score {x['score']:.0f}")
+    try:
+        scorecard(P, dates, 60, quiet=True)
+    except Exception as e:
+        print("Scorecard skipped:", e)
     build_dashboard(latest, B)
 
 
@@ -753,6 +929,7 @@ if __name__ == "__main__":
     ap.add_argument("--close", choices=["last", "official"], default="last",
                     help="which closing price to use: last traded price (default) or NSE official close")
     ap.add_argument("--backfill", type=int, default=0, help="save movers lists for the last N past days (fills History)")
+    ap.add_argument("--evaluate", type=int, default=0, help="scorecard: how the nightly lists did on the next day (last N days)")
     ap.add_argument("--study", action="store_true", help="research mode: which features predict next-day moves")
     ap.add_argument("--history", type=int, default=CFG["history_days"],
                     help="trading days of NSE data to keep, e.g. 750 for a longer backtest")
@@ -775,7 +952,10 @@ if __name__ == "__main__":
     data = drop_non_trading_days(data)
     P = prep(data)
     dates = sorted(data["date"].dt.date.unique())
-    if a.backfill:
+    load_sectors(fetch=not a.offline)
+    if a.evaluate:
+        scorecard(P, dates, a.evaluate)
+    elif a.backfill:
         backfill(P, dates, a.backfill)
     elif a.study:
         study(P)
