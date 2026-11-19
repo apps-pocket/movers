@@ -1,13 +1,9 @@
 name: Nightly scan
 on:
   schedule:
-    - cron: "47 13 * * 1-5"   # 7:17 PM India time
-    - cron: "47 14 * * 1-5"   # 8:17 PM
-    - cron: "47 15 * * 1-5"   # 9:17 PM
-    - cron: "47 16 * * 1-5"   # 10:17 PM
-    - cron: "17 18 * * 1-5"   # 11:47 PM
-    - cron: "47 23 * * 1-5"   # 5:17 AM next morning
-  workflow_dispatch:           # lets you press "Run workflow" by hand
+    - cron: "17 18 * * 1-5"   # backup run, 11:47 PM India time
+    - cron: "47 23 * * 1-5"   # backup run, 5:17 AM India time
+  workflow_dispatch:           # an outside timer (cron-job.org) starts the main runs on time
 concurrency:
   group: nightly-scan
   cancel-in-progress: false
@@ -33,10 +29,20 @@ jobs:
           DASH_PASSWORD: ${{ secrets.DASH_PASSWORD }}
         run: |
           if [ ! -d results/history ]; then python scanner.py --history 300 --backfill 40; fi
+      - name: Rebuild past lists with the new rules (once)
+        env:
+          DASH_PASSWORD: ${{ secrets.DASH_PASSWORD }}
+        run: |
+          if [ ! -f results/.rules_v2 ]; then python scanner.py --backfill 60 --history 300 && touch results/.rules_v2; fi
       - name: Run scanner
         env:
           DASH_PASSWORD: ${{ secrets.DASH_PASSWORD }}
         run: python scanner.py --history 300
+      - name: Show the scorecard on the run page
+        run: |
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          cat results/evaluation.txt >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
       - name: Prepare website files
         run: |
           mkdir -p docs
@@ -48,4 +54,5 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add results docs
           git commit -m "Nightly scan" || echo "nothing new to save"
+          git pull --rebase origin main
           git push
