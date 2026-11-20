@@ -412,5 +412,170 @@
    "score": 84.44
   }
  ],
- "outcomes": null
+ "outcomes": {
+  "next_date": "2026-11-20",
+  "ref": "pc",
+  "rows": {
+   "IREDA": {
+    "gap": -0.62,
+    "oc": 2.09,
+    "cc": 1.46,
+    "range_pct": 4.33,
+    "up": 2.93,
+    "down": -1.38
+   },
+   "PAYTM": {
+    "gap": 0.24,
+    "oc": 0.58,
+    "cc": 0.82,
+    "range_pct": 3.43,
+    "up": 2.57,
+    "down": -0.87
+   },
+   "BLUESTARCO": {
+    "gap": -0.28,
+    "oc": 1.81,
+    "cc": 1.53,
+    "range_pct": 3.96,
+    "up": 3.17,
+    "down": -0.77
+   },
+   "VOLTAS": {
+    "gap": -0.4,
+    "oc": 0.24,
+    "cc": -0.16,
+    "range_pct": 2.19,
+    "up": 1.62,
+    "down": -0.57
+   },
+   "AMBER": {
+    "gap": -1.0,
+    "oc": 1.67,
+    "cc": 0.65,
+    "range_pct": 3.5,
+    "up": 1.96,
+    "down": -1.51
+   },
+   "TATATECH": {
+    "gap": -0.53,
+    "oc": 4.07,
+    "cc": 3.52,
+    "range_pct": 6.31,
+    "up": 4.55,
+    "down": -1.73
+   },
+   "TMPV": {
+    "gap": -0.46,
+    "oc": 1.54,
+    "cc": 1.08,
+    "range_pct": 2.55,
+    "up": 1.69,
+    "down": -0.85
+   },
+   "WOCKPHARMA": {
+    "gap": -1.23,
+    "oc": 0.68,
+    "cc": -0.57,
+    "range_pct": 3.22,
+    "up": 1.26,
+    "down": -1.92
+   },
+   "CRAFTSMAN": {
+    "gap": -0.77,
+    "oc": -0.91,
+    "cc": -1.68,
+    "range_pct": 3.54,
+    "up": 1.29,
+    "down": -2.22
+   },
+   "POLYCAB": {
+    "gap": -1.01,
+    "oc": 1.28,
+    "cc": 0.26,
+    "range_pct": 3.24,
+    "up": 0.33,
+    "down": -2.87
+   },
+   "PNB": {
+    "gap": -0.55,
+    "oc": 0.86,
+    "cc": 0.31,
+    "range_pct": 2.78,
+    "up": 0.36,
+    "down": -2.4
+   },
+   "PGEL": {
+    "gap": -1.44,
+    "oc": 3.3,
+    "cc": 1.81,
+    "range_pct": 3.7,
+    "up": 2.14,
+    "down": -1.51
+   },
+   "PWL": {
+    "gap": 2.2,
+    "oc": -2.22,
+    "cc": -0.07,
+    "range_pct": 3.48,
+    "up": 2.71,
+    "down": -0.85
+   },
+   "MARUTI": {
+    "gap": -0.07,
+    "oc": 3.18,
+    "cc": 3.11,
+    "range_pct": 3.99,
+    "up": 3.37,
+    "down": -0.62
+   },
+   "IDFCFIRSTB": {
+    "gap": -0.64,
+    "oc": 2.06,
+    "cc": 1.41,
+    "range_pct": 3.2,
+    "up": 1.8,
+    "down": -1.38
+   },
+   "AZAD": {
+    "gap": -1.46,
+    "oc": -1.52,
+    "cc": -2.95,
+    "range_pct": 2.76,
+    "up": -0.61,
+    "down": -3.33
+   },
+   "HYUNDAI": {
+    "gap": -0.01,
+    "oc": -0.18,
+    "cc": -0.19,
+    "range_pct": 2.07,
+    "up": 1.28,
+    "down": -0.78
+   },
+   "BBOX": {
+    "gap": -0.5,
+    "oc": -0.54,
+    "cc": -1.04,
+    "range_pct": 2.37,
+    "up": 0.51,
+    "down": -1.85
+   },
+   "POLICYBZR": {
+    "gap": 0.0,
+    "oc": 0.77,
+    "cc": 0.77,
+    "range_pct": 3.78,
+    "up": 2.2,
+    "down": -1.59
+   },
+   "FLUOROCHEM": {
+    "gap": 0.0,
+    "oc": -0.98,
+    "cc": -0.98,
+    "range_pct": 2.85,
+    "up": 0.81,
+    "down": -2.04
+   }
+  }
+ }
 }
