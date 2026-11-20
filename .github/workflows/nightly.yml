@@ -1,9 +1,9 @@
 name: Nightly scan
 on:
   schedule:
-    - cron: "17 18 * * 1-5"   # backup run, 11:47 PM India time
-    - cron: "47 23 * * 1-5"   # backup run, 5:17 AM India time
-  workflow_dispatch:           # an outside timer (cron-job.org) starts the main runs on time
+    - cron: "17 18 * * 1-5"
+    - cron: "47 23 * * 1-5"
+  workflow_dispatch:
 concurrency:
   group: nightly-scan
   cancel-in-progress: false
