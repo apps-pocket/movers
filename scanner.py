@@ -44,7 +44,7 @@ CFG = dict(
     median_days=60,
     min_trades=10000,           # average number of trades per day (many different buyers and sellers)
     use_nifty500=True,          # keep only Nifty 500 members when the list can be fetched
-    variant="current",          # which score ranks the movers (see VARIANTS)
+    variant="volatility+surge", # which score ranks the movers (see VARIANTS); chosen from the scorecard
 )
 
 # NSE equity trading holidays (market closed). Any data for these dates is ignored.
@@ -607,10 +607,13 @@ def scorecard(P, dates, n=60, quiet=False):
             continue
         sizes.append(len(df))
         base += [res[x] for x in df.symbol]
+        info = df.set_index("symbol")[["today_ret", "sector"]]
+        adv = float((df.today_ret > 0).mean() * 100)
         for v in VARIANTS:
             top = df.sort_values("score_" + v, ascending=False, kind="mergesort").head(20)
             for rank, sym in enumerate(top.symbol, 1):
-                per[v].append(dict(res[sym], rank=rank))
+                per[v].append(dict(res[sym], rank=rank, today_ret=float(info.loc[sym, "today_ret"]),
+                                   sector=info.loc[sym, "sector"], adv=adv, day=d))
         top10 = df.sort_values("score_" + CFG["variant"], ascending=False, kind="mergesort").head(10)
         picks_info += list(zip(top10.median_turnover_cr, top10.sector.fillna("(no sector)")))
         last_days[d] = [(r.symbol, r.today_ret, res[r.symbol]) for r in top10.itertuples()]
@@ -648,6 +651,25 @@ def scorecard(P, dates, n=60, quiet=False):
         w(f"  List of {d}:")
         for sym, tr, o in last_days[d]:
             w(f"    {sym:<12} {tr:+5.1f}% -> gap {o['gap']:+5.1f}% | close {o['cc']:+5.1f}% | range {o['range_pct']:4.1f}%")
+    sel = pd.DataFrame([r for r in per[CFG["variant"]] if r["rank"] <= 10])
+    sel["sector"] = sel.sector.fillna("(no sector)")
+
+    def dstats(x):
+        return pd.Series({"stock-days": len(x), "closed UP (%)": (x.cc > 0).mean() * 100, "avg gap (%)": x.gap.mean(),
+                          "avg open-to-close (%)": x.oc.mean(), "avg close vs prev (%)": x.cc.mean(),
+                          "avg day range (%)": x.range_pct.mean(), "closed 4%+ away (%)": (x.cc.abs() >= 4).mean() * 100}).round(2)
+    w(f"\n5) DIRECTION CHECK, top 10 picks (score '{CFG['variant']}'): next day, by how the stock moved on the list day")
+    w(sel.groupby(pd.cut(sel.today_ret, [-100, -4, 0, 4, 100], labels=["fell 4%+", "fell 0-4%", "rose 0-4%", "rose 4%+"]),
+                  observed=True).apply(dstats).to_string())
+    w("\n6) ... by how the whole market did on the list day (share of liquid stocks that rose)")
+    w(sel.groupby(pd.cut(sel.adv, [-1, 35, 65, 101], labels=["weak day (under 35% rose)", "mixed day", "strong day (over 65% rose)"]),
+                  observed=True).apply(dstats).to_string())
+    cnt = sel.sector.value_counts()
+    big_sec = sel[sel.sector.isin(cnt[cnt >= 25].index)]
+    if len(big_sec):
+        w("\n7) ... by sector (sectors with 25 or more picks)")
+        w(big_sec.groupby("sector").apply(dstats).to_string())
+    w("   Sixty days is a short time: look for big, repeated differences, not small ones.")
     txt = "\n".join(L)
     OUT.mkdir(exist_ok=True)
     (OUT / "evaluation.txt").write_text(txt, encoding="utf-8")
@@ -665,11 +687,25 @@ def scorecard(P, dates, n=60, quiet=False):
     return txt
 
 
+RULES = "movers-v3: Nifty 500 liquid universe, score volatility+surge"
+
+
+def ensure_rules(P, dates):
+    """When the scoring rules change, rebuild the last 60 saved lists once so History matches the new rules."""
+    f = OUT / "rules.txt"
+    if f.exists() and f.read_text().strip() == RULES:
+        return
+    print("New rules: rebuilding the last 60 lists ...")
+    backfill(P, dates, 60)
+    f.write_text(RULES)
+
+
 def nightly(P, dates):
     asof = str(dates[-1])
     OUT.mkdir(exist_ok=True); (OUT / "history").mkdir(exist_ok=True)
     B = breadth_series(P)
     prune_history(dates)
+    ensure_rules(P, dates)
     latest = save_scan(P, asof, B)
     fill_outcomes(P, dates)
     (OUT / "latest.json").write_text(json.dumps(latest, indent=1))
