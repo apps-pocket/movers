@@ -17,47 +17,73 @@ average open-to-close (%)                              -0.37                    
 average close vs prev close (%)                        -0.35                       -0.27                             -0.49                     -0.32              -0.03
    Lift in 'closed 4%+ away': current 1.9x, volatility 2.7x, volatility+surge 2.7x, activity 1.5x
 
-2) Does the rank matter? (score 'current')
+2) Does the rank matter? (score 'volatility+surge')
                        ranks 1-3  ranks 4-10  ranks 11-20  all liquid
-closed 4%+ away (%)        12.78       14.05        10.33        7.09
-day range 5%+ (%)          38.33       22.62        15.83        9.73
-average day range (%)       4.76        4.06         3.60        3.01
+closed 4%+ away (%)        21.11       17.86        15.00        7.09
+day range 5%+ (%)          45.56       30.24        24.67        9.73
+average day range (%)       5.27        4.50         4.14        3.01
 
 3) Liquidity and sectors of the top 10 picks
-   Median daily traded value of the picks: Rs 117 crore (10th percentile Rs 49 crore)
-   Most common sectors: Capital Goods (23%), Financial Services (23%), Automobile and Auto Components (7%), Healthcare (6%), Consumer Services (5%), Information Technology (4%)
+   Median daily traded value of the picks: Rs 108 crore (10th percentile Rs 48 crore)
+   Most common sectors: Capital Goods (30%), Financial Services (18%), Consumer Services (7%), Oil Gas & Consumable Fuels (6%), Automobile and Auto Components (5%), Healthcare (5%)
 
 4) The three most recent lists and what happened next (today's move -> next day: gap / close / day range)
   List of 2026-11-17:
-    PNB           +3.7% -> gap  +0.1% | close  -0.3% | range  2.5%
-    KAYNES        -4.1% -> gap  +0.3% | close  +0.8% | range  2.8%
-    TATACHEM      +5.5% -> gap  -0.1% | close  -2.5% | range  2.5%
-    ASHOKLEY      -4.2% -> gap  -0.3% | close  +1.2% | range  3.9%
     URBANCO       -5.5% -> gap  +0.0% | close  +6.7% | range  8.6%
-    LICHSGFIN     +2.8% -> gap  -1.0% | close  -2.0% | range  2.5%
-    BANKINDIA     +4.1% -> gap  -0.5% | close  -0.8% | range  1.3%
+    KAYNES        -4.1% -> gap  +0.3% | close  +0.8% | range  2.8%
+    WELSPUNLIV    +8.1% -> gap  -0.7% | close  -3.2% | range  4.0%
+    IIFL          -2.7% -> gap  +2.3% | close  +4.3% | range  4.9%
+    PFOCUS        +4.6% -> gap  +0.9% | close  -2.6% | range  5.3%
+    MOTILALOFS    +1.9% -> gap  -0.4% | close  -0.9% | range  4.6%
+    EXIDEIND      +4.0% -> gap  -0.0% | close  +2.2% | range  3.5%
     LAURUSLABS    +5.3% -> gap  +0.3% | close  -0.7% | range  1.9%
-    MAHABANK      +4.3% -> gap  -0.1% | close  +0.0% | range  1.9%
     KALYANKJIL    -3.6% -> gap  +0.0% | close  -4.8% | range  6.1%
+    WELCORP       +3.1% -> gap  +0.0% | close  -1.4% | range  2.4%
   List of 2026-11-18:
-    POLYCAB       -5.1% -> gap  -0.1% | close  +3.3% | range  4.6%
-    ANGELONE      -3.3% -> gap  -0.4% | close  -0.6% | range  3.7%
+    PWL           -1.2% -> gap  +3.5% | close  +6.1% | range  6.8%
+    IIFL          +4.3% -> gap  +1.0% | close  -2.4% | range  5.3%
+    URBANCO       +6.7% -> gap  -0.2% | close  +1.6% | range  4.5%
     VAML          -5.8% -> gap  -1.3% | close  -0.7% | range  4.3%
-    NAVINFLUOR    +4.7% -> gap  -0.4% | close  -0.7% | range  2.4%
-    SAIL          -4.3% -> gap  -1.2% | close  +0.3% | range  2.7%
+    NAM-INDIA     -3.0% -> gap  -1.6% | close  -0.1% | range  3.0%
+    ANGELONE      -3.3% -> gap  -0.4% | close  -0.6% | range  3.7%
     KALYANKJIL    -4.8% -> gap  -0.8% | close  +1.7% | range  3.8%
     MANAPPURAM    -4.6% -> gap  -0.8% | close  -0.1% | range  3.0%
-    URBANCO       +6.7% -> gap  -0.2% | close  +1.6% | range  4.5%
-    IIFL          +4.3% -> gap  +1.0% | close  -2.4% | range  5.3%
-    MUTHOOTFIN    -4.0% -> gap  -2.0% | close  -0.8% | range  3.1%
+    PFOCUS        -2.7% -> gap  -1.7% | close  -2.5% | range  6.2%
+    AZAD          -2.1% -> gap  +0.0% | close  +3.1% | range  7.5%
   List of 2026-11-19:
-    IREDA         +8.3% -> gap  -0.6% | close  +1.5% | range  4.3%
-    PAYTM         -8.7% -> gap  +0.2% | close  +0.8% | range  3.4%
-    BLUESTARCO    +8.8% -> gap  -0.3% | close  +1.5% | range  4.0%
-    VOLTAS        +9.0% -> gap  -0.4% | close  -0.2% | range  2.2%
     AMBER         +7.4% -> gap  -1.0% | close  +0.7% | range  3.5%
-    TATATECH      +7.2% -> gap  -0.5% | close  +3.5% | range  6.3%
-    TMPV          +4.3% -> gap  -0.5% | close  +1.1% | range  2.5%
-    WOCKPHARMA    +7.9% -> gap  -1.2% | close  -0.6% | range  3.2%
+    PWL           +6.1% -> gap  +2.2% | close  -0.1% | range  3.5%
+    BBOX          +3.4% -> gap  -0.5% | close  -1.0% | range  2.4%
+    AZAD          +3.1% -> gap  -1.5% | close  -3.0% | range  2.8%
+    PAYTM         -8.7% -> gap  +0.2% | close  +0.8% | range  3.4%
+    IIFL          -2.4% -> gap  -1.9% | close  -4.7% | range  3.6%
+    POLICYBZR     -2.0% -> gap  +0.0% | close  +0.8% | range  3.8%
     CRAFTSMAN     +5.7% -> gap  -0.8% | close  -1.7% | range  3.5%
-    POLYCAB       +3.3% -> gap  -1.0% | close  +0.3% | range  3.2%
+    BLUESTARCO    +8.8% -> gap  -0.3% | close  +1.5% | range  4.0%
+    WOCKPHARMA    +7.9% -> gap  -1.2% | close  -0.6% | range  3.2%
+
+5) DIRECTION CHECK, top 10 picks (score 'volatility+surge'): next day, by how the stock moved on the list day
+           stock-days  closed UP (%)  avg gap (%)  avg open-to-close (%)  avg close vs prev (%)  avg day range (%)  closed 4%+ away (%)
+today_ret                                                                                                                              
+fell 4%+        142.0          40.14        -0.12                  -0.49                  -0.61               4.93                18.31
+fell 0-4%       128.0          41.41         0.08                  -0.50                  -0.42               4.68                24.22
+rose 0-4%       120.0          43.33         0.24                  -0.40                  -0.16               4.54                24.17
+rose 4%+        210.0          40.00         0.16                  -0.80                  -0.63               4.74                12.86
+
+6) ... by how the whole market did on the list day (share of liquid stocks that rose)
+                            stock-days  closed UP (%)  avg gap (%)  avg open-to-close (%)  avg close vs prev (%)  avg day range (%)  closed 4%+ away (%)
+adv                                                                                                                                                     
+weak day (under 35% rose)        180.0          36.67         0.01                  -0.92                  -0.91               5.18                23.33
+mixed day                        270.0          41.11         0.19                  -0.44                  -0.25               4.47                17.04
+strong day (over 65% rose)       150.0          46.00         0.01                  -0.43                  -0.40               4.66                16.67
+
+7) ... by sector (sectors with 25 or more picks)
+                                stock-days  closed UP (%)  avg gap (%)  avg open-to-close (%)  avg close vs prev (%)  avg day range (%)  closed 4%+ away (%)
+sector                                                                                                                                                      
+Automobile and Auto Components        32.0          56.25         0.21                   0.47                   0.68               4.01                 9.38
+Capital Goods                        179.0          41.90         0.09                  -0.57                  -0.48               4.81                19.55
+Consumer Services                     44.0          40.91         0.09                  -0.52                  -0.42               4.76                18.18
+Financial Services                   107.0          33.64         0.01                  -1.04                  -1.00               5.01                23.36
+Healthcare                            30.0          53.33         0.19                   0.63                   0.82               4.43                26.67
+Oil Gas & Consumable Fuels            39.0          33.33         0.21                  -1.74                  -1.55               6.02                30.77
+   Sixty days is a short time: look for big, repeated differences, not small ones.
