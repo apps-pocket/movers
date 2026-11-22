@@ -616,6 +616,7 @@ def scorecard(P, dates, n=60, quiet=False):
     keys = list(VARIANTS) + ["selected"]
     per = {k: [] for k in keys}
     base, sizes, picks_info, last_days = [], [], [], {}
+    tiers, tier_base = {100: [], 300: []}, {100: [], 300: []}
     for k in range(len(ds) - n - 1, len(ds) - 1):
         d, nd = ds[k], ds[k + 1]
         df = movers_table(P, d)
@@ -635,6 +636,12 @@ def scorecard(P, dates, n=60, quiet=False):
             for rank, sym in enumerate(top.symbol, 1):
                 per[key].append(dict(res[sym], rank=rank, today_ret=float(info.loc[sym, "today_ret"]),
                                      sector=info.loc[sym, "sector"], adv=adv, day=d))
+        for thr in tiers:
+            dft = df[df.median_turnover_cr >= thr]
+            if len(dft) >= 15:
+                tp = pick_top(dft, "score_" + CFG["variant"], 10, CFG["sector_cap"])
+                tiers[thr] += [dict(res[x], rank=r) for r, x in enumerate(tp.symbol, 1)]
+                tier_base[thr] += [res[x] for x in dft.symbol]
         top10 = pick_top(df, "score_" + CFG["variant"], 10, CFG["sector_cap"])
         picks_info += list(zip(top10.median_turnover_cr, top10.sector.fillna("(no sector)")))
         last_days[d] = [(r.symbol, r.today_ret, res[r.symbol]) for r in top10.itertuples()]
@@ -702,6 +709,29 @@ def scorecard(P, dates, n=60, quiet=False):
     w(qt[["picks", "closed 4%+ away (%)", "closed 4%+ away (%) | all", "lift 4%+", "day range 5%+ (%)", "day range 5%+ (%) | all",
           "avg close vs prev (%)", "avg close vs prev (%) | all"]].to_string())
     w("   Look for big, repeated differences across quarters, not small ones. The Nifty 500 list is today's, so older periods use today's members.")
+    w("\n9) Liquidity tiers: top 10 picks among stocks that trade at least Rs 40 / 100 / 300 crore a day (median). More liquid = easier to trade, but moves less")
+    c4 = ["closed 4%+ away (%)", "day range 5%+ (%)", "average day range (%)", "average close vs prev close (%)"]
+    rows = {"Rs 40+ cr: picks": tab[sel_name][c4], "Rs 40+ cr: all": tab["all liquid stocks"][c4]}
+    for thr in (100, 300):
+        pk = [r for r in tiers[thr] if r["rank"] <= 10]
+        if pk:
+            rows[f"Rs {thr}+ cr: picks"] = _metrics(pk)[c4]
+            rows[f"Rs {thr}+ cr: all"] = _metrics(tier_base[thr])[c4]
+    w(pd.DataFrame(rows).to_string())
+
+    def gap_tab(rws):
+        x = pd.DataFrame(rws)
+        b = pd.cut(x.gap, [-100, -2, -0.5, 0.5, 2, 100], labels=["gap down 2%+", "gap down 0.5-2%", "flat", "gap up 0.5-2%", "gap up 2%+"])
+        return x.groupby(b, observed=True).apply(lambda y: pd.Series({
+            "stock-days": len(y), "avg open-to-close (%)": y.oc.mean(), "went up (%)": (y.oc > 0).mean() * 100,
+            "long, net of 0.1% cost (%)": y.oc.mean() - 0.1, "short, net of 0.1% cost (%)": -y.oc.mean() - 0.1,
+            "avg day range (%)": y.range_pct.mean()})).round(2)
+    w("\n10) GAP CHECK: what happened from the open to the close, by the size of the opening gap (you see the gap at 9:15)")
+    w("Top 10 picks:")
+    w(gap_tab(top10s["selected"]).to_string())
+    w("All liquid stocks:")
+    w(gap_tab(base).to_string())
+    w("   Uses the official opening price. Real fills at the open are usually worse, so treat small edges with care.")
     txt = "\n".join(L)
     OUT.mkdir(exist_ok=True)
     (OUT / "evaluation.txt").write_text(txt, encoding="utf-8")
@@ -711,7 +741,7 @@ def scorecard(P, dates, n=60, quiet=False):
         for k in ("gap_table", "movers_gap_table"):
             st.setdefault(k, DEFAULT_STATS[k])
         st.update({"list_rates_10": _rates(top10s["selected"]), "list_rates": _rates(per["selected"]),
-                   "universe_rates": _rates(base), "asof": ds[-1],
+                   "universe_rates": _rates(base), "asof": ds[-1], "sc_version": SCORECARD_VERSION,
                    "source": f"scorecard of {len(sizes)} past lists, liquid universe"})
         f.write_text(json.dumps(st, indent=1))
     t10 = tab[sel_name]["closed 4%+ away (%)"]
@@ -719,6 +749,7 @@ def scorecard(P, dates, n=60, quiet=False):
     return txt
 
 
+SCORECARD_VERSION = "5"  # change this when the scorecard gets new sections, so it is recalculated once
 RULES = "movers-v4: Nifty 500 liquid universe, score volatility+surge, max 3 per sector"
 
 
@@ -755,8 +786,8 @@ def nightly(P, dates):
     build_dashboard(latest, B)
     try:  # the long scorecard is recalculated once per new trading day (it feeds the dashboard tiles next time)
         f = OUT / "stats.json"
-        done = json.loads(f.read_text()).get("asof") if f.exists() else None
-        if done != asof:
+        old = json.loads(f.read_text()) if f.exists() else {}
+        if old.get("asof") != asof or old.get("sc_version") != SCORECARD_VERSION:
             scorecard(P, dates, 400, quiet=True)
     except Exception as e:
         print("Scorecard skipped:", e)
