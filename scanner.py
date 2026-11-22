@@ -45,6 +45,8 @@ CFG = dict(
     min_trades=10000,           # average number of trades per day (many different buyers and sellers)
     use_nifty500=True,          # keep only Nifty 500 members when the list can be fetched
     variant="volatility+surge", # which score ranks the movers (see VARIANTS); chosen from the scorecard
+    sector_cap=3,               # at most this many picks from one sector in the top list (0 = no limit)
+    eval_history=600,           # trading days of NSE data kept, so the scorecard can look back about 18 months
 )
 
 # NSE equity trading holidays (market closed). Any data for these dates is ignored.
@@ -448,13 +450,30 @@ def movers_table(P, asof, cfg=CFG):
     return df
 
 
+def pick_top(df, col, n, cap=0):
+    """Best n rows by score; with cap, at most `cap` from the same sector."""
+    d = df.sort_values(col, ascending=False, kind="mergesort")
+    if not cap:
+        return d.head(n)
+    keep, cnt = [], {}
+    for idx, r in d.iterrows():
+        sec = r["sector"] if isinstance(r["sector"], str) else None
+        if sec is not None and cnt.get(sec, 0) >= cap:
+            continue
+        keep.append(idx)
+        cnt[sec] = cnt.get(sec, 0) + 1
+        if len(keep) >= n:
+            break
+    return d.loc[keep]
+
+
 def movers_scan(P, asof, cfg=CFG, top=20):
     """Liquid stocks most likely to move a lot tomorrow (direction NOT predicted)."""
     df = movers_table(P, asof, cfg)
     if df.empty:
         return [], 0
     out = []
-    for r in df.sort_values("score", ascending=False).head(top).to_dict("records"):
+    for r in pick_top(df, "score", top, cfg.get("sector_cap", 0)).to_dict("records"):
         out.append({k: (None if v is None or (isinstance(v, float) and not np.isfinite(v)) else
                         (round(float(v), 2) if isinstance(v, (int, float, np.floating)) else v))
                     for k, v in r.items() if k not in ("range_ratio",) and not k.startswith("score_")})
@@ -591,10 +610,11 @@ def _metrics(rows):
 
 
 def scorecard(P, dates, n=60, quiet=False):
-    """Scorecard: how did the nightly lists really do on the NEXT day, compared with all liquid stocks?"""
+    """How did the nightly lists really do on the NEXT day, compared with all liquid stocks?"""
     ds = [str(d) for d in dates]
     n = max(min(n, len(ds) - 3), 1)
-    per = {v: [] for v in VARIANTS}
+    keys = list(VARIANTS) + ["selected"]
+    per = {k: [] for k in keys}
     base, sizes, picks_info, last_days = [], [], [], {}
     for k in range(len(ds) - n - 1, len(ds) - 1):
         d, nd = ds[k], ds[k + 1]
@@ -606,40 +626,43 @@ def scorecard(P, dates, n=60, quiet=False):
         if len(df) < 10:
             continue
         sizes.append(len(df))
-        base += [res[x] for x in df.symbol]
+        base += [dict(res[x], day=d) for x in df.symbol]
         info = df.set_index("symbol")[["today_ret", "sector"]]
         adv = float((df.today_ret > 0).mean() * 100)
-        for v in VARIANTS:
-            top = df.sort_values("score_" + v, ascending=False, kind="mergesort").head(20)
+        for key in keys:
+            col = "score_" + (CFG["variant"] if key == "selected" else key)
+            top = pick_top(df, col, 20, CFG["sector_cap"] if key == "selected" else 0)
             for rank, sym in enumerate(top.symbol, 1):
-                per[v].append(dict(res[sym], rank=rank, today_ret=float(info.loc[sym, "today_ret"]),
-                                   sector=info.loc[sym, "sector"], adv=adv, day=d))
-        top10 = df.sort_values("score_" + CFG["variant"], ascending=False, kind="mergesort").head(10)
+                per[key].append(dict(res[sym], rank=rank, today_ret=float(info.loc[sym, "today_ret"]),
+                                     sector=info.loc[sym, "sector"], adv=adv, day=d))
+        top10 = pick_top(df, "score_" + CFG["variant"], 10, CFG["sector_cap"])
         picks_info += list(zip(top10.median_turnover_cr, top10.sector.fillna("(no sector)")))
         last_days[d] = [(r.symbol, r.today_ret, res[r.symbol]) for r in top10.itertuples()]
     if not sizes:
         return "Scorecard: not enough data yet."
-    cur = pd.DataFrame(per[CFG["variant"]])
+    sel_name = f"selected: {CFG['variant']}" + (f", max {CFG['sector_cap']} per sector" if CFG["sector_cap"] else "")
     L = []
     w = L.append
-    w(f"SCORECARD of Tomorrow's Movers: {len(sizes)} past days, about {int(np.mean(sizes))} liquid stocks ranked each day.")
+    w(f"SCORECARD of Tomorrow's Movers: {len(sizes)} past days ({ds[-n - 1]} to {ds[-2]}), about {int(np.mean(sizes))} liquid stocks ranked each day.")
     w("Universe: " + (f"Nifty 500 members ({len(SECTORS)} in the list) " if len(SECTORS) >= 300 else "all stocks ") +
       f"with median daily traded value of at least Rs {CFG['min_median_turnover_cr']} crore, at least {CFG['min_trades']:,} trades a day, "
       "not closed at a price limit, funds and ETFs removed.")
     w("Each list is made after the close and checked on the next trading day. 'Away' = closing price vs the previous close, up or down.")
-    tab = {f"top 10, score '{v}'": _metrics([r for r in per[v] if r["rank"] <= 10]) for v in VARIANTS}
+    top10s = {k: [r for r in per[k] if r["rank"] <= 10] for k in keys}
+    tab = {f"top 10, {v}": _metrics(top10s[v]) for v in VARIANTS}
+    tab[sel_name] = _metrics(top10s["selected"])
     tab["all liquid stocks"] = _metrics(base)
     w("\n1) Top 10 of each score variant vs all liquid stocks")
     w(pd.DataFrame(tab).to_string())
     b4 = tab["all liquid stocks"]["closed 4%+ away (%)"]
-    q = "'"
     if b4 > 0:
-        w("   Lift in 'closed 4%+ away': " + ", ".join(f"{v} {tab[f'top 10, score {q}{v}{q}']['closed 4%+ away (%)'] / b4:.1f}x" for v in VARIANTS))
-    w(f"\n2) Does the rank matter? (score '{CFG['variant']}')")
-    rk = pd.DataFrame({nm: _metrics([r for r in per[CFG['variant']] if lo <= r['rank'] <= hi])[
-        ["closed 4%+ away (%)", "day range 5%+ (%)", "average day range (%)"]] for nm, lo, hi in
-        (("ranks 1-3", 1, 3), ("ranks 4-10", 4, 10), ("ranks 11-20", 11, 20))})
-    rk["all liquid"] = tab["all liquid stocks"][["closed 4%+ away (%)", "day range 5%+ (%)", "average day range (%)"]]
+        w("   Lift in 'closed 4%+ away': " + ", ".join(f"{c.replace('top 10, ', '')} {tab[c]['closed 4%+ away (%)'] / b4:.1f}x"
+                                                      for c in tab if c != "all liquid stocks"))
+    w("\n2) Does the rank matter? (selected list)")
+    cols3 = ["closed 4%+ away (%)", "day range 5%+ (%)", "average day range (%)"]
+    rk = pd.DataFrame({nm: _metrics([r for r in per["selected"] if lo <= r["rank"] <= hi])[cols3]
+                       for nm, lo, hi in (("ranks 1-3", 1, 3), ("ranks 4-10", 4, 10), ("ranks 11-20", 11, 20))})
+    rk["all liquid"] = tab["all liquid stocks"][cols3]
     w(rk.to_string())
     w("\n3) Liquidity and sectors of the top 10 picks")
     tv = np.array([x[0] for x in picks_info])
@@ -651,14 +674,14 @@ def scorecard(P, dates, n=60, quiet=False):
         w(f"  List of {d}:")
         for sym, tr, o in last_days[d]:
             w(f"    {sym:<12} {tr:+5.1f}% -> gap {o['gap']:+5.1f}% | close {o['cc']:+5.1f}% | range {o['range_pct']:4.1f}%")
-    sel = pd.DataFrame([r for r in per[CFG["variant"]] if r["rank"] <= 10])
+    sel = pd.DataFrame(top10s["selected"])
     sel["sector"] = sel.sector.fillna("(no sector)")
 
     def dstats(x):
         return pd.Series({"stock-days": len(x), "closed UP (%)": (x.cc > 0).mean() * 100, "avg gap (%)": x.gap.mean(),
                           "avg open-to-close (%)": x.oc.mean(), "avg close vs prev (%)": x.cc.mean(),
                           "avg day range (%)": x.range_pct.mean(), "closed 4%+ away (%)": (x.cc.abs() >= 4).mean() * 100}).round(2)
-    w(f"\n5) DIRECTION CHECK, top 10 picks (score '{CFG['variant']}'): next day, by how the stock moved on the list day")
+    w("\n5) DIRECTION CHECK, top 10 picks: next day, by how the stock moved on the list day")
     w(sel.groupby(pd.cut(sel.today_ret, [-100, -4, 0, 4, 100], labels=["fell 4%+", "fell 0-4%", "rose 0-4%", "rose 4%+"]),
                   observed=True).apply(dstats).to_string())
     w("\n6) ... by how the whole market did on the list day (share of liquid stocks that rose)")
@@ -669,25 +692,34 @@ def scorecard(P, dates, n=60, quiet=False):
     if len(big_sec):
         w("\n7) ... by sector (sectors with 25 or more picks)")
         w(big_sec.groupby("sector").apply(dstats).to_string())
-    w("   Sixty days is a short time: look for big, repeated differences, not small ones.")
+    w("\n8) Is it consistent over time? By quarter: top 10 picks vs all liquid stocks")
+    bdf = pd.DataFrame(base)
+    qf = lambda x: pd.PeriodIndex(pd.to_datetime(x.day), freq="Q").astype(str)
+    qs = lambda x: pd.Series({"picks": len(x), "closed 4%+ away (%)": (x.cc.abs() >= 4).mean() * 100,
+                              "day range 5%+ (%)": (x.range_pct >= 5).mean() * 100, "avg close vs prev (%)": x.cc.mean()}).round(2)
+    qt = sel.groupby(qf(sel)).apply(qs).join(bdf.groupby(qf(bdf)).apply(qs), rsuffix=" | all")
+    qt["lift 4%+"] = (qt["closed 4%+ away (%)"] / qt["closed 4%+ away (%) | all"].replace(0, np.nan)).round(1)
+    w(qt[["picks", "closed 4%+ away (%)", "closed 4%+ away (%) | all", "lift 4%+", "day range 5%+ (%)", "day range 5%+ (%) | all",
+          "avg close vs prev (%)", "avg close vs prev (%) | all"]].to_string())
+    w("   Look for big, repeated differences across quarters, not small ones. The Nifty 500 list is today's, so older periods use today's members.")
     txt = "\n".join(L)
     OUT.mkdir(exist_ok=True)
     (OUT / "evaluation.txt").write_text(txt, encoding="utf-8")
-    if len(sizes) >= 15:  # keep the dashboard tiles honest: numbers from the real lists of this universe
+    if len(sizes) >= 15:  # dashboard tiles: numbers from the real lists of this universe
         f = OUT / "stats.json"
         st = json.loads(f.read_text()) if f.exists() else {}
         for k in ("gap_table", "movers_gap_table"):
             st.setdefault(k, DEFAULT_STATS[k])
-        st.update({"list_rates_10": _rates([r for r in per[CFG["variant"]] if r["rank"] <= 10]),
-                   "list_rates": _rates(per[CFG["variant"]]), "universe_rates": _rates(base),
+        st.update({"list_rates_10": _rates(top10s["selected"]), "list_rates": _rates(per["selected"]),
+                   "universe_rates": _rates(base), "asof": ds[-1],
                    "source": f"scorecard of {len(sizes)} past lists, liquid universe"})
         f.write_text(json.dumps(st, indent=1))
-    t10 = tab[f"top 10, score {q}{CFG['variant']}{q}"]["closed 4%+ away (%)"]
+    t10 = tab[sel_name]["closed 4%+ away (%)"]
     print(txt if not quiet else txt.split("\n")[0] + f" Top 10 closed 4%+ away: {t10:.1f}% vs {b4:.1f}% for all.")
     return txt
 
 
-RULES = "movers-v3: Nifty 500 liquid universe, score volatility+surge"
+RULES = "movers-v4: Nifty 500 liquid universe, score volatility+surge, max 3 per sector"
 
 
 def ensure_rules(P, dates):
@@ -720,11 +752,14 @@ def nightly(P, dates):
     for x in latest["movers"]:
         print(f"  {x['symbol']:<12} close {x['close']:>9}  today {x['today_ret']:+5.1f}%  vol {x['vol_ratio']:.1f}x  "
               f"usual range {x['avg_range_pct']:.1f}%  score {x['score']:.0f}")
-    try:
-        scorecard(P, dates, 60, quiet=True)
+    build_dashboard(latest, B)
+    try:  # the long scorecard is recalculated once per new trading day (it feeds the dashboard tiles next time)
+        f = OUT / "stats.json"
+        done = json.loads(f.read_text()).get("asof") if f.exists() else None
+        if done != asof:
+            scorecard(P, dates, 400, quiet=True)
     except Exception as e:
         print("Scorecard skipped:", e)
-    build_dashboard(latest, B)
 
 
 def backfill(P, dates, n):
@@ -978,7 +1013,7 @@ if __name__ == "__main__":
         data = load_yahoo()
     else:
         if not a.offline:
-            update_cache(a.history)
+            update_cache(max(a.history, CFG["eval_history"]))
         n_files = len(list(CACHE.glob("*.csv")))
         if a.source == "auto" and n_files < 210 and not a.offline:
             print(f"NSE gave only {n_files} days of data. Switching to Yahoo Finance.")
