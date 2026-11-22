@@ -71,5 +71,6 @@
   "range>=12": 0.25
  },
  "source": "scorecard of 400 past lists, liquid universe",
- "asof": "2026-11-20"
+ "asof": "2026-11-20",
+ "sc_version": "5"
 }

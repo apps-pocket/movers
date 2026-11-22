@@ -109,3 +109,29 @@ day
 2026Q3  650.0                17.69                       5.35       3.3              35.08                     7.52                  -0.19                        -0.05
 2026Q4  330.0                19.09                       8.64       2.2              34.55                    11.83                  -0.40                         0.14
    Look for big, repeated differences across quarters, not small ones. The Nifty 500 list is today's, so older periods use today's members.
+
+9) Liquidity tiers: top 10 picks among stocks that trade at least Rs 40 / 100 / 300 crore a day (median). More liquid = easier to trade, but moves less
+                                 Rs 40+ cr: picks  Rs 40+ cr: all  Rs 100+ cr: picks  Rs 100+ cr: all  Rs 300+ cr: picks  Rs 300+ cr: all
+closed 4%+ away (%)                         17.55            6.44              16.62             5.91              11.75             5.74
+day range 5%+ (%)                           33.78            8.73              28.28             7.25              15.52             6.12
+average day range (%)                        4.72            2.88               4.37             2.72               3.48             2.57
+average close vs prev close (%)             -0.03            0.06              -0.02             0.06               0.07             0.05
+
+10) GAP CHECK: what happened from the open to the close, by the size of the opening gap (you see the gap at 9:15)
+Top 10 picks:
+                 stock-days  avg open-to-close (%)  went up (%)  long, net of 0.1% cost (%)  short, net of 0.1% cost (%)  avg day range (%)
+gap                                                                                                                                        
+gap down 2%+          128.0                   0.08        55.47                       -0.02                        -0.18               6.52
+gap down 0.5-2%       485.0                  -0.15        44.54                       -0.25                         0.05               4.84
+flat                 2043.0                  -0.31        42.14                       -0.41                         0.21               4.30
+gap up 0.5-2%        1148.0                  -0.23        42.51                       -0.33                         0.13               4.93
+gap up 2%+            196.0                  -0.34        43.88                       -0.44                         0.24               6.50
+All liquid stocks:
+                 stock-days  avg open-to-close (%)  went up (%)  long, net of 0.1% cost (%)  short, net of 0.1% cost (%)  avg day range (%)
+gap                                                                                                                                        
+gap down 2%+         2229.0                   0.88        65.41                        0.78                        -0.98               4.45
+gap down 0.5-2%     13554.0                   0.06        51.09                       -0.04                        -0.16               3.12
+flat                75497.0                  -0.11        44.67                       -0.21                         0.01               2.66
+gap up 0.5-2%       22428.0                  -0.03        45.23                       -0.13                        -0.07               3.15
+gap up 2%+           2930.0                   0.04        49.18                       -0.06                        -0.14               4.36
+   Uses the official opening price. Real fills at the open are usually worse, so treat small edges with care.
