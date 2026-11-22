@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-30",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2159,
-  "pct_above_50dma": 15.3,
-  "pct_advancing": 22.0,
+  "stocks_scanned": 2252,
+  "pct_above_50dma": 15.5,
+  "pct_advancing": 22.2,
   "mood": "Weak",
   "pct_above_20ema": 22.0,
   "breadth_5d_change": 13.8,
@@ -272,26 +272,6 @@
    "score": 85.34
   },
   {
-   "symbol": "KIRLOSENG",
-   "close": 1800.0,
-   "open": 1884.0,
-   "high": 1884.0,
-   "low": 1780.1,
-   "prev_close": 1890.3,
-   "official_close": 1796.1,
-   "volume": 710338.0,
-   "today_ret": -4.78,
-   "vol_ratio": 1.59,
-   "range_today_pct": 5.77,
-   "avg_range_pct": 4.81,
-   "tight6": 10.93,
-   "median_turnover_cr": 81.95,
-   "trades": 44565.2,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.21,
-   "score": 85.0
-  },
-  {
    "symbol": "SWIGGY",
    "close": 176.6,
    "open": 184.3,
@@ -309,26 +289,6 @@
    "trades": 91123.5,
    "sector": "Consumer Services",
    "delivery_ratio": 1.11,
-   "score": 82.97
-  },
-  {
-   "symbol": "JYOTICNC",
-   "close": 913.6,
-   "open": 955.0,
-   "high": 955.0,
-   "low": 899.6,
-   "prev_close": 956.7,
-   "official_close": 905.6,
-   "volume": 654717.0,
-   "today_ret": -4.51,
-   "vol_ratio": 1.16,
-   "range_today_pct": 6.06,
-   "avg_range_pct": 4.72,
-   "tight6": 9.95,
-   "median_turnover_cr": 71.45,
-   "trades": 32779.4,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.93,
    "score": 82.97
   },
   {
@@ -350,26 +310,6 @@
    "sector": "Consumer Durables",
    "delivery_ratio": 1.2,
    "score": 82.54
-  },
-  {
-   "symbol": "GRSE",
-   "close": 1930.0,
-   "open": 2011.3,
-   "high": 2027.9,
-   "low": 1917.6,
-   "prev_close": 1923.2,
-   "official_close": 1943.7,
-   "volume": 1747020.0,
-   "today_ret": 0.35,
-   "vol_ratio": 3.66,
-   "range_today_pct": 5.72,
-   "avg_range_pct": 3.65,
-   "tight6": 9.63,
-   "median_turnover_cr": 87.64,
-   "trades": 42230.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.53,
-   "score": 81.78
   },
   {
    "symbol": "PPLPHARMA",
@@ -410,6 +350,66 @@
    "sector": "Chemicals",
    "delivery_ratio": 0.29,
    "score": 81.44
+  },
+  {
+   "symbol": "BLUESTARCO",
+   "close": 1627.9,
+   "open": 1633.4,
+   "high": 1637.9,
+   "low": 1551.0,
+   "prev_close": 1673.0,
+   "official_close": 1627.9,
+   "volume": 1496289.0,
+   "today_ret": -2.7,
+   "vol_ratio": 3.56,
+   "range_today_pct": 5.34,
+   "avg_range_pct": 3.49,
+   "tight6": 11.85,
+   "median_turnover_cr": 74.66,
+   "trades": 27855.4,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 0.36,
+   "score": 78.9
+  },
+  {
+   "symbol": "BALRAMCHIN",
+   "close": 589.45,
+   "open": 638.9,
+   "high": 638.9,
+   "low": 585.4,
+   "prev_close": 635.2,
+   "official_close": 589.5,
+   "volume": 831000.0,
+   "today_ret": -7.2,
+   "vol_ratio": 0.79,
+   "range_today_pct": 9.08,
+   "avg_range_pct": 4.54,
+   "tight6": 11.54,
+   "median_turnover_cr": 78.21,
+   "trades": 32731.55,
+   "sector": "Fast Moving Consumer Goods",
+   "delivery_ratio": 1.42,
+   "score": 78.14
+  },
+  {
+   "symbol": "AEGISLOG",
+   "close": 1090.4,
+   "open": 1180.0,
+   "high": 1180.0,
+   "low": 1080.2,
+   "prev_close": 1178.7,
+   "official_close": 1096.7,
+   "volume": 739752.0,
+   "today_ret": -7.49,
+   "vol_ratio": 0.63,
+   "range_today_pct": 9.15,
+   "avg_range_pct": 6.96,
+   "tight6": 21.24,
+   "median_turnover_cr": 107.88,
+   "trades": 65257.8,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 1.21,
+   "score": 76.61
   }
  ],
  "outcomes": {
@@ -520,14 +520,6 @@
     "up": 0.42,
     "down": -6.09
    },
-   "KIRLOSENG": {
-    "gap": -0.95,
-    "oc": -2.76,
-    "cc": -3.68,
-    "range_pct": 4.78,
-    "up": 0.27,
-    "down": -4.46
-   },
    "SWIGGY": {
     "gap": 0.79,
     "oc": -0.15,
@@ -536,14 +528,6 @@
     "up": 2.68,
     "down": 0.05
    },
-   "JYOTICNC": {
-    "gap": 1.15,
-    "oc": 3.05,
-    "cc": 4.23,
-    "range_pct": 4.18,
-    "up": 4.74,
-    "down": 0.51
-   },
    "AMBER": {
     "gap": 0.15,
     "oc": 5.94,
@@ -551,14 +535,6 @@
     "range_pct": 6.66,
     "up": 6.83,
     "down": 0.15
-   },
-   "GRSE": {
-    "gap": 0.07,
-    "oc": 5.02,
-    "cc": 5.09,
-    "range_pct": 7.66,
-    "up": 6.18,
-    "down": -1.49
    },
    "PPLPHARMA": {
     "gap": 0.04,
@@ -575,6 +551,30 @@
     "range_pct": 3.34,
     "up": 3.07,
     "down": -0.29
+   },
+   "BLUESTARCO": {
+    "gap": -0.06,
+    "oc": -2.03,
+    "cc": -2.08,
+    "range_pct": 3.8,
+    "up": 0.47,
+    "down": -3.33
+   },
+   "BALRAMCHIN": {
+    "gap": 0.42,
+    "oc": 1.0,
+    "cc": 1.42,
+    "range_pct": 3.46,
+    "up": 1.98,
+    "down": -1.49
+   },
+   "AEGISLOG": {
+    "gap": 0.66,
+    "oc": 0.01,
+    "cc": 0.67,
+    "range_pct": 7.02,
+    "up": 6.46,
+    "down": -0.6
    }
   }
  }

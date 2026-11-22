@@ -1,13 +1,13 @@
 {
  "asof": "2026-09-15",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1942,
-  "pct_above_50dma": 27.2,
-  "pct_advancing": 13.4,
+  "stocks_scanned": 2178,
+  "pct_above_50dma": 28.6,
+  "pct_advancing": 14.0,
   "mood": "Weak",
   "pct_above_20ema": 19.9,
-  "breadth_5d_change": -19.0,
+  "breadth_5d_change": -19.1,
   "liquid_stocks": 299
  },
  "movers": [
@@ -72,26 +72,6 @@
    "score": 90.89
   },
   {
-   "symbol": "INOXINDIA",
-   "close": 2005.9,
-   "open": 2250.0,
-   "high": 2265.0,
-   "low": 1982.0,
-   "prev_close": 2246.6,
-   "official_close": 1992.8,
-   "volume": 531067.0,
-   "today_ret": -10.71,
-   "vol_ratio": 1.08,
-   "range_today_pct": 14.11,
-   "avg_range_pct": 5.18,
-   "tight6": 17.82,
-   "median_turnover_cr": 44.87,
-   "trades": 43855.5,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.17,
-   "score": 90.64
-  },
-  {
    "symbol": "SOLARINDS",
    "close": 19250.0,
    "open": 22320.0,
@@ -110,26 +90,6 @@
    "sector": "Chemicals",
    "delivery_ratio": 0.84,
    "score": 90.22
-  },
-  {
-   "symbol": "WELCORP",
-   "close": 2402.0,
-   "open": 2661.2,
-   "high": 2718.4,
-   "low": 2363.6,
-   "prev_close": 2676.6,
-   "official_close": 2413.3,
-   "volume": 3340619.0,
-   "today_ret": -10.26,
-   "vol_ratio": 1.04,
-   "range_today_pct": 14.77,
-   "avg_range_pct": 5.25,
-   "tight6": 17.54,
-   "median_turnover_cr": 185.42,
-   "trades": 147519.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.39,
-   "score": 89.97
   },
   {
    "symbol": "SANSERA",
@@ -209,26 +169,6 @@
    "trades": 15119.4,
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 1.26,
-   "score": 84.36
-  },
-  {
-   "symbol": "EMMVEE",
-   "close": 329.6,
-   "open": 346.0,
-   "high": 349.7,
-   "low": 322.45,
-   "prev_close": 346.0,
-   "official_close": 328.55,
-   "volume": 2890305.0,
-   "today_ret": -4.74,
-   "vol_ratio": 1.49,
-   "range_today_pct": 8.27,
-   "avg_range_pct": 3.27,
-   "tight6": 8.94,
-   "median_turnover_cr": 65.82,
-   "trades": 35123.25,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.03,
    "score": 84.36
   },
   {
@@ -332,26 +272,6 @@
    "score": 80.85
   },
   {
-   "symbol": "GVT&D",
-   "close": 4246.9,
-   "open": 4520.0,
-   "high": 4520.0,
-   "low": 4191.6,
-   "prev_close": 4548.1,
-   "official_close": 4246.9,
-   "volume": 1106490.0,
-   "today_ret": -6.62,
-   "vol_ratio": 1.1,
-   "range_today_pct": 7.73,
-   "avg_range_pct": 3.42,
-   "tight6": 14.91,
-   "median_turnover_cr": 383.75,
-   "trades": 83995.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.94,
-   "score": 80.77
-  },
-  {
    "symbol": "GRANULES",
    "close": 873.2,
    "open": 917.0,
@@ -392,24 +312,104 @@
    "score": 80.1
   },
   {
-   "symbol": "FINCABLES",
-   "close": 1340.5,
-   "open": 1420.0,
-   "high": 1421.6,
-   "low": 1326.4,
-   "prev_close": 1424.0,
-   "official_close": 1339.9,
-   "volume": 1266116.0,
-   "today_ret": -5.86,
-   "vol_ratio": 1.03,
-   "range_today_pct": 7.1,
-   "avg_range_pct": 4.66,
-   "tight6": 21.4,
-   "median_turnover_cr": 45.12,
-   "trades": 49555.8,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.09,
-   "score": 78.6
+   "symbol": "PINELABS",
+   "close": 194.5,
+   "open": 201.4,
+   "high": 201.4,
+   "low": 191.0,
+   "prev_close": 202.17,
+   "official_close": 193.8,
+   "volume": 62792856.0,
+   "today_ret": -3.79,
+   "vol_ratio": 1.64,
+   "range_today_pct": 5.35,
+   "avg_range_pct": 3.69,
+   "tight6": 32.05,
+   "median_turnover_cr": 221.37,
+   "trades": 170031.7,
+   "sector": "Financial Services",
+   "delivery_ratio": 0.84,
+   "score": 78.26
+  },
+  {
+   "symbol": "CMPDI",
+   "close": 204.95,
+   "open": 216.7,
+   "high": 217.9,
+   "low": 202.0,
+   "prev_close": 215.23,
+   "official_close": 203.74,
+   "volume": 1650955.0,
+   "today_ret": -4.78,
+   "vol_ratio": 0.85,
+   "range_today_pct": 7.76,
+   "avg_range_pct": 4.58,
+   "tight6": 21.96,
+   "median_turnover_cr": 50.46,
+   "trades": 25931.35,
+   "sector": "Services",
+   "delivery_ratio": 0.99,
+   "score": 77.51
+  },
+  {
+   "symbol": "JSWINFRA",
+   "close": 326.5,
+   "open": 345.5,
+   "high": 349.2,
+   "low": 324.55,
+   "prev_close": 343.15,
+   "official_close": 325.85,
+   "volume": 3396380.0,
+   "today_ret": -4.85,
+   "vol_ratio": 1.55,
+   "range_today_pct": 7.55,
+   "avg_range_pct": 2.69,
+   "tight6": 7.55,
+   "median_turnover_cr": 94.47,
+   "trades": 45259.5,
+   "sector": "Services",
+   "delivery_ratio": 0.92,
+   "score": 75.84
+  },
+  {
+   "symbol": "ACUTAAS",
+   "close": 3265.0,
+   "open": 3384.0,
+   "high": 3447.6,
+   "low": 3232.2,
+   "prev_close": 3383.7,
+   "official_close": 3266.2,
+   "volume": 264234.0,
+   "today_ret": -3.51,
+   "vol_ratio": 0.89,
+   "range_today_pct": 6.6,
+   "avg_range_pct": 3.86,
+   "tight6": 10.05,
+   "median_turnover_cr": 92.28,
+   "trades": 38135.3,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.84,
+   "score": 75.0
+  },
+  {
+   "symbol": "THANGAMAYL",
+   "close": 4881.0,
+   "open": 5142.0,
+   "high": 5148.5,
+   "low": 4870.0,
+   "prev_close": 5126.0,
+   "official_close": 4912.0,
+   "volume": 100172.0,
+   "today_ret": -4.78,
+   "vol_ratio": 1.07,
+   "range_today_pct": 5.71,
+   "avg_range_pct": 3.59,
+   "tight6": 13.05,
+   "median_turnover_cr": 79.44,
+   "trades": 13808.8,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.14,
+   "score": 73.75
   }
  ],
  "outcomes": {
@@ -440,14 +440,6 @@
     "up": 3.41,
     "down": -5.27
    },
-   "INOXINDIA": {
-    "gap": 0.66,
-    "oc": -1.05,
-    "cc": -0.39,
-    "range_pct": 5.64,
-    "up": 2.56,
-    "down": -3.11
-   },
    "SOLARINDS": {
     "gap": 0.78,
     "oc": -2.58,
@@ -455,14 +447,6 @@
     "range_pct": 5.05,
     "up": 1.09,
     "down": -4.0
-   },
-   "WELCORP": {
-    "gap": -0.01,
-    "oc": 0.29,
-    "cc": 0.28,
-    "range_pct": 8.64,
-    "up": 1.47,
-    "down": -7.17
    },
    "SANSERA": {
     "gap": -0.03,
@@ -495,14 +479,6 @@
     "range_pct": 6.47,
     "up": 2.07,
     "down": -4.5
-   },
-   "EMMVEE": {
-    "gap": -1.84,
-    "oc": -0.47,
-    "cc": -2.3,
-    "range_pct": 3.72,
-    "up": 0.62,
-    "down": -3.03
    },
    "GODREJPROP": {
     "gap": 0.46,
@@ -544,14 +520,6 @@
     "up": 1.21,
     "down": -2.0
    },
-   "GVT&D": {
-    "gap": -0.21,
-    "oc": 0.68,
-    "cc": 0.47,
-    "range_pct": 3.92,
-    "up": 1.62,
-    "down": -2.29
-   },
    "GRANULES": {
     "gap": -0.41,
     "oc": -1.61,
@@ -568,13 +536,45 @@
     "up": 5.0,
     "down": 0.17
    },
-   "FINCABLES": {
-    "gap": 0.32,
-    "oc": 1.38,
-    "cc": 1.71,
-    "range_pct": 7.13,
-    "up": 4.1,
-    "down": -3.05
+   "PINELABS": {
+    "gap": 2.17,
+    "oc": -6.17,
+    "cc": -4.14,
+    "range_pct": 11.46,
+    "up": 2.17,
+    "down": -9.55
+   },
+   "CMPDI": {
+    "gap": 0.13,
+    "oc": 0.25,
+    "cc": 0.37,
+    "range_pct": 3.92,
+    "up": 2.08,
+    "down": -1.84
+   },
+   "JSWINFRA": {
+    "gap": 0.18,
+    "oc": 0.11,
+    "cc": 0.29,
+    "range_pct": 3.97,
+    "up": 1.53,
+    "down": -2.44
+   },
+   "ACUTAAS": {
+    "gap": 0.27,
+    "oc": 2.26,
+    "cc": 2.54,
+    "range_pct": 5.2,
+    "up": 2.84,
+    "down": -2.37
+   },
+   "THANGAMAYL": {
+    "gap": -0.24,
+    "oc": 0.72,
+    "cc": 0.48,
+    "range_pct": 3.4,
+    "up": 0.77,
+    "down": -2.62
    }
   }
  }

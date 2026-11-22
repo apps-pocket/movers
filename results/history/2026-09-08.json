@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-08",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1934,
-  "pct_above_50dma": 42.6,
-  "pct_advancing": 43.3,
+  "stocks_scanned": 2169,
+  "pct_above_50dma": 43.4,
+  "pct_advancing": 43.1,
   "mood": "Neutral",
   "pct_above_20ema": 39.5,
   "breadth_5d_change": 2.8,
@@ -70,26 +70,6 @@
    "sector": "Financial Services",
    "delivery_ratio": 0.88,
    "score": 96.98
-  },
-  {
-   "symbol": "PINELABS",
-   "close": 145.59,
-   "open": 140.47,
-   "high": 148.99,
-   "low": 139.06,
-   "prev_close": 140.89,
-   "official_close": 145.23,
-   "volume": 44763411.53,
-   "today_ret": 3.33,
-   "vol_ratio": 2.07,
-   "range_today_pct": 6.82,
-   "avg_range_pct": 3.74,
-   "tight6": 11.08,
-   "median_turnover_cr": 219.57,
-   "trades": 90503.5,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.81,
-   "score": 92.65
   },
   {
    "symbol": "DATAPATTNS",
@@ -192,26 +172,6 @@
    "score": 86.36
   },
   {
-   "symbol": "BEML",
-   "close": 2099.0,
-   "open": 2120.0,
-   "high": 2205.0,
-   "low": 2095.1,
-   "prev_close": 2097.2,
-   "official_close": 2105.6,
-   "volume": 1462432.0,
-   "today_ret": 0.09,
-   "vol_ratio": 3.39,
-   "range_today_pct": 5.24,
-   "avg_range_pct": 2.91,
-   "tight6": 13.1,
-   "median_turnover_cr": 45.48,
-   "trades": 32342.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.63,
-   "score": 85.95
-  },
-  {
    "symbol": "KALYANKJIL",
    "close": 612.6,
    "open": 591.0,
@@ -230,26 +190,6 @@
    "sector": "Consumer Durables",
    "delivery_ratio": 0.88,
    "score": 85.62
-  },
-  {
-   "symbol": "SYRMA",
-   "close": 1639.9,
-   "open": 1627.0,
-   "high": 1660.0,
-   "low": 1592.2,
-   "prev_close": 1634.8,
-   "official_close": 1639.2,
-   "volume": 2823789.0,
-   "today_ret": 0.31,
-   "vol_ratio": 1.85,
-   "range_today_pct": 4.13,
-   "avg_range_pct": 3.16,
-   "tight6": 15.52,
-   "median_turnover_cr": 137.83,
-   "trades": 58422.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.56,
-   "score": 84.97
   },
   {
    "symbol": "SAILIFE",
@@ -272,46 +212,6 @@
    "score": 84.72
   },
   {
-   "symbol": "FINCABLES",
-   "close": 1303.0,
-   "open": 1235.1,
-   "high": 1311.8,
-   "low": 1230.2,
-   "prev_close": 1227.0,
-   "official_close": 1302.3,
-   "volume": 1806357.0,
-   "today_ret": 6.19,
-   "vol_ratio": 0.78,
-   "range_today_pct": 6.26,
-   "avg_range_pct": 4.36,
-   "tight6": 9.62,
-   "median_turnover_cr": 44.22,
-   "trades": 70156.85,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.92,
-   "score": 84.56
-  },
-  {
-   "symbol": "JYOTICNC",
-   "close": 1040.5,
-   "open": 1020.0,
-   "high": 1058.85,
-   "low": 1012.45,
-   "prev_close": 1020.65,
-   "official_close": 1037.2,
-   "volume": 1316914.0,
-   "today_ret": 1.94,
-   "vol_ratio": 0.95,
-   "range_today_pct": 4.46,
-   "avg_range_pct": 3.83,
-   "tight6": 10.65,
-   "median_turnover_cr": 78.57,
-   "trades": 47748.65,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.0,
-   "score": 84.56
-  },
-  {
    "symbol": "SANSERA",
    "close": 4025.0,
    "open": 4020.0,
@@ -330,26 +230,6 @@
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 0.79,
    "score": 84.07
-  },
-  {
-   "symbol": "GRAPHITE",
-   "close": 734.95,
-   "open": 718.0,
-   "high": 743.9,
-   "low": 713.0,
-   "prev_close": 717.1,
-   "official_close": 734.25,
-   "volume": 1208880.0,
-   "today_ret": 2.49,
-   "vol_ratio": 1.16,
-   "range_today_pct": 4.2,
-   "avg_range_pct": 3.24,
-   "tight6": 6.63,
-   "median_turnover_cr": 48.76,
-   "trades": 29745.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.96,
-   "score": 82.92
   },
   {
    "symbol": "CEMPRO",
@@ -392,24 +272,144 @@
    "score": 82.76
   },
   {
-   "symbol": "TDPOWERSYS",
-   "close": 774.0,
-   "open": 736.0,
-   "high": 778.85,
-   "low": 736.0,
-   "prev_close": 734.15,
-   "official_close": 768.8,
-   "volume": 2089519.0,
-   "today_ret": 5.43,
-   "vol_ratio": 1.03,
-   "range_today_pct": 5.54,
-   "avg_range_pct": 6.59,
-   "tight6": 8.23,
-   "median_turnover_cr": 115.78,
-   "trades": 77193.9,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.85,
-   "score": 82.68
+   "symbol": "WOCKPHARMA",
+   "close": 2227.0,
+   "open": 2200.0,
+   "high": 2240.0,
+   "low": 2166.0,
+   "prev_close": 2208.0,
+   "official_close": 2224.0,
+   "volume": 1343981.0,
+   "today_ret": 0.86,
+   "vol_ratio": 1.37,
+   "range_today_pct": 3.32,
+   "avg_range_pct": 3.36,
+   "tight6": 18.26,
+   "median_turnover_cr": 125.99,
+   "trades": 50373.35,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.6,
+   "score": 82.11
+  },
+  {
+   "symbol": "LODHA",
+   "close": 1212.0,
+   "open": 1195.0,
+   "high": 1226.2,
+   "low": 1175.1,
+   "prev_close": 1200.0,
+   "official_close": 1212.0,
+   "volume": 1308433.0,
+   "today_ret": 1.0,
+   "vol_ratio": 1.02,
+   "range_today_pct": 4.22,
+   "avg_range_pct": 3.08,
+   "tight6": 6.44,
+   "median_turnover_cr": 195.2,
+   "trades": 32656.4,
+   "sector": "Realty",
+   "delivery_ratio": 0.92,
+   "score": 80.31
+  },
+  {
+   "symbol": "BELRISE",
+   "close": 227.79,
+   "open": 230.41,
+   "high": 230.95,
+   "low": 225.0,
+   "prev_close": 230.29,
+   "official_close": 227.17,
+   "volume": 5392903.0,
+   "today_ret": -1.09,
+   "vol_ratio": 1.22,
+   "range_today_pct": 2.61,
+   "avg_range_pct": 3.25,
+   "tight6": 6.26,
+   "median_turnover_cr": 85.14,
+   "trades": 52805.8,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.06,
+   "score": 74.51
+  },
+  {
+   "symbol": "CARTRADE",
+   "close": 3183.0,
+   "open": 3186.0,
+   "high": 3225.7,
+   "low": 3110.0,
+   "prev_close": 3179.9,
+   "official_close": 3176.7,
+   "volume": 308717.0,
+   "today_ret": 0.1,
+   "vol_ratio": 0.73,
+   "range_today_pct": 3.63,
+   "avg_range_pct": 3.69,
+   "tight6": 11.35,
+   "median_turnover_cr": 101.28,
+   "trades": 41394.8,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.91,
+   "score": 74.26
+  },
+  {
+   "symbol": "GMDCLTD",
+   "close": 568.65,
+   "open": 558.1,
+   "high": 576.1,
+   "low": 552.75,
+   "prev_close": 557.6,
+   "official_close": 568.85,
+   "volume": 1454970.0,
+   "today_ret": 1.98,
+   "vol_ratio": 1.63,
+   "range_today_pct": 4.11,
+   "avg_range_pct": 2.51,
+   "tight6": 4.11,
+   "median_turnover_cr": 51.85,
+   "trades": 23367.15,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 0.65,
+   "score": 74.02
+  },
+  {
+   "symbol": "NAUKRI",
+   "close": 1292.0,
+   "open": 1274.5,
+   "high": 1298.3,
+   "low": 1251.9,
+   "prev_close": 1302.5,
+   "official_close": 1292.0,
+   "volume": 2345489.0,
+   "today_ret": -0.81,
+   "vol_ratio": 1.37,
+   "range_today_pct": 3.59,
+   "avg_range_pct": 2.56,
+   "tight6": 9.27,
+   "median_turnover_cr": 167.35,
+   "trades": 49246.95,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.01,
+   "score": 73.28
+  },
+  {
+   "symbol": "GABRIEL",
+   "close": 1386.0,
+   "open": 1360.1,
+   "high": 1395.0,
+   "low": 1346.1,
+   "prev_close": 1363.5,
+   "official_close": 1389.6,
+   "volume": 196279.0,
+   "today_ret": 1.65,
+   "vol_ratio": 0.67,
+   "range_today_pct": 3.53,
+   "avg_range_pct": 3.82,
+   "tight6": 11.35,
+   "median_turnover_cr": 41.58,
+   "trades": 21682.85,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 0.89,
+   "score": 72.22
   }
  ],
  "outcomes": {
@@ -439,14 +439,6 @@
     "range_pct": 4.12,
     "up": 0.01,
     "down": -4.1
-   },
-   "PINELABS": {
-    "gap": 0.5,
-    "oc": 2.73,
-    "cc": 3.24,
-    "range_pct": 5.28,
-    "up": 4.22,
-    "down": -1.09
    },
    "DATAPATTNS": {
     "gap": 0.0,
@@ -488,14 +480,6 @@
     "up": 1.95,
     "down": -3.29
    },
-   "BEML": {
-    "gap": -0.03,
-    "oc": -0.48,
-    "cc": -0.5,
-    "range_pct": 3.62,
-    "up": 1.92,
-    "down": -1.7
-   },
    "KALYANKJIL": {
     "gap": 0.0,
     "oc": -0.82,
@@ -503,14 +487,6 @@
     "range_pct": 2.38,
     "up": 0.87,
     "down": -1.52
-   },
-   "SYRMA": {
-    "gap": -0.01,
-    "oc": -1.4,
-    "cc": -1.42,
-    "range_pct": 2.68,
-    "up": 1.27,
-    "down": -1.42
    },
    "SAILIFE": {
     "gap": 0.01,
@@ -520,22 +496,6 @@
     "up": 3.03,
     "down": -0.31
    },
-   "FINCABLES": {
-    "gap": 1.36,
-    "oc": 1.97,
-    "cc": 3.36,
-    "range_pct": 6.11,
-    "up": 5.66,
-    "down": -0.53
-   },
-   "JYOTICNC": {
-    "gap": -0.66,
-    "oc": -1.98,
-    "cc": -2.62,
-    "range_pct": 4.85,
-    "up": 1.72,
-    "down": -3.1
-   },
    "SANSERA": {
     "gap": -0.49,
     "oc": 2.4,
@@ -543,14 +503,6 @@
     "range_pct": 5.36,
     "up": 3.38,
     "down": -1.95
-   },
-   "GRAPHITE": {
-    "gap": 10.71,
-    "oc": 3.7,
-    "cc": 14.81,
-    "range_pct": 12.22,
-    "up": 19.08,
-    "down": 5.55
    },
    "CEMPRO": {
     "gap": 0.38,
@@ -568,13 +520,61 @@
     "up": 2.28,
     "down": -0.44
    },
-   "TDPOWERSYS": {
-    "gap": 0.13,
-    "oc": -1.79,
-    "cc": -1.66,
-    "range_pct": 4.62,
-    "up": 2.45,
-    "down": -2.19
+   "WOCKPHARMA": {
+    "gap": 0.04,
+    "oc": 0.67,
+    "cc": 0.72,
+    "range_pct": 3.46,
+    "up": 2.2,
+    "down": -1.26
+   },
+   "LODHA": {
+    "gap": -0.7,
+    "oc": -3.12,
+    "cc": -3.8,
+    "range_pct": 4.35,
+    "up": 0.11,
+    "down": -4.21
+   },
+   "BELRISE": {
+    "gap": 0.15,
+    "oc": 0.48,
+    "cc": 0.63,
+    "range_pct": 1.78,
+    "up": 1.92,
+    "down": 0.15
+   },
+   "CARTRADE": {
+    "gap": -0.61,
+    "oc": -4.38,
+    "cc": -4.96,
+    "range_pct": 4.95,
+    "up": -0.29,
+    "down": -5.22
+   },
+   "GMDCLTD": {
+    "gap": 0.5,
+    "oc": 0.38,
+    "cc": 0.88,
+    "range_pct": 2.63,
+    "up": 2.84,
+    "down": 0.19
+   },
+   "NAUKRI": {
+    "gap": -0.85,
+    "oc": -1.09,
+    "cc": -1.93,
+    "range_pct": 2.47,
+    "up": -0.42,
+    "down": -2.86
+   },
+   "GABRIEL": {
+    "gap": -0.19,
+    "oc": -1.95,
+    "cc": -2.13,
+    "range_pct": 2.38,
+    "up": -0.19,
+    "down": -2.56
    }
   }
  }

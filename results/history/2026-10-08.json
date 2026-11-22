@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-08",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2009,
-  "pct_above_50dma": 18.3,
-  "pct_advancing": 9.1,
+  "stocks_scanned": 2229,
+  "pct_above_50dma": 19.7,
+  "pct_advancing": 10.0,
   "mood": "Weak",
   "pct_above_20ema": 17.3,
   "breadth_5d_change": -8.4,

@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-23",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1962,
-  "pct_above_50dma": 39.2,
-  "pct_advancing": 67.7,
+  "stocks_scanned": 2202,
+  "pct_above_50dma": 39.7,
+  "pct_advancing": 67.1,
   "mood": "Weak",
   "pct_above_20ema": 43.2,
   "breadth_5d_change": 22.8,
@@ -52,26 +52,6 @@
    "score": 95.15
   },
   {
-   "symbol": "SAIL",
-   "close": 185.44,
-   "open": 174.5,
-   "high": 185.7,
-   "low": 174.5,
-   "prev_close": 174.01,
-   "official_close": 185.44,
-   "volume": 41615771.0,
-   "today_ret": 6.57,
-   "vol_ratio": 1.84,
-   "range_today_pct": 6.04,
-   "avg_range_pct": 3.54,
-   "tight6": 8.2,
-   "median_turnover_cr": 225.82,
-   "trades": 76281.6,
-   "sector": "Metals & Mining",
-   "delivery_ratio": 1.06,
-   "score": 90.14
-  },
-  {
    "symbol": "ACMESOLAR",
    "close": 455.3,
    "open": 461.6,
@@ -89,6 +69,26 @@
    "trades": 61598.85,
    "sector": "Power",
    "delivery_ratio": 1.02,
+   "score": 90.14
+  },
+  {
+   "symbol": "SAIL",
+   "close": 185.44,
+   "open": 174.5,
+   "high": 185.7,
+   "low": 174.5,
+   "prev_close": 174.01,
+   "official_close": 185.44,
+   "volume": 41615771.0,
+   "today_ret": 6.57,
+   "vol_ratio": 1.84,
+   "range_today_pct": 6.04,
+   "avg_range_pct": 3.54,
+   "tight6": 8.2,
+   "median_turnover_cr": 225.82,
+   "trades": 76281.6,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 1.06,
    "score": 90.14
   },
   {
@@ -372,26 +372,6 @@
    "score": 82.65
   },
   {
-   "symbol": "INOXWIND",
-   "close": 75.02,
-   "open": 78.25,
-   "high": 78.25,
-   "low": 74.8,
-   "prev_close": 77.9,
-   "official_close": 75.02,
-   "volume": 17183824.0,
-   "today_ret": -3.7,
-   "vol_ratio": 1.38,
-   "range_today_pct": 4.6,
-   "avg_range_pct": 3.05,
-   "tight6": 8.29,
-   "median_turnover_cr": 77.16,
-   "trades": 37945.0,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.04,
-   "score": 82.14
-  },
-  {
    "symbol": "RUBICON",
    "close": 1679.0,
    "open": 1670.0,
@@ -410,6 +390,26 @@
    "sector": "Healthcare",
    "delivery_ratio": 1.24,
    "score": 81.8
+  },
+  {
+   "symbol": "CRAFTSMAN",
+   "close": 10668.0,
+   "open": 10600.0,
+   "high": 10990.0,
+   "low": 10509.0,
+   "prev_close": 10602.0,
+   "official_close": 10904.0,
+   "volume": 51402.0,
+   "today_ret": 0.62,
+   "vol_ratio": 0.78,
+   "range_today_pct": 4.51,
+   "avg_range_pct": 4.29,
+   "tight6": 8.75,
+   "median_turnover_cr": 40.46,
+   "trades": 17072.25,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 0.97,
+   "score": 80.61
   }
  ],
  "outcomes": {
@@ -432,14 +432,6 @@
     "up": 0.21,
     "down": -2.78
    },
-   "SAIL": {
-    "gap": -1.48,
-    "oc": 0.71,
-    "cc": -0.78,
-    "range_pct": 5.04,
-    "up": 3.19,
-    "down": -1.77
-   },
    "ACMESOLAR": {
     "gap": 0.55,
     "oc": -1.72,
@@ -447,6 +439,14 @@
     "range_pct": 3.36,
     "up": 1.58,
     "down": -1.8
+   },
+   "SAIL": {
+    "gap": -1.48,
+    "oc": 0.71,
+    "cc": -0.78,
+    "range_pct": 5.04,
+    "up": 3.19,
+    "down": -1.77
    },
    "ENGINERSIN": {
     "gap": -0.88,
@@ -560,14 +560,6 @@
     "up": -0.29,
     "down": -2.84
    },
-   "INOXWIND": {
-    "gap": -0.88,
-    "oc": -1.71,
-    "cc": -2.57,
-    "range_pct": 3.03,
-    "up": 0.05,
-    "down": -2.95
-   },
    "RUBICON": {
     "gap": -0.59,
     "oc": 1.2,
@@ -575,6 +567,14 @@
     "range_pct": 3.14,
     "up": 1.1,
     "down": -2.02
+   },
+   "CRAFTSMAN": {
+    "gap": -1.69,
+    "oc": -0.57,
+    "cc": -2.25,
+    "range_pct": 3.4,
+    "up": 0.93,
+    "down": -2.42
    }
   }
  }

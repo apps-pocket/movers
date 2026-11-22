@@ -1,13 +1,13 @@
 {
  "asof": "2026-09-09",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1934,
-  "pct_above_50dma": 41.2,
-  "pct_advancing": 33.1,
+  "stocks_scanned": 2166,
+  "pct_above_50dma": 42.0,
+  "pct_advancing": 33.4,
   "mood": "Weak",
   "pct_above_20ema": 37.2,
-  "breadth_5d_change": 3.8,
+  "breadth_5d_change": 3.9,
   "liquid_stocks": 305
  },
  "movers": [
@@ -232,66 +232,6 @@
    "score": 85.49
   },
   {
-   "symbol": "IIFL",
-   "close": 609.5,
-   "open": 626.0,
-   "high": 628.05,
-   "low": 602.25,
-   "prev_close": 628.0,
-   "official_close": 605.15,
-   "volume": 4680660.0,
-   "today_ret": -2.95,
-   "vol_ratio": 1.44,
-   "range_today_pct": 4.23,
-   "avg_range_pct": 4.31,
-   "tight6": 12.07,
-   "median_turnover_cr": 104.26,
-   "trades": 64913.65,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.05,
-   "score": 83.28
-  },
-  {
-   "symbol": "KIRLOSENG",
-   "close": 2207.0,
-   "open": 2281.0,
-   "high": 2317.1,
-   "low": 2198.0,
-   "prev_close": 2272.8,
-   "official_close": 2219.9,
-   "volume": 438855.0,
-   "today_ret": -2.9,
-   "vol_ratio": 1.06,
-   "range_today_pct": 5.4,
-   "avg_range_pct": 3.58,
-   "tight6": 10.21,
-   "median_turnover_cr": 94.67,
-   "trades": 36077.55,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.02,
-   "score": 82.79
-  },
-  {
-   "symbol": "IDBI",
-   "close": 81.0,
-   "open": 81.4,
-   "high": 83.47,
-   "low": 80.12,
-   "prev_close": 81.11,
-   "official_close": 81.56,
-   "volume": 22159103.0,
-   "today_ret": -0.14,
-   "vol_ratio": 1.41,
-   "range_today_pct": 4.14,
-   "avg_range_pct": 4.21,
-   "tight6": 17.78,
-   "median_turnover_cr": 69.63,
-   "trades": 52132.15,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.75,
-   "score": 82.62
-  },
-  {
    "symbol": "LODHA",
    "close": 1166.0,
    "open": 1203.5,
@@ -310,26 +250,6 @@
    "sector": "Realty",
    "delivery_ratio": 1.26,
    "score": 80.16
-  },
-  {
-   "symbol": "ZENTEC",
-   "close": 1763.0,
-   "open": 1820.0,
-   "high": 1853.9,
-   "low": 1756.5,
-   "prev_close": 1825.0,
-   "official_close": 1762.3,
-   "volume": 447868.0,
-   "today_ret": -3.4,
-   "vol_ratio": 0.87,
-   "range_today_pct": 5.52,
-   "avg_range_pct": 3.71,
-   "tight6": 6.65,
-   "median_turnover_cr": 79.56,
-   "trades": 32382.2,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.26,
-   "score": 80.08
   },
   {
    "symbol": "ADANIENT",
@@ -372,26 +292,6 @@
    "score": 79.34
   },
   {
-   "symbol": "ANGELONE",
-   "close": 299.05,
-   "open": 297.95,
-   "high": 303.65,
-   "low": 291.6,
-   "prev_close": 298.0,
-   "official_close": 299.05,
-   "volume": 7856510.0,
-   "today_ret": 0.35,
-   "vol_ratio": 1.21,
-   "range_today_pct": 4.03,
-   "avg_range_pct": 3.02,
-   "tight6": 11.07,
-   "median_turnover_cr": 155.31,
-   "trades": 49880.65,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.97,
-   "score": 78.69
-  },
-  {
    "symbol": "CRAFTSMAN",
    "close": 11980.0,
    "open": 11406.0,
@@ -410,6 +310,106 @@
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 0.91,
    "score": 78.2
+  },
+  {
+   "symbol": "ANTHEM",
+   "close": 944.0,
+   "open": 957.7,
+   "high": 977.55,
+   "low": 940.45,
+   "prev_close": 957.8,
+   "official_close": 942.95,
+   "volume": 928217.0,
+   "today_ret": -1.44,
+   "vol_ratio": 1.2,
+   "range_today_pct": 3.93,
+   "avg_range_pct": 3.07,
+   "tight6": 6.56,
+   "median_turnover_cr": 47.98,
+   "trades": 39715.1,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.06,
+   "score": 78.2
+  },
+  {
+   "symbol": "ZENSARTECH",
+   "close": 436.5,
+   "open": 450.55,
+   "high": 450.55,
+   "low": 435.1,
+   "prev_close": 450.55,
+   "official_close": 436.95,
+   "volume": 870647.0,
+   "today_ret": -3.12,
+   "vol_ratio": 1.32,
+   "range_today_pct": 3.54,
+   "avg_range_pct": 3.0,
+   "tight6": 9.36,
+   "median_turnover_cr": 41.69,
+   "trades": 21132.0,
+   "sector": "Information Technology",
+   "delivery_ratio": 1.05,
+   "score": 77.3
+  },
+  {
+   "symbol": "GLAND",
+   "close": 3019.8,
+   "open": 2959.3,
+   "high": 3033.9,
+   "low": 2938.6,
+   "prev_close": 2959.3,
+   "official_close": 3026.2,
+   "volume": 1560855.0,
+   "today_ret": 2.04,
+   "vol_ratio": 2.68,
+   "range_today_pct": 3.16,
+   "avg_range_pct": 2.95,
+   "tight6": 7.91,
+   "median_turnover_cr": 130.94,
+   "trades": 45417.1,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.12,
+   "score": 77.3
+  },
+  {
+   "symbol": "RKFORGE",
+   "close": 724.05,
+   "open": 701.2,
+   "high": 728.8,
+   "low": 696.4,
+   "prev_close": 701.3,
+   "official_close": 720.7,
+   "volume": 806230.0,
+   "today_ret": 3.24,
+   "vol_ratio": 1.02,
+   "range_today_pct": 4.47,
+   "avg_range_pct": 3.22,
+   "tight6": 8.22,
+   "median_turnover_cr": 52.21,
+   "trades": 24226.2,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.01,
+   "score": 77.3
+  },
+  {
+   "symbol": "WOCKPHARMA",
+   "close": 2240.0,
+   "open": 2225.0,
+   "high": 2272.9,
+   "low": 2196.0,
+   "prev_close": 2224.0,
+   "official_close": 2248.8,
+   "volume": 1394874.0,
+   "today_ret": 0.72,
+   "vol_ratio": 1.4,
+   "range_today_pct": 3.43,
+   "avg_range_pct": 3.35,
+   "tight6": 19.42,
+   "median_turnover_cr": 125.99,
+   "trades": 52063.95,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.73,
+   "score": 76.89
   }
  ],
  "outcomes": {
@@ -504,30 +504,6 @@
     "up": 0.31,
     "down": -1.79
    },
-   "IIFL": {
-    "gap": 0.77,
-    "oc": 0.52,
-    "cc": 1.3,
-    "range_pct": 2.5,
-    "up": 1.88,
-    "down": -0.64
-   },
-   "KIRLOSENG": {
-    "gap": -0.54,
-    "oc": 0.77,
-    "cc": 0.23,
-    "range_pct": 2.99,
-    "up": 1.38,
-    "down": -1.59
-   },
-   "IDBI": {
-    "gap": 0.05,
-    "oc": -0.12,
-    "cc": -0.07,
-    "range_pct": 1.75,
-    "up": 1.02,
-    "down": -0.74
-   },
    "LODHA": {
     "gap": -0.18,
     "oc": -0.04,
@@ -535,14 +511,6 @@
     "range_pct": 2.83,
     "up": 0.59,
     "down": -2.23
-   },
-   "ZENTEC": {
-    "gap": 0.43,
-    "oc": -1.06,
-    "cc": -0.64,
-    "range_pct": 1.49,
-    "up": 0.54,
-    "down": -0.95
    },
    "ADANIENT": {
     "gap": 0.32,
@@ -560,14 +528,6 @@
     "up": 1.17,
     "down": -1.69
    },
-   "ANGELONE": {
-    "gap": -0.69,
-    "oc": 0.1,
-    "cc": -0.59,
-    "range_pct": 1.75,
-    "up": 0.77,
-    "down": -0.97
-   },
    "CRAFTSMAN": {
     "gap": -0.05,
     "oc": 0.66,
@@ -575,6 +535,46 @@
     "range_pct": 6.51,
     "up": 1.63,
     "down": -4.87
+   },
+   "ANTHEM": {
+    "gap": 0.32,
+    "oc": -1.12,
+    "cc": -0.81,
+    "range_pct": 2.66,
+    "up": 1.72,
+    "down": -0.95
+   },
+   "ZENSARTECH": {
+    "gap": 0.01,
+    "oc": -2.19,
+    "cc": -2.17,
+    "range_pct": 2.96,
+    "up": 0.56,
+    "down": -2.4
+   },
+   "GLAND": {
+    "gap": 0.16,
+    "oc": -2.67,
+    "cc": -2.52,
+    "range_pct": 3.7,
+    "up": 0.16,
+    "down": -3.55
+   },
+   "RKFORGE": {
+    "gap": 0.17,
+    "oc": 0.84,
+    "cc": 1.01,
+    "range_pct": 2.6,
+    "up": 2.37,
+    "down": -0.23
+   },
+   "WOCKPHARMA": {
+    "gap": 0.05,
+    "oc": -1.34,
+    "cc": -1.29,
+    "range_pct": 3.11,
+    "up": 0.81,
+    "down": -2.3
    }
   }
  }

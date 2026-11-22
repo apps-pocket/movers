@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-28",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1972,
-  "pct_above_50dma": 26.5,
-  "pct_advancing": 16.0,
+  "stocks_scanned": 2212,
+  "pct_above_50dma": 28.0,
+  "pct_advancing": 17.3,
   "mood": "Weak",
   "pct_above_20ema": 24.1,
   "breadth_5d_change": -10.9,
@@ -212,26 +212,6 @@
    "score": 81.97
   },
   {
-   "symbol": "SANSERA",
-   "close": 4445.0,
-   "open": 4660.7,
-   "high": 4662.1,
-   "low": 4436.0,
-   "prev_close": 4662.4,
-   "official_close": 4457.2,
-   "volume": 272710.0,
-   "today_ret": -4.66,
-   "vol_ratio": 1.01,
-   "range_today_pct": 5.09,
-   "avg_range_pct": 4.07,
-   "tight6": 12.83,
-   "median_turnover_cr": 77.91,
-   "trades": 40573.1,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 1.03,
-   "score": 81.38
-  },
-  {
    "symbol": "AZAD",
    "close": 2720.0,
    "open": 2740.0,
@@ -252,24 +232,24 @@
    "score": 81.38
   },
   {
-   "symbol": "NUVAMA",
-   "close": 1635.8,
-   "open": 1651.0,
-   "high": 1668.9,
-   "low": 1605.1,
-   "prev_close": 1681.4,
-   "official_close": 1640.6,
-   "volume": 516479.0,
-   "today_ret": -2.71,
-   "vol_ratio": 1.62,
-   "range_today_pct": 3.9,
-   "avg_range_pct": 3.65,
-   "tight6": 8.19,
-   "median_turnover_cr": 49.37,
-   "trades": 28609.2,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.77,
-   "score": 80.1
+   "symbol": "SANSERA",
+   "close": 4445.0,
+   "open": 4660.7,
+   "high": 4662.1,
+   "low": 4436.0,
+   "prev_close": 4662.4,
+   "official_close": 4457.2,
+   "volume": 272710.0,
+   "today_ret": -4.66,
+   "vol_ratio": 1.01,
+   "range_today_pct": 5.09,
+   "avg_range_pct": 4.07,
+   "tight6": 12.83,
+   "median_turnover_cr": 77.91,
+   "trades": 40573.1,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.03,
+   "score": 81.38
   },
   {
    "symbol": "URBANCO",
@@ -290,46 +270,6 @@
    "sector": "Consumer Services",
    "delivery_ratio": 1.2,
    "score": 79.08
-  },
-  {
-   "symbol": "MAHABANK",
-   "close": 80.85,
-   "open": 84.5,
-   "high": 84.5,
-   "low": 80.49,
-   "prev_close": 84.88,
-   "official_close": 80.85,
-   "volume": 16655515.0,
-   "today_ret": -4.75,
-   "vol_ratio": 1.1,
-   "range_today_pct": 4.96,
-   "avg_range_pct": 3.12,
-   "tight6": 5.43,
-   "median_turnover_cr": 98.74,
-   "trades": 48453.6,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.09,
-   "score": 76.87
-  },
-  {
-   "symbol": "PIRAMALFIN",
-   "close": 2152.0,
-   "open": 2142.0,
-   "high": 2170.0,
-   "low": 2054.9,
-   "prev_close": 2142.7,
-   "official_close": 2149.0,
-   "volume": 328989.0,
-   "today_ret": 0.43,
-   "vol_ratio": 0.75,
-   "range_today_pct": 5.35,
-   "avg_range_pct": 4.2,
-   "tight6": 24.33,
-   "median_turnover_cr": 58.91,
-   "trades": 33986.0,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.76,
-   "score": 76.62
   },
   {
    "symbol": "ENGINERSIN",
@@ -372,26 +312,6 @@
    "score": 74.66
   },
   {
-   "symbol": "ENRIN",
-   "close": 3198.1,
-   "open": 3333.0,
-   "high": 3334.9,
-   "low": 3168.8,
-   "prev_close": 3313.0,
-   "official_close": 3189.0,
-   "volume": 306877.0,
-   "today_ret": -3.47,
-   "vol_ratio": 0.81,
-   "range_today_pct": 5.19,
-   "avg_range_pct": 3.27,
-   "tight6": 5.93,
-   "median_turnover_cr": 111.51,
-   "trades": 40285.2,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.83,
-   "score": 73.47
-  },
-  {
    "symbol": "RKFORGE",
    "close": 706.2,
    "open": 701.2,
@@ -410,6 +330,86 @@
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 1.04,
    "score": 73.47
+  },
+  {
+   "symbol": "DIXON",
+   "close": 13640.0,
+   "open": 13325.0,
+   "high": 13766.0,
+   "low": 13234.0,
+   "prev_close": 13390.0,
+   "official_close": 13640.0,
+   "volume": 571209.0,
+   "today_ret": 1.87,
+   "vol_ratio": 1.83,
+   "range_today_pct": 3.9,
+   "avg_range_pct": 2.7,
+   "tight6": 5.65,
+   "median_turnover_cr": 542.5,
+   "trades": 49179.25,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.16,
+   "score": 72.87
+  },
+  {
+   "symbol": "TMPV",
+   "close": 281.75,
+   "open": 290.45,
+   "high": 291.2,
+   "low": 280.2,
+   "prev_close": 290.45,
+   "official_close": 281.75,
+   "volume": 14063134.0,
+   "today_ret": -3.0,
+   "vol_ratio": 1.49,
+   "range_today_pct": 3.9,
+   "avg_range_pct": 2.72,
+   "tight6": 8.38,
+   "median_turnover_cr": 254.75,
+   "trades": 92110.2,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.12,
+   "score": 72.79
+  },
+  {
+   "symbol": "PWL",
+   "close": 127.91,
+   "open": 133.75,
+   "high": 134.19,
+   "low": 126.41,
+   "prev_close": 134.36,
+   "official_close": 128.07,
+   "volume": 7121679.0,
+   "today_ret": -4.8,
+   "vol_ratio": 0.53,
+   "range_today_pct": 6.08,
+   "avg_range_pct": 4.24,
+   "tight6": 10.62,
+   "median_turnover_cr": 90.64,
+   "trades": 69831.8,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.07,
+   "score": 72.7
+  },
+  {
+   "symbol": "DELHIVERY",
+   "close": 407.5,
+   "open": 421.3,
+   "high": 421.9,
+   "low": 405.05,
+   "prev_close": 422.7,
+   "official_close": 407.5,
+   "volume": 4477983.0,
+   "today_ret": -3.6,
+   "vol_ratio": 1.99,
+   "range_today_pct": 4.13,
+   "avg_range_pct": 2.63,
+   "tight6": 7.99,
+   "median_turnover_cr": 128.22,
+   "trades": 38542.2,
+   "sector": "Services",
+   "delivery_ratio": 1.04,
+   "score": 71.43
   }
  ],
  "outcomes": {
@@ -496,14 +496,6 @@
     "up": 1.98,
     "down": -1.47
    },
-   "SANSERA": {
-    "gap": -1.73,
-    "oc": 1.56,
-    "cc": -0.2,
-    "range_pct": 9.03,
-    "up": 2.08,
-    "down": -6.79
-   },
    "AZAD": {
     "gap": 2.05,
     "oc": 4.89,
@@ -512,13 +504,13 @@
     "up": 10.09,
     "down": 1.02
    },
-   "NUVAMA": {
-    "gap": -0.34,
-    "oc": 0.98,
-    "cc": 0.63,
-    "range_pct": 3.76,
-    "up": 2.23,
-    "down": -1.52
+   "SANSERA": {
+    "gap": -1.73,
+    "oc": 1.56,
+    "cc": -0.2,
+    "range_pct": 9.03,
+    "up": 2.08,
+    "down": -6.79
    },
    "URBANCO": {
     "gap": -0.13,
@@ -527,22 +519,6 @@
     "range_pct": 3.91,
     "up": 2.28,
     "down": -1.62
-   },
-   "MAHABANK": {
-    "gap": -0.19,
-    "oc": -1.91,
-    "cc": -2.09,
-    "range_pct": 1.96,
-    "up": -0.14,
-    "down": -2.09
-   },
-   "PIRAMALFIN": {
-    "gap": -0.33,
-    "oc": -2.46,
-    "cc": -2.77,
-    "range_pct": 5.47,
-    "up": 1.18,
-    "down": -4.27
    },
    "ENGINERSIN": {
     "gap": -1.21,
@@ -560,14 +536,6 @@
     "up": 1.89,
     "down": -1.88
    },
-   "ENRIN": {
-    "gap": 0.02,
-    "oc": 0.77,
-    "cc": 0.78,
-    "range_pct": 2.57,
-    "up": 1.79,
-    "down": -0.78
-   },
    "RKFORGE": {
     "gap": -0.01,
     "oc": 1.99,
@@ -575,6 +543,38 @@
     "range_pct": 3.34,
     "up": 2.89,
     "down": -0.44
+   },
+   "DIXON": {
+    "gap": 0.0,
+    "oc": -2.86,
+    "cc": -2.86,
+    "range_pct": 3.2,
+    "up": 0.34,
+    "down": -2.86
+   },
+   "TMPV": {
+    "gap": -0.98,
+    "oc": 0.7,
+    "cc": -0.28,
+    "range_pct": 3.3,
+    "up": -0.12,
+    "down": -3.39
+   },
+   "PWL": {
+    "gap": 0.0,
+    "oc": -2.32,
+    "cc": -2.32,
+    "range_pct": 3.07,
+    "up": 0.2,
+    "down": -2.87
+   },
+   "DELHIVERY": {
+    "gap": 0.37,
+    "oc": 2.05,
+    "cc": 2.43,
+    "range_pct": 3.19,
+    "up": 2.65,
+    "down": -0.55
    }
   }
  }

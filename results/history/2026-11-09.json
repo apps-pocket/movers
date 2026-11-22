@@ -1,10 +1,10 @@
 {
  "asof": "2026-11-09",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2186,
-  "pct_above_50dma": 42.8,
-  "pct_advancing": 69.4,
+  "stocks_scanned": 2276,
+  "pct_above_50dma": 42.6,
+  "pct_advancing": 69.2,
   "mood": "Neutral",
   "pct_above_20ema": 63.8,
   "breadth_5d_change": 31.1,
@@ -70,26 +70,6 @@
    "sector": "Capital Goods",
    "delivery_ratio": 0.79,
    "score": 91.95
-  },
-  {
-   "symbol": "RRKABEL",
-   "close": 1958.9,
-   "open": 2073.0,
-   "high": 2073.0,
-   "low": 1951.0,
-   "prev_close": 2115.4,
-   "official_close": 1969.4,
-   "volume": 1160714.0,
-   "today_ret": -7.4,
-   "vol_ratio": 2.19,
-   "range_today_pct": 6.23,
-   "avg_range_pct": 5.7,
-   "tight6": 11.07,
-   "median_turnover_cr": 93.98,
-   "trades": 50692.15,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.81,
-   "score": 90.34
   },
   {
    "symbol": "SANSERA",
@@ -172,26 +152,6 @@
    "score": 83.9
   },
   {
-   "symbol": "AZAD",
-   "close": 2427.0,
-   "open": 2500.0,
-   "high": 2500.0,
-   "low": 2385.1,
-   "prev_close": 2501.3,
-   "official_close": 2434.2,
-   "volume": 803682.0,
-   "today_ret": -2.97,
-   "vol_ratio": 1.44,
-   "range_today_pct": 4.73,
-   "avg_range_pct": 4.85,
-   "tight6": 11.49,
-   "median_turnover_cr": 133.33,
-   "trades": 52310.45,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.15,
-   "score": 83.47
-  },
-  {
    "symbol": "ZEEL",
    "close": 69.26,
    "open": 68.98,
@@ -252,26 +212,6 @@
    "score": 81.53
   },
   {
-   "symbol": "GRAPHITE",
-   "close": 765.35,
-   "open": 732.5,
-   "high": 766.9,
-   "low": 725.05,
-   "prev_close": 732.3,
-   "official_close": 763.1,
-   "volume": 898697.0,
-   "today_ret": 4.51,
-   "vol_ratio": 1.1,
-   "range_today_pct": 5.47,
-   "avg_range_pct": 4.01,
-   "tight6": 7.7,
-   "median_turnover_cr": 70.79,
-   "trades": 32007.2,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.16,
-   "score": 80.0
-  },
-  {
    "symbol": "VOLTAS",
    "close": 1090.1,
    "open": 1060.0,
@@ -290,26 +230,6 @@
    "sector": "Consumer Durables",
    "delivery_ratio": 0.56,
    "score": 79.49
-  },
-  {
-   "symbol": "THERMAX",
-   "close": 2774.0,
-   "open": 2839.8,
-   "high": 2842.0,
-   "low": 2723.2,
-   "prev_close": 2839.8,
-   "official_close": 2785.9,
-   "volume": 399928.0,
-   "today_ret": -2.32,
-   "vol_ratio": 1.3,
-   "range_today_pct": 4.28,
-   "avg_range_pct": 4.34,
-   "tight6": 26.07,
-   "median_turnover_cr": 50.44,
-   "trades": 35510.45,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.79,
-   "score": 79.41
   },
   {
    "symbol": "WOCKPHARMA",
@@ -332,26 +252,6 @@
    "score": 78.22
   },
   {
-   "symbol": "KIRLOSENG",
-   "close": 1619.0,
-   "open": 1640.0,
-   "high": 1650.0,
-   "low": 1584.1,
-   "prev_close": 1632.8,
-   "official_close": 1622.7,
-   "volume": 783358.0,
-   "today_ret": -0.85,
-   "vol_ratio": 1.42,
-   "range_today_pct": 4.07,
-   "avg_range_pct": 5.74,
-   "tight6": 21.34,
-   "median_turnover_cr": 81.53,
-   "trades": 55987.85,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.81,
-   "score": 76.53
-  },
-  {
    "symbol": "GESHIP",
    "close": 1424.0,
    "open": 1465.0,
@@ -372,44 +272,144 @@
    "score": 76.19
   },
   {
-   "symbol": "GLAND",
-   "close": 3285.0,
-   "open": 3147.0,
-   "high": 3374.0,
-   "low": 3140.8,
-   "prev_close": 3132.8,
-   "official_close": 3302.4,
-   "volume": 2436973.0,
-   "today_ret": 4.86,
-   "vol_ratio": 6.86,
-   "range_today_pct": 7.1,
-   "avg_range_pct": 3.17,
-   "tight6": 10.32,
-   "median_turnover_cr": 110.46,
-   "trades": 55757.2,
-   "sector": "Healthcare",
-   "delivery_ratio": 0.4,
-   "score": 75.76
+   "symbol": "AMBER",
+   "close": 6230.0,
+   "open": 6340.0,
+   "high": 6340.0,
+   "low": 6094.0,
+   "prev_close": 6354.0,
+   "official_close": 6230.0,
+   "volume": 355568.0,
+   "today_ret": -1.95,
+   "vol_ratio": 2.22,
+   "range_today_pct": 3.95,
+   "avg_range_pct": 3.4,
+   "tight6": 11.83,
+   "median_turnover_cr": 97.27,
+   "trades": 25660.45,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 0.73,
+   "score": 75.17
   },
   {
-   "symbol": "ABB",
-   "close": 6915.0,
-   "open": 6862.0,
-   "high": 6991.5,
-   "low": 6664.5,
-   "prev_close": 6859.5,
-   "official_close": 6915.0,
-   "volume": 422971.0,
-   "today_ret": 0.81,
-   "vol_ratio": 1.32,
-   "range_today_pct": 4.73,
-   "avg_range_pct": 3.46,
-   "tight6": 9.57,
-   "median_turnover_cr": 139.45,
-   "trades": 36233.05,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.95,
-   "score": 75.25
+   "symbol": "RVNL",
+   "close": 201.7,
+   "open": 195.0,
+   "high": 203.0,
+   "low": 191.72,
+   "prev_close": 194.24,
+   "official_close": 201.7,
+   "volume": 9594891.0,
+   "today_ret": 3.84,
+   "vol_ratio": 2.21,
+   "range_today_pct": 5.59,
+   "avg_range_pct": 3.2,
+   "tight6": 11.21,
+   "median_turnover_cr": 77.77,
+   "trades": 36093.65,
+   "sector": "Construction",
+   "delivery_ratio": 1.05,
+   "score": 74.24
+  },
+  {
+   "symbol": "PIRAMALFIN",
+   "close": 2062.8,
+   "open": 2141.0,
+   "high": 2164.4,
+   "low": 2057.8,
+   "prev_close": 2168.9,
+   "official_close": 2070.7,
+   "volume": 298449.0,
+   "today_ret": -4.89,
+   "vol_ratio": 0.84,
+   "range_today_pct": 5.17,
+   "avg_range_pct": 3.94,
+   "tight6": 18.43,
+   "median_turnover_cr": 65.02,
+   "trades": 34593.55,
+   "sector": "Financial Services",
+   "delivery_ratio": 1.01,
+   "score": 73.73
+  },
+  {
+   "symbol": "MPHASIS",
+   "close": 2455.0,
+   "open": 2510.3,
+   "high": 2524.0,
+   "low": 2418.1,
+   "prev_close": 2524.0,
+   "official_close": 2455.0,
+   "volume": 880984.0,
+   "today_ret": -2.73,
+   "vol_ratio": 1.0,
+   "range_today_pct": 4.31,
+   "avg_range_pct": 3.76,
+   "tight6": 11.93,
+   "median_turnover_cr": 105.42,
+   "trades": 52940.15,
+   "sector": "Information Technology",
+   "delivery_ratio": 1.0,
+   "score": 73.14
+  },
+  {
+   "symbol": "IREDA",
+   "close": 119.65,
+   "open": 111.62,
+   "high": 120.7,
+   "low": 110.4,
+   "prev_close": 111.33,
+   "official_close": 119.65,
+   "volume": 46171717.0,
+   "today_ret": 7.47,
+   "vol_ratio": 9.37,
+   "range_today_pct": 8.61,
+   "avg_range_pct": 2.99,
+   "tight6": 17.53,
+   "median_turnover_cr": 42.86,
+   "trades": 38709.4,
+   "sector": "Financial Services",
+   "delivery_ratio": 0.46,
+   "score": 72.71
+  },
+  {
+   "symbol": "CROMPTON",
+   "close": 218.9,
+   "open": 218.0,
+   "high": 223.45,
+   "low": 214.51,
+   "prev_close": 216.8,
+   "official_close": 218.9,
+   "volume": 5357679.0,
+   "today_ret": 0.97,
+   "vol_ratio": 0.89,
+   "range_today_pct": 4.08,
+   "avg_range_pct": 3.99,
+   "tight6": 14.32,
+   "median_turnover_cr": 69.45,
+   "trades": 51906.15,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 0.92,
+   "score": 71.69
+  },
+  {
+   "symbol": "JUBLFOOD",
+   "close": 428.5,
+   "open": 454.0,
+   "high": 455.2,
+   "low": 427.2,
+   "prev_close": 451.0,
+   "official_close": 428.5,
+   "volume": 6488839.0,
+   "today_ret": -4.99,
+   "vol_ratio": 3.63,
+   "range_today_pct": 6.53,
+   "avg_range_pct": 2.9,
+   "tight6": 9.11,
+   "median_turnover_cr": 56.66,
+   "trades": 41793.2,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.77,
+   "score": 69.83
   }
  ],
  "outcomes": {
@@ -439,14 +439,6 @@
     "range_pct": 8.44,
     "up": 8.63,
     "down": 0.06
-   },
-   "RRKABEL": {
-    "gap": 0.69,
-    "oc": -1.77,
-    "cc": -1.09,
-    "range_pct": 2.72,
-    "up": 1.3,
-    "down": -1.44
    },
    "SANSERA": {
     "gap": 0.57,
@@ -480,14 +472,6 @@
     "up": 5.72,
     "down": 0.39
    },
-   "AZAD": {
-    "gap": 1.07,
-    "oc": 0.36,
-    "cc": 1.43,
-    "range_pct": 4.59,
-    "up": 3.52,
-    "down": -1.12
-   },
    "ZEEL": {
     "gap": 0.47,
     "oc": 1.28,
@@ -512,14 +496,6 @@
     "up": 4.06,
     "down": -0.25
    },
-   "GRAPHITE": {
-    "gap": 1.04,
-    "oc": 0.45,
-    "cc": 1.49,
-    "range_pct": 1.72,
-    "up": 1.87,
-    "down": 0.14
-   },
    "VOLTAS": {
     "gap": 0.83,
     "oc": 2.15,
@@ -527,14 +503,6 @@
     "range_pct": 3.17,
     "up": 3.74,
     "down": 0.55
-   },
-   "THERMAX": {
-    "gap": 0.22,
-    "oc": -2.33,
-    "cc": -2.11,
-    "range_pct": 3.98,
-    "up": 1.3,
-    "down": -2.69
    },
    "WOCKPHARMA": {
     "gap": 1.3,
@@ -544,14 +512,6 @@
     "up": 1.92,
     "down": -0.81
    },
-   "KIRLOSENG": {
-    "gap": 0.51,
-    "oc": 0.25,
-    "cc": 0.76,
-    "range_pct": 6.42,
-    "up": 6.0,
-    "down": -0.46
-   },
    "GESHIP": {
     "gap": 0.34,
     "oc": 0.12,
@@ -560,21 +520,61 @@
     "up": 1.66,
     "down": -1.16
    },
-   "GLAND": {
-    "gap": 1.28,
-    "oc": -2.53,
-    "cc": -1.28,
-    "range_pct": 4.11,
-    "up": 2.06,
-    "down": -2.1
+   "AMBER": {
+    "gap": 0.87,
+    "oc": -1.42,
+    "cc": -0.56,
+    "range_pct": 4.84,
+    "up": 3.9,
+    "down": -0.98
    },
-   "ABB": {
-    "gap": 1.23,
-    "oc": -0.53,
-    "cc": 0.69,
+   "RVNL": {
+    "gap": 0.69,
+    "oc": 3.1,
+    "cc": 3.82,
+    "range_pct": 8.67,
+    "up": 9.23,
+    "down": 0.51
+   },
+   "PIRAMALFIN": {
+    "gap": 0.05,
+    "oc": 2.04,
+    "cc": 2.09,
+    "range_pct": 3.28,
+    "up": 3.34,
+    "down": 0.05
+   },
+   "MPHASIS": {
+    "gap": 1.79,
+    "oc": -4.36,
+    "cc": -2.65,
+    "range_pct": 5.11,
+    "up": 1.79,
+    "down": -3.41
+   },
+   "IREDA": {
+    "gap": 0.94,
+    "oc": -0.47,
+    "cc": 0.46,
+    "range_pct": 4.04,
+    "up": 3.63,
+    "down": -0.45
+   },
+   "CROMPTON": {
+    "gap": 0.62,
+    "oc": -1.52,
+    "cc": -0.91,
+    "range_pct": 3.12,
+    "up": 1.92,
+    "down": -1.22
+   },
+   "JUBLFOOD": {
+    "gap": 0.98,
+    "oc": 0.51,
+    "cc": 1.49,
     "range_pct": 2.23,
-    "up": 1.23,
-    "down": -1.03
+    "up": 2.89,
+    "down": 0.64
    }
   }
  }

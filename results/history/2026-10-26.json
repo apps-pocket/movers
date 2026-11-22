@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-26",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2165,
-  "pct_above_50dma": 11.4,
-  "pct_advancing": 59.2,
+  "stocks_scanned": 2268,
+  "pct_above_50dma": 11.9,
+  "pct_advancing": 59.1,
   "mood": "Weak",
   "pct_above_20ema": 11.6,
   "breadth_5d_change": -23.2,
@@ -192,26 +192,6 @@
    "score": 88.38
   },
   {
-   "symbol": "FINCABLES",
-   "close": 1140.0,
-   "open": 1080.0,
-   "high": 1150.0,
-   "low": 1062.0,
-   "prev_close": 1090.3,
-   "official_close": 1144.7,
-   "volume": 1029329.0,
-   "today_ret": 4.56,
-   "vol_ratio": 1.59,
-   "range_today_pct": 7.72,
-   "avg_range_pct": 5.73,
-   "tight6": 32.0,
-   "median_turnover_cr": 87.85,
-   "trades": 45155.0,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.87,
-   "score": 88.13
-  },
-  {
    "symbol": "CHENNPETRO",
    "close": 1525.0,
    "open": 1472.0,
@@ -332,26 +312,6 @@
    "score": 82.49
   },
   {
-   "symbol": "KEI",
-   "close": 3899.5,
-   "open": 3720.0,
-   "high": 3912.0,
-   "low": 3685.2,
-   "prev_close": 3725.0,
-   "official_close": 3899.5,
-   "volume": 943498.0,
-   "today_ret": 4.68,
-   "vol_ratio": 2.05,
-   "range_today_pct": 5.82,
-   "avg_range_pct": 4.02,
-   "tight6": 25.04,
-   "median_turnover_cr": 174.66,
-   "trades": 41361.0,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.25,
-   "score": 82.15
-  },
-  {
    "symbol": "RKFORGE",
    "close": 605.0,
    "open": 590.0,
@@ -392,24 +352,64 @@
    "score": 80.81
   },
   {
-   "symbol": "SUPREMEIND",
-   "close": 3250.0,
-   "open": 3390.0,
-   "high": 3512.5,
-   "low": 3244.3,
-   "prev_close": 3390.0,
-   "official_close": 3250.0,
-   "volume": 828292.0,
-   "today_ret": -4.13,
-   "vol_ratio": 4.68,
-   "range_today_pct": 8.25,
-   "avg_range_pct": 3.42,
-   "tight6": 12.6,
-   "median_turnover_cr": 55.82,
-   "trades": 22164.8,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.62,
-   "score": 80.39
+   "symbol": "REDINGTON",
+   "close": 368.35,
+   "open": 352.6,
+   "high": 372.4,
+   "low": 350.2,
+   "prev_close": 359.1,
+   "official_close": 366.75,
+   "volume": 4505586.0,
+   "today_ret": 2.58,
+   "vol_ratio": 1.18,
+   "range_today_pct": 6.03,
+   "avg_range_pct": 4.2,
+   "tight6": 11.74,
+   "median_turnover_cr": 157.36,
+   "trades": 71192.55,
+   "sector": "Services",
+   "delivery_ratio": 1.09,
+   "score": 79.38
+  },
+  {
+   "symbol": "CYIENT",
+   "close": 1237.2,
+   "open": 1220.5,
+   "high": 1277.0,
+   "low": 1201.4,
+   "prev_close": 1233.0,
+   "official_close": 1242.9,
+   "volume": 1780621.0,
+   "today_ret": 0.34,
+   "vol_ratio": 1.01,
+   "range_today_pct": 6.11,
+   "avg_range_pct": 4.34,
+   "tight6": 12.12,
+   "median_turnover_cr": 50.28,
+   "trades": 80489.75,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.5,
+   "score": 78.7
+  },
+  {
+   "symbol": "SCI",
+   "close": 246.55,
+   "open": 238.0,
+   "high": 251.0,
+   "low": 234.65,
+   "prev_close": 237.8,
+   "official_close": 246.9,
+   "volume": 2718334.0,
+   "today_ret": 3.68,
+   "vol_ratio": 0.86,
+   "range_today_pct": 6.63,
+   "avg_range_pct": 4.26,
+   "tight6": 21.96,
+   "median_turnover_cr": 48.28,
+   "trades": 46406.1,
+   "sector": "Services",
+   "delivery_ratio": 0.89,
+   "score": 77.44
   }
  ],
  "outcomes": {
@@ -488,14 +488,6 @@
     "up": 4.71,
     "down": 0.23
    },
-   "FINCABLES": {
-    "gap": 0.16,
-    "oc": 1.69,
-    "cc": 1.85,
-    "range_pct": 3.49,
-    "up": 3.08,
-    "down": -0.41
-   },
    "CHENNPETRO": {
     "gap": 0.35,
     "oc": 2.5,
@@ -544,14 +536,6 @@
     "up": 16.46,
     "down": 0.35
    },
-   "KEI": {
-    "gap": 0.0,
-    "oc": -0.74,
-    "cc": -0.74,
-    "range_pct": 2.38,
-    "up": 1.64,
-    "down": -0.74
-   },
    "RKFORGE": {
     "gap": 0.06,
     "oc": 2.69,
@@ -568,13 +552,29 @@
     "up": 1.1,
     "down": -0.68
    },
-   "SUPREMEIND": {
-    "gap": 0.31,
-    "oc": 1.18,
-    "cc": 1.49,
-    "range_pct": 3.9,
-    "up": 1.49,
-    "down": -2.42
+   "REDINGTON": {
+    "gap": 0.44,
+    "oc": -2.67,
+    "cc": -2.25,
+    "range_pct": 3.81,
+    "up": 1.09,
+    "down": -2.74
+   },
+   "CYIENT": {
+    "gap": -0.29,
+    "oc": -4.38,
+    "cc": -4.66,
+    "range_pct": 5.17,
+    "up": -0.29,
+    "down": -5.45
+   },
+   "SCI": {
+    "gap": 0.45,
+    "oc": -1.35,
+    "cc": -0.91,
+    "range_pct": 6.17,
+    "up": 4.5,
+    "down": -1.7
    }
   }
  }

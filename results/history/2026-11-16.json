@@ -1,10 +1,10 @@
 {
  "asof": "2026-11-16",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2206,
-  "pct_above_50dma": 44.2,
-  "pct_advancing": 28.4,
+  "stocks_scanned": 2289,
+  "pct_above_50dma": 44.0,
+  "pct_advancing": 28.6,
   "mood": "Weak",
   "pct_above_20ema": 54.6,
   "breadth_5d_change": -1.0,
@@ -172,26 +172,6 @@
    "score": 86.49
   },
   {
-   "symbol": "TEGA",
-   "close": 1599.0,
-   "open": 1675.6,
-   "high": 1730.0,
-   "low": 1595.0,
-   "prev_close": 1675.6,
-   "official_close": 1605.0,
-   "volume": 198727.0,
-   "today_ret": -4.57,
-   "vol_ratio": 0.72,
-   "range_today_pct": 8.44,
-   "avg_range_pct": 5.56,
-   "tight6": 10.32,
-   "median_turnover_cr": 43.39,
-   "trades": 23907.4,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.19,
-   "score": 86.49
-  },
-  {
    "symbol": "BELRISE",
    "close": 235.2,
    "open": 223.0,
@@ -250,26 +230,6 @@
    "sector": "Fast Moving Consumer Goods",
    "delivery_ratio": 0.76,
    "score": 84.71
-  },
-  {
-   "symbol": "PREMIERENE",
-   "close": 822.5,
-   "open": 895.9,
-   "high": 895.9,
-   "low": 813.7,
-   "prev_close": 895.9,
-   "official_close": 822.5,
-   "volume": 3131152.0,
-   "today_ret": -8.19,
-   "vol_ratio": 3.04,
-   "range_today_pct": 9.99,
-   "avg_range_pct": 3.7,
-   "tight6": 11.69,
-   "median_turnover_cr": 89.9,
-   "trades": 32774.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.95,
-   "score": 84.54
   },
   {
    "symbol": "ATHERENERG",
@@ -332,26 +292,6 @@
    "score": 82.26
   },
   {
-   "symbol": "CPPLUS",
-   "close": 3960.5,
-   "open": 4110.0,
-   "high": 4115.0,
-   "low": 3908.0,
-   "prev_close": 4148.0,
-   "official_close": 3963.4,
-   "volume": 258171.0,
-   "today_ret": -4.52,
-   "vol_ratio": 0.81,
-   "range_today_pct": 5.23,
-   "avg_range_pct": 4.57,
-   "tight6": 12.89,
-   "median_turnover_cr": 93.17,
-   "trades": 44382.2,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.99,
-   "score": 82.18
-  },
-  {
    "symbol": "PPLPHARMA",
    "close": 241.9,
    "open": 240.0,
@@ -410,6 +350,66 @@
    "sector": "Financial Services",
    "delivery_ratio": 0.71,
    "score": 80.57
+  },
+  {
+   "symbol": "FLUOROCHEM",
+   "close": 4860.0,
+   "open": 4716.0,
+   "high": 4860.0,
+   "low": 4587.4,
+   "prev_close": 4712.1,
+   "official_close": 4824.1,
+   "volume": 132528.0,
+   "today_ret": 3.14,
+   "vol_ratio": 1.27,
+   "range_today_pct": 5.61,
+   "avg_range_pct": 3.47,
+   "tight6": 7.51,
+   "median_turnover_cr": 48.53,
+   "trades": 20194.85,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.97,
+   "score": 77.79
+  },
+  {
+   "symbol": "MEESHO",
+   "close": 251.1,
+   "open": 259.0,
+   "high": 261.1,
+   "low": 250.1,
+   "prev_close": 257.07,
+   "official_close": 251.19,
+   "volume": 15792578.0,
+   "today_ret": -2.32,
+   "vol_ratio": 1.23,
+   "range_today_pct": 4.38,
+   "avg_range_pct": 3.6,
+   "tight6": 12.88,
+   "median_turnover_cr": 332.05,
+   "trades": 123954.8,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.09,
+   "score": 77.03
+  },
+  {
+   "symbol": "SANSERA",
+   "close": 4770.0,
+   "open": 4720.7,
+   "high": 4776.3,
+   "low": 4552.2,
+   "prev_close": 4708.4,
+   "official_close": 4763.6,
+   "volume": 204830.0,
+   "today_ret": 1.31,
+   "vol_ratio": 0.88,
+   "range_today_pct": 4.7,
+   "avg_range_pct": 3.81,
+   "tight6": 12.83,
+   "median_turnover_cr": 87.35,
+   "trades": 37459.85,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.1,
+   "score": 76.52
   }
  ],
  "outcomes": {
@@ -480,14 +480,6 @@
     "up": 1.27,
     "down": -4.06
    },
-   "TEGA": {
-    "gap": 0.32,
-    "oc": -0.75,
-    "cc": -0.44,
-    "range_pct": 2.79,
-    "up": 1.25,
-    "down": -1.56
-   },
    "BELRISE": {
     "gap": 0.49,
     "oc": -0.28,
@@ -511,14 +503,6 @@
     "range_pct": 1.74,
     "up": 1.31,
     "down": -0.42
-   },
-   "PREMIERENE": {
-    "gap": -0.3,
-    "oc": 1.59,
-    "cc": 1.28,
-    "range_pct": 3.62,
-    "up": 2.46,
-    "down": -1.14
    },
    "ATHERENERG": {
     "gap": 0.02,
@@ -544,14 +528,6 @@
     "up": 1.37,
     "down": -1.88
    },
-   "CPPLUS": {
-    "gap": -0.3,
-    "oc": 1.23,
-    "cc": 0.92,
-    "range_pct": 3.52,
-    "up": 1.85,
-    "down": -1.66
-   },
    "PPLPHARMA": {
     "gap": -0.75,
     "oc": -1.03,
@@ -575,6 +551,30 @@
     "range_pct": 4.92,
     "up": 0.0,
     "down": -4.92
+   },
+   "FLUOROCHEM": {
+    "gap": 0.16,
+    "oc": -1.95,
+    "cc": -1.78,
+    "range_pct": 3.29,
+    "up": 1.0,
+    "down": -2.29
+   },
+   "MEESHO": {
+    "gap": 0.52,
+    "oc": -0.34,
+    "cc": 0.18,
+    "range_pct": 2.16,
+    "up": 1.31,
+    "down": -0.86
+   },
+   "SANSERA": {
+    "gap": -0.32,
+    "oc": -2.82,
+    "cc": -3.13,
+    "range_pct": 5.86,
+    "up": 1.81,
+    "down": -4.03
    }
   }
  }

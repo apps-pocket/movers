@@ -1,13 +1,13 @@
 {
  "asof": "2026-09-01",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1930,
-  "pct_above_50dma": 43.4,
-  "pct_advancing": 34.2,
+  "stocks_scanned": 2154,
+  "pct_above_50dma": 44.4,
+  "pct_advancing": 34.4,
   "mood": "Weak",
-  "pct_above_20ema": 36.7,
-  "breadth_5d_change": -10.9,
+  "pct_above_20ema": 36.8,
+  "breadth_5d_change": -10.8,
   "liquid_stocks": 306
  },
  "movers": [
@@ -292,26 +292,6 @@
    "score": 83.25
   },
   {
-   "symbol": "RRKABEL",
-   "close": 2874.0,
-   "open": 2942.6,
-   "high": 2980.0,
-   "low": 2834.0,
-   "prev_close": 2928.4,
-   "official_close": 2869.8,
-   "volume": 520093.0,
-   "today_ret": -1.86,
-   "vol_ratio": 1.2,
-   "range_today_pct": 5.08,
-   "avg_range_pct": 3.31,
-   "tight6": 6.72,
-   "median_turnover_cr": 100.12,
-   "trades": 36017.0,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.02,
-   "score": 82.43
-  },
-  {
    "symbol": "CREDITACC",
    "close": 1385.0,
    "open": 1365.9,
@@ -352,46 +332,6 @@
    "score": 81.54
   },
   {
-   "symbol": "SANSERA",
-   "close": 3920.0,
-   "open": 4084.9,
-   "high": 4084.9,
-   "low": 3861.1,
-   "prev_close": 4018.0,
-   "official_close": 3903.0,
-   "volume": 224580.0,
-   "today_ret": -2.44,
-   "vol_ratio": 0.86,
-   "range_today_pct": 5.71,
-   "avg_range_pct": 3.95,
-   "tight6": 8.26,
-   "median_turnover_cr": 72.55,
-   "trades": 32548.9,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 0.69,
-   "score": 81.37
-  },
-  {
-   "symbol": "INOXINDIA",
-   "close": 2160.0,
-   "open": 2130.0,
-   "high": 2200.0,
-   "low": 2088.2,
-   "prev_close": 2134.2,
-   "official_close": 2165.9,
-   "volume": 387635.0,
-   "today_ret": 1.21,
-   "vol_ratio": 0.97,
-   "range_today_pct": 5.18,
-   "avg_range_pct": 3.55,
-   "tight6": 17.94,
-   "median_turnover_cr": 46.64,
-   "trades": 33337.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.58,
-   "score": 80.47
-  },
-  {
    "symbol": "TEJASNET",
    "close": 540.9,
    "open": 559.75,
@@ -410,6 +350,66 @@
    "sector": "Telecommunication",
    "delivery_ratio": 0.8,
    "score": 79.58
+  },
+  {
+   "symbol": "MRPL",
+   "close": 171.4,
+   "open": 171.15,
+   "high": 177.15,
+   "low": 169.99,
+   "prev_close": 170.37,
+   "official_close": 171.42,
+   "volume": 13051829.0,
+   "today_ret": 0.6,
+   "vol_ratio": 1.17,
+   "range_today_pct": 4.18,
+   "avg_range_pct": 3.86,
+   "tight6": 5.86,
+   "median_turnover_cr": 97.77,
+   "trades": 61711.4,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 0.54,
+   "score": 78.59
+  },
+  {
+   "symbol": "LODHA",
+   "close": 1193.9,
+   "open": 1214.9,
+   "high": 1231.8,
+   "low": 1180.0,
+   "prev_close": 1198.6,
+   "official_close": 1193.9,
+   "volume": 1844689.0,
+   "today_ret": -0.39,
+   "vol_ratio": 1.51,
+   "range_today_pct": 4.34,
+   "avg_range_pct": 2.94,
+   "tight6": 10.63,
+   "median_turnover_cr": 191.64,
+   "trades": 31029.6,
+   "sector": "Realty",
+   "delivery_ratio": 1.17,
+   "score": 78.51
+  },
+  {
+   "symbol": "ADANIGREEN",
+   "close": 1265.0,
+   "open": 1220.0,
+   "high": 1271.2,
+   "low": 1217.0,
+   "prev_close": 1214.9,
+   "official_close": 1265.0,
+   "volume": 4309378.0,
+   "today_ret": 4.12,
+   "vol_ratio": 2.99,
+   "range_today_pct": 4.28,
+   "avg_range_pct": 2.74,
+   "tight6": 10.43,
+   "median_turnover_cr": 317.21,
+   "trades": 36064.1,
+   "sector": "Power",
+   "delivery_ratio": 0.93,
+   "score": 77.53
   }
  ],
  "outcomes": {
@@ -528,14 +528,6 @@
     "up": -0.34,
     "down": -2.9
    },
-   "RRKABEL": {
-    "gap": -0.01,
-    "oc": -8.14,
-    "cc": -8.15,
-    "range_pct": 8.76,
-    "up": -0.01,
-    "down": -8.77
-   },
    "CREDITACC": {
     "gap": -1.03,
     "oc": 1.52,
@@ -552,22 +544,6 @@
     "up": 0.66,
     "down": -4.9
    },
-   "SANSERA": {
-    "gap": -0.5,
-    "oc": -1.79,
-    "cc": -2.28,
-    "range_pct": 3.7,
-    "up": 0.58,
-    "down": -3.1
-   },
-   "INOXINDIA": {
-    "gap": -0.96,
-    "oc": -2.24,
-    "cc": -3.18,
-    "range_pct": 4.31,
-    "up": 0.14,
-    "down": -4.13
-   },
    "TEJASNET": {
     "gap": -1.09,
     "oc": 2.89,
@@ -575,6 +551,30 @@
     "range_pct": 4.01,
     "up": 2.14,
     "down": -1.83
+   },
+   "MRPL": {
+    "gap": -0.01,
+    "oc": 2.1,
+    "cc": 2.09,
+    "range_pct": 3.8,
+    "up": 2.67,
+    "down": -1.14
+   },
+   "LODHA": {
+    "gap": -1.19,
+    "oc": 2.42,
+    "cc": 1.21,
+    "range_pct": 3.55,
+    "up": 1.21,
+    "down": -2.3
+   },
+   "ADANIGREEN": {
+    "gap": -1.66,
+    "oc": 4.18,
+    "cc": 2.45,
+    "range_pct": 5.35,
+    "up": 3.0,
+    "down": -2.26
    }
   }
  }

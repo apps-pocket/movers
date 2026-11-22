@@ -1,10 +1,10 @@
 {
  "asof": "2026-08-25",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1924,
-  "pct_above_50dma": 50.6,
-  "pct_advancing": 46.7,
+  "stocks_scanned": 2140,
+  "pct_above_50dma": 50.9,
+  "pct_advancing": 46.3,
   "mood": "Neutral",
   "pct_above_20ema": 47.6,
   "breadth_5d_change": 4.1,
@@ -112,26 +112,6 @@
    "score": 89.74
   },
   {
-   "symbol": "RUBICON",
-   "close": 1699.0,
-   "open": 1776.1,
-   "high": 1799.8,
-   "low": 1695.2,
-   "prev_close": 1776.1,
-   "official_close": 1708.8,
-   "volume": 429723.0,
-   "today_ret": -4.34,
-   "vol_ratio": 1.03,
-   "range_today_pct": 6.16,
-   "avg_range_pct": 4.1,
-   "tight6": 7.35,
-   "median_turnover_cr": 42.48,
-   "trades": 32734.15,
-   "sector": "Healthcare",
-   "delivery_ratio": 1.24,
-   "score": 88.82
-  },
-  {
    "symbol": "ACUTAAS",
    "close": 3301.0,
    "open": 3189.9,
@@ -149,6 +129,26 @@
    "trades": 33383.0,
    "sector": "Healthcare",
    "delivery_ratio": 0.94,
+   "score": 88.82
+  },
+  {
+   "symbol": "RUBICON",
+   "close": 1699.0,
+   "open": 1776.1,
+   "high": 1799.8,
+   "low": 1695.2,
+   "prev_close": 1776.1,
+   "official_close": 1708.8,
+   "volume": 429723.0,
+   "today_ret": -4.34,
+   "vol_ratio": 1.03,
+   "range_today_pct": 6.16,
+   "avg_range_pct": 4.1,
+   "tight6": 7.35,
+   "median_turnover_cr": 42.48,
+   "trades": 32734.15,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.24,
    "score": 88.82
   },
   {
@@ -212,26 +212,6 @@
    "score": 85.68
   },
   {
-   "symbol": "CUB",
-   "close": 222.0,
-   "open": 213.89,
-   "high": 224.0,
-   "low": 212.48,
-   "prev_close": 212.2,
-   "official_close": 221.6,
-   "volume": 4102236.0,
-   "today_ret": 4.62,
-   "vol_ratio": 0.98,
-   "range_today_pct": 5.19,
-   "avg_range_pct": 3.44,
-   "tight6": 6.54,
-   "median_turnover_cr": 61.49,
-   "trades": 49247.15,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.62,
-   "score": 84.11
-  },
-  {
    "symbol": "SAIL",
    "close": 184.59,
    "open": 180.7,
@@ -250,66 +230,6 @@
    "sector": "Metals & Mining",
    "delivery_ratio": 0.95,
    "score": 83.61
-  },
-  {
-   "symbol": "IIFL",
-   "close": 663.4,
-   "open": 667.0,
-   "high": 681.1,
-   "low": 643.55,
-   "prev_close": 696.4,
-   "official_close": 666.25,
-   "volume": 8288695.0,
-   "today_ret": -4.74,
-   "vol_ratio": 3.61,
-   "range_today_pct": 5.66,
-   "avg_range_pct": 2.82,
-   "tight6": 13.2,
-   "median_turnover_cr": 99.02,
-   "trades": 49113.85,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.85,
-   "score": 83.61
-  },
-  {
-   "symbol": "IFCI",
-   "close": 83.33,
-   "open": 82.65,
-   "high": 85.24,
-   "low": 82.41,
-   "prev_close": 82.48,
-   "official_close": 83.25,
-   "volume": 49384082.0,
-   "today_ret": 1.03,
-   "vol_ratio": 2.1,
-   "range_today_pct": 3.4,
-   "avg_range_pct": 3.24,
-   "tight6": 8.26,
-   "median_turnover_cr": 244.86,
-   "trades": 67047.1,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.85,
-   "score": 82.37
-  },
-  {
-   "symbol": "TDPOWERSYS",
-   "close": 730.3,
-   "open": 780.2,
-   "high": 782.5,
-   "low": 719.0,
-   "prev_close": 780.1,
-   "official_close": 729.4,
-   "volume": 1939751.0,
-   "today_ret": -6.38,
-   "vol_ratio": 0.93,
-   "range_today_pct": 8.7,
-   "avg_range_pct": 9.7,
-   "tight6": 120.32,
-   "median_turnover_cr": 122.63,
-   "trades": 90090.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.02,
-   "score": 82.28
   },
   {
    "symbol": "GESHIP",
@@ -352,26 +272,6 @@
    "score": 81.71
   },
   {
-   "symbol": "ANGELONE",
-   "close": 300.9,
-   "open": 286.8,
-   "high": 301.55,
-   "low": 284.0,
-   "prev_close": 286.0,
-   "official_close": 300.9,
-   "volume": 10825633.0,
-   "today_ret": 5.21,
-   "vol_ratio": 2.3,
-   "range_today_pct": 5.83,
-   "avg_range_pct": 2.7,
-   "tight6": 6.63,
-   "median_turnover_cr": 161.98,
-   "trades": 42299.0,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.99,
-   "score": 81.37
-  },
-  {
    "symbol": "NETWEB",
    "close": 5295.0,
    "open": 5400.0,
@@ -410,6 +310,106 @@
    "sector": "Construction",
    "delivery_ratio": 0.95,
    "score": 80.22
+  },
+  {
+   "symbol": "CARTRADE",
+   "close": 3140.0,
+   "open": 3138.6,
+   "high": 3175.0,
+   "low": 3020.0,
+   "prev_close": 3138.6,
+   "official_close": 3144.8,
+   "volume": 418313.0,
+   "today_ret": 0.04,
+   "vol_ratio": 0.75,
+   "range_today_pct": 4.94,
+   "avg_range_pct": 3.37,
+   "tight6": 12.9,
+   "median_turnover_cr": 124.03,
+   "trades": 42885.8,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.54,
+   "score": 78.81
+  },
+  {
+   "symbol": "ACMESOLAR",
+   "close": 398.0,
+   "open": 404.0,
+   "high": 405.85,
+   "low": 389.8,
+   "prev_close": 409.15,
+   "official_close": 399.3,
+   "volume": 1881116.0,
+   "today_ret": -2.73,
+   "vol_ratio": 0.82,
+   "range_today_pct": 4.03,
+   "avg_range_pct": 3.4,
+   "tight6": 12.49,
+   "median_turnover_cr": 67.53,
+   "trades": 41931.8,
+   "sector": "Power",
+   "delivery_ratio": 0.81,
+   "score": 77.9
+  },
+  {
+   "symbol": "AWL",
+   "close": 200.6,
+   "open": 194.0,
+   "high": 204.82,
+   "low": 192.98,
+   "prev_close": 193.88,
+   "official_close": 200.64,
+   "volume": 16360851.0,
+   "today_ret": 3.47,
+   "vol_ratio": 5.26,
+   "range_today_pct": 5.9,
+   "avg_range_pct": 2.53,
+   "tight6": 8.9,
+   "median_turnover_cr": 43.46,
+   "trades": 37804.75,
+   "sector": "Fast Moving Consumer Goods",
+   "delivery_ratio": 0.71,
+   "score": 77.4
+  },
+  {
+   "symbol": "DIXON",
+   "close": 14990.0,
+   "open": 14529.0,
+   "high": 14990.0,
+   "low": 14400.0,
+   "prev_close": 14570.0,
+   "official_close": 14990.0,
+   "volume": 522440.0,
+   "today_ret": 2.88,
+   "vol_ratio": 1.32,
+   "range_today_pct": 3.94,
+   "avg_range_pct": 2.67,
+   "tight6": 6.5,
+   "median_turnover_cr": 596.57,
+   "trades": 55470.15,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.04,
+   "score": 75.33
+  },
+  {
+   "symbol": "SWIGGY",
+   "close": 287.4,
+   "open": 282.8,
+   "high": 291.0,
+   "low": 282.0,
+   "prev_close": 284.25,
+   "official_close": 287.4,
+   "volume": 20041501.0,
+   "today_ret": 1.11,
+   "vol_ratio": 0.92,
+   "range_today_pct": 3.13,
+   "avg_range_pct": 3.43,
+   "tight6": 7.39,
+   "median_turnover_cr": 317.18,
+   "trades": 120701.95,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.9,
+   "score": 75.08
   }
  ],
  "outcomes": {
@@ -456,14 +456,6 @@
     "up": 5.62,
     "down": -1.21
    },
-   "RUBICON": {
-    "gap": 1.24,
-    "oc": 4.51,
-    "cc": 5.81,
-    "range_pct": 5.72,
-    "up": 7.03,
-    "down": 1.24
-   },
    "ACUTAAS": {
     "gap": 0.2,
     "oc": -1.87,
@@ -471,6 +463,14 @@
     "range_pct": 3.21,
     "up": 0.8,
     "down": -2.41
+   },
+   "RUBICON": {
+    "gap": 1.24,
+    "oc": 4.51,
+    "cc": 5.81,
+    "range_pct": 5.72,
+    "up": 7.03,
+    "down": 1.24
    },
    "KAYNES": {
     "gap": 0.19,
@@ -496,14 +496,6 @@
     "up": 2.91,
     "down": 0.55
    },
-   "CUB": {
-    "gap": 0.18,
-    "oc": 2.31,
-    "cc": 2.5,
-    "range_pct": 2.59,
-    "up": 2.75,
-    "down": 0.16
-   },
    "SAIL": {
     "gap": 0.74,
     "oc": 4.81,
@@ -511,30 +503,6 @@
     "range_pct": 7.58,
     "up": 6.45,
     "down": -1.19
-   },
-   "IIFL": {
-    "gap": -0.43,
-    "oc": -1.27,
-    "cc": -1.7,
-    "range_pct": 2.94,
-    "up": 0.79,
-    "down": -2.14
-   },
-   "IFCI": {
-    "gap": 0.42,
-    "oc": 2.75,
-    "cc": 3.18,
-    "range_pct": 4.78,
-    "up": 4.68,
-    "down": -0.12
-   },
-   "TDPOWERSYS": {
-    "gap": 0.63,
-    "oc": -0.82,
-    "cc": -0.19,
-    "range_pct": 3.39,
-    "up": 2.45,
-    "down": -0.96
    },
    "GESHIP": {
     "gap": 0.46,
@@ -552,14 +520,6 @@
     "up": 1.78,
     "down": -1.37
    },
-   "ANGELONE": {
-    "gap": 0.37,
-    "oc": -1.04,
-    "cc": -0.68,
-    "range_pct": 2.57,
-    "up": 1.51,
-    "down": -1.06
-   },
    "NETWEB": {
     "gap": 0.94,
     "oc": -0.64,
@@ -575,6 +535,46 @@
     "range_pct": 2.02,
     "up": 1.41,
     "down": -0.61
+   },
+   "CARTRADE": {
+    "gap": -0.15,
+    "oc": -0.48,
+    "cc": -0.63,
+    "range_pct": 2.9,
+    "up": 0.9,
+    "down": -2.0
+   },
+   "ACMESOLAR": {
+    "gap": 1.43,
+    "oc": -2.33,
+    "cc": -0.94,
+    "range_pct": 2.74,
+    "up": 1.55,
+    "down": -1.23
+   },
+   "AWL": {
+    "gap": 0.94,
+    "oc": -0.31,
+    "cc": 0.63,
+    "range_pct": 2.59,
+    "up": 1.92,
+    "down": -0.69
+   },
+   "DIXON": {
+    "gap": -0.93,
+    "oc": -0.77,
+    "cc": -1.7,
+    "range_pct": 1.77,
+    "up": -0.05,
+    "down": -1.8
+   },
+   "SWIGGY": {
+    "gap": 0.73,
+    "oc": -1.02,
+    "cc": -0.3,
+    "range_pct": 2.23,
+    "up": 1.95,
+    "down": -0.3
    }
   }
  }

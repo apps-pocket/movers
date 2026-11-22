@@ -1,10 +1,10 @@
 {
  "asof": "2026-08-24",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1919,
-  "pct_above_50dma": 49.3,
-  "pct_advancing": 43.6,
+  "stocks_scanned": 2143,
+  "pct_above_50dma": 49.7,
+  "pct_advancing": 43.5,
   "mood": "Neutral",
   "pct_above_20ema": 44.7,
   "breadth_5d_change": -1.8,
@@ -352,26 +352,6 @@
    "score": 79.54
   },
   {
-   "symbol": "TARIL",
-   "close": 303.0,
-   "open": 300.0,
-   "high": 313.9,
-   "low": 298.9,
-   "prev_close": 298.65,
-   "official_close": 302.1,
-   "volume": 4220906.0,
-   "today_ret": 1.46,
-   "vol_ratio": 3.62,
-   "range_today_pct": 4.95,
-   "avg_range_pct": 2.62,
-   "tight6": 9.87,
-   "median_turnover_cr": 57.93,
-   "trades": 20441.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.57,
-   "score": 79.29
-  },
-  {
    "symbol": "PWL",
    "close": 121.24,
    "open": 121.0,
@@ -410,6 +390,26 @@
    "sector": "Financial Services",
    "delivery_ratio": 0.97,
    "score": 78.71
+  },
+  {
+   "symbol": "LENSKART",
+   "close": 656.95,
+   "open": 661.4,
+   "high": 673.9,
+   "low": 648.0,
+   "prev_close": 661.4,
+   "official_close": 659.75,
+   "volume": 7775210.0,
+   "today_ret": -0.67,
+   "vol_ratio": 1.1,
+   "range_today_pct": 3.94,
+   "avg_range_pct": 2.78,
+   "tight6": 11.1,
+   "median_turnover_cr": 249.66,
+   "trades": 103890.15,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.74,
+   "score": 77.64
   }
  ],
  "outcomes": {
@@ -552,14 +552,6 @@
     "up": 0.69,
     "down": -4.99
    },
-   "TARIL": {
-    "gap": 0.61,
-    "oc": 1.33,
-    "cc": 1.95,
-    "range_pct": 3.03,
-    "up": 2.42,
-    "down": -0.63
-   },
    "PWL": {
     "gap": 0.44,
     "oc": -0.48,
@@ -575,6 +567,14 @@
     "range_pct": 3.42,
     "up": 3.35,
     "down": -0.08
+   },
+   "LENSKART": {
+    "gap": -0.58,
+    "oc": -0.82,
+    "cc": -1.39,
+    "range_pct": 3.57,
+    "up": 1.63,
+    "down": -1.92
    }
   }
  }

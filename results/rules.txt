@@ -1,1 +1,1 @@
-movers-v3: Nifty 500 liquid universe, score volatility+surge
+movers-v4: Nifty 500 liquid universe, score volatility+surge, max 3 per sector

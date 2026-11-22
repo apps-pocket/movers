@@ -1,10 +1,10 @@
 {
  "asof": "2026-11-04",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2179,
+  "stocks_scanned": 2270,
   "pct_above_50dma": 31.2,
-  "pct_advancing": 79.9,
+  "pct_advancing": 79.6,
   "mood": "Weak",
   "pct_above_20ema": 54.6,
   "breadth_5d_change": 34.6,
@@ -172,26 +172,6 @@
    "score": 83.73
   },
   {
-   "symbol": "HSCL",
-   "close": 564.0,
-   "open": 531.4,
-   "high": 564.95,
-   "low": 523.75,
-   "prev_close": 529.0,
-   "official_close": 562.05,
-   "volume": 3536122.0,
-   "today_ret": 6.62,
-   "vol_ratio": 1.38,
-   "range_today_pct": 7.3,
-   "avg_range_pct": 4.37,
-   "tight6": 10.27,
-   "median_turnover_cr": 172.03,
-   "trades": 55619.3,
-   "sector": "Chemicals",
-   "delivery_ratio": 0.75,
-   "score": 83.64
-  },
-  {
    "symbol": "BALRAMCHIN",
    "close": 673.0,
    "open": 650.0,
@@ -209,6 +189,26 @@
    "trades": 40780.15,
    "sector": "Fast Moving Consumer Goods",
    "delivery_ratio": 0.57,
+   "score": 83.64
+  },
+  {
+   "symbol": "HSCL",
+   "close": 564.0,
+   "open": 531.4,
+   "high": 564.95,
+   "low": 523.75,
+   "prev_close": 529.0,
+   "official_close": 562.05,
+   "volume": 3536122.0,
+   "today_ret": 6.62,
+   "vol_ratio": 1.38,
+   "range_today_pct": 7.3,
+   "avg_range_pct": 4.37,
+   "tight6": 10.27,
+   "median_turnover_cr": 172.03,
+   "trades": 55619.3,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.75,
    "score": 83.64
   },
   {
@@ -272,86 +272,6 @@
    "score": 81.44
   },
   {
-   "symbol": "TDPOWERSYS",
-   "close": 726.5,
-   "open": 711.1,
-   "high": 739.2,
-   "low": 685.95,
-   "prev_close": 711.55,
-   "official_close": 728.4,
-   "volume": 3497224.0,
-   "today_ret": 2.1,
-   "vol_ratio": 1.12,
-   "range_today_pct": 7.33,
-   "avg_range_pct": 5.2,
-   "tight6": 7.33,
-   "median_turnover_cr": 175.86,
-   "trades": 107404.5,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.65,
-   "score": 81.36
-  },
-  {
-   "symbol": "ENRIN",
-   "close": 2963.0,
-   "open": 2846.1,
-   "high": 2963.0,
-   "low": 2761.3,
-   "prev_close": 2846.6,
-   "official_close": 2963.0,
-   "volume": 652356.0,
-   "today_ret": 4.09,
-   "vol_ratio": 1.42,
-   "range_today_pct": 6.81,
-   "avg_range_pct": 3.94,
-   "tight6": 7.11,
-   "median_turnover_cr": 121.53,
-   "trades": 41038.0,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.97,
-   "score": 81.02
-  },
-  {
-   "symbol": "JYOTICNC",
-   "close": 1036.05,
-   "open": 1009.85,
-   "high": 1039.6,
-   "low": 992.35,
-   "prev_close": 967.4,
-   "official_close": 1034.95,
-   "volume": 3473261.0,
-   "today_ret": 7.1,
-   "vol_ratio": 4.1,
-   "range_today_pct": 4.56,
-   "avg_range_pct": 4.5,
-   "tight6": 13.72,
-   "median_turnover_cr": 73.76,
-   "trades": 51049.15,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.64,
-   "score": 80.85
-  },
-  {
-   "symbol": "EMMVEE",
-   "close": 246.55,
-   "open": 231.95,
-   "high": 247.61,
-   "low": 228.26,
-   "prev_close": 231.26,
-   "official_close": 246.41,
-   "volume": 2672402.0,
-   "today_ret": 6.61,
-   "vol_ratio": 1.01,
-   "range_today_pct": 7.85,
-   "avg_range_pct": 5.4,
-   "tight6": 8.95,
-   "median_turnover_cr": 49.64,
-   "trades": 56162.15,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.91,
-   "score": 80.68
-  },
-  {
    "symbol": "IIFL",
    "close": 582.05,
    "open": 541.85,
@@ -410,6 +330,86 @@
    "sector": "Realty",
    "delivery_ratio": 0.89,
    "score": 79.07
+  },
+  {
+   "symbol": "HINDCOPPER",
+   "close": 425.8,
+   "open": 398.0,
+   "high": 426.9,
+   "low": 393.4,
+   "prev_close": 400.3,
+   "official_close": 423.25,
+   "volume": 7523402.0,
+   "today_ret": 6.37,
+   "vol_ratio": 1.88,
+   "range_today_pct": 7.87,
+   "avg_range_pct": 3.32,
+   "tight6": 7.87,
+   "median_turnover_cr": 309.4,
+   "trades": 69836.75,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 0.83,
+   "score": 76.86
+  },
+  {
+   "symbol": "LALPATHLAB",
+   "close": 2045.0,
+   "open": 1934.1,
+   "high": 2049.0,
+   "low": 1901.0,
+   "prev_close": 1925.7,
+   "official_close": 2029.4,
+   "volume": 735423.0,
+   "today_ret": 6.2,
+   "vol_ratio": 3.19,
+   "range_today_pct": 7.24,
+   "avg_range_pct": 3.22,
+   "tight6": 9.41,
+   "median_turnover_cr": 42.01,
+   "trades": 40151.85,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.58,
+   "score": 76.27
+  },
+  {
+   "symbol": "FLUOROCHEM",
+   "close": 4625.8,
+   "open": 4500.0,
+   "high": 4668.0,
+   "low": 4402.0,
+   "prev_close": 4463.9,
+   "official_close": 4613.3,
+   "volume": 186966.0,
+   "today_ret": 3.63,
+   "vol_ratio": 1.85,
+   "range_today_pct": 5.75,
+   "avg_range_pct": 3.35,
+   "tight6": 10.66,
+   "median_turnover_cr": 50.77,
+   "trades": 19756.1,
+   "sector": "Chemicals",
+   "delivery_ratio": 1.09,
+   "score": 75.25
+  },
+  {
+   "symbol": "PFOCUS",
+   "close": 307.75,
+   "open": 290.0,
+   "high": 307.95,
+   "low": 288.5,
+   "prev_close": 289.55,
+   "official_close": 305.55,
+   "volume": 4946975.0,
+   "today_ret": 6.29,
+   "vol_ratio": 0.97,
+   "range_today_pct": 6.32,
+   "avg_range_pct": 5.26,
+   "tight6": 9.07,
+   "median_turnover_cr": 99.67,
+   "trades": 51679.2,
+   "sector": "Media Entertainment & Publication",
+   "delivery_ratio": 1.76,
+   "score": 75.17
   }
  ],
  "outcomes": {
@@ -480,14 +480,6 @@
     "up": 4.49,
     "down": 1.57
    },
-   "HSCL": {
-    "gap": 1.89,
-    "oc": -0.73,
-    "cc": 1.15,
-    "range_pct": 1.74,
-    "up": 2.48,
-    "down": 0.71
-   },
    "BALRAMCHIN": {
     "gap": 1.0,
     "oc": -0.59,
@@ -495,6 +487,14 @@
     "range_pct": 3.73,
     "up": 2.63,
     "down": -1.14
+   },
+   "HSCL": {
+    "gap": 1.89,
+    "oc": -0.73,
+    "cc": 1.15,
+    "range_pct": 1.74,
+    "up": 2.48,
+    "down": 0.71
    },
    "EXIDEIND": {
     "gap": 2.33,
@@ -520,38 +520,6 @@
     "up": 3.72,
     "down": 0.33
    },
-   "TDPOWERSYS": {
-    "gap": 0.52,
-    "oc": -8.1,
-    "cc": -7.62,
-    "range_pct": 9.23,
-    "up": 0.71,
-    "down": -8.57
-   },
-   "ENRIN": {
-    "gap": -1.86,
-    "oc": -1.69,
-    "cc": -3.51,
-    "range_pct": 3.46,
-    "up": -0.71,
-    "down": -4.11
-   },
-   "JYOTICNC": {
-    "gap": 2.32,
-    "oc": -3.12,
-    "cc": -0.86,
-    "range_pct": 4.9,
-    "up": 3.37,
-    "down": -1.64
-   },
-   "EMMVEE": {
-    "gap": 2.67,
-    "oc": -0.4,
-    "cc": 2.27,
-    "range_pct": 3.86,
-    "up": 5.11,
-    "down": 1.14
-   },
    "IIFL": {
     "gap": 3.77,
     "oc": 0.33,
@@ -575,6 +543,38 @@
     "range_pct": 4.71,
     "up": 5.27,
     "down": 0.5
+   },
+   "HINDCOPPER": {
+    "gap": 2.07,
+    "oc": -0.97,
+    "cc": 1.08,
+    "range_pct": 2.13,
+    "up": 2.88,
+    "down": 0.71
+   },
+   "LALPATHLAB": {
+    "gap": 0.97,
+    "oc": -3.85,
+    "cc": -2.92,
+    "range_pct": 5.73,
+    "up": 1.6,
+    "down": -4.18
+   },
+   "FLUOROCHEM": {
+    "gap": 0.66,
+    "oc": 0.86,
+    "cc": 1.53,
+    "range_pct": 3.16,
+    "up": 2.68,
+    "down": -0.5
+   },
+   "PFOCUS": {
+    "gap": -0.18,
+    "oc": -5.23,
+    "cc": -5.4,
+    "range_pct": 10.82,
+    "up": 1.83,
+    "down": -8.97
    }
   }
  }

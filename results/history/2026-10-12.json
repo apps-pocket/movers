@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-12",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2040,
-  "pct_above_50dma": 21.5,
-  "pct_advancing": 49.8,
+  "stocks_scanned": 2246,
+  "pct_above_50dma": 22.9,
+  "pct_advancing": 49.4,
   "mood": "Weak",
   "pct_above_20ema": 23.9,
   "breadth_5d_change": 3.6,
@@ -312,26 +312,6 @@
    "score": 83.65
   },
   {
-   "symbol": "ZENTEC",
-   "close": 1614.9,
-   "open": 1545.3,
-   "high": 1615.0,
-   "low": 1539.3,
-   "prev_close": 1528.8,
-   "official_close": 1610.0,
-   "volume": 452056.0,
-   "today_ret": 5.63,
-   "vol_ratio": 1.73,
-   "range_today_pct": 4.69,
-   "avg_range_pct": 3.37,
-   "tight6": 8.84,
-   "median_turnover_cr": 50.71,
-   "trades": 24039.1,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.75,
-   "score": 82.79
-  },
-  {
    "symbol": "DELHIVERY",
    "close": 412.15,
    "open": 400.95,
@@ -372,26 +352,6 @@
    "score": 77.42
   },
   {
-   "symbol": "GRSE",
-   "close": 2087.4,
-   "open": 2062.0,
-   "high": 2142.9,
-   "low": 2058.6,
-   "prev_close": 2046.0,
-   "official_close": 2081.9,
-   "volume": 551916.0,
-   "today_ret": 2.02,
-   "vol_ratio": 1.5,
-   "range_today_pct": 4.04,
-   "avg_range_pct": 3.15,
-   "tight6": 7.61,
-   "median_turnover_cr": 87.17,
-   "trades": 31613.5,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.62,
-   "score": 77.34
-  },
-  {
    "symbol": "OFSS",
    "close": 10360.0,
    "open": 10558.0,
@@ -410,6 +370,46 @@
    "sector": "Information Technology",
    "delivery_ratio": 1.28,
    "score": 76.64
+  },
+  {
+   "symbol": "AEGISLOG",
+   "close": 1449.9,
+   "open": 1396.3,
+   "high": 1455.9,
+   "low": 1387.2,
+   "prev_close": 1388.9,
+   "official_close": 1450.0,
+   "volume": 724454.0,
+   "today_ret": 4.39,
+   "vol_ratio": 0.72,
+   "range_today_pct": 4.74,
+   "avg_range_pct": 4.93,
+   "tight6": 9.15,
+   "median_turnover_cr": 108.83,
+   "trades": 52928.55,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 1.18,
+   "score": 76.47
+  },
+  {
+   "symbol": "WOCKPHARMA",
+   "close": 1965.0,
+   "open": 2002.9,
+   "high": 2025.1,
+   "low": 1945.6,
+   "prev_close": 1996.4,
+   "official_close": 1963.2,
+   "volume": 881944.0,
+   "today_ret": -1.57,
+   "vol_ratio": 0.87,
+   "range_today_pct": 4.05,
+   "avg_range_pct": 4.97,
+   "tight6": 12.79,
+   "median_turnover_cr": 151.77,
+   "trades": 59349.1,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.26,
+   "score": 75.78
   }
  ],
  "outcomes": {
@@ -536,14 +536,6 @@
     "up": 0.5,
     "down": -4.66
    },
-   "ZENTEC": {
-    "gap": 0.93,
-    "oc": 1.84,
-    "cc": 2.78,
-    "range_pct": 4.25,
-    "up": 2.8,
-    "down": -1.5
-   },
    "DELHIVERY": {
     "gap": -0.11,
     "oc": 1.14,
@@ -560,14 +552,6 @@
     "up": 0.12,
     "down": -1.88
    },
-   "GRSE": {
-    "gap": 0.58,
-    "oc": 2.44,
-    "cc": 3.03,
-    "range_pct": 4.3,
-    "up": 3.17,
-    "down": -1.15
-   },
    "OFSS": {
     "gap": 1.13,
     "oc": 1.56,
@@ -575,6 +559,22 @@
     "range_pct": 2.48,
     "up": 3.2,
     "down": 0.69
+   },
+   "AEGISLOG": {
+    "gap": -0.34,
+    "oc": -3.74,
+    "cc": -4.07,
+    "range_pct": 5.56,
+    "up": -0.34,
+    "down": -5.88
+   },
+   "WOCKPHARMA": {
+    "gap": 0.35,
+    "oc": 0.7,
+    "cc": 1.05,
+    "range_pct": 5.04,
+    "up": 1.88,
+    "down": -3.17
    }
   }
  }

@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-21",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2152,
-  "pct_above_50dma": 14.6,
-  "pct_advancing": 13.6,
+  "stocks_scanned": 2261,
+  "pct_above_50dma": 15.3,
+  "pct_advancing": 13.9,
   "mood": "Weak",
   "pct_above_20ema": 14.0,
   "breadth_5d_change": -14.8,
@@ -32,26 +32,6 @@
    "score": 91.24
   },
   {
-   "symbol": "FINCABLES",
-   "close": 1199.9,
-   "open": 1290.0,
-   "high": 1295.6,
-   "low": 1195.0,
-   "prev_close": 1282.5,
-   "official_close": 1202.4,
-   "volume": 969181.0,
-   "today_ret": -6.44,
-   "vol_ratio": 1.66,
-   "range_today_pct": 8.38,
-   "avg_range_pct": 4.99,
-   "tight6": 23.75,
-   "median_turnover_cr": 79.43,
-   "trades": 39642.45,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.34,
-   "score": 90.73
-  },
-  {
    "symbol": "APARINDS",
    "close": 15160.0,
    "open": 15897.0,
@@ -69,6 +49,26 @@
    "trades": 38806.75,
    "sector": "Capital Goods",
    "delivery_ratio": 1.16,
+   "score": 90.73
+  },
+  {
+   "symbol": "FINCABLES",
+   "close": 1199.9,
+   "open": 1290.0,
+   "high": 1295.6,
+   "low": 1195.0,
+   "prev_close": 1282.5,
+   "official_close": 1202.4,
+   "volume": 969181.0,
+   "today_ret": -6.44,
+   "vol_ratio": 1.66,
+   "range_today_pct": 8.38,
+   "avg_range_pct": 4.99,
+   "tight6": 23.75,
+   "median_turnover_cr": 79.43,
+   "trades": 39642.45,
+   "sector": "Capital Goods",
+   "delivery_ratio": 1.34,
    "score": 90.73
   },
   {
@@ -232,26 +232,6 @@
    "score": 82.82
   },
   {
-   "symbol": "JYOTICNC",
-   "close": 914.0,
-   "open": 978.0,
-   "high": 981.3,
-   "low": 900.9,
-   "prev_close": 975.8,
-   "official_close": 914.9,
-   "volume": 884193.0,
-   "today_ret": -6.33,
-   "vol_ratio": 0.95,
-   "range_today_pct": 8.8,
-   "avg_range_pct": 4.72,
-   "tight6": 14.96,
-   "median_turnover_cr": 73.76,
-   "trades": 34709.45,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.4,
-   "score": 82.48
-  },
-  {
    "symbol": "IPCALAB",
    "close": 1921.0,
    "open": 1810.0,
@@ -272,26 +252,6 @@
    "score": 81.72
   },
   {
-   "symbol": "ABB",
-   "close": 6559.5,
-   "open": 7038.0,
-   "high": 7038.0,
-   "low": 6510.0,
-   "prev_close": 6974.0,
-   "official_close": 6559.5,
-   "volume": 656683.0,
-   "today_ret": -5.94,
-   "vol_ratio": 2.97,
-   "range_today_pct": 8.05,
-   "avg_range_pct": 3.22,
-   "tight6": 8.05,
-   "median_turnover_cr": 140.5,
-   "trades": 31487.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.65,
-   "score": 81.04
-  },
-  {
    "symbol": "TEJASNET",
    "close": 427.4,
    "open": 449.5,
@@ -310,46 +270,6 @@
    "sector": "Telecommunication",
    "delivery_ratio": 1.02,
    "score": 80.36
-  },
-  {
-   "symbol": "COCHINSHIP",
-   "close": 1167.1,
-   "open": 1231.9,
-   "high": 1234.9,
-   "low": 1150.1,
-   "prev_close": 1226.5,
-   "official_close": 1167.1,
-   "volume": 1548758.0,
-   "today_ret": -4.84,
-   "vol_ratio": 1.96,
-   "range_today_pct": 7.27,
-   "avg_range_pct": 3.25,
-   "tight6": 10.86,
-   "median_turnover_cr": 109.93,
-   "trades": 31910.45,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.35,
-   "score": 79.85
-  },
-  {
-   "symbol": "BEML",
-   "close": 1858.2,
-   "open": 1952.1,
-   "high": 1964.4,
-   "low": 1846.2,
-   "prev_close": 1938.4,
-   "official_close": 1888.3,
-   "volume": 239846.0,
-   "today_ret": -4.14,
-   "vol_ratio": 1.25,
-   "range_today_pct": 6.36,
-   "avg_range_pct": 3.41,
-   "tight6": 8.92,
-   "median_turnover_cr": 46.14,
-   "trades": 18863.55,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.03,
-   "score": 79.08
   },
   {
    "symbol": "URBANCO",
@@ -392,24 +312,104 @@
    "score": 77.55
   },
   {
-   "symbol": "SYRMA",
-   "close": 1483.0,
-   "open": 1547.6,
-   "high": 1553.7,
-   "low": 1459.9,
-   "prev_close": 1547.6,
-   "official_close": 1473.1,
-   "volume": 1527221.0,
-   "today_ret": -4.17,
-   "vol_ratio": 1.08,
-   "range_today_pct": 6.33,
-   "avg_range_pct": 4.93,
-   "tight6": 19.35,
-   "median_turnover_cr": 161.26,
-   "trades": 71119.4,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.47,
+   "symbol": "GLAND",
+   "close": 2930.0,
+   "open": 3005.1,
+   "high": 3028.3,
+   "low": 2839.6,
+   "prev_close": 3019.8,
+   "official_close": 2935.0,
+   "volume": 1203469.0,
+   "today_ret": -2.97,
+   "vol_ratio": 3.59,
+   "range_today_pct": 6.44,
+   "avg_range_pct": 3.09,
+   "tight6": 9.06,
+   "median_turnover_cr": 109.2,
+   "trades": 41264.4,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.13,
    "score": 77.21
+  },
+  {
+   "symbol": "SANSERA",
+   "close": 3954.9,
+   "open": 4150.5,
+   "high": 4159.0,
+   "low": 3907.2,
+   "prev_close": 4150.3,
+   "official_close": 3945.1,
+   "volume": 327621.0,
+   "today_ret": -4.71,
+   "vol_ratio": 1.03,
+   "range_today_pct": 6.37,
+   "avg_range_pct": 4.93,
+   "tight6": 10.7,
+   "median_turnover_cr": 77.16,
+   "trades": 48911.95,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.23,
+   "score": 76.45
+  },
+  {
+   "symbol": "CROMPTON",
+   "close": 201.08,
+   "open": 210.4,
+   "high": 210.55,
+   "low": 200.76,
+   "prev_close": 208.45,
+   "official_close": 201.08,
+   "volume": 5850080.0,
+   "today_ret": -3.54,
+   "vol_ratio": 1.34,
+   "range_today_pct": 4.87,
+   "avg_range_pct": 3.64,
+   "tight6": 10.43,
+   "median_turnover_cr": 59.01,
+   "trades": 44241.05,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.13,
+   "score": 75.26
+  },
+  {
+   "symbol": "PPLPHARMA",
+   "close": 190.51,
+   "open": 194.95,
+   "high": 199.5,
+   "low": 189.6,
+   "prev_close": 194.44,
+   "official_close": 191.19,
+   "volume": 3166061.0,
+   "today_ret": -2.02,
+   "vol_ratio": 1.24,
+   "range_today_pct": 5.2,
+   "avg_range_pct": 3.36,
+   "tight6": 6.37,
+   "median_turnover_cr": 62.67,
+   "trades": 38393.75,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.98,
+   "score": 74.4
+  },
+  {
+   "symbol": "HINDCOPPER",
+   "close": 420.75,
+   "open": 441.5,
+   "high": 443.1,
+   "low": 415.1,
+   "prev_close": 441.1,
+   "official_close": 420.85,
+   "volume": 7198478.0,
+   "today_ret": -4.61,
+   "vol_ratio": 1.51,
+   "range_today_pct": 6.65,
+   "avg_range_pct": 3.04,
+   "tight6": 13.29,
+   "median_turnover_cr": 324.36,
+   "trades": 77712.15,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 1.09,
+   "score": 73.13
   }
  ],
  "outcomes": {
@@ -424,14 +424,6 @@
     "up": -0.03,
     "down": -3.71
    },
-   "FINCABLES": {
-    "gap": -0.2,
-    "oc": -4.76,
-    "cc": -4.95,
-    "range_pct": 6.92,
-    "up": -0.2,
-    "down": -7.1
-   },
    "APARINDS": {
     "gap": 0.0,
     "oc": -2.33,
@@ -439,6 +431,14 @@
     "range_pct": 4.45,
     "up": 1.1,
     "down": -3.35
+   },
+   "FINCABLES": {
+    "gap": -0.2,
+    "oc": -4.76,
+    "cc": -4.95,
+    "range_pct": 6.92,
+    "up": -0.2,
+    "down": -7.1
    },
    "HSCL": {
     "gap": 0.28,
@@ -504,14 +504,6 @@
     "up": 2.26,
     "down": -1.85
    },
-   "JYOTICNC": {
-    "gap": 0.01,
-    "oc": 0.55,
-    "cc": 0.56,
-    "range_pct": 4.07,
-    "up": 2.87,
-    "down": -1.19
-   },
    "IPCALAB": {
     "gap": -1.09,
     "oc": 0.09,
@@ -520,14 +512,6 @@
     "up": 1.72,
     "down": -1.81
    },
-   "ABB": {
-    "gap": -0.19,
-    "oc": -1.26,
-    "cc": -1.45,
-    "range_pct": 3.06,
-    "up": 0.52,
-    "down": -2.54
-   },
    "TEJASNET": {
     "gap": -1.11,
     "oc": 0.59,
@@ -535,22 +519,6 @@
     "range_pct": 4.62,
     "up": 2.57,
     "down": -2.0
-   },
-   "COCHINSHIP": {
-    "gap": -0.9,
-    "oc": 0.63,
-    "cc": -0.27,
-    "range_pct": 3.26,
-    "up": 1.45,
-    "down": -1.78
-   },
-   "BEML": {
-    "gap": -1.17,
-    "oc": 1.81,
-    "cc": 0.62,
-    "range_pct": 4.48,
-    "up": 1.57,
-    "down": -2.87
    },
    "URBANCO": {
     "gap": -0.11,
@@ -568,13 +536,45 @@
     "up": 1.09,
     "down": -1.86
    },
-   "SYRMA": {
-    "gap": -0.54,
-    "oc": 2.16,
-    "cc": 1.61,
-    "range_pct": 5.32,
-    "up": 4.0,
-    "down": -1.3
+   "GLAND": {
+    "gap": -0.98,
+    "oc": -1.93,
+    "cc": -2.9,
+    "range_pct": 4.3,
+    "up": 0.64,
+    "down": -3.61
+   },
+   "SANSERA": {
+    "gap": -0.01,
+    "oc": 0.09,
+    "cc": 0.08,
+    "range_pct": 4.58,
+    "up": 2.66,
+    "down": -1.92
+   },
+   "CROMPTON": {
+    "gap": 0.15,
+    "oc": 0.01,
+    "cc": 0.16,
+    "range_pct": 3.06,
+    "up": 1.29,
+    "down": -1.77
+   },
+   "PPLPHARMA": {
+    "gap": -0.36,
+    "oc": 2.33,
+    "cc": 1.96,
+    "range_pct": 4.27,
+    "up": 2.7,
+    "down": -1.55
+   },
+   "HINDCOPPER": {
+    "gap": -1.15,
+    "oc": -0.6,
+    "cc": -1.75,
+    "range_pct": 3.32,
+    "up": 0.04,
+    "down": -3.24
    }
   }
  }

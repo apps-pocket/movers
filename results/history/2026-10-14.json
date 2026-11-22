@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-14",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2108,
-  "pct_above_50dma": 26.7,
-  "pct_advancing": 53.9,
+  "stocks_scanned": 2250,
+  "pct_above_50dma": 27.0,
+  "pct_advancing": 54.1,
   "mood": "Weak",
   "pct_above_20ema": 33.7,
   "breadth_5d_change": 4.2,
@@ -312,26 +312,6 @@
    "score": 76.04
   },
   {
-   "symbol": "CUB",
-   "close": 225.8,
-   "open": 235.0,
-   "high": 235.0,
-   "low": 225.75,
-   "prev_close": 234.53,
-   "official_close": 227.99,
-   "volume": 2430821.0,
-   "today_ret": -3.72,
-   "vol_ratio": 0.97,
-   "range_today_pct": 4.1,
-   "avg_range_pct": 3.71,
-   "tight6": 7.0,
-   "median_turnover_cr": 50.15,
-   "trades": 46300.0,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.38,
-   "score": 75.87
-  },
-  {
    "symbol": "EMMVEE",
    "close": 299.7,
    "open": 300.95,
@@ -392,24 +372,44 @@
    "score": 74.57
   },
   {
-   "symbol": "GROWW",
-   "close": 192.45,
-   "open": 194.0,
-   "high": 197.49,
-   "low": 190.66,
-   "prev_close": 193.81,
-   "official_close": 192.52,
-   "volume": 52797684.0,
-   "today_ret": -0.7,
-   "vol_ratio": 1.68,
-   "range_today_pct": 3.55,
-   "avg_range_pct": 2.97,
-   "tight6": 4.71,
-   "median_turnover_cr": 418.86,
-   "trades": 156606.3,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.66,
-   "score": 73.96
+   "symbol": "SUPREMEIND",
+   "close": 3607.0,
+   "open": 3514.0,
+   "high": 3610.0,
+   "low": 3476.6,
+   "prev_close": 3506.9,
+   "official_close": 3607.0,
+   "volume": 371467.0,
+   "today_ret": 2.85,
+   "vol_ratio": 2.29,
+   "range_today_pct": 3.7,
+   "avg_range_pct": 2.87,
+   "tight6": 6.04,
+   "median_turnover_cr": 54.51,
+   "trades": 18276.65,
+   "sector": "Capital Goods",
+   "delivery_ratio": 1.2,
+   "score": 73.27
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "close": 229.65,
+   "open": 224.0,
+   "high": 234.47,
+   "low": 222.3,
+   "prev_close": 226.13,
+   "official_close": 229.58,
+   "volume": 2935238.0,
+   "today_ret": 1.56,
+   "vol_ratio": 0.58,
+   "range_today_pct": 5.3,
+   "avg_range_pct": 4.31,
+   "tight6": 11.1,
+   "median_turnover_cr": 60.56,
+   "trades": 54732.7,
+   "sector": "Textiles",
+   "delivery_ratio": 1.12,
+   "score": 72.15
   }
  ],
  "outcomes": {
@@ -536,14 +536,6 @@
     "up": 2.59,
     "down": 0.3
    },
-   "CUB": {
-    "gap": 0.0,
-    "oc": -2.36,
-    "cc": -2.36,
-    "range_pct": 3.2,
-    "up": 0.57,
-    "down": -2.63
-   },
    "EMMVEE": {
     "gap": 2.54,
     "oc": -8.7,
@@ -568,13 +560,21 @@
     "up": 1.41,
     "down": -2.84
    },
-   "GROWW": {
-    "gap": 0.04,
-    "oc": 2.67,
-    "cc": 2.72,
-    "range_pct": 5.19,
-    "up": 4.3,
-    "down": -0.89
+   "SUPREMEIND": {
+    "gap": -0.61,
+    "oc": 0.86,
+    "cc": 0.25,
+    "range_pct": 2.12,
+    "up": 1.28,
+    "down": -0.83
+   },
+   "WELSPUNLIV": {
+    "gap": 0.0,
+    "oc": -5.09,
+    "cc": -5.09,
+    "range_pct": 6.57,
+    "up": 0.7,
+    "down": -5.87
    }
   }
  }

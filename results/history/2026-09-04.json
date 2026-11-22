@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-04",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1928,
-  "pct_above_50dma": 45.4,
-  "pct_advancing": 52.0,
+  "stocks_scanned": 2150,
+  "pct_above_50dma": 46.1,
+  "pct_advancing": 51.6,
   "mood": "Neutral",
   "pct_above_20ema": 43.4,
   "breadth_5d_change": -4.7,
@@ -252,26 +252,6 @@
    "score": 86.97
   },
   {
-   "symbol": "CGCL",
-   "close": 281.9,
-   "open": 274.0,
-   "high": 284.8,
-   "low": 271.5,
-   "prev_close": 271.7,
-   "official_close": 279.9,
-   "volume": 7594713.0,
-   "today_ret": 3.75,
-   "vol_ratio": 1.09,
-   "range_today_pct": 4.72,
-   "avg_range_pct": 3.84,
-   "tight6": 15.08,
-   "median_turnover_cr": 78.74,
-   "trades": 50297.9,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.91,
-   "score": 85.99
-  },
-  {
    "symbol": "RKFORGE",
    "close": 701.95,
    "open": 732.5,
@@ -290,26 +270,6 @@
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 1.04,
    "score": 85.83
-  },
-  {
-   "symbol": "HBLENGINE",
-   "close": 695.0,
-   "open": 668.5,
-   "high": 724.0,
-   "low": 667.0,
-   "prev_close": 665.55,
-   "official_close": 695.75,
-   "volume": 14312325.0,
-   "today_ret": 4.42,
-   "vol_ratio": 15.87,
-   "range_today_pct": 8.2,
-   "avg_range_pct": 2.9,
-   "tight6": 10.94,
-   "median_turnover_cr": 61.75,
-   "trades": 41248.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.21,
-   "score": 85.5
   },
   {
    "symbol": "MEESHO",
@@ -372,44 +332,84 @@
    "score": 83.63
   },
   {
-   "symbol": "KAYNES",
-   "close": 3598.0,
-   "open": 3487.8,
-   "high": 3617.9,
-   "low": 3450.0,
-   "prev_close": 3485.0,
-   "official_close": 3598.0,
-   "volume": 1211084.0,
-   "today_ret": 3.24,
-   "vol_ratio": 0.92,
-   "range_today_pct": 4.67,
-   "avg_range_pct": 4.29,
-   "tight6": 16.77,
-   "median_turnover_cr": 360.72,
-   "trades": 82988.45,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.97,
-   "score": 83.31
+   "symbol": "SWIGGY",
+   "close": 276.1,
+   "open": 269.3,
+   "high": 284.4,
+   "low": 269.3,
+   "prev_close": 269.3,
+   "official_close": 276.1,
+   "volume": 184369387.0,
+   "today_ret": 2.53,
+   "vol_ratio": 13.14,
+   "range_today_pct": 5.47,
+   "avg_range_pct": 2.79,
+   "tight6": 8.46,
+   "median_turnover_cr": 339.48,
+   "trades": 101061.05,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.95,
+   "score": 82.08
   },
   {
-   "symbol": "PAYTM",
-   "close": 1659.5,
-   "open": 1635.2,
-   "high": 1697.7,
-   "low": 1626.6,
-   "prev_close": 1637.0,
-   "official_close": 1659.5,
-   "volume": 5191803.0,
-   "today_ret": 1.37,
-   "vol_ratio": 1.09,
-   "range_today_pct": 4.28,
-   "avg_range_pct": 3.53,
-   "tight6": 7.41,
-   "median_turnover_cr": 445.57,
-   "trades": 114107.95,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.01,
-   "score": 83.14
+   "symbol": "ANANTRAJ",
+   "close": 625.3,
+   "open": 633.0,
+   "high": 646.4,
+   "low": 622.1,
+   "prev_close": 628.3,
+   "official_close": 625.45,
+   "volume": 4215356.0,
+   "today_ret": -0.48,
+   "vol_ratio": 1.61,
+   "range_today_pct": 3.89,
+   "avg_range_pct": 3.01,
+   "tight6": 12.0,
+   "median_turnover_cr": 93.79,
+   "trades": 48231.2,
+   "sector": "Realty",
+   "delivery_ratio": 0.52,
+   "score": 81.51
+  },
+  {
+   "symbol": "ANTHEM",
+   "close": 933.35,
+   "open": 970.0,
+   "high": 973.5,
+   "low": 926.8,
+   "prev_close": 950.7,
+   "official_close": 934.05,
+   "volume": 872940.0,
+   "today_ret": -1.82,
+   "vol_ratio": 1.07,
+   "range_today_pct": 5.0,
+   "avg_range_pct": 3.04,
+   "tight6": 9.16,
+   "median_turnover_cr": 43.09,
+   "trades": 36903.5,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.93,
+   "score": 81.03
+  },
+  {
+   "symbol": "PRESTIGE",
+   "close": 1587.0,
+   "open": 1620.1,
+   "high": 1646.6,
+   "low": 1565.2,
+   "prev_close": 1615.2,
+   "official_close": 1587.0,
+   "volume": 588022.0,
+   "today_ret": -1.75,
+   "vol_ratio": 1.13,
+   "range_today_pct": 5.13,
+   "avg_range_pct": 2.94,
+   "tight6": 7.86,
+   "median_turnover_cr": 112.97,
+   "trades": 20903.05,
+   "sector": "Realty",
+   "delivery_ratio": 0.7,
+   "score": 81.03
   }
  ],
  "outcomes": {
@@ -512,14 +512,6 @@
     "up": 0.51,
     "down": -2.39
    },
-   "CGCL": {
-    "gap": 1.0,
-    "oc": -3.15,
-    "cc": -2.18,
-    "range_pct": 5.08,
-    "up": 2.7,
-    "down": -2.43
-   },
    "RKFORGE": {
     "gap": -0.12,
     "oc": 0.86,
@@ -527,14 +519,6 @@
     "range_pct": 2.86,
     "up": 1.45,
     "down": -1.41
-   },
-   "HBLENGINE": {
-    "gap": -0.01,
-    "oc": 1.62,
-    "cc": 1.61,
-    "range_pct": 2.56,
-    "up": 1.75,
-    "down": -0.8
    },
    "MEESHO": {
     "gap": 0.47,
@@ -560,21 +544,37 @@
     "up": 2.19,
     "down": -1.12
    },
-   "KAYNES": {
-    "gap": -0.26,
-    "oc": 0.42,
-    "cc": 0.17,
-    "range_pct": 4.56,
-    "up": 3.8,
-    "down": -0.75
+   "SWIGGY": {
+    "gap": 0.58,
+    "oc": -0.45,
+    "cc": 0.13,
+    "range_pct": 2.11,
+    "up": 1.59,
+    "down": -0.53
    },
-   "PAYTM": {
-    "gap": 0.01,
-    "oc": 0.27,
-    "cc": 0.27,
-    "range_pct": 1.64,
-    "up": 0.59,
-    "down": -1.05
+   "ANANTRAJ": {
+    "gap": -0.55,
+    "oc": 2.47,
+    "cc": 1.9,
+    "range_pct": 4.76,
+    "up": 3.09,
+    "down": -1.64
+   },
+   "ANTHEM": {
+    "gap": 0.64,
+    "oc": -0.91,
+    "cc": -0.27,
+    "range_pct": 2.95,
+    "up": 2.66,
+    "down": -0.32
+   },
+   "PRESTIGE": {
+    "gap": 0.5,
+    "oc": -2.82,
+    "cc": -2.33,
+    "range_pct": 2.82,
+    "up": 0.5,
+    "down": -2.33
    }
   }
  }

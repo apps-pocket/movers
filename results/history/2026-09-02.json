@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-02",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1930,
-  "pct_above_50dma": 40.3,
-  "pct_advancing": 35.0,
+  "stocks_scanned": 2154,
+  "pct_above_50dma": 41.0,
+  "pct_advancing": 35.6,
   "mood": "Weak",
   "pct_above_20ema": 33.3,
   "breadth_5d_change": -16.5,
@@ -212,26 +212,6 @@
    "score": 85.02
   },
   {
-   "symbol": "IIFL",
-   "close": 635.8,
-   "open": 633.85,
-   "high": 652.0,
-   "low": 624.25,
-   "prev_close": 639.15,
-   "official_close": 633.25,
-   "volume": 4480751.0,
-   "today_ret": -0.52,
-   "vol_ratio": 1.91,
-   "range_today_pct": 4.36,
-   "avg_range_pct": 3.46,
-   "tight6": 8.89,
-   "median_turnover_cr": 99.61,
-   "trades": 49574.5,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.97,
-   "score": 84.45
-  },
-  {
    "symbol": "ACMESOLAR",
    "close": 397.9,
    "open": 395.0,
@@ -272,26 +252,6 @@
    "score": 83.63
   },
   {
-   "symbol": "MEESHO",
-   "close": 211.62,
-   "open": 205.15,
-   "high": 213.95,
-   "low": 204.6,
-   "prev_close": 205.15,
-   "official_close": 211.6,
-   "volume": 23152746.0,
-   "today_ret": 3.15,
-   "vol_ratio": 1.75,
-   "range_today_pct": 4.42,
-   "avg_range_pct": 3.17,
-   "tight6": 5.88,
-   "median_turnover_cr": 258.79,
-   "trades": 102358.85,
-   "sector": "Consumer Services",
-   "delivery_ratio": 0.97,
-   "score": 83.14
-  },
-  {
    "symbol": "HFCL",
    "close": 225.98,
    "open": 230.0,
@@ -309,6 +269,26 @@
    "trades": 88719.25,
    "sector": "Telecommunication",
    "delivery_ratio": 1.17,
+   "score": 83.14
+  },
+  {
+   "symbol": "MEESHO",
+   "close": 211.62,
+   "open": 205.15,
+   "high": 213.95,
+   "low": 204.6,
+   "prev_close": 205.15,
+   "official_close": 211.6,
+   "volume": 23152746.0,
+   "today_ret": 3.15,
+   "vol_ratio": 1.75,
+   "range_today_pct": 4.42,
+   "avg_range_pct": 3.17,
+   "tight6": 5.88,
+   "median_turnover_cr": 258.79,
+   "trades": 102358.85,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.97,
    "score": 83.14
   },
   {
@@ -330,26 +310,6 @@
    "sector": "Capital Goods",
    "delivery_ratio": 1.2,
    "score": 79.56
-  },
-  {
-   "symbol": "BSE",
-   "close": 3168.0,
-   "open": 3222.6,
-   "high": 3265.0,
-   "low": 3131.5,
-   "prev_close": 3242.0,
-   "official_close": 3168.0,
-   "volume": 6510791.0,
-   "today_ret": -2.28,
-   "vol_ratio": 1.37,
-   "range_today_pct": 4.21,
-   "avg_range_pct": 3.19,
-   "tight6": 8.79,
-   "median_turnover_cr": 1156.56,
-   "trades": 200744.9,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.92,
-   "score": 79.48
   },
   {
    "symbol": "ADANIGREEN",
@@ -410,6 +370,46 @@
    "sector": "Healthcare",
    "delivery_ratio": 0.92,
    "score": 78.58
+  },
+  {
+   "symbol": "VOLTAS",
+   "close": 1152.1,
+   "open": 1199.9,
+   "high": 1199.9,
+   "low": 1151.0,
+   "prev_close": 1205.0,
+   "official_close": 1152.1,
+   "volume": 1981487.0,
+   "today_ret": -4.39,
+   "vol_ratio": 1.96,
+   "range_today_pct": 4.24,
+   "avg_range_pct": 2.74,
+   "tight6": 8.16,
+   "median_turnover_cr": 92.48,
+   "trades": 34896.8,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.08,
+   "score": 77.04
+  },
+  {
+   "symbol": "WOCKPHARMA",
+   "close": 1902.0,
+   "open": 1846.2,
+   "high": 1911.0,
+   "low": 1838.0,
+   "prev_close": 1850.6,
+   "official_close": 1904.3,
+   "volume": 684958.0,
+   "today_ret": 2.78,
+   "vol_ratio": 1.0,
+   "range_today_pct": 3.84,
+   "avg_range_pct": 3.73,
+   "tight6": 11.13,
+   "median_turnover_cr": 125.99,
+   "trades": 35644.35,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.08,
+   "score": 75.08
   }
  ],
  "outcomes": {
@@ -496,14 +496,6 @@
     "up": 2.83,
     "down": -0.04
    },
-   "IIFL": {
-    "gap": 0.8,
-    "oc": 0.27,
-    "cc": 1.07,
-    "range_pct": 2.86,
-    "up": 3.58,
-    "down": 0.7
-   },
    "ACMESOLAR": {
     "gap": 0.05,
     "oc": 0.53,
@@ -536,14 +528,6 @@
     "up": 4.06,
     "down": 0.03
    },
-   "BSE": {
-    "gap": 1.01,
-    "oc": 3.32,
-    "cc": 4.36,
-    "range_pct": 3.68,
-    "up": 4.69,
-    "down": 0.98
-   },
    "ADANIGREEN": {
     "gap": 0.31,
     "oc": -1.28,
@@ -567,6 +551,22 @@
     "range_pct": 2.45,
     "up": 2.19,
     "down": -0.27
+   },
+   "VOLTAS": {
+    "gap": 0.51,
+    "oc": 1.73,
+    "cc": 2.25,
+    "range_pct": 2.7,
+    "up": 2.68,
+    "down": -0.03
+   },
+   "WOCKPHARMA": {
+    "gap": 0.02,
+    "oc": 2.38,
+    "cc": 2.4,
+    "range_pct": 4.76,
+    "up": 4.08,
+    "down": -0.68
    }
   }
  }

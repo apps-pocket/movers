@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-03",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1927,
-  "pct_above_50dma": 44.3,
-  "pct_advancing": 60.9,
+  "stocks_scanned": 2149,
+  "pct_above_50dma": 45.0,
+  "pct_advancing": 60.8,
   "mood": "Neutral",
   "pct_above_20ema": 39.3,
   "breadth_5d_change": -6.0,
@@ -192,46 +192,6 @@
    "score": 86.48
   },
   {
-   "symbol": "APARINDS",
-   "close": 17687.0,
-   "open": 16941.0,
-   "high": 17772.0,
-   "low": 16940.0,
-   "prev_close": 16813.0,
-   "official_close": 17704.0,
-   "volume": 208669.0,
-   "today_ret": 5.2,
-   "vol_ratio": 1.29,
-   "range_today_pct": 4.7,
-   "avg_range_pct": 4.09,
-   "tight6": 8.9,
-   "median_turnover_cr": 250.44,
-   "trades": 38826.4,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.03,
-   "score": 86.31
-  },
-  {
-   "symbol": "PINELABS",
-   "close": 133.84,
-   "open": 140.65,
-   "high": 141.5,
-   "low": 132.85,
-   "prev_close": 139.04,
-   "official_close": 134.05,
-   "volume": 20013950.9,
-   "today_ret": -3.74,
-   "vol_ratio": 0.87,
-   "range_today_pct": 6.46,
-   "avg_range_pct": 3.98,
-   "tight6": 11.52,
-   "median_turnover_cr": 221.37,
-   "trades": 92038.05,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.15,
-   "score": 86.07
-  },
-  {
    "symbol": "ANANTRAJ",
    "close": 627.0,
    "open": 598.0,
@@ -252,24 +212,24 @@
    "score": 86.07
   },
   {
-   "symbol": "FINCABLES",
-   "close": 1270.1,
-   "open": 1197.2,
-   "high": 1279.8,
-   "low": 1197.2,
-   "prev_close": 1191.2,
-   "official_close": 1272.9,
-   "volume": 1809176.0,
-   "today_ret": 6.62,
-   "vol_ratio": 0.84,
-   "range_today_pct": 6.5,
-   "avg_range_pct": 4.81,
-   "tight6": 10.12,
-   "median_turnover_cr": 43.01,
-   "trades": 79623.4,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.66,
-   "score": 85.9
+   "symbol": "PINELABS",
+   "close": 133.84,
+   "open": 140.65,
+   "high": 141.5,
+   "low": 132.85,
+   "prev_close": 139.04,
+   "official_close": 134.05,
+   "volume": 20013950.9,
+   "today_ret": -3.74,
+   "vol_ratio": 0.87,
+   "range_today_pct": 6.46,
+   "avg_range_pct": 3.98,
+   "tight6": 11.52,
+   "median_turnover_cr": 221.37,
+   "trades": 92038.05,
+   "sector": "Financial Services",
+   "delivery_ratio": 1.15,
+   "score": 86.07
   },
   {
    "symbol": "ENGINERSIN",
@@ -310,26 +270,6 @@
    "sector": "Information Technology",
    "delivery_ratio": 1.07,
    "score": 85.41
-  },
-  {
-   "symbol": "INOXWIND",
-   "close": 74.0,
-   "open": 71.9,
-   "high": 74.56,
-   "low": 70.54,
-   "prev_close": 70.59,
-   "official_close": 74.0,
-   "volume": 39746918.0,
-   "today_ret": 4.83,
-   "vol_ratio": 3.08,
-   "range_today_pct": 5.43,
-   "avg_range_pct": 2.95,
-   "tight6": 8.86,
-   "median_turnover_cr": 81.86,
-   "trades": 44101.55,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.77,
-   "score": 85.08
   },
   {
    "symbol": "GABRIEL",
@@ -410,6 +350,66 @@
    "sector": "Consumer Services",
    "delivery_ratio": 0.85,
    "score": 81.39
+  },
+  {
+   "symbol": "MEESHO",
+   "close": 209.7,
+   "open": 213.4,
+   "high": 215.4,
+   "low": 207.1,
+   "prev_close": 211.6,
+   "official_close": 209.74,
+   "volume": 17240943.0,
+   "today_ret": -0.9,
+   "vol_ratio": 1.22,
+   "range_today_pct": 3.96,
+   "avg_range_pct": 3.28,
+   "tight6": 6.62,
+   "median_turnover_cr": 258.79,
+   "trades": 103254.2,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.67,
+   "score": 81.23
+  },
+  {
+   "symbol": "GRANULES",
+   "close": 857.0,
+   "open": 837.5,
+   "high": 873.5,
+   "low": 834.0,
+   "prev_close": 831.75,
+   "official_close": 853.85,
+   "volume": 2829036.0,
+   "today_ret": 3.04,
+   "vol_ratio": 5.19,
+   "range_today_pct": 4.61,
+   "avg_range_pct": 2.76,
+   "tight6": 6.71,
+   "median_turnover_cr": 66.24,
+   "trades": 26164.65,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.84,
+   "score": 80.82
+  },
+  {
+   "symbol": "GODREJPROP",
+   "close": 2001.5,
+   "open": 1964.0,
+   "high": 2056.7,
+   "low": 1960.0,
+   "prev_close": 1970.7,
+   "official_close": 2001.5,
+   "volume": 1323927.0,
+   "today_ret": 1.56,
+   "vol_ratio": 2.65,
+   "range_today_pct": 4.83,
+   "avg_range_pct": 2.76,
+   "tight6": 9.3,
+   "median_turnover_cr": 120.77,
+   "trades": 25576.85,
+   "sector": "Realty",
+   "delivery_ratio": 1.07,
+   "score": 80.0
   }
  ],
  "outcomes": {
@@ -488,22 +488,6 @@
     "up": 9.75,
     "down": 0.45
    },
-   "APARINDS": {
-    "gap": -0.08,
-    "oc": -1.42,
-    "cc": -1.51,
-    "range_pct": 3.0,
-    "up": 1.08,
-    "down": -1.91
-   },
-   "PINELABS": {
-    "gap": 0.58,
-    "oc": 5.79,
-    "cc": 6.4,
-    "range_pct": 8.14,
-    "up": 7.48,
-    "down": -0.72
-   },
    "ANANTRAJ": {
     "gap": 0.75,
     "oc": -1.22,
@@ -512,13 +496,13 @@
     "up": 2.88,
     "down": -0.99
    },
-   "FINCABLES": {
-    "gap": -3.88,
-    "oc": 0.12,
-    "cc": -3.76,
-    "range_pct": 3.59,
-    "up": -1.41,
-    "down": -4.86
+   "PINELABS": {
+    "gap": 0.58,
+    "oc": 5.79,
+    "cc": 6.4,
+    "range_pct": 8.14,
+    "up": 7.48,
+    "down": -0.72
    },
    "ENGINERSIN": {
     "gap": 0.16,
@@ -535,14 +519,6 @@
     "range_pct": 4.9,
     "up": 2.92,
     "down": -2.0
-   },
-   "INOXWIND": {
-    "gap": 0.36,
-    "oc": 0.18,
-    "cc": 0.54,
-    "range_pct": 4.04,
-    "up": 3.38,
-    "down": -0.68
    },
    "GABRIEL": {
     "gap": 0.24,
@@ -575,6 +551,30 @@
     "range_pct": 3.56,
     "up": 2.0,
     "down": -1.57
+   },
+   "MEESHO": {
+    "gap": 0.0,
+    "oc": 0.11,
+    "cc": 0.11,
+    "range_pct": 4.2,
+    "up": 3.3,
+    "down": -0.89
+   },
+   "GRANULES": {
+    "gap": -0.1,
+    "oc": -0.38,
+    "cc": -0.47,
+    "range_pct": 2.93,
+    "up": 1.14,
+    "down": -1.79
+   },
+   "GODREJPROP": {
+    "gap": -0.07,
+    "oc": -0.9,
+    "cc": -0.97,
+    "range_pct": 2.54,
+    "up": 1.01,
+    "down": -1.52
    }
   }
  }

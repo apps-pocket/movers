@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-18",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1946,
-  "pct_above_50dma": 34.8,
-  "pct_advancing": 67.5,
+  "stocks_scanned": 2179,
+  "pct_above_50dma": 35.6,
+  "pct_advancing": 66.5,
   "mood": "Weak",
   "pct_above_20ema": 35.7,
   "breadth_5d_change": 0.0,
@@ -112,26 +112,6 @@
    "score": 89.2
   },
   {
-   "symbol": "BEML",
-   "close": 2134.5,
-   "open": 2030.4,
-   "high": 2155.0,
-   "low": 2030.4,
-   "prev_close": 2013.3,
-   "official_close": 2135.0,
-   "volume": 1380251.0,
-   "today_ret": 6.02,
-   "vol_ratio": 3.09,
-   "range_today_pct": 5.84,
-   "avg_range_pct": 3.6,
-   "tight6": 13.75,
-   "median_turnover_cr": 51.78,
-   "trades": 36582.1,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.74,
-   "score": 87.84
-  },
-  {
    "symbol": "MEESHO",
    "close": 219.63,
    "open": 208.48,
@@ -152,26 +132,6 @@
    "score": 87.59
   },
   {
-   "symbol": "AZAD",
-   "close": 2777.0,
-   "open": 2605.3,
-   "high": 2816.0,
-   "low": 2605.3,
-   "prev_close": 2605.3,
-   "official_close": 2790.3,
-   "volume": 700873.0,
-   "today_ret": 6.59,
-   "vol_ratio": 1.76,
-   "range_today_pct": 7.59,
-   "avg_range_pct": 4.08,
-   "tight6": 12.57,
-   "median_turnover_cr": 111.35,
-   "trades": 31589.95,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.04,
-   "score": 87.07
-  },
-  {
    "symbol": "TATATECH",
    "close": 719.0,
    "open": 761.4,
@@ -189,26 +149,6 @@
    "trades": 41095.85,
    "sector": "Information Technology",
    "delivery_ratio": 1.15,
-   "score": 86.99
-  },
-  {
-   "symbol": "CPPLUS",
-   "close": 3352.3,
-   "open": 3378.4,
-   "high": 3500.0,
-   "low": 3321.0,
-   "prev_close": 3378.4,
-   "official_close": 3355.1,
-   "volume": 880079.0,
-   "today_ret": -0.77,
-   "vol_ratio": 3.6,
-   "range_today_pct": 5.34,
-   "avg_range_pct": 4.86,
-   "tight6": 17.27,
-   "median_turnover_cr": 72.28,
-   "trades": 33227.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.23,
    "score": 86.99
   },
   {
@@ -250,26 +190,6 @@
    "sector": "Services",
    "delivery_ratio": 1.08,
    "score": 84.01
-  },
-  {
-   "symbol": "WELCORP",
-   "close": 2660.0,
-   "open": 2472.6,
-   "high": 2678.7,
-   "low": 2472.6,
-   "prev_close": 2460.3,
-   "official_close": 2660.1,
-   "volume": 4629365.0,
-   "today_ret": 8.12,
-   "vol_ratio": 1.33,
-   "range_today_pct": 7.75,
-   "avg_range_pct": 5.39,
-   "tight6": 20.47,
-   "median_turnover_cr": 208.32,
-   "trades": 164512.0,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.49,
-   "score": 82.99
   },
   {
    "symbol": "PWL",
@@ -372,26 +292,6 @@
    "score": 81.21
   },
   {
-   "symbol": "CARTRADE",
-   "close": 2980.0,
-   "open": 2949.9,
-   "high": 3127.7,
-   "low": 2946.7,
-   "prev_close": 2938.0,
-   "official_close": 2988.9,
-   "volume": 650048.0,
-   "today_ret": 1.43,
-   "vol_ratio": 1.41,
-   "range_today_pct": 6.07,
-   "avg_range_pct": 4.69,
-   "tight6": 10.52,
-   "median_turnover_cr": 99.1,
-   "trades": 46573.2,
-   "sector": "Consumer Services",
-   "delivery_ratio": 0.64,
-   "score": 80.87
-  },
-  {
    "symbol": "ATGL",
    "close": 657.6,
    "open": 587.4,
@@ -410,6 +310,106 @@
    "sector": "Oil Gas & Consumable Fuels",
    "delivery_ratio": 0.17,
    "score": 80.61
+  },
+  {
+   "symbol": "ANTHEM",
+   "close": 941.0,
+   "open": 934.0,
+   "high": 952.9,
+   "low": 916.55,
+   "prev_close": 927.4,
+   "official_close": 928.5,
+   "volume": 5490000.0,
+   "today_ret": 1.47,
+   "vol_ratio": 6.31,
+   "range_today_pct": 3.86,
+   "avg_range_pct": 3.41,
+   "tight6": 6.27,
+   "median_turnover_cr": 54.2,
+   "trades": 48873.0,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.25,
+   "score": 80.44
+  },
+  {
+   "symbol": "CRAFTSMAN",
+   "close": 11235.0,
+   "open": 10890.0,
+   "high": 11300.0,
+   "low": 10871.0,
+   "prev_close": 10937.0,
+   "official_close": 11138.0,
+   "volume": 207605.0,
+   "today_ret": 2.72,
+   "vol_ratio": 3.84,
+   "range_today_pct": 3.82,
+   "avg_range_pct": 3.76,
+   "tight6": 12.45,
+   "median_turnover_cr": 40.46,
+   "trades": 16422.2,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.43,
+   "score": 79.85
+  },
+  {
+   "symbol": "ACUTAAS",
+   "close": 3425.2,
+   "open": 3334.0,
+   "high": 3462.0,
+   "low": 3302.5,
+   "prev_close": 3315.1,
+   "official_close": 3440.3,
+   "volume": 521496.0,
+   "today_ret": 3.32,
+   "vol_ratio": 1.81,
+   "range_today_pct": 4.66,
+   "avg_range_pct": 3.56,
+   "tight6": 8.74,
+   "median_turnover_cr": 96.38,
+   "trades": 38169.6,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.98,
+   "score": 78.83
+  },
+  {
+   "symbol": "LODHA",
+   "close": 1144.7,
+   "open": 1110.2,
+   "high": 1148.8,
+   "low": 1108.6,
+   "prev_close": 1103.1,
+   "official_close": 1144.7,
+   "volume": 4727259.0,
+   "today_ret": 3.77,
+   "vol_ratio": 2.98,
+   "range_today_pct": 3.51,
+   "avg_range_pct": 3.69,
+   "tight6": 10.95,
+   "median_turnover_cr": 203.08,
+   "trades": 39148.0,
+   "sector": "Realty",
+   "delivery_ratio": 1.41,
+   "score": 77.89
+  },
+  {
+   "symbol": "AEGISLOG",
+   "close": 1420.9,
+   "open": 1362.9,
+   "high": 1429.7,
+   "low": 1360.0,
+   "prev_close": 1353.8,
+   "official_close": 1415.4,
+   "volume": 1333662.0,
+   "today_ret": 4.96,
+   "vol_ratio": 1.59,
+   "range_today_pct": 4.91,
+   "avg_range_pct": 4.45,
+   "tight6": 9.99,
+   "median_turnover_cr": 162.74,
+   "trades": 43533.4,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 1.24,
+   "score": 77.64
   }
  ],
  "outcomes": {
@@ -456,14 +456,6 @@
     "up": 1.43,
     "down": -1.64
    },
-   "BEML": {
-    "gap": 0.75,
-    "oc": -2.42,
-    "cc": -1.69,
-    "range_pct": 3.0,
-    "up": 0.94,
-    "down": -2.08
-   },
    "MEESHO": {
     "gap": 0.73,
     "oc": 1.62,
@@ -472,14 +464,6 @@
     "up": 3.15,
     "down": 0.73
    },
-   "AZAD": {
-    "gap": 0.92,
-    "oc": -1.88,
-    "cc": -0.98,
-    "range_pct": 2.34,
-    "up": 0.92,
-    "down": -1.44
-   },
    "TATATECH": {
     "gap": -0.67,
     "oc": 0.75,
@@ -487,14 +471,6 @@
     "range_pct": 3.31,
     "up": 1.13,
     "down": -2.16
-   },
-   "CPPLUS": {
-    "gap": -0.15,
-    "oc": 3.88,
-    "cc": 3.72,
-    "range_pct": 4.96,
-    "up": 4.47,
-    "down": -0.49
    },
    "PINELABS": {
     "gap": 1.28,
@@ -511,14 +487,6 @@
     "range_pct": 1.43,
     "up": 0.78,
     "down": -0.66
-   },
-   "WELCORP": {
-    "gap": 3.68,
-    "oc": -0.11,
-    "cc": 3.57,
-    "range_pct": 4.76,
-    "up": 5.17,
-    "down": 0.23
    },
    "PWL": {
     "gap": -0.44,
@@ -560,14 +528,6 @@
     "up": 0.28,
     "down": -2.57
    },
-   "CARTRADE": {
-    "gap": 0.03,
-    "oc": -2.37,
-    "cc": -2.34,
-    "range_pct": 2.76,
-    "up": 0.04,
-    "down": -2.72
-   },
    "ATGL": {
     "gap": -0.46,
     "oc": -2.99,
@@ -575,6 +535,46 @@
     "range_pct": 4.55,
     "up": -0.25,
     "down": -4.78
+   },
+   "ANTHEM": {
+    "gap": 1.21,
+    "oc": -2.15,
+    "cc": -0.97,
+    "range_pct": 3.46,
+    "up": 1.99,
+    "down": -1.51
+   },
+   "CRAFTSMAN": {
+    "gap": 0.5,
+    "oc": -2.13,
+    "cc": -1.63,
+    "range_pct": 4.7,
+    "up": 2.73,
+    "down": -1.99
+   },
+   "ACUTAAS": {
+    "gap": 0.57,
+    "oc": -1.01,
+    "cc": -0.44,
+    "range_pct": 3.21,
+    "up": 2.02,
+    "down": -1.2
+   },
+   "LODHA": {
+    "gap": -0.6,
+    "oc": 0.02,
+    "cc": -0.59,
+    "range_pct": 2.08,
+    "up": 0.52,
+    "down": -1.55
+   },
+   "AEGISLOG": {
+    "gap": 0.47,
+    "oc": 3.36,
+    "cc": 3.84,
+    "range_pct": 5.89,
+    "up": 5.99,
+    "down": 0.07
    }
   }
  }

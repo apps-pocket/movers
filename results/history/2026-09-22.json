@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-22",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1955,
-  "pct_above_50dma": 34.3,
-  "pct_advancing": 43.1,
+  "stocks_scanned": 2201,
+  "pct_above_50dma": 35.3,
+  "pct_advancing": 43.9,
   "mood": "Weak",
   "pct_above_20ema": 35.4,
   "breadth_5d_change": 15.5,
@@ -232,26 +232,6 @@
    "score": 89.85
   },
   {
-   "symbol": "FINCABLES",
-   "close": 1463.9,
-   "open": 1409.9,
-   "high": 1474.0,
-   "low": 1404.3,
-   "prev_close": 1399.7,
-   "official_close": 1468.1,
-   "volume": 1670261.0,
-   "today_ret": 4.59,
-   "vol_ratio": 1.36,
-   "range_today_pct": 4.76,
-   "avg_range_pct": 4.41,
-   "tight6": 11.95,
-   "median_turnover_cr": 49.95,
-   "trades": 55963.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.14,
-   "score": 87.58
-  },
-  {
    "symbol": "SOLARINDS",
    "close": 19890.0,
    "open": 19395.0,
@@ -352,26 +332,6 @@
    "score": 81.04
   },
   {
-   "symbol": "ENRIN",
-   "close": 3228.0,
-   "open": 3225.1,
-   "high": 3348.0,
-   "low": 3217.6,
-   "prev_close": 3214.7,
-   "official_close": 3235.0,
-   "volume": 545192.0,
-   "today_ret": 0.41,
-   "vol_ratio": 1.29,
-   "range_today_pct": 4.04,
-   "avg_range_pct": 3.12,
-   "tight6": 11.77,
-   "median_turnover_cr": 128.07,
-   "trades": 41343.05,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.82,
-   "score": 80.62
-  },
-  {
    "symbol": "WELSPUNLIV",
    "close": 223.5,
    "open": 215.4,
@@ -392,24 +352,64 @@
    "score": 80.45
   },
   {
-   "symbol": "THERMAX",
-   "close": 3459.0,
-   "open": 3580.0,
-   "high": 3615.0,
-   "low": 3459.0,
-   "prev_close": 3578.2,
-   "official_close": 3472.2,
-   "volume": 183238.0,
-   "today_ret": -3.33,
-   "vol_ratio": 1.42,
-   "range_today_pct": 4.51,
-   "avg_range_pct": 3.0,
-   "tight6": 7.49,
-   "median_turnover_cr": 66.53,
-   "trades": 27513.65,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.2,
-   "score": 80.03
+   "symbol": "RKFORGE",
+   "close": 715.0,
+   "open": 719.4,
+   "high": 741.0,
+   "low": 712.1,
+   "prev_close": 716.5,
+   "official_close": 716.25,
+   "volume": 660677.0,
+   "today_ret": -0.21,
+   "vol_ratio": 0.92,
+   "range_today_pct": 4.04,
+   "avg_range_pct": 3.64,
+   "tight6": 11.45,
+   "median_turnover_cr": 52.44,
+   "trades": 23974.8,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 0.75,
+   "score": 79.19
+  },
+  {
+   "symbol": "SWIGGY",
+   "close": 284.05,
+   "open": 273.0,
+   "high": 284.25,
+   "low": 272.8,
+   "prev_close": 272.7,
+   "official_close": 284.05,
+   "volume": 32604564.0,
+   "today_ret": 4.16,
+   "vol_ratio": 1.29,
+   "range_today_pct": 4.03,
+   "avg_range_pct": 2.88,
+   "tight6": 5.21,
+   "median_turnover_cr": 452.4,
+   "trades": 103000.45,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.19,
+   "score": 76.76
+  },
+  {
+   "symbol": "CONCOR",
+   "close": 467.0,
+   "open": 489.5,
+   "high": 489.5,
+   "low": 466.7,
+   "prev_close": 487.05,
+   "official_close": 467.0,
+   "volume": 2828067.0,
+   "today_ret": -4.12,
+   "vol_ratio": 2.29,
+   "range_today_pct": 4.88,
+   "avg_range_pct": 2.71,
+   "tight6": 8.1,
+   "median_turnover_cr": 57.13,
+   "trades": 22259.15,
+   "sector": "Services",
+   "delivery_ratio": 0.95,
+   "score": 76.43
   }
  ],
  "outcomes": {
@@ -504,14 +504,6 @@
     "up": 0.49,
     "down": -2.28
    },
-   "FINCABLES": {
-    "gap": 0.47,
-    "oc": -0.34,
-    "cc": 0.13,
-    "range_pct": 3.21,
-    "up": 1.38,
-    "down": -1.85
-   },
    "SOLARINDS": {
     "gap": 0.8,
     "oc": -1.6,
@@ -552,14 +544,6 @@
     "up": 2.23,
     "down": -3.23
    },
-   "ENRIN": {
-    "gap": 0.0,
-    "oc": -0.87,
-    "cc": -0.87,
-    "range_pct": 2.19,
-    "up": 1.29,
-    "down": -0.9
-   },
    "WELSPUNLIV": {
     "gap": 3.47,
     "oc": -2.49,
@@ -568,13 +552,29 @@
     "up": 5.19,
     "down": -0.23
    },
-   "THERMAX": {
-    "gap": -0.35,
-    "oc": 0.01,
-    "cc": -0.33,
-    "range_pct": 1.81,
-    "up": 1.03,
-    "down": -0.78
+   "RKFORGE": {
+    "gap": -0.31,
+    "oc": -0.21,
+    "cc": -0.52,
+    "range_pct": 2.46,
+    "up": 0.95,
+    "down": -1.5
+   },
+   "SWIGGY": {
+    "gap": 0.09,
+    "oc": -2.04,
+    "cc": -1.95,
+    "range_pct": 4.57,
+    "up": 1.97,
+    "down": -2.61
+   },
+   "CONCOR": {
+    "gap": 0.43,
+    "oc": -0.93,
+    "cc": -0.5,
+    "range_pct": 2.24,
+    "up": 1.42,
+    "down": -0.82
    }
   }
  }

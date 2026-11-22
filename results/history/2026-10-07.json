@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-07",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1998,
-  "pct_above_50dma": 26.1,
-  "pct_advancing": 35.3,
+  "stocks_scanned": 2228,
+  "pct_above_50dma": 27.6,
+  "pct_advancing": 36.0,
   "mood": "Weak",
   "pct_above_20ema": 29.4,
   "breadth_5d_change": 5.0,
@@ -352,26 +352,6 @@
    "score": 78.01
   },
   {
-   "symbol": "MAHABANK",
-   "close": 84.15,
-   "open": 80.8,
-   "high": 84.5,
-   "low": 79.89,
-   "prev_close": 80.8,
-   "official_close": 84.15,
-   "volume": 20883267.0,
-   "today_ret": 4.15,
-   "vol_ratio": 1.51,
-   "range_today_pct": 5.48,
-   "avg_range_pct": 2.94,
-   "tight6": 6.69,
-   "median_turnover_cr": 93.37,
-   "trades": 47895.1,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.79,
-   "score": 76.98
-  },
-  {
    "symbol": "ZEEL",
    "close": 70.25,
    "open": 72.5,
@@ -410,6 +390,26 @@
    "sector": "Metals & Mining",
    "delivery_ratio": 1.14,
    "score": 75.77
+  },
+  {
+   "symbol": "GLAND",
+   "close": 3159.0,
+   "open": 3026.0,
+   "high": 3171.0,
+   "low": 3019.0,
+   "prev_close": 3006.1,
+   "official_close": 3150.6,
+   "volume": 1341221.0,
+   "today_ret": 5.09,
+   "vol_ratio": 2.66,
+   "range_today_pct": 4.81,
+   "avg_range_pct": 2.84,
+   "tight6": 10.44,
+   "median_turnover_cr": 110.55,
+   "trades": 45358.85,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.75,
+   "score": 75.43
   }
  ],
  "outcomes": {
@@ -552,14 +552,6 @@
     "up": -0.02,
     "down": -2.93
    },
-   "MAHABANK": {
-    "gap": 0.0,
-    "oc": -2.5,
-    "cc": -2.5,
-    "range_pct": 2.91,
-    "up": 0.42,
-    "down": -2.5
-   },
    "ZEEL": {
     "gap": 0.83,
     "oc": -3.14,
@@ -575,6 +567,14 @@
     "range_pct": 7.15,
     "up": 0.0,
     "down": -7.15
+   },
+   "GLAND": {
+    "gap": 0.36,
+    "oc": -3.17,
+    "cc": -2.82,
+    "range_pct": 3.83,
+    "up": 0.63,
+    "down": -3.21
    }
   }
  }

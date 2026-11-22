@@ -1,10 +1,10 @@
 {
  "asof": "2026-11-19",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2228,
-  "pct_above_50dma": 44.0,
-  "pct_advancing": 58.5,
+  "stocks_scanned": 2296,
+  "pct_above_50dma": 43.9,
+  "pct_advancing": 58.2,
   "mood": "Neutral",
   "pct_above_20ema": 48.6,
   "breadth_5d_change": -24.5,
@@ -252,26 +252,6 @@
    "score": 83.84
   },
   {
-   "symbol": "IREDA",
-   "close": 129.8,
-   "open": 120.0,
-   "high": 133.6,
-   "low": 119.7,
-   "prev_close": 119.8,
-   "official_close": 129.8,
-   "volume": 117907599.0,
-   "today_ret": 8.35,
-   "vol_ratio": 12.08,
-   "range_today_pct": 10.71,
-   "avg_range_pct": 3.53,
-   "tight6": 14.68,
-   "median_turnover_cr": 48.81,
-   "trades": 60950.9,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.51,
-   "score": 83.42
-  },
-  {
    "symbol": "VAML",
    "close": 372.0,
    "open": 369.5,
@@ -292,26 +272,6 @@
    "score": 82.74
   },
   {
-   "symbol": "PINELABS",
-   "close": 160.95,
-   "open": 166.0,
-   "high": 166.0,
-   "low": 158.82,
-   "prev_close": 169.35,
-   "official_close": 161.24,
-   "volume": 20306471.0,
-   "today_ret": -4.96,
-   "vol_ratio": 1.41,
-   "range_today_pct": 4.46,
-   "avg_range_pct": 4.5,
-   "tight6": 12.28,
-   "median_turnover_cr": 275.25,
-   "trades": 97838.85,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.92,
-   "score": 82.48
-  },
-  {
    "symbol": "PFOCUS",
    "close": 268.75,
    "open": 271.0,
@@ -330,26 +290,6 @@
    "sector": "Media Entertainment & Publication",
    "delivery_ratio": 0.68,
    "score": 81.89
-  },
-  {
-   "symbol": "VOLTAS",
-   "close": 1237.0,
-   "open": 1131.0,
-   "high": 1243.7,
-   "low": 1131.0,
-   "prev_close": 1134.6,
-   "official_close": 1237.0,
-   "volume": 6235827.0,
-   "today_ret": 9.03,
-   "vol_ratio": 5.7,
-   "range_today_pct": 9.11,
-   "avg_range_pct": 3.4,
-   "tight6": 11.84,
-   "median_turnover_cr": 71.21,
-   "trades": 44747.4,
-   "sector": "Consumer Durables",
-   "delivery_ratio": 0.51,
-   "score": 80.1
   },
   {
    "symbol": "SANSERA",
@@ -410,6 +350,66 @@
    "sector": "Chemicals",
    "delivery_ratio": 1.06,
    "score": 76.96
+  },
+  {
+   "symbol": "TATATECH",
+   "close": 704.1,
+   "open": 656.05,
+   "high": 717.8,
+   "low": 648.1,
+   "prev_close": 656.7,
+   "official_close": 703.75,
+   "volume": 8544689.0,
+   "today_ret": 7.22,
+   "vol_ratio": 16.62,
+   "range_today_pct": 9.9,
+   "avg_range_pct": 3.18,
+   "tight6": 9.9,
+   "median_turnover_cr": 48.26,
+   "trades": 38423.95,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.27,
+   "score": 75.94
+  },
+  {
+   "symbol": "RVNL",
+   "close": 195.0,
+   "open": 188.28,
+   "high": 195.85,
+   "low": 187.23,
+   "prev_close": 189.0,
+   "official_close": 195.0,
+   "volume": 8008194.0,
+   "today_ret": 3.17,
+   "vol_ratio": 0.99,
+   "range_today_pct": 4.42,
+   "avg_range_pct": 3.86,
+   "tight6": 12.96,
+   "median_turnover_cr": 82.28,
+   "trades": 54788.0,
+   "sector": "Construction",
+   "delivery_ratio": 0.74,
+   "score": 75.51
+  },
+  {
+   "symbol": "POLYCAB",
+   "close": 7550.0,
+   "open": 7300.0,
+   "high": 7571.0,
+   "low": 7238.0,
+   "prev_close": 7307.5,
+   "official_close": 7550.0,
+   "volume": 1027023.0,
+   "today_ret": 3.32,
+   "vol_ratio": 2.93,
+   "range_today_pct": 4.41,
+   "avg_range_pct": 3.29,
+   "tight6": 13.76,
+   "median_turnover_cr": 269.1,
+   "trades": 50330.4,
+   "sector": "Capital Goods",
+   "delivery_ratio": 1.15,
+   "score": 74.66
   }
  ],
  "outcomes": {
@@ -512,14 +512,6 @@
     "up": 2.14,
     "down": -1.51
    },
-   "IREDA": {
-    "gap": -0.62,
-    "oc": 2.09,
-    "cc": 1.46,
-    "range_pct": 4.33,
-    "up": 2.93,
-    "down": -1.38
-   },
    "VAML": {
     "gap": -2.96,
     "oc": 2.04,
@@ -528,14 +520,6 @@
     "up": -0.93,
     "down": -3.99
    },
-   "PINELABS": {
-    "gap": -0.3,
-    "oc": -0.41,
-    "cc": -0.71,
-    "range_pct": 5.1,
-    "up": 3.88,
-    "down": -1.2
-   },
    "PFOCUS": {
     "gap": 0.6,
     "oc": -5.64,
@@ -543,14 +527,6 @@
     "range_pct": 7.89,
     "up": 0.77,
     "down": -7.17
-   },
-   "VOLTAS": {
-    "gap": -0.4,
-    "oc": 0.24,
-    "cc": -0.16,
-    "range_pct": 2.19,
-    "up": 1.62,
-    "down": -0.57
    },
    "SANSERA": {
     "gap": -1.18,
@@ -575,6 +551,30 @@
     "range_pct": 2.85,
     "up": 0.81,
     "down": -2.04
+   },
+   "TATATECH": {
+    "gap": -0.53,
+    "oc": 4.07,
+    "cc": 3.52,
+    "range_pct": 6.31,
+    "up": 4.55,
+    "down": -1.73
+   },
+   "RVNL": {
+    "gap": -1.15,
+    "oc": -0.91,
+    "cc": -2.05,
+    "range_pct": 2.28,
+    "up": 0.0,
+    "down": -2.25
+   },
+   "POLYCAB": {
+    "gap": -1.01,
+    "oc": 1.28,
+    "cc": 0.26,
+    "range_pct": 3.24,
+    "up": 0.33,
+    "down": -2.87
    }
   }
  }

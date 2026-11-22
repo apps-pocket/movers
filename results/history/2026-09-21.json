@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-21",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1948,
-  "pct_above_50dma": 34.4,
-  "pct_advancing": 43.4,
+  "stocks_scanned": 2195,
+  "pct_above_50dma": 35.2,
+  "pct_advancing": 43.0,
   "mood": "Weak",
   "pct_above_20ema": 34.9,
   "breadth_5d_change": 2.4,
@@ -192,26 +192,6 @@
    "score": 86.87
   },
   {
-   "symbol": "KAYNES",
-   "close": 3650.0,
-   "open": 3549.0,
-   "high": 3674.0,
-   "low": 3507.7,
-   "prev_close": 3515.0,
-   "official_close": 3650.0,
-   "volume": 1131072.0,
-   "today_ret": 3.84,
-   "vol_ratio": 1.06,
-   "range_today_pct": 4.56,
-   "avg_range_pct": 3.96,
-   "tight6": 10.44,
-   "median_turnover_cr": 354.29,
-   "trades": 72149.2,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.84,
-   "score": 85.95
-  },
-  {
    "symbol": "BSE",
    "close": 3161.0,
    "open": 3258.0,
@@ -230,26 +210,6 @@
    "sector": "Financial Services",
    "delivery_ratio": 0.94,
    "score": 85.03
-  },
-  {
-   "symbol": "SHYAMMETL",
-   "close": 1095.0,
-   "open": 1111.0,
-   "high": 1114.5,
-   "low": 1071.0,
-   "prev_close": 1100.0,
-   "official_close": 1097.5,
-   "volume": 2877181.0,
-   "today_ret": -0.45,
-   "vol_ratio": 5.47,
-   "range_today_pct": 3.97,
-   "avg_range_pct": 3.15,
-   "tight6": 8.72,
-   "median_turnover_cr": 42.18,
-   "trades": 20529.8,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.11,
-   "score": 84.03
   },
   {
    "symbol": "SANSERA",
@@ -352,46 +312,6 @@
    "score": 79.6
   },
   {
-   "symbol": "WELCORP",
-   "close": 2755.0,
-   "open": 2758.0,
-   "high": 2797.6,
-   "low": 2666.2,
-   "prev_close": 2660.1,
-   "official_close": 2762.7,
-   "volume": 2544698.0,
-   "today_ret": 3.57,
-   "vol_ratio": 0.69,
-   "range_today_pct": 4.77,
-   "avg_range_pct": 5.05,
-   "tight6": 20.23,
-   "median_turnover_cr": 208.32,
-   "trades": 140725.7,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.84,
-   "score": 79.35
-  },
-  {
-   "symbol": "SYRMA",
-   "close": 1707.0,
-   "open": 1721.0,
-   "high": 1727.4,
-   "low": 1658.0,
-   "prev_close": 1728.9,
-   "official_close": 1713.3,
-   "volume": 1838433.0,
-   "today_ret": -1.27,
-   "vol_ratio": 0.75,
-   "range_today_pct": 4.07,
-   "avg_range_pct": 3.97,
-   "tight6": 20.27,
-   "median_turnover_cr": 140.37,
-   "trades": 90508.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.64,
-   "score": 78.93
-  },
-  {
    "symbol": "ACUTAAS",
    "close": 3425.0,
    "open": 3460.0,
@@ -410,6 +330,86 @@
    "sector": "Healthcare",
    "delivery_ratio": 0.82,
    "score": 77.93
+  },
+  {
+   "symbol": "CMPDI",
+   "close": 210.17,
+   "open": 216.02,
+   "high": 216.3,
+   "low": 208.46,
+   "prev_close": 214.58,
+   "official_close": 209.96,
+   "volume": 1509024.0,
+   "today_ret": -2.06,
+   "vol_ratio": 0.8,
+   "range_today_pct": 3.73,
+   "avg_range_pct": 4.31,
+   "tight6": 8.57,
+   "median_turnover_cr": 46.65,
+   "trades": 25096.95,
+   "sector": "Services",
+   "delivery_ratio": 1.31,
+   "score": 77.76
+  },
+  {
+   "symbol": "TATATECH",
+   "close": 723.0,
+   "open": 717.6,
+   "high": 730.6,
+   "low": 706.85,
+   "prev_close": 722.45,
+   "official_close": 724.9,
+   "volume": 1034878.0,
+   "today_ret": 0.08,
+   "vol_ratio": 0.94,
+   "range_today_pct": 3.28,
+   "avg_range_pct": 3.84,
+   "tight6": 11.49,
+   "median_turnover_cr": 70.82,
+   "trades": 42212.45,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.9,
+   "score": 77.34
+  },
+  {
+   "symbol": "SOLARINDS",
+   "close": 19265.0,
+   "open": 18790.0,
+   "high": 19370.0,
+   "low": 18730.0,
+   "prev_close": 18555.0,
+   "official_close": 19265.0,
+   "volume": 215492.0,
+   "today_ret": 3.83,
+   "vol_ratio": 0.94,
+   "range_today_pct": 3.32,
+   "avg_range_pct": 3.57,
+   "tight6": 21.91,
+   "median_turnover_cr": 191.09,
+   "trades": 44437.55,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.87,
+   "score": 76.34
+  },
+  {
+   "symbol": "SCI",
+   "close": 281.0,
+   "open": 278.4,
+   "high": 286.9,
+   "low": 278.2,
+   "prev_close": 277.05,
+   "official_close": 280.55,
+   "volume": 2506605.0,
+   "today_ret": 1.43,
+   "vol_ratio": 1.26,
+   "range_today_pct": 3.1,
+   "avg_range_pct": 3.06,
+   "tight6": 8.58,
+   "median_turnover_cr": 55.93,
+   "trades": 29353.0,
+   "sector": "Services",
+   "delivery_ratio": 0.77,
+   "score": 75.33
   }
  ],
  "outcomes": {
@@ -488,14 +488,6 @@
     "up": 5.0,
     "down": 0.51
    },
-   "KAYNES": {
-    "gap": -1.4,
-    "oc": -4.0,
-    "cc": -5.34,
-    "range_pct": 4.83,
-    "up": -1.4,
-    "down": -6.16
-   },
    "BSE": {
     "gap": 0.31,
     "oc": 2.02,
@@ -503,14 +495,6 @@
     "range_pct": 2.62,
     "up": 2.94,
     "down": 0.31
-   },
-   "SHYAMMETL": {
-    "gap": 0.7,
-    "oc": -1.11,
-    "cc": -0.42,
-    "range_pct": 1.75,
-    "up": 0.7,
-    "down": -1.06
    },
    "SANSERA": {
     "gap": 4.49,
@@ -552,22 +536,6 @@
     "up": 2.14,
     "down": -0.98
    },
-   "WELCORP": {
-    "gap": 0.0,
-    "oc": -0.64,
-    "cc": -0.64,
-    "range_pct": 4.43,
-    "up": 2.4,
-    "down": -2.03
-   },
-   "SYRMA": {
-    "gap": 0.39,
-    "oc": 0.75,
-    "cc": 1.14,
-    "range_pct": 5.2,
-    "up": 5.29,
-    "down": 0.07
-   },
    "ACUTAAS": {
     "gap": 0.71,
     "oc": -6.96,
@@ -575,6 +543,38 @@
     "range_pct": 7.25,
     "up": 0.71,
     "down": -6.59
+   },
+   "CMPDI": {
+    "gap": 0.02,
+    "oc": -0.34,
+    "cc": -0.31,
+    "range_pct": 2.92,
+    "up": 1.88,
+    "down": -1.05
+   },
+   "TATATECH": {
+    "gap": 0.0,
+    "oc": -1.54,
+    "cc": -1.54,
+    "range_pct": 1.78,
+    "up": 0.0,
+    "down": -1.78
+   },
+   "SOLARINDS": {
+    "gap": 0.67,
+    "oc": 2.55,
+    "cc": 3.24,
+    "range_pct": 4.69,
+    "up": 4.98,
+    "down": 0.26
+   },
+   "SCI": {
+    "gap": 0.52,
+    "oc": -0.46,
+    "cc": 0.05,
+    "range_pct": 1.74,
+    "up": 1.19,
+    "down": -0.55
    }
   }
  }

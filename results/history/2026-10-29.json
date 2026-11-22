@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-29",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2171,
-  "pct_above_50dma": 16.9,
-  "pct_advancing": 62.2,
+  "stocks_scanned": 2270,
+  "pct_above_50dma": 17.3,
+  "pct_advancing": 61.8,
   "mood": "Weak",
   "pct_above_20ema": 26.9,
   "breadth_5d_change": 14.1,
@@ -152,26 +152,6 @@
    "score": 90.24
   },
   {
-   "symbol": "WELCORP",
-   "close": 2512.0,
-   "open": 2589.0,
-   "high": 2607.2,
-   "low": 2385.6,
-   "prev_close": 2564.3,
-   "official_close": 2499.1,
-   "volume": 1519901.0,
-   "today_ret": -2.04,
-   "vol_ratio": 1.0,
-   "range_today_pct": 8.82,
-   "avg_range_pct": 5.62,
-   "tight6": 12.22,
-   "median_turnover_cr": 351.69,
-   "trades": 92826.5,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.64,
-   "score": 87.63
-  },
-  {
    "symbol": "ZENSARTECH",
    "close": 537.4,
    "open": 503.0,
@@ -272,26 +252,6 @@
    "score": 82.58
   },
   {
-   "symbol": "SAMMAANCAP",
-   "close": 121.21,
-   "open": 116.0,
-   "high": 121.82,
-   "low": 115.35,
-   "prev_close": 116.04,
-   "official_close": 121.13,
-   "volume": 7788781.0,
-   "today_ret": 4.46,
-   "vol_ratio": 1.22,
-   "range_today_pct": 5.34,
-   "avg_range_pct": 4.28,
-   "tight6": 9.78,
-   "median_turnover_cr": 73.95,
-   "trades": 40208.1,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.88,
-   "score": 81.82
-  },
-  {
    "symbol": "PPLPHARMA",
    "close": 230.05,
    "open": 231.73,
@@ -310,66 +270,6 @@
    "sector": "Healthcare",
    "delivery_ratio": 0.53,
    "score": 81.65
-  },
-  {
-   "symbol": "CUB",
-   "close": 226.9,
-   "open": 219.1,
-   "high": 229.48,
-   "low": 219.1,
-   "prev_close": 215.0,
-   "official_close": 226.9,
-   "volume": 8601757.0,
-   "today_ret": 5.53,
-   "vol_ratio": 3.12,
-   "range_today_pct": 4.57,
-   "avg_range_pct": 3.88,
-   "tight6": 11.86,
-   "median_turnover_cr": 49.45,
-   "trades": 56593.65,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.55,
-   "score": 81.57
-  },
-  {
-   "symbol": "PNBHOUSING",
-   "close": 1110.0,
-   "open": 1162.0,
-   "high": 1177.3,
-   "low": 1083.1,
-   "prev_close": 1122.0,
-   "official_close": 1110.0,
-   "volume": 3597852.0,
-   "today_ret": -1.07,
-   "vol_ratio": 4.43,
-   "range_today_pct": 8.49,
-   "avg_range_pct": 3.33,
-   "tight6": 10.91,
-   "median_turnover_cr": 84.76,
-   "trades": 36292.5,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.71,
-   "score": 78.79
-  },
-  {
-   "symbol": "JYOTICNC",
-   "close": 956.5,
-   "open": 930.7,
-   "high": 962.7,
-   "low": 917.1,
-   "prev_close": 929.2,
-   "official_close": 956.7,
-   "volume": 616914.0,
-   "today_ret": 2.94,
-   "vol_ratio": 1.08,
-   "range_today_pct": 4.77,
-   "avg_range_pct": 4.43,
-   "tight6": 9.5,
-   "median_turnover_cr": 71.45,
-   "trades": 32127.85,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.02,
-   "score": 78.79
   },
   {
    "symbol": "PVRINOX",
@@ -410,6 +310,106 @@
    "sector": "Construction",
    "delivery_ratio": 1.08,
    "score": 77.61
+  },
+  {
+   "symbol": "NEULANDLAB",
+   "close": 19295.0,
+   "open": 19995.0,
+   "high": 20015.0,
+   "low": 19130.0,
+   "prev_close": 19970.0,
+   "official_close": 19280.0,
+   "volume": 71654.0,
+   "today_ret": -3.38,
+   "vol_ratio": 1.59,
+   "range_today_pct": 4.59,
+   "avg_range_pct": 3.71,
+   "tight6": 10.24,
+   "median_turnover_cr": 97.47,
+   "trades": 17059.3,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.18,
+   "score": 77.61
+  },
+  {
+   "symbol": "AMBUJACEM",
+   "close": 354.7,
+   "open": 352.0,
+   "high": 361.95,
+   "low": 349.0,
+   "prev_close": 351.2,
+   "official_close": 354.7,
+   "volume": 12293951.0,
+   "today_ret": 1.0,
+   "vol_ratio": 3.59,
+   "range_today_pct": 3.65,
+   "avg_range_pct": 3.6,
+   "tight6": 7.7,
+   "median_turnover_cr": 83.55,
+   "trades": 42199.75,
+   "sector": "Construction Materials",
+   "delivery_ratio": 0.92,
+   "score": 75.76
+  },
+  {
+   "symbol": "ZEEL",
+   "close": 70.2,
+   "open": 69.0,
+   "high": 70.83,
+   "low": 67.8,
+   "prev_close": 69.09,
+   "official_close": 70.51,
+   "volume": 15069377.0,
+   "today_ret": 1.61,
+   "vol_ratio": 1.1,
+   "range_today_pct": 4.32,
+   "avg_range_pct": 4.04,
+   "tight6": 11.72,
+   "median_turnover_cr": 132.98,
+   "trades": 55276.65,
+   "sector": "Media Entertainment & Publication",
+   "delivery_ratio": 0.8,
+   "score": 75.51
+  },
+  {
+   "symbol": "TIINDIA",
+   "close": 2177.0,
+   "open": 2131.8,
+   "high": 2177.9,
+   "low": 2096.1,
+   "prev_close": 2135.0,
+   "official_close": 2177.0,
+   "volume": 835125.0,
+   "today_ret": 1.97,
+   "vol_ratio": 1.39,
+   "range_today_pct": 3.76,
+   "avg_range_pct": 3.89,
+   "tight6": 7.93,
+   "median_turnover_cr": 67.41,
+   "trades": 40105.75,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.5,
+   "score": 75.17
+  },
+  {
+   "symbol": "ANANTRAJ",
+   "close": 462.7,
+   "open": 462.85,
+   "high": 468.8,
+   "low": 453.1,
+   "prev_close": 463.85,
+   "official_close": 463.95,
+   "volume": 2045073.0,
+   "today_ret": -0.25,
+   "vol_ratio": 1.22,
+   "range_today_pct": 3.39,
+   "avg_range_pct": 4.92,
+   "tight6": 7.81,
+   "median_turnover_cr": 83.75,
+   "trades": 44594.25,
+   "sector": "Realty",
+   "delivery_ratio": 1.06,
+   "score": 74.16
   }
  ],
  "outcomes": {
@@ -472,14 +472,6 @@
     "up": 6.0,
     "down": -3.25
    },
-   "WELCORP": {
-    "gap": -0.36,
-    "oc": -6.83,
-    "cc": -7.17,
-    "range_pct": 7.51,
-    "up": -0.36,
-    "down": -7.85
-   },
    "ZENSARTECH": {
     "gap": -0.06,
     "oc": -0.33,
@@ -520,14 +512,6 @@
     "up": -0.27,
     "down": -7.0
    },
-   "SAMMAANCAP": {
-    "gap": -0.4,
-    "oc": -3.69,
-    "cc": -4.07,
-    "range_pct": 4.23,
-    "up": -0.37,
-    "down": -4.58
-   },
    "PPLPHARMA": {
     "gap": -0.36,
     "oc": 3.4,
@@ -535,30 +519,6 @@
     "range_pct": 6.17,
     "up": 4.0,
     "down": -2.15
-   },
-   "CUB": {
-    "gap": -0.39,
-    "oc": -5.23,
-    "cc": -5.6,
-    "range_pct": 5.49,
-    "up": -0.13,
-    "down": -5.6
-   },
-   "PNBHOUSING": {
-    "gap": -0.36,
-    "oc": -4.16,
-    "cc": -4.5,
-    "range_pct": 4.34,
-    "up": -0.36,
-    "down": -4.68
-   },
-   "JYOTICNC": {
-    "gap": -0.18,
-    "oc": -4.34,
-    "cc": -4.51,
-    "range_pct": 5.8,
-    "up": -0.18,
-    "down": -5.97
    },
    "PVRINOX": {
     "gap": -0.15,
@@ -575,6 +535,46 @@
     "range_pct": 5.49,
     "up": 1.24,
     "down": -4.27
+   },
+   "NEULANDLAB": {
+    "gap": 0.34,
+    "oc": 1.32,
+    "cc": 1.66,
+    "range_pct": 4.63,
+    "up": 3.32,
+    "down": -1.32
+   },
+   "AMBUJACEM": {
+    "gap": -0.96,
+    "oc": -0.93,
+    "cc": -1.87,
+    "range_pct": 2.89,
+    "up": 0.99,
+    "down": -1.87
+   },
+   "ZEEL": {
+    "gap": -1.05,
+    "oc": -5.4,
+    "cc": -6.4,
+    "range_pct": 5.68,
+    "up": -1.05,
+    "down": -6.67
+   },
+   "TIINDIA": {
+    "gap": 0.05,
+    "oc": -2.66,
+    "cc": -2.62,
+    "range_pct": 4.5,
+    "up": 0.05,
+    "down": -4.46
+   },
+   "ANANTRAJ": {
+    "gap": -0.2,
+    "oc": -3.67,
+    "cc": -3.87,
+    "range_pct": 4.62,
+    "up": 0.31,
+    "down": -4.3
    }
   }
  }

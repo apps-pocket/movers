@@ -1,10 +1,10 @@
 {
  "asof": "2026-08-26",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1923,
-  "pct_above_50dma": 51.3,
-  "pct_advancing": 52.6,
+  "stocks_scanned": 2141,
+  "pct_above_50dma": 51.7,
+  "pct_advancing": 52.2,
   "mood": "Neutral",
   "pct_above_20ema": 49.8,
   "breadth_5d_change": 10.7,
@@ -212,26 +212,6 @@
    "score": 82.54
   },
   {
-   "symbol": "KAYNES",
-   "close": 4032.0,
-   "open": 3943.6,
-   "high": 4117.9,
-   "low": 3938.0,
-   "prev_close": 3936.0,
-   "official_close": 4032.0,
-   "volume": 1736408.0,
-   "today_ret": 2.44,
-   "vol_ratio": 1.03,
-   "range_today_pct": 4.46,
-   "avg_range_pct": 3.59,
-   "tight6": 11.87,
-   "median_turnover_cr": 303.29,
-   "trades": 88117.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.07,
-   "score": 82.3
-  },
-  {
    "symbol": "GVT&D",
    "close": 4340.0,
    "open": 4185.0,
@@ -290,46 +270,6 @@
    "sector": "Power",
    "delivery_ratio": 1.17,
    "score": 80.9
-  },
-  {
-   "symbol": "PREMIERENE",
-   "close": 1005.0,
-   "open": 1036.5,
-   "high": 1040.0,
-   "low": 982.2,
-   "prev_close": 1036.0,
-   "official_close": 1005.0,
-   "volume": 2553287.0,
-   "today_ret": -2.99,
-   "vol_ratio": 2.62,
-   "range_today_pct": 5.75,
-   "avg_range_pct": 2.75,
-   "tight6": 8.98,
-   "median_turnover_cr": 106.76,
-   "trades": 32714.8,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.9,
-   "score": 80.25
-  },
-  {
-   "symbol": "CPPLUS",
-   "close": 3542.0,
-   "open": 3418.0,
-   "high": 3548.0,
-   "low": 3400.1,
-   "prev_close": 3393.5,
-   "official_close": 3530.3,
-   "volume": 217905.0,
-   "today_ret": 4.38,
-   "vol_ratio": 0.84,
-   "range_today_pct": 4.18,
-   "avg_range_pct": 4.16,
-   "tight6": 8.89,
-   "median_turnover_cr": 74.54,
-   "trades": 27619.55,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.15,
-   "score": 79.43
   },
   {
    "symbol": "HINDZINC",
@@ -410,6 +350,66 @@
    "sector": "Financial Services",
    "delivery_ratio": 0.88,
    "score": 77.21
+  },
+  {
+   "symbol": "ATHERENERG",
+   "close": 1494.6,
+   "open": 1445.0,
+   "high": 1494.6,
+   "low": 1442.9,
+   "prev_close": 1439.4,
+   "official_close": 1494.6,
+   "volume": 4256363.0,
+   "today_ret": 3.83,
+   "vol_ratio": 0.99,
+   "range_today_pct": 3.46,
+   "avg_range_pct": 3.91,
+   "tight6": 4.88,
+   "median_turnover_cr": 408.03,
+   "trades": 133407.7,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.34,
+   "score": 75.9
+  },
+  {
+   "symbol": "JUBLFOOD",
+   "close": 499.5,
+   "open": 524.35,
+   "high": 527.85,
+   "low": 499.5,
+   "prev_close": 515.0,
+   "official_close": 499.5,
+   "volume": 2351201.0,
+   "today_ret": -3.01,
+   "vol_ratio": 0.62,
+   "range_today_pct": 5.68,
+   "avg_range_pct": 3.22,
+   "tight6": 6.63,
+   "median_turnover_cr": 89.09,
+   "trades": 56971.45,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.75,
+   "score": 75.66
+  },
+  {
+   "symbol": "PARADEEP",
+   "close": 163.41,
+   "open": 160.51,
+   "high": 165.79,
+   "low": 159.26,
+   "prev_close": 159.63,
+   "official_close": 163.84,
+   "volume": 13344838.0,
+   "today_ret": 2.37,
+   "vol_ratio": 0.86,
+   "range_today_pct": 4.0,
+   "avg_range_pct": 3.1,
+   "tight6": 12.04,
+   "median_turnover_cr": 43.68,
+   "trades": 50148.25,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.74,
+   "score": 75.41
   }
  ],
  "outcomes": {
@@ -496,14 +496,6 @@
     "up": 0.99,
     "down": -0.29
    },
-   "KAYNES": {
-    "gap": -0.3,
-    "oc": -0.03,
-    "cc": -0.33,
-    "range_pct": 2.72,
-    "up": 2.01,
-    "down": -0.69
-   },
    "GVT&D": {
     "gap": 1.85,
     "oc": -0.28,
@@ -527,22 +519,6 @@
     "range_pct": 2.25,
     "up": 3.01,
     "down": 0.73
-   },
-   "PREMIERENE": {
-    "gap": -0.2,
-    "oc": -0.3,
-    "cc": -0.5,
-    "range_pct": 3.48,
-    "up": 1.49,
-    "down": -1.98
-   },
-   "CPPLUS": {
-    "gap": 0.0,
-    "oc": 3.33,
-    "cc": 3.33,
-    "range_pct": 4.25,
-    "up": 3.39,
-    "down": -0.86
    },
    "HINDZINC": {
     "gap": 0.48,
@@ -575,6 +551,30 @@
     "range_pct": 1.78,
     "up": 0.89,
     "down": -0.9
+   },
+   "ATHERENERG": {
+    "gap": -0.64,
+    "oc": 0.69,
+    "cc": 0.05,
+    "range_pct": 2.74,
+    "up": 1.23,
+    "down": -1.49
+   },
+   "JUBLFOOD": {
+    "gap": -0.08,
+    "oc": 0.98,
+    "cc": 0.9,
+    "range_pct": 2.8,
+    "up": 1.9,
+    "down": -0.89
+   },
+   "PARADEEP": {
+    "gap": -0.57,
+    "oc": -1.45,
+    "cc": -2.01,
+    "range_pct": 2.03,
+    "up": -0.56,
+    "down": -2.58
    }
   }
  }

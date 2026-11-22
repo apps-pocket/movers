@@ -1,10 +1,10 @@
 {
  "asof": "2026-08-31",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1930,
-  "pct_above_50dma": 47.4,
-  "pct_advancing": 34.2,
+  "stocks_scanned": 2154,
+  "pct_above_50dma": 48.1,
+  "pct_advancing": 34.3,
   "mood": "Weak",
   "pct_above_20ema": 43.8,
   "breadth_5d_change": -0.9,
@@ -352,26 +352,6 @@
    "score": 77.48
   },
   {
-   "symbol": "WOCKPHARMA",
-   "close": 1885.0,
-   "open": 1974.9,
-   "high": 1977.1,
-   "low": 1872.0,
-   "prev_close": 1977.1,
-   "official_close": 1883.7,
-   "volume": 852543.0,
-   "today_ret": -4.66,
-   "vol_ratio": 1.19,
-   "range_today_pct": 5.58,
-   "avg_range_pct": 3.79,
-   "tight6": 9.41,
-   "median_turnover_cr": 126.82,
-   "trades": 35880.1,
-   "sector": "Healthcare",
-   "delivery_ratio": 1.23,
-   "score": 77.32
-  },
-  {
    "symbol": "CEMPRO",
    "close": 1227.0,
    "open": 1275.0,
@@ -392,24 +372,44 @@
    "score": 77.32
   },
   {
-   "symbol": "ADANIPOWER",
-   "close": 198.0,
-   "open": 212.37,
-   "high": 213.13,
-   "low": 198.0,
-   "prev_close": 212.63,
-   "official_close": 198.0,
-   "volume": 53907969.0,
-   "today_ret": -6.88,
-   "vol_ratio": 3.16,
-   "range_today_pct": 7.64,
-   "avg_range_pct": 2.6,
-   "tight6": 9.8,
-   "median_turnover_cr": 466.68,
-   "trades": 86946.05,
-   "sector": "Power",
-   "delivery_ratio": 1.64,
-   "score": 77.15
+   "symbol": "WOCKPHARMA",
+   "close": 1885.0,
+   "open": 1974.9,
+   "high": 1977.1,
+   "low": 1872.0,
+   "prev_close": 1977.1,
+   "official_close": 1883.7,
+   "volume": 852543.0,
+   "today_ret": -4.66,
+   "vol_ratio": 1.19,
+   "range_today_pct": 5.58,
+   "avg_range_pct": 3.79,
+   "tight6": 9.41,
+   "median_turnover_cr": 126.82,
+   "trades": 35880.1,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.23,
+   "score": 77.32
+  },
+  {
+   "symbol": "LODHA",
+   "close": 1198.6,
+   "open": 1260.0,
+   "high": 1260.0,
+   "low": 1198.6,
+   "prev_close": 1274.0,
+   "official_close": 1198.6,
+   "volume": 2185679.0,
+   "today_ret": -5.92,
+   "vol_ratio": 1.81,
+   "range_today_pct": 5.12,
+   "avg_range_pct": 2.84,
+   "tight6": 9.04,
+   "median_turnover_cr": 190.64,
+   "trades": 30253.65,
+   "sector": "Realty",
+   "delivery_ratio": 1.54,
+   "score": 76.9
   }
  ],
  "outcomes": {
@@ -552,14 +552,6 @@
     "up": 0.7,
     "down": -1.87
    },
-   "WOCKPHARMA": {
-    "gap": 0.0,
-    "oc": -1.79,
-    "cc": -1.79,
-    "range_pct": 2.89,
-    "up": 0.22,
-    "down": -2.68
-   },
    "CEMPRO": {
     "gap": 1.57,
     "oc": -0.23,
@@ -568,13 +560,21 @@
     "up": 2.23,
     "down": -1.35
    },
-   "ADANIPOWER": {
-    "gap": 2.02,
-    "oc": 1.17,
-    "cc": 3.21,
-    "range_pct": 2.22,
-    "up": 3.93,
-    "down": 1.67
+   "WOCKPHARMA": {
+    "gap": 0.0,
+    "oc": -1.79,
+    "cc": -1.79,
+    "range_pct": 2.89,
+    "up": 0.22,
+    "down": -2.68
+   },
+   "LODHA": {
+    "gap": 1.36,
+    "oc": -1.73,
+    "cc": -0.39,
+    "range_pct": 4.26,
+    "up": 2.77,
+    "down": -1.55
    }
   }
  }

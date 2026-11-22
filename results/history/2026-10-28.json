@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-28",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2168,
-  "pct_above_50dma": 14.9,
-  "pct_advancing": 51.3,
+  "stocks_scanned": 2269,
+  "pct_above_50dma": 15.4,
+  "pct_advancing": 51.4,
   "mood": "Weak",
   "pct_above_20ema": 20.0,
   "breadth_5d_change": 6.0,
@@ -72,26 +72,6 @@
    "score": 88.89
   },
   {
-   "symbol": "KAYNES",
-   "close": 3140.0,
-   "open": 3311.9,
-   "high": 3348.4,
-   "low": 3112.0,
-   "prev_close": 3350.4,
-   "official_close": 3140.0,
-   "volume": 2440816.0,
-   "today_ret": -6.28,
-   "vol_ratio": 3.26,
-   "range_today_pct": 7.53,
-   "avg_range_pct": 4.28,
-   "tight6": 14.17,
-   "median_turnover_cr": 345.87,
-   "trades": 52374.4,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.99,
-   "score": 88.72
-  },
-  {
    "symbol": "ACUTAAS",
    "close": 3690.0,
    "open": 3850.0,
@@ -109,6 +89,26 @@
    "trades": 74177.1,
    "sector": "Healthcare",
    "delivery_ratio": 0.65,
+   "score": 88.72
+  },
+  {
+   "symbol": "KAYNES",
+   "close": 3140.0,
+   "open": 3311.9,
+   "high": 3348.4,
+   "low": 3112.0,
+   "prev_close": 3350.4,
+   "official_close": 3140.0,
+   "volume": 2440816.0,
+   "today_ret": -6.28,
+   "vol_ratio": 3.26,
+   "range_today_pct": 7.53,
+   "avg_range_pct": 4.28,
+   "tight6": 14.17,
+   "median_turnover_cr": 345.87,
+   "trades": 52374.4,
+   "sector": "Capital Goods",
+   "delivery_ratio": 0.99,
    "score": 88.72
   },
   {
@@ -292,26 +292,6 @@
    "score": 82.66
   },
   {
-   "symbol": "SYRMA",
-   "close": 1563.0,
-   "open": 1520.7,
-   "high": 1592.4,
-   "low": 1519.0,
-   "prev_close": 1519.6,
-   "official_close": 1563.0,
-   "volume": 2088980.0,
-   "today_ret": 2.86,
-   "vol_ratio": 1.67,
-   "range_today_pct": 4.7,
-   "avg_range_pct": 5.12,
-   "tight6": 12.32,
-   "median_turnover_cr": 161.26,
-   "trades": 70708.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.96,
-   "score": 82.58
-  },
-  {
    "symbol": "MAZDOCK",
    "close": 1732.8,
    "open": 1694.9,
@@ -332,24 +312,24 @@
    "score": 82.58
   },
   {
-   "symbol": "WAAREEENER",
-   "close": 2238.0,
-   "open": 2225.0,
-   "high": 2306.9,
-   "low": 2161.5,
-   "prev_close": 2275.0,
-   "official_close": 2238.0,
-   "volume": 2980144.0,
-   "today_ret": -1.63,
-   "vol_ratio": 4.27,
-   "range_today_pct": 6.5,
-   "avg_range_pct": 3.54,
-   "tight6": 15.04,
-   "median_turnover_cr": 130.89,
-   "trades": 47855.3,
+   "symbol": "SYRMA",
+   "close": 1563.0,
+   "open": 1520.7,
+   "high": 1592.4,
+   "low": 1519.0,
+   "prev_close": 1519.6,
+   "official_close": 1563.0,
+   "volume": 2088980.0,
+   "today_ret": 2.86,
+   "vol_ratio": 1.67,
+   "range_today_pct": 4.7,
+   "avg_range_pct": 5.12,
+   "tight6": 12.32,
+   "median_turnover_cr": 161.26,
+   "trades": 70708.6,
    "sector": "Capital Goods",
-   "delivery_ratio": 0.61,
-   "score": 81.57
+   "delivery_ratio": 0.96,
+   "score": 82.58
   },
   {
    "symbol": "ANANTRAJ",
@@ -410,6 +390,26 @@
    "sector": "Services",
    "delivery_ratio": 1.05,
    "score": 78.87
+  },
+  {
+   "symbol": "CROMPTON",
+   "close": 204.0,
+   "open": 194.99,
+   "high": 205.29,
+   "low": 194.72,
+   "prev_close": 196.25,
+   "official_close": 204.0,
+   "volume": 5978741.0,
+   "today_ret": 3.95,
+   "vol_ratio": 1.14,
+   "range_today_pct": 5.18,
+   "avg_range_pct": 3.95,
+   "tight6": 9.08,
+   "median_turnover_cr": 65.6,
+   "trades": 50403.6,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.09,
+   "score": 78.7
   }
  ],
  "outcomes": {
@@ -440,14 +440,6 @@
     "up": 1.95,
     "down": -1.26
    },
-   "KAYNES": {
-    "gap": 0.09,
-    "oc": 1.42,
-    "cc": 1.51,
-    "range_pct": 2.51,
-    "up": 2.58,
-    "down": 0.06
-   },
    "ACUTAAS": {
     "gap": -0.27,
     "oc": 6.49,
@@ -455,6 +447,14 @@
     "range_pct": 9.7,
     "up": 8.68,
     "down": -0.99
+   },
+   "KAYNES": {
+    "gap": 0.09,
+    "oc": 1.42,
+    "cc": 1.51,
+    "range_pct": 2.51,
+    "up": 2.58,
+    "down": 0.06
    },
    "CUB": {
     "gap": 1.91,
@@ -528,14 +528,6 @@
     "up": -0.23,
     "down": -5.75
    },
-   "SYRMA": {
-    "gap": 0.0,
-    "oc": 6.78,
-    "cc": 6.78,
-    "range_pct": 7.8,
-    "up": 7.8,
-    "down": 0.0
-   },
    "MAZDOCK": {
     "gap": 0.01,
     "oc": 1.71,
@@ -544,13 +536,13 @@
     "up": 1.97,
     "down": -0.73
    },
-   "WAAREEENER": {
-    "gap": 0.53,
-    "oc": 3.03,
-    "cc": 3.57,
-    "range_pct": 3.92,
-    "up": 4.07,
-    "down": 0.13
+   "SYRMA": {
+    "gap": 0.0,
+    "oc": 6.78,
+    "cc": 6.78,
+    "range_pct": 7.8,
+    "up": 7.8,
+    "down": 0.0
    },
    "ANANTRAJ": {
     "gap": -0.22,
@@ -575,6 +567,14 @@
     "range_pct": 4.16,
     "up": 3.59,
     "down": -0.57
+   },
+   "CROMPTON": {
+    "gap": -0.64,
+    "oc": -1.33,
+    "cc": -1.96,
+    "range_pct": 2.02,
+    "up": -0.35,
+    "down": -2.36
    }
   }
  }

@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-22",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2165,
-  "pct_above_50dma": 13.1,
-  "pct_advancing": 25.5,
+  "stocks_scanned": 2264,
+  "pct_above_50dma": 13.7,
+  "pct_advancing": 25.7,
   "mood": "Weak",
   "pct_above_20ema": 12.8,
   "breadth_5d_change": -20.8,
@@ -72,26 +72,6 @@
    "score": 90.68
   },
   {
-   "symbol": "SWIGGY",
-   "close": 211.4,
-   "open": 220.5,
-   "high": 221.1,
-   "low": 207.7,
-   "prev_close": 223.65,
-   "official_close": 211.4,
-   "volume": 27037639.0,
-   "today_ret": -5.48,
-   "vol_ratio": 2.41,
-   "range_today_pct": 6.34,
-   "avg_range_pct": 4.17,
-   "tight6": 13.15,
-   "median_turnover_cr": 333.83,
-   "trades": 65992.2,
-   "sector": "Consumer Services",
-   "delivery_ratio": 0.84,
-   "score": 90.51
-  },
-  {
    "symbol": "KEI",
    "close": 3873.0,
    "open": 4099.8,
@@ -109,6 +89,26 @@
    "trades": 38530.4,
    "sector": "Capital Goods",
    "delivery_ratio": 0.74,
+   "score": 90.51
+  },
+  {
+   "symbol": "SWIGGY",
+   "close": 211.4,
+   "open": 220.5,
+   "high": 221.1,
+   "low": 207.7,
+   "prev_close": 223.65,
+   "official_close": 211.4,
+   "volume": 27037639.0,
+   "today_ret": -5.48,
+   "vol_ratio": 2.41,
+   "range_today_pct": 6.34,
+   "avg_range_pct": 4.17,
+   "tight6": 13.15,
+   "median_turnover_cr": 333.83,
+   "trades": 65992.2,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.84,
    "score": 90.51
   },
   {
@@ -292,26 +292,6 @@
    "score": 79.92
   },
   {
-   "symbol": "GRSE",
-   "close": 1953.4,
-   "open": 1977.0,
-   "high": 1977.4,
-   "low": 1866.1,
-   "prev_close": 2024.1,
-   "official_close": 1955.8,
-   "volume": 1433526.0,
-   "today_ret": -3.49,
-   "vol_ratio": 3.91,
-   "range_today_pct": 5.7,
-   "avg_range_pct": 3.21,
-   "tight6": 15.7,
-   "median_turnover_cr": 87.64,
-   "trades": 33605.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.56,
-   "score": 79.58
-  },
-  {
    "symbol": "ETERNAL",
    "close": 304.45,
    "open": 312.0,
@@ -332,66 +312,6 @@
    "score": 78.9
   },
   {
-   "symbol": "APARINDS",
-   "close": 14770.0,
-   "open": 15122.0,
-   "high": 15288.0,
-   "low": 14615.0,
-   "prev_close": 15122.0,
-   "official_close": 14713.0,
-   "volume": 144762.0,
-   "today_ret": -2.33,
-   "vol_ratio": 1.1,
-   "range_today_pct": 4.56,
-   "avg_range_pct": 4.63,
-   "tight6": 23.88,
-   "median_turnover_cr": 227.12,
-   "trades": 37781.25,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.07,
-   "score": 78.47
-  },
-  {
-   "symbol": "SYRMA",
-   "close": 1496.8,
-   "open": 1465.1,
-   "high": 1532.0,
-   "low": 1454.0,
-   "prev_close": 1473.1,
-   "official_close": 1495.7,
-   "volume": 1227755.0,
-   "today_ret": 1.61,
-   "vol_ratio": 0.88,
-   "range_today_pct": 5.21,
-   "avg_range_pct": 4.84,
-   "tight6": 17.32,
-   "median_turnover_cr": 164.56,
-   "trades": 68564.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.77,
-   "score": 78.31
-  },
-  {
-   "symbol": "HBLENGINE",
-   "close": 783.4,
-   "open": 777.0,
-   "high": 813.8,
-   "low": 766.5,
-   "prev_close": 786.6,
-   "official_close": 784.45,
-   "volume": 2837401.0,
-   "today_ret": -0.41,
-   "vol_ratio": 0.77,
-   "range_today_pct": 6.04,
-   "avg_range_pct": 4.39,
-   "tight6": 17.87,
-   "median_turnover_cr": 67.49,
-   "trades": 84350.55,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.56,
-   "score": 78.14
-  },
-  {
    "symbol": "ACMESOLAR",
    "close": 385.4,
    "open": 405.0,
@@ -410,6 +330,86 @@
    "sector": "Power",
    "delivery_ratio": 1.18,
    "score": 77.71
+  },
+  {
+   "symbol": "OFSS",
+   "close": 9843.0,
+   "open": 10210.0,
+   "high": 10290.0,
+   "low": 9843.0,
+   "prev_close": 10263.0,
+   "official_close": 9843.0,
+   "volume": 251663.0,
+   "today_ret": -4.09,
+   "vol_ratio": 1.15,
+   "range_today_pct": 4.54,
+   "avg_range_pct": 3.33,
+   "tight6": 8.69,
+   "median_turnover_cr": 222.98,
+   "trades": 34484.6,
+   "sector": "Information Technology",
+   "delivery_ratio": 1.09,
+   "score": 75.42
+  },
+  {
+   "symbol": "ADANIENSOL",
+   "close": 1295.4,
+   "open": 1323.9,
+   "high": 1336.8,
+   "low": 1287.0,
+   "prev_close": 1324.0,
+   "official_close": 1295.4,
+   "volume": 2330309.0,
+   "today_ret": -2.16,
+   "vol_ratio": 1.22,
+   "range_today_pct": 3.84,
+   "avg_range_pct": 3.48,
+   "tight6": 7.98,
+   "median_turnover_cr": 250.65,
+   "trades": 53190.85,
+   "sector": "Power",
+   "delivery_ratio": 0.9,
+   "score": 75.17
+  },
+  {
+   "symbol": "BALRAMCHIN",
+   "close": 657.0,
+   "open": 680.0,
+   "high": 686.7,
+   "low": 650.0,
+   "prev_close": 680.95,
+   "official_close": 654.75,
+   "volume": 978316.0,
+   "today_ret": -3.52,
+   "vol_ratio": 0.71,
+   "range_today_pct": 5.59,
+   "avg_range_pct": 4.13,
+   "tight6": 13.09,
+   "median_turnover_cr": 84.93,
+   "trades": 38266.65,
+   "sector": "Fast Moving Consumer Goods",
+   "delivery_ratio": 1.27,
+   "score": 74.49
+  },
+  {
+   "symbol": "PPLPHARMA",
+   "close": 194.94,
+   "open": 190.51,
+   "high": 196.35,
+   "low": 188.22,
+   "prev_close": 191.19,
+   "official_close": 194.99,
+   "volume": 2835616.0,
+   "today_ret": 1.96,
+   "vol_ratio": 1.14,
+   "range_today_pct": 4.17,
+   "avg_range_pct": 3.33,
+   "tight6": 6.93,
+   "median_turnover_cr": 61.41,
+   "trades": 39315.8,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.76,
+   "score": 73.47
   }
  ],
  "outcomes": {
@@ -440,14 +440,6 @@
     "up": 0.92,
     "down": -4.66
    },
-   "SWIGGY": {
-    "gap": -3.05,
-    "oc": -14.13,
-    "cc": -16.75,
-    "range_pct": 15.15,
-    "up": -2.55,
-    "down": -17.24
-   },
    "KEI": {
     "gap": 0.81,
     "oc": -4.59,
@@ -455,6 +447,14 @@
     "range_pct": 6.46,
     "up": 1.17,
     "down": -5.34
+   },
+   "SWIGGY": {
+    "gap": -3.05,
+    "oc": -14.13,
+    "cc": -16.75,
+    "range_pct": 15.15,
+    "up": -2.55,
+    "down": -17.24
    },
    "M&MFIN": {
     "gap": 0.14,
@@ -528,14 +528,6 @@
     "up": 0.13,
     "down": -3.51
    },
-   "GRSE": {
-    "gap": -0.3,
-    "oc": -4.62,
-    "cc": -4.9,
-    "range_pct": 5.03,
-    "up": -0.24,
-    "down": -5.26
-   },
    "ETERNAL": {
     "gap": 0.54,
     "oc": 3.69,
@@ -544,30 +536,6 @@
     "up": 4.45,
     "down": -0.89
    },
-   "APARINDS": {
-    "gap": 0.39,
-    "oc": -3.18,
-    "cc": -2.8,
-    "range_pct": 6.02,
-    "up": 0.53,
-    "down": -5.51
-   },
-   "SYRMA": {
-    "gap": 0.07,
-    "oc": -3.79,
-    "cc": -3.72,
-    "range_pct": 6.83,
-    "up": 0.43,
-    "down": -6.41
-   },
-   "HBLENGINE": {
-    "gap": 0.2,
-    "oc": -2.42,
-    "cc": -2.22,
-    "range_pct": 5.29,
-    "up": 0.2,
-    "down": -5.11
-   },
    "ACMESOLAR": {
     "gap": -0.59,
     "oc": -3.43,
@@ -575,6 +543,38 @@
     "range_pct": 4.97,
     "up": -0.41,
     "down": -5.35
+   },
+   "OFSS": {
+    "gap": 0.18,
+    "oc": -1.87,
+    "cc": -1.69,
+    "range_pct": 4.82,
+    "up": 2.1,
+    "down": -2.72
+   },
+   "ADANIENSOL": {
+    "gap": 0.0,
+    "oc": -5.82,
+    "cc": -5.82,
+    "range_pct": 7.87,
+    "up": 0.51,
+    "down": -7.36
+   },
+   "BALRAMCHIN": {
+    "gap": -0.73,
+    "oc": -1.13,
+    "cc": -1.85,
+    "range_pct": 3.37,
+    "up": -0.2,
+    "down": -3.54
+   },
+   "PPLPHARMA": {
+    "gap": -0.51,
+    "oc": -1.55,
+    "cc": -2.05,
+    "range_pct": 5.1,
+    "up": -0.04,
+    "down": -5.11
    }
   }
  }

@@ -1,10 +1,10 @@
 {
  "asof": "2026-09-11",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 1940,
-  "pct_above_50dma": 37.4,
-  "pct_advancing": 34.5,
+  "stocks_scanned": 2164,
+  "pct_above_50dma": 38.0,
+  "pct_advancing": 35.5,
   "mood": "Weak",
   "pct_above_20ema": 32.5,
   "breadth_5d_change": -10.9,
@@ -212,26 +212,6 @@
    "score": 87.62
   },
   {
-   "symbol": "GRAPHITE",
-   "close": 828.0,
-   "open": 812.0,
-   "high": 834.4,
-   "low": 785.1,
-   "prev_close": 824.8,
-   "official_close": 825.8,
-   "volume": 3972340.0,
-   "today_ret": 0.39,
-   "vol_ratio": 1.18,
-   "range_today_pct": 5.95,
-   "avg_range_pct": 3.62,
-   "tight6": 19.49,
-   "median_turnover_cr": 50.05,
-   "trades": 72477.2,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.66,
-   "score": 86.31
-  },
-  {
    "symbol": "PAYTM",
    "close": 1807.5,
    "open": 1745.0,
@@ -252,26 +232,6 @@
    "score": 86.15
   },
   {
-   "symbol": "APARINDS",
-   "close": 17499.0,
-   "open": 17200.0,
-   "high": 17558.0,
-   "low": 16686.0,
-   "prev_close": 17342.0,
-   "official_close": 17500.0,
-   "volume": 169196.0,
-   "today_ret": 0.91,
-   "vol_ratio": 1.27,
-   "range_today_pct": 4.98,
-   "avg_range_pct": 3.66,
-   "tight6": 8.26,
-   "median_turnover_cr": 215.17,
-   "trades": 34552.9,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.96,
-   "score": 85.33
-  },
-  {
    "symbol": "IDBI",
    "close": 83.55,
    "open": 81.21,
@@ -290,26 +250,6 @@
    "sector": "Financial Services",
    "delivery_ratio": 0.76,
    "score": 83.44
-  },
-  {
-   "symbol": "AZAD",
-   "close": 2862.0,
-   "open": 2744.0,
-   "high": 2864.0,
-   "low": 2677.8,
-   "prev_close": 2773.5,
-   "official_close": 2849.1,
-   "volume": 454037.0,
-   "today_ret": 3.19,
-   "vol_ratio": 0.87,
-   "range_today_pct": 6.51,
-   "avg_range_pct": 3.82,
-   "tight6": 7.69,
-   "median_turnover_cr": 106.82,
-   "trades": 34378.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.81,
-   "score": 82.3
   },
   {
    "symbol": "MEESHO",
@@ -352,44 +292,24 @@
    "score": 81.07
   },
   {
-   "symbol": "EMMVEE",
-   "close": 344.8,
-   "open": 342.65,
-   "high": 348.2,
-   "low": 332.9,
-   "prev_close": 342.65,
-   "official_close": 346.0,
-   "volume": 3747104.0,
-   "today_ret": 0.63,
-   "vol_ratio": 2.07,
-   "range_today_pct": 4.44,
-   "avg_range_pct": 2.84,
-   "tight6": 8.11,
-   "median_turnover_cr": 65.82,
-   "trades": 33833.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.77,
-   "score": 80.66
-  },
-  {
-   "symbol": "KEI",
-   "close": 4578.0,
-   "open": 4599.0,
-   "high": 4599.0,
-   "low": 4447.0,
-   "prev_close": 4640.0,
-   "official_close": 4578.0,
-   "volume": 1138228.0,
-   "today_ret": -1.34,
-   "vol_ratio": 1.93,
-   "range_today_pct": 3.32,
-   "avg_range_pct": 3.72,
-   "tight6": 12.69,
-   "median_turnover_cr": 175.49,
-   "trades": 56907.05,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.08,
-   "score": 79.34
+   "symbol": "ACUTAAS",
+   "close": 3375.0,
+   "open": 3488.0,
+   "high": 3488.0,
+   "low": 3350.0,
+   "prev_close": 3451.4,
+   "official_close": 3383.7,
+   "volume": 325242.0,
+   "today_ret": -2.21,
+   "vol_ratio": 1.09,
+   "range_today_pct": 4.09,
+   "avg_range_pct": 3.57,
+   "tight6": 9.83,
+   "median_turnover_cr": 96.71,
+   "trades": 36657.95,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.78,
+   "score": 79.18
   },
   {
    "symbol": "GRANULES",
@@ -410,6 +330,86 @@
    "sector": "Healthcare",
    "delivery_ratio": 1.22,
    "score": 79.18
+  },
+  {
+   "symbol": "DIXON",
+   "close": 13425.0,
+   "open": 13300.0,
+   "high": 13490.0,
+   "low": 12980.0,
+   "prev_close": 13500.0,
+   "official_close": 13425.0,
+   "volume": 549928.0,
+   "today_ret": -0.56,
+   "vol_ratio": 1.52,
+   "range_today_pct": 3.8,
+   "avg_range_pct": 2.8,
+   "tight6": 11.05,
+   "median_turnover_cr": 586.0,
+   "trades": 52494.2,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.16,
+   "score": 76.89
+  },
+  {
+   "symbol": "PIIND",
+   "close": 2259.0,
+   "open": 2350.0,
+   "high": 2365.0,
+   "low": 2191.0,
+   "prev_close": 2365.0,
+   "official_close": 2259.0,
+   "volume": 1124887.0,
+   "today_ret": -4.48,
+   "vol_ratio": 5.36,
+   "range_today_pct": 7.7,
+   "avg_range_pct": 2.45,
+   "tight6": 14.08,
+   "median_turnover_cr": 49.8,
+   "trades": 18010.3,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.66,
+   "score": 74.18
+  },
+  {
+   "symbol": "REDINGTON",
+   "close": 394.2,
+   "open": 395.85,
+   "high": 396.85,
+   "low": 384.2,
+   "prev_close": 392.0,
+   "official_close": 393.7,
+   "volume": 7473984.0,
+   "today_ret": 0.56,
+   "vol_ratio": 1.16,
+   "range_today_pct": 3.21,
+   "avg_range_pct": 3.62,
+   "tight6": 9.15,
+   "median_turnover_cr": 112.66,
+   "trades": 92706.7,
+   "sector": "Services",
+   "delivery_ratio": 0.96,
+   "score": 74.1
+  },
+  {
+   "symbol": "CEMPRO",
+   "close": 1249.8,
+   "open": 1248.0,
+   "high": 1257.8,
+   "low": 1214.9,
+   "prev_close": 1251.9,
+   "official_close": 1244.3,
+   "volume": 288343.0,
+   "today_ret": -0.17,
+   "vol_ratio": 1.04,
+   "range_today_pct": 3.43,
+   "avg_range_pct": 3.61,
+   "tight6": 11.21,
+   "median_turnover_cr": 55.91,
+   "trades": 15663.45,
+   "sector": "Construction",
+   "delivery_ratio": 1.13,
+   "score": 74.02
   }
  ],
  "outcomes": {
@@ -496,14 +496,6 @@
     "up": 0.58,
     "down": -4.42
    },
-   "GRAPHITE": {
-    "gap": -0.04,
-    "oc": -5.15,
-    "cc": -5.18,
-    "range_pct": 6.54,
-    "up": 0.51,
-    "down": -6.02
-   },
    "PAYTM": {
     "gap": 0.03,
     "oc": -4.31,
@@ -512,14 +504,6 @@
     "up": 0.19,
     "down": -4.29
    },
-   "APARINDS": {
-    "gap": 0.56,
-    "oc": -5.6,
-    "cc": -5.07,
-    "range_pct": 6.81,
-    "up": 1.07,
-    "down": -5.77
-   },
    "IDBI": {
     "gap": 0.68,
     "oc": -1.19,
@@ -527,14 +511,6 @@
     "range_pct": 6.95,
     "up": 6.11,
     "down": -0.89
-   },
-   "AZAD": {
-    "gap": 0.56,
-    "oc": -5.24,
-    "cc": -4.71,
-    "range_pct": 7.38,
-    "up": 1.93,
-    "down": -5.48
    },
    "MEESHO": {
     "gap": 1.09,
@@ -552,21 +528,13 @@
     "up": 1.13,
     "down": -5.41
    },
-   "EMMVEE": {
-    "gap": 0.0,
-    "oc": -4.74,
-    "cc": -4.74,
-    "range_pct": 7.88,
-    "up": 1.07,
-    "down": -6.81
-   },
-   "KEI": {
-    "gap": -0.17,
-    "oc": -1.53,
-    "cc": -1.7,
-    "range_pct": 2.75,
-    "up": -0.08,
-    "down": -2.82
+   "ACUTAAS": {
+    "gap": 0.01,
+    "oc": -3.52,
+    "cc": -3.51,
+    "range_pct": 6.37,
+    "up": 1.89,
+    "down": -4.48
    },
    "GRANULES": {
     "gap": 0.85,
@@ -575,6 +543,38 @@
     "range_pct": 5.58,
     "up": 1.58,
     "down": -4.05
+   },
+   "DIXON": {
+    "gap": 0.48,
+    "oc": -2.3,
+    "cc": -1.82,
+    "range_pct": 3.57,
+    "up": 1.12,
+    "down": -2.47
+   },
+   "PIIND": {
+    "gap": 0.04,
+    "oc": -0.22,
+    "cc": -0.18,
+    "range_pct": 2.12,
+    "up": 1.3,
+    "down": -0.82
+   },
+   "REDINGTON": {
+    "gap": 0.51,
+    "oc": -4.09,
+    "cc": -3.61,
+    "range_pct": 6.03,
+    "up": 1.31,
+    "down": -4.75
+   },
+   "CEMPRO": {
+    "gap": 0.14,
+    "oc": -3.69,
+    "cc": -3.56,
+    "range_pct": 7.2,
+    "up": 3.33,
+    "down": -3.88
    }
   }
  }

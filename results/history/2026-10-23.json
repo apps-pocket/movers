@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-23",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2166,
-  "pct_above_50dma": 10.3,
-  "pct_advancing": 13.7,
+  "stocks_scanned": 2265,
+  "pct_above_50dma": 10.7,
+  "pct_advancing": 13.9,
   "mood": "Weak",
   "pct_above_20ema": 8.2,
   "breadth_5d_change": -20.5,
@@ -192,26 +192,6 @@
    "score": 83.78
   },
   {
-   "symbol": "KEI",
-   "close": 3725.0,
-   "open": 3904.3,
-   "high": 3918.5,
-   "low": 3666.1,
-   "prev_close": 3873.0,
-   "official_close": 3725.0,
-   "volume": 831153.0,
-   "today_ret": -3.82,
-   "vol_ratio": 1.81,
-   "range_today_pct": 6.78,
-   "avg_range_pct": 4.01,
-   "tight6": 29.23,
-   "median_turnover_cr": 170.55,
-   "trades": 39326.65,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.89,
-   "score": 83.7
-  },
-  {
    "symbol": "CHENNPETRO",
    "close": 1473.0,
    "open": 1462.0,
@@ -250,46 +230,6 @@
    "sector": "Information Technology",
    "delivery_ratio": 1.34,
    "score": 83.45
-  },
-  {
-   "symbol": "ZENTEC",
-   "close": 1496.9,
-   "open": 1555.1,
-   "high": 1562.2,
-   "low": 1463.0,
-   "prev_close": 1562.2,
-   "official_close": 1493.8,
-   "volume": 422703.0,
-   "today_ret": -4.18,
-   "vol_ratio": 1.73,
-   "range_today_pct": 6.63,
-   "avg_range_pct": 4.01,
-   "tight6": 16.39,
-   "median_turnover_cr": 48.89,
-   "trades": 23892.45,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.23,
-   "score": 82.77
-  },
-  {
-   "symbol": "INOXWIND",
-   "close": 58.93,
-   "open": 62.11,
-   "high": 62.35,
-   "low": 57.9,
-   "prev_close": 62.11,
-   "official_close": 58.93,
-   "volume": 14520196.0,
-   "today_ret": -5.12,
-   "vol_ratio": 1.29,
-   "range_today_pct": 7.55,
-   "avg_range_pct": 4.73,
-   "tight6": 20.53,
-   "median_turnover_cr": 73.22,
-   "trades": 38937.6,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.98,
-   "score": 82.43
   },
   {
    "symbol": "HSCL",
@@ -410,6 +350,66 @@
    "sector": "Financial Services",
    "delivery_ratio": 0.74,
    "score": 79.14
+  },
+  {
+   "symbol": "COLPAL",
+   "close": 1605.0,
+   "open": 1680.0,
+   "high": 1696.8,
+   "low": 1580.0,
+   "prev_close": 1685.0,
+   "official_close": 1605.0,
+   "volume": 1445523.0,
+   "today_ret": -4.75,
+   "vol_ratio": 2.64,
+   "range_today_pct": 7.28,
+   "avg_range_pct": 3.32,
+   "tight6": 15.99,
+   "median_turnover_cr": 66.54,
+   "trades": 34376.75,
+   "sector": "Fast Moving Consumer Goods",
+   "delivery_ratio": 0.68,
+   "score": 77.53
+  },
+  {
+   "symbol": "ADANIGREEN",
+   "close": 1185.1,
+   "open": 1247.8,
+   "high": 1247.8,
+   "low": 1171.0,
+   "prev_close": 1250.0,
+   "official_close": 1185.1,
+   "volume": 2975692.0,
+   "today_ret": -5.19,
+   "vol_ratio": 1.28,
+   "range_today_pct": 6.48,
+   "avg_range_pct": 3.91,
+   "tight6": 12.57,
+   "median_turnover_cr": 173.69,
+   "trades": 55536.2,
+   "sector": "Power",
+   "delivery_ratio": 0.95,
+   "score": 76.69
+  },
+  {
+   "symbol": "CARTRADE",
+   "close": 2849.0,
+   "open": 2836.7,
+   "high": 2866.0,
+   "low": 2660.0,
+   "prev_close": 2840.0,
+   "official_close": 2820.3,
+   "volume": 328233.0,
+   "today_ret": 0.32,
+   "vol_ratio": 1.05,
+   "range_today_pct": 7.23,
+   "avg_range_pct": 4.86,
+   "tight6": 16.56,
+   "median_turnover_cr": 81.64,
+   "trades": 39059.85,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.94,
+   "score": 75.93
   }
  ],
  "outcomes": {
@@ -488,14 +488,6 @@
     "up": 8.36,
     "down": -1.25
    },
-   "KEI": {
-    "gap": -0.13,
-    "oc": 4.83,
-    "cc": 4.68,
-    "range_pct": 6.1,
-    "up": 5.02,
-    "down": -1.07
-   },
    "CHENNPETRO": {
     "gap": -0.24,
     "oc": 3.6,
@@ -511,22 +503,6 @@
     "range_pct": 9.46,
     "up": 4.59,
     "down": -5.3
-   },
-   "ZENTEC": {
-    "gap": -0.32,
-    "oc": 3.76,
-    "cc": 3.43,
-    "range_pct": 5.71,
-    "up": 4.43,
-    "down": -1.26
-   },
-   "INOXWIND": {
-    "gap": 0.0,
-    "oc": -0.9,
-    "cc": -0.9,
-    "range_pct": 2.88,
-    "up": 0.97,
-    "down": -1.92
    },
    "HSCL": {
     "gap": 0.41,
@@ -575,6 +551,30 @@
     "range_pct": 3.09,
     "up": -3.35,
     "down": -6.34
+   },
+   "COLPAL": {
+    "gap": -0.31,
+    "oc": 0.97,
+    "cc": 0.65,
+    "range_pct": 3.16,
+    "up": 2.07,
+    "down": -1.08
+   },
+   "ADANIGREEN": {
+    "gap": 0.0,
+    "oc": 5.48,
+    "cc": 5.48,
+    "range_pct": 6.33,
+    "up": 5.48,
+    "down": -0.85
+   },
+   "CARTRADE": {
+    "gap": -0.72,
+    "oc": 0.18,
+    "cc": -0.54,
+    "range_pct": 7.25,
+    "up": 1.67,
+    "down": -5.53
    }
   }
  }

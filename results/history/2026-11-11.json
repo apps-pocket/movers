@@ -1,10 +1,10 @@
 {
  "asof": "2026-11-11",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2192,
-  "pct_above_50dma": 49.9,
-  "pct_advancing": 70.6,
+  "stocks_scanned": 2280,
+  "pct_above_50dma": 49.6,
+  "pct_advancing": 70.3,
   "mood": "Neutral",
   "pct_above_20ema": 72.0,
   "breadth_5d_change": 32.5,
@@ -192,26 +192,6 @@
    "score": 86.52
   },
   {
-   "symbol": "FINCABLES",
-   "close": 1221.8,
-   "open": 1220.0,
-   "high": 1264.0,
-   "low": 1203.3,
-   "prev_close": 1232.4,
-   "official_close": 1225.4,
-   "volume": 3574044.0,
-   "today_ret": -0.86,
-   "vol_ratio": 3.74,
-   "range_today_pct": 4.97,
-   "avg_range_pct": 5.32,
-   "tight6": 20.3,
-   "median_turnover_cr": 87.85,
-   "trades": 59156.9,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.41,
-   "score": 85.15
-  },
-  {
    "symbol": "GRANULES",
    "close": 797.8,
    "open": 796.0,
@@ -252,26 +232,6 @@
    "score": 81.48
   },
   {
-   "symbol": "WAAREEENER",
-   "close": 2500.0,
-   "open": 2450.0,
-   "high": 2613.3,
-   "low": 2449.8,
-   "prev_close": 2444.0,
-   "official_close": 2500.0,
-   "volume": 2134516.0,
-   "today_ret": 2.29,
-   "vol_ratio": 2.5,
-   "range_today_pct": 6.54,
-   "avg_range_pct": 3.47,
-   "tight6": 12.33,
-   "median_turnover_cr": 138.2,
-   "trades": 50508.55,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.56,
-   "score": 81.23
-  },
-  {
    "symbol": "NUVAMA",
    "close": 1845.0,
    "open": 1902.0,
@@ -310,26 +270,6 @@
    "sector": "Construction",
    "delivery_ratio": 0.56,
    "score": 81.06
-  },
-  {
-   "symbol": "GRSE",
-   "close": 2214.0,
-   "open": 2217.0,
-   "high": 2270.0,
-   "low": 2144.4,
-   "prev_close": 2198.1,
-   "official_close": 2225.4,
-   "volume": 1414072.0,
-   "today_ret": 0.72,
-   "vol_ratio": 1.72,
-   "range_today_pct": 5.67,
-   "avg_range_pct": 3.87,
-   "tight6": 9.91,
-   "median_turnover_cr": 89.07,
-   "trades": 56845.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.74,
-   "score": 80.8
   },
   {
    "symbol": "FLUOROCHEM",
@@ -410,6 +350,66 @@
    "sector": "Healthcare",
    "delivery_ratio": 0.58,
    "score": 77.9
+  },
+  {
+   "symbol": "FORCEMOT",
+   "close": 19872.0,
+   "open": 18888.0,
+   "high": 20079.0,
+   "low": 18880.0,
+   "prev_close": 18837.0,
+   "official_close": 19872.0,
+   "volume": 206201.0,
+   "today_ret": 5.49,
+   "vol_ratio": 2.67,
+   "range_today_pct": 6.03,
+   "avg_range_pct": 3.32,
+   "tight6": 13.17,
+   "median_turnover_cr": 107.7,
+   "trades": 24497.4,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.04,
+   "score": 77.73
+  },
+  {
+   "symbol": "MEESHO",
+   "close": 248.25,
+   "open": 239.5,
+   "high": 250.77,
+   "low": 238.57,
+   "prev_close": 238.48,
+   "official_close": 248.16,
+   "volume": 31104684.0,
+   "today_ret": 4.1,
+   "vol_ratio": 1.92,
+   "range_today_pct": 4.91,
+   "avg_range_pct": 3.6,
+   "tight6": 12.63,
+   "median_turnover_cr": 319.62,
+   "trades": 121933.9,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.23,
+   "score": 77.65
+  },
+  {
+   "symbol": "MOTILALOFS",
+   "close": 1156.5,
+   "open": 1162.0,
+   "high": 1191.95,
+   "low": 1145.0,
+   "prev_close": 1147.3,
+   "official_close": 1156.5,
+   "volume": 2261714.0,
+   "today_ret": 0.8,
+   "vol_ratio": 1.97,
+   "range_today_pct": 4.06,
+   "avg_range_pct": 3.77,
+   "tight6": 19.67,
+   "median_turnover_cr": 88.6,
+   "trades": 37934.55,
+   "sector": "Financial Services",
+   "delivery_ratio": 1.12,
+   "score": 75.94
   }
  ],
  "outcomes": {
@@ -488,14 +488,6 @@
     "up": 3.33,
     "down": -0.77
    },
-   "FINCABLES": {
-    "gap": 1.18,
-    "oc": 1.21,
-    "cc": 2.41,
-    "range_pct": 4.09,
-    "up": 4.86,
-    "down": 0.73
-   },
    "GRANULES": {
     "gap": 0.34,
     "oc": 4.49,
@@ -512,14 +504,6 @@
     "up": 5.05,
     "down": -0.83
    },
-   "WAAREEENER": {
-    "gap": 0.43,
-    "oc": 2.44,
-    "cc": 2.88,
-    "range_pct": 3.85,
-    "up": 3.3,
-    "down": -0.57
-   },
    "NUVAMA": {
     "gap": 0.13,
     "oc": 2.39,
@@ -535,14 +519,6 @@
     "range_pct": 3.67,
     "up": 1.48,
     "down": -2.22
-   },
-   "GRSE": {
-    "gap": 0.23,
-    "oc": -0.74,
-    "cc": -0.51,
-    "range_pct": 3.53,
-    "up": 2.19,
-    "down": -1.34
    },
    "FLUOROCHEM": {
     "gap": 0.12,
@@ -575,6 +551,30 @@
     "range_pct": 2.4,
     "up": 0.43,
     "down": -1.96
+   },
+   "FORCEMOT": {
+    "gap": 0.64,
+    "oc": -0.82,
+    "cc": -0.18,
+    "range_pct": 6.33,
+    "up": 3.05,
+    "down": -3.32
+   },
+   "MEESHO": {
+    "gap": 0.34,
+    "oc": 1.47,
+    "cc": 1.81,
+    "range_pct": 5.03,
+    "up": 4.37,
+    "down": -0.68
+   },
+   "MOTILALOFS": {
+    "gap": 0.11,
+    "oc": 5.1,
+    "cc": 5.21,
+    "range_pct": 6.52,
+    "up": 6.14,
+    "down": -0.38
    }
   }
  }

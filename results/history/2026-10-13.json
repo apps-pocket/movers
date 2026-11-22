@@ -1,10 +1,10 @@
 {
  "asof": "2026-10-13",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2078,
-  "pct_above_50dma": 23.3,
-  "pct_advancing": 63.3,
+  "stocks_scanned": 2249,
+  "pct_above_50dma": 24.2,
+  "pct_advancing": 62.6,
   "mood": "Weak",
   "pct_above_20ema": 28.7,
   "breadth_5d_change": -0.3,
@@ -252,26 +252,6 @@
    "score": 79.84
   },
   {
-   "symbol": "POONAWALLA",
-   "close": 438.5,
-   "open": 450.1,
-   "high": 452.0,
-   "low": 434.0,
-   "prev_close": 449.1,
-   "official_close": 440.4,
-   "volume": 3100559.0,
-   "today_ret": -2.36,
-   "vol_ratio": 1.13,
-   "range_today_pct": 4.1,
-   "avg_range_pct": 4.0,
-   "tight6": 11.57,
-   "median_turnover_cr": 45.62,
-   "trades": 56796.65,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.58,
-   "score": 78.37
-  },
-  {
    "symbol": "PVRINOX",
    "close": 1408.4,
    "open": 1401.3,
@@ -290,46 +270,6 @@
    "sector": "Media Entertainment & Publication",
    "delivery_ratio": 0.93,
    "score": 78.03
-  },
-  {
-   "symbol": "ZENSARTECH",
-   "close": 480.0,
-   "open": 457.65,
-   "high": 483.9,
-   "low": 455.85,
-   "prev_close": 452.65,
-   "official_close": 478.9,
-   "volume": 3052012.0,
-   "today_ret": 6.04,
-   "vol_ratio": 0.8,
-   "range_today_pct": 5.84,
-   "avg_range_pct": 3.59,
-   "tight6": 9.93,
-   "median_turnover_cr": 42.89,
-   "trades": 73452.7,
-   "sector": "Information Technology",
-   "delivery_ratio": 0.96,
-   "score": 76.82
-  },
-  {
-   "symbol": "COFORGE",
-   "close": 1929.0,
-   "open": 1866.1,
-   "high": 1943.5,
-   "low": 1852.2,
-   "prev_close": 1846.6,
-   "official_close": 1929.0,
-   "volume": 3817796.0,
-   "today_ret": 4.46,
-   "vol_ratio": 1.78,
-   "range_today_pct": 4.73,
-   "avg_range_pct": 3.06,
-   "tight6": 7.21,
-   "median_turnover_cr": 346.36,
-   "trades": 81929.8,
-   "sector": "Information Technology",
-   "delivery_ratio": 0.74,
-   "score": 76.73
   },
   {
    "symbol": "TMCV",
@@ -372,26 +312,6 @@
    "score": 76.21
   },
   {
-   "symbol": "RBLBANK",
-   "close": 388.05,
-   "open": 400.0,
-   "high": 401.85,
-   "low": 381.4,
-   "prev_close": 417.7,
-   "official_close": 388.05,
-   "volume": 39165831.0,
-   "today_ret": -7.1,
-   "vol_ratio": 11.08,
-   "range_today_pct": 5.27,
-   "avg_range_pct": 2.9,
-   "tight6": 10.98,
-   "median_turnover_cr": 112.34,
-   "trades": 54920.2,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.88,
-   "score": 75.52
-  },
-  {
    "symbol": "BALRAMCHIN",
    "close": 719.0,
    "open": 706.85,
@@ -410,6 +330,86 @@
    "sector": "Fast Moving Consumer Goods",
    "delivery_ratio": 1.58,
    "score": 75.52
+  },
+  {
+   "symbol": "HYUNDAI",
+   "close": 1964.9,
+   "open": 1941.0,
+   "high": 2022.2,
+   "low": 1923.4,
+   "prev_close": 1941.1,
+   "official_close": 1964.9,
+   "volume": 777583.0,
+   "today_ret": 1.23,
+   "vol_ratio": 1.26,
+   "range_today_pct": 5.03,
+   "avg_range_pct": 3.06,
+   "tight6": 6.36,
+   "median_turnover_cr": 132.92,
+   "trades": 39887.9,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 0.66,
+   "score": 74.57
+  },
+  {
+   "symbol": "MEESHO",
+   "close": 238.53,
+   "open": 231.7,
+   "high": 242.88,
+   "low": 231.7,
+   "prev_close": 230.9,
+   "official_close": 240.67,
+   "volume": 19619473.0,
+   "today_ret": 3.3,
+   "vol_ratio": 0.74,
+   "range_today_pct": 4.69,
+   "avg_range_pct": 4.57,
+   "tight6": 8.88,
+   "median_turnover_cr": 294.87,
+   "trades": 170883.75,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.68,
+   "score": 74.57
+  },
+  {
+   "symbol": "CARTRADE",
+   "close": 3160.0,
+   "open": 3175.0,
+   "high": 3190.0,
+   "low": 3074.0,
+   "prev_close": 3191.3,
+   "official_close": 3152.8,
+   "volume": 378070.0,
+   "today_ret": -0.98,
+   "vol_ratio": 1.16,
+   "range_today_pct": 3.67,
+   "avg_range_pct": 4.2,
+   "tight6": 13.88,
+   "median_turnover_cr": 84.43,
+   "trades": 38719.65,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.88,
+   "score": 74.13
+  },
+  {
+   "symbol": "GMDCLTD",
+   "close": 480.1,
+   "open": 470.0,
+   "high": 481.0,
+   "low": 462.7,
+   "prev_close": 468.35,
+   "official_close": 480.15,
+   "volume": 1098862.0,
+   "today_ret": 2.51,
+   "vol_ratio": 1.42,
+   "range_today_pct": 3.81,
+   "avg_range_pct": 3.12,
+   "tight6": 8.51,
+   "median_turnover_cr": 42.62,
+   "trades": 24494.9,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 0.97,
+   "score": 73.62
   }
  ],
  "outcomes": {
@@ -512,14 +512,6 @@
     "up": 1.05,
     "down": -1.14
    },
-   "POONAWALLA": {
-    "gap": -0.5,
-    "oc": -0.18,
-    "cc": -0.68,
-    "range_pct": 2.21,
-    "up": 1.16,
-    "down": -1.04
-   },
    "PVRINOX": {
     "gap": -0.32,
     "oc": -1.24,
@@ -527,22 +519,6 @@
     "range_pct": 3.24,
     "up": 0.63,
     "down": -2.6
-   },
-   "ZENSARTECH": {
-    "gap": 0.02,
-    "oc": 2.3,
-    "cc": 2.32,
-    "range_pct": 4.75,
-    "up": 4.77,
-    "down": 0.02
-   },
-   "COFORGE": {
-    "gap": 0.57,
-    "oc": -0.62,
-    "cc": -0.05,
-    "range_pct": 2.43,
-    "up": 1.86,
-    "down": -0.59
    },
    "TMCV": {
     "gap": -0.24,
@@ -560,14 +536,6 @@
     "up": -0.39,
     "down": -2.8
    },
-   "RBLBANK": {
-    "gap": 0.0,
-    "oc": -0.53,
-    "cc": -0.53,
-    "range_pct": 1.89,
-    "up": 0.39,
-    "down": -1.51
-   },
    "BALRAMCHIN": {
     "gap": 0.0,
     "oc": -1.67,
@@ -575,6 +543,38 @@
     "range_pct": 4.44,
     "up": 2.19,
     "down": -2.24
+   },
+   "HYUNDAI": {
+    "gap": 1.02,
+    "oc": -0.98,
+    "cc": 0.04,
+    "range_pct": 3.12,
+    "up": 2.5,
+    "down": -0.66
+   },
+   "MEESHO": {
+    "gap": -3.91,
+    "oc": -2.01,
+    "cc": -5.85,
+    "range_pct": 3.78,
+    "up": -2.46,
+    "down": -6.09
+   },
+   "CARTRADE": {
+    "gap": -0.56,
+    "oc": 0.48,
+    "cc": -0.09,
+    "range_pct": 3.54,
+    "up": 1.05,
+    "down": -2.47
+   },
+   "GMDCLTD": {
+    "gap": -0.18,
+    "oc": -0.9,
+    "cc": -1.07,
+    "range_pct": 1.66,
+    "up": 0.39,
+    "down": -1.27
    }
   }
  }

@@ -1,10 +1,10 @@
 {
  "asof": "2026-11-18",
- "generated_at": "21 Nov 2026, 06:37 PM IST",
+ "generated_at": "22 Nov 2026, 06:39 PM IST",
  "market": {
-  "stocks_scanned": 2220,
-  "pct_above_50dma": 41.4,
-  "pct_advancing": 26.0,
+  "stocks_scanned": 2293,
+  "pct_above_50dma": 41.2,
+  "pct_advancing": 26.3,
   "mood": "Weak",
   "pct_above_20ema": 46.7,
   "breadth_5d_change": -25.3,
@@ -152,26 +152,6 @@
    "score": 87.16
   },
   {
-   "symbol": "MANAPPURAM",
-   "close": 283.0,
-   "open": 291.5,
-   "high": 291.5,
-   "low": 280.45,
-   "prev_close": 296.6,
-   "official_close": 283.0,
-   "volume": 15888401.0,
-   "today_ret": -4.59,
-   "vol_ratio": 2.58,
-   "range_today_pct": 3.9,
-   "avg_range_pct": 4.32,
-   "tight6": 16.45,
-   "median_turnover_cr": 137.34,
-   "trades": 53547.85,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.98,
-   "score": 85.2
-  },
-  {
    "symbol": "PFOCUS",
    "close": 271.6,
    "open": 281.65,
@@ -230,26 +210,6 @@
    "sector": "Capital Goods",
    "delivery_ratio": 1.23,
    "score": 80.44
-  },
-  {
-   "symbol": "MOTILALOFS",
-   "close": 1228.95,
-   "open": 1235.0,
-   "high": 1264.5,
-   "low": 1208.0,
-   "prev_close": 1240.25,
-   "official_close": 1228.95,
-   "volume": 1527097.0,
-   "today_ret": -0.91,
-   "vol_ratio": 0.97,
-   "range_today_pct": 4.6,
-   "avg_range_pct": 4.0,
-   "tight6": 10.81,
-   "median_turnover_cr": 90.09,
-   "trades": 48169.4,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.75,
-   "score": 80.19
   },
   {
    "symbol": "SAIL",
@@ -352,26 +312,6 @@
    "score": 78.57
   },
   {
-   "symbol": "IREDA",
-   "close": 119.8,
-   "open": 116.0,
-   "high": 121.75,
-   "low": 116.0,
-   "prev_close": 117.4,
-   "official_close": 119.8,
-   "volume": 20105294.0,
-   "today_ret": 2.04,
-   "vol_ratio": 2.24,
-   "range_today_pct": 4.8,
-   "avg_range_pct": 3.47,
-   "tight6": 7.89,
-   "median_turnover_cr": 48.42,
-   "trades": 47611.35,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.59,
-   "score": 78.23
-  },
-  {
    "symbol": "ACMESOLAR",
    "close": 410.0,
    "open": 406.5,
@@ -410,6 +350,66 @@
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 1.0,
    "score": 77.21
+  },
+  {
+   "symbol": "RVNL",
+   "close": 189.0,
+   "open": 194.0,
+   "high": 195.9,
+   "low": 188.5,
+   "prev_close": 195.5,
+   "official_close": 189.0,
+   "volume": 6911618.0,
+   "today_ret": -3.32,
+   "vol_ratio": 0.88,
+   "range_today_pct": 3.92,
+   "avg_range_pct": 3.99,
+   "tight6": 16.84,
+   "median_turnover_cr": 81.54,
+   "trades": 53895.0,
+   "sector": "Construction",
+   "delivery_ratio": 1.03,
+   "score": 76.02
+  },
+  {
+   "symbol": "NAVINFLUOR",
+   "close": 10278.0,
+   "open": 9815.5,
+   "high": 10295.0,
+   "low": 9775.5,
+   "prev_close": 9815.0,
+   "official_close": 10278.0,
+   "volume": 365012.0,
+   "today_ret": 4.72,
+   "vol_ratio": 1.56,
+   "range_today_pct": 5.05,
+   "avg_range_pct": 3.31,
+   "tight6": 11.6,
+   "median_turnover_cr": 101.44,
+   "trades": 42800.3,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.72,
+   "score": 74.91
+  },
+  {
+   "symbol": "PIIND",
+   "close": 1624.0,
+   "open": 1676.0,
+   "high": 1676.0,
+   "low": 1619.7,
+   "prev_close": 1672.0,
+   "official_close": 1624.0,
+   "volume": 900369.0,
+   "today_ret": -2.87,
+   "vol_ratio": 0.81,
+   "range_today_pct": 3.47,
+   "avg_range_pct": 4.25,
+   "tight6": 9.8,
+   "median_turnover_cr": 50.95,
+   "trades": 46529.45,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.78,
+   "score": 73.38
   }
  ],
  "outcomes": {
@@ -472,14 +472,6 @@
     "up": 2.0,
     "down": -1.75
    },
-   "MANAPPURAM": {
-    "gap": -0.85,
-    "oc": 0.8,
-    "cc": -0.05,
-    "range_pct": 2.96,
-    "up": 0.49,
-    "down": -2.44
-   },
    "PFOCUS": {
     "gap": -1.72,
     "oc": -0.83,
@@ -503,14 +495,6 @@
     "range_pct": 3.3,
     "up": 1.84,
     "down": -1.46
-   },
-   "MOTILALOFS": {
-    "gap": -0.24,
-    "oc": -1.27,
-    "cc": -1.51,
-    "range_pct": 3.08,
-    "up": -0.24,
-    "down": -3.31
    },
    "SAIL": {
     "gap": -1.21,
@@ -552,14 +536,6 @@
     "up": 3.61,
     "down": -0.95
    },
-   "IREDA": {
-    "gap": 0.17,
-    "oc": 8.17,
-    "cc": 8.35,
-    "range_pct": 11.58,
-    "up": 11.52,
-    "down": -0.08
-   },
    "ACMESOLAR": {
     "gap": 0.07,
     "oc": -0.24,
@@ -575,6 +551,30 @@
     "range_pct": 3.31,
     "up": 3.57,
     "down": 0.24
+   },
+   "RVNL": {
+    "gap": -0.38,
+    "oc": 3.57,
+    "cc": 3.17,
+    "range_pct": 4.58,
+    "up": 3.62,
+    "down": -0.94
+   },
+   "NAVINFLUOR": {
+    "gap": -0.42,
+    "oc": -0.31,
+    "cc": -0.73,
+    "range_pct": 2.42,
+    "up": 0.8,
+    "down": -1.61
+   },
+   "PIIND": {
+    "gap": 0.0,
+    "oc": 0.37,
+    "cc": 0.37,
+    "range_pct": 2.54,
+    "up": 1.83,
+    "down": -0.71
    }
   }
  }
