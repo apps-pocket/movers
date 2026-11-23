@@ -1,44 +1,33 @@
-SCORECARD of Tomorrow's Movers: 400 past days (2025-04-07 to 2026-11-19), about 291 liquid stocks ranked each day.
+SCORECARD of Tomorrow's Movers: 400 past days (2025-04-08 to 2026-11-20), about 291 liquid stocks ranked each day.
 Universe: Nifty 500 members (501 in the list) with median daily traded value of at least Rs 40 crore, at least 10,000 trades a day, not closed at a price limit, funds and ETFs removed.
 Each list is made after the close and checked on the next trading day. 'Away' = closing price vs the previous close, up or down.
 
 1) Top 10 of each score variant vs all liquid stocks
                                      top 10, current  top 10, volatility  top 10, volatility+surge  top 10, activity  selected: volatility+surge, max 3 per sector  all liquid stocks
-stock-days                                   4000.00             4000.00                   4000.00           4000.00                                       4000.00          116638.00
-closed 2%+ away from prev close (%)            40.48               44.45                     45.20             37.43                                         45.45              26.22
-closed 4%+ away (%)                            14.68               17.52                     17.65             12.55                                         17.55               6.44
-closed 6%+ away (%)                             5.68                6.50                      7.10              4.50                                          7.05               1.83
-day range 3%+ (%)                              67.10               75.78                     77.85             60.35                                         77.28              35.64
-day range 5%+ (%)                              27.20               32.60                     34.30             22.85                                         33.78               8.73
-average day range (%)                           4.27                4.57                      4.74              3.97                                          4.72               2.88
-of the 4%+ movers, went UP (%)                 55.54               58.49                     54.25             54.38                                         54.27              61.41
-average gap at the open (%)                     0.19                0.27                      0.24              0.17                                          0.23               0.12
-average open-to-close (%)                      -0.18               -0.15                     -0.27             -0.17                                         -0.26              -0.05
-average close vs prev close (%)                 0.01                0.11                     -0.04             -0.00                                         -0.03               0.06
-   Lift in 'closed 4%+ away': current 2.3x, volatility 2.7x, volatility+surge 2.7x, activity 1.9x, selected: volatility+surge, max 3 per sector 2.7x
+stock-days                                   4000.00             4000.00                   4000.00           4000.00                                       4000.00          116656.00
+closed 2%+ away from prev close (%)            40.48               44.40                     45.20             37.43                                         45.45              26.16
+closed 4%+ away (%)                            14.62               17.47                     17.62             12.50                                         17.52               6.41
+closed 6%+ away (%)                             5.62                6.48                      7.05              4.45                                          7.00               1.82
+day range 3%+ (%)                              67.00               75.72                     77.85             60.30                                         77.28              35.59
+day range 5%+ (%)                              27.10               32.50                     34.30             22.80                                         33.75               8.70
+average day range (%)                           4.26                4.57                      4.74              3.96                                          4.72               2.88
+of the 4%+ movers, went UP (%)                 55.38               58.23                     54.04             54.40                                         54.07              61.18
+average gap at the open (%)                     0.18                0.26                      0.23              0.17                                          0.23               0.11
+average open-to-close (%)                      -0.18               -0.16                     -0.27             -0.17                                         -0.25              -0.06
+average close vs prev close (%)                 0.00                0.10                     -0.04             -0.01                                         -0.03               0.05
+   Lift in 'closed 4%+ away': current 2.3x, volatility 2.7x, volatility+surge 2.7x, activity 2.0x, selected: volatility+surge, max 3 per sector 2.7x
 
 2) Does the rank matter? (selected list)
                        ranks 1-3  ranks 4-10  ranks 11-20  all liquid
-closed 4%+ away (%)        22.00       15.64        12.35        6.44
-day range 5%+ (%)          46.58       28.29        20.55        8.73
-average day range (%)       5.41        4.43         3.89        2.88
+closed 4%+ away (%)        22.08       15.57        12.28        6.41
+day range 5%+ (%)          46.75       28.18        20.47        8.70
+average day range (%)       5.41        4.42         3.89        2.88
 
 3) Liquidity and sectors of the top 10 picks
    Median daily traded value of the picks: Rs 94 crore (10th percentile Rs 47 crore)
    Most common sectors: Capital Goods (22%), Financial Services (16%), Automobile and Auto Components (7%), Consumer Services (7%), Healthcare (6%), Information Technology (5%)
 
 4) The three most recent lists and what happened next (today's move -> next day: gap / close / day range)
-  List of 2026-11-17:
-    URBANCO       -5.5% -> gap  +0.0% | close  +6.7% | range  8.6%
-    KAYNES        -4.1% -> gap  +0.3% | close  +0.8% | range  2.8%
-    WELSPUNLIV    +8.1% -> gap  -0.7% | close  -3.2% | range  4.0%
-    IIFL          -2.7% -> gap  +2.3% | close  +4.3% | range  4.9%
-    PFOCUS        +4.6% -> gap  +0.9% | close  -2.6% | range  5.3%
-    MOTILALOFS    +1.9% -> gap  -0.4% | close  -0.9% | range  4.6%
-    EXIDEIND      +4.0% -> gap  -0.0% | close  +2.2% | range  3.5%
-    LAURUSLABS    +5.3% -> gap  +0.3% | close  -0.7% | range  1.9%
-    KALYANKJIL    -3.6% -> gap  +0.0% | close  -4.8% | range  6.1%
-    WELCORP       +3.1% -> gap  +0.0% | close  -1.4% | range  2.4%
   List of 2026-11-18:
     PWL           -1.2% -> gap  +3.5% | close  +6.1% | range  6.8%
     IIFL          +4.3% -> gap  +1.0% | close  -2.4% | range  5.3%
@@ -61,77 +50,88 @@ average day range (%)       5.41        4.43         3.89        2.88
     CRAFTSMAN     +5.7% -> gap  -0.8% | close  -1.7% | range  3.5%
     BLUESTARCO    +8.8% -> gap  -0.3% | close  +1.5% | range  4.0%
     WOCKPHARMA    +7.9% -> gap  -1.2% | close  -0.6% | range  3.2%
+  List of 2026-11-20:
+    WELSPUNLIV    +4.2% -> gap  -0.7% | close  +0.3% | range  6.4%
+    CUB           +6.3% -> gap  +0.9% | close  -1.3% | range  5.2%
+    PFOCUS        -5.1% -> gap  +0.5% | close  -5.7% | range  7.8%
+    POONAWALLA    +2.8% -> gap  +0.5% | close  +0.3% | range  3.4%
+    KALYANKJIL    -3.4% -> gap  +0.2% | close  +2.2% | range  4.8%
+    COFORGE       +2.2% -> gap  +1.0% | close  +2.7% | range  2.4%
+    IIFL          -4.7% -> gap  +0.8% | close  +0.5% | range  3.4%
+    MTARTECH      -5.8% -> gap  -0.5% | close  +0.5% | range  5.0%
+    SCI           +2.7% -> gap  +2.3% | close  -0.5% | range  3.6%
+    PWL           -0.1% -> gap  -0.6% | close  +2.1% | range  4.1%
 
 5) DIRECTION CHECK, top 10 picks: next day, by how the stock moved on the list day
            stock-days  closed UP (%)  avg gap (%)  avg open-to-close (%)  avg close vs prev (%)  avg day range (%)  closed 4%+ away (%)
 today_ret                                                                                                                              
-fell 4%+        721.0          51.04         0.21                  -0.06                   0.15               5.06                20.67
-fell 0-4%       863.0          47.39         0.10                  -0.37                  -0.28               4.42                18.19
-rose 0-4%      1126.0          44.05         0.28                  -0.30                  -0.02               4.31                14.12
-rose 4%+       1290.0          47.83         0.29                  -0.26                   0.02               5.10                18.37
+fell 4%+        718.0          50.97         0.19                  -0.06                   0.13               5.06                20.61
+fell 0-4%       864.0          47.45         0.10                  -0.36                  -0.28               4.42                18.17
+rose 0-4%      1126.0          44.14         0.28                  -0.29                  -0.01               4.30                14.12
+rose 4%+       1292.0          47.83         0.29                  -0.26                   0.02               5.10                18.34
 
 6) ... by how the whole market did on the list day (share of liquid stocks that rose)
                             stock-days  closed UP (%)  avg gap (%)  avg open-to-close (%)  avg close vs prev (%)  avg day range (%)  closed 4%+ away (%)
 adv                                                                                                                                                     
-weak day (under 35% rose)       1070.0          45.89         0.02                  -0.21                  -0.19               5.06                19.63
-mixed day                       1930.0          47.31         0.32                  -0.32                  -0.01               4.57                16.63
+weak day (under 35% rose)       1060.0          45.75        -0.00                  -0.19                  -0.21               5.05                19.62
+mixed day                       1940.0          47.42         0.32                  -0.32                  -0.01               4.57                16.60
 strong day (over 65% rose)      1000.0          48.60         0.30                  -0.19                   0.11               4.66                17.10
 
 7) ... by sector (sectors with 25 or more picks)
                                    stock-days  closed UP (%)  avg gap (%)  avg open-to-close (%)  avg close vs prev (%)  avg day range (%)  closed 4%+ away (%)
 sector                                                                                                                                                         
 Automobile and Auto Components          286.0          52.10         0.47                  -0.15                   0.32               4.40                12.59
-Capital Goods                           887.0          49.15         0.38                  -0.24                   0.14               4.83                18.26
+Capital Goods                           886.0          49.21         0.37                  -0.23                   0.14               4.83                18.28
 Chemicals                               173.0          47.98         0.38                  -0.32                   0.06               4.45                12.72
 Construction                             65.0          46.15         0.25                  -0.26                  -0.03               4.01                 9.23
-Consumer Durables                       164.0          47.56         0.29                  -0.21                   0.08               4.60                18.29
-Consumer Services                       279.0          45.52         0.14                  -0.14                  -0.00               4.99                16.13
+Consumer Durables                       164.0          47.56         0.26                  -0.21                   0.05               4.59                17.68
+Consumer Services                       280.0          45.71         0.14                  -0.13                   0.01               4.99                16.07
 Fast Moving Consumer Goods              153.0          49.67        -0.00                  -0.09                  -0.17               5.57                22.22
-Financial Services                      630.0          45.56         0.21                  -0.35                  -0.13               4.33                15.24
+Financial Services                      631.0          45.48         0.20                  -0.35                  -0.14               4.32                15.21
 Healthcare                              225.0          44.89         0.19                  -0.30                  -0.11               4.49                20.89
-Information Technology                  213.0          46.95         0.20                  -0.30                  -0.10               4.88                21.13
-Media Entertainment & Publication        98.0          50.00         0.17                   0.08                   0.25               5.17                22.45
-Metals & Mining                         196.0          42.35         0.06                  -0.32                  -0.25               4.54                18.88
-Oil Gas & Consumable Fuels              172.0          38.37         0.16                  -0.85                  -0.70               5.59                26.16
+Information Technology                  212.0          47.17         0.17                  -0.26                  -0.09               4.86                21.23
+Media Entertainment & Publication        99.0          49.49         0.18                   0.02                   0.19               5.20                23.23
+Metals & Mining                         195.0          42.05         0.05                  -0.33                  -0.29               4.54                18.46
+Oil Gas & Consumable Fuels              171.0          38.60         0.16                  -0.83                  -0.68               5.60                26.32
 Power                                    84.0          60.71        -0.60                   0.40                  -0.34               4.90                17.86
 Realty                                   81.0          49.38         0.39                  -0.37                   0.02               3.99                11.11
-Services                                135.0          51.11         0.19                  -0.38                  -0.20               4.58                11.85
+Services                                135.0          51.11         0.19                  -0.38                  -0.19               4.57                11.85
 Telecommunication                       128.0          41.41         0.20                  -0.18                   0.02               5.45                23.44
 
 8) Is it consistent over time? By quarter: top 10 picks vs all liquid stocks
         picks  closed 4%+ away (%)  closed 4%+ away (%) | all  lift 4%+  day range 5%+ (%)  day range 5%+ (%) | all  avg close vs prev (%)  avg close vs prev (%) | all
 day                                                                                                                                                                    
-2025Q2  570.0                17.89                       7.28       2.5              34.74                    10.17                   0.16                         0.29
+2025Q2  560.0                17.86                       7.16       2.5              34.46                    10.06                   0.14                         0.26
 2025Q3  640.0                12.19                       3.68       3.3              27.03                     5.23                  -0.09                        -0.06
 2025Q4  620.0                12.10                       3.24       3.7              25.32                     4.98                  -0.05                         0.01
 2026Q1  590.0                24.07                      10.24       2.4              41.02                    12.09                  -0.22                        -0.15
 2026Q2  600.0                21.17                       8.00       2.6              39.83                    11.03                   0.44                         0.27
 2026Q3  650.0                17.69                       5.35       3.3              35.08                     7.52                  -0.19                        -0.05
-2026Q4  330.0                19.09                       8.64       2.2              34.55                    11.83                  -0.40                         0.14
+2026Q4  340.0                18.82                       8.47       2.2              34.71                    11.68                  -0.39                         0.10
    Look for big, repeated differences across quarters, not small ones. The Nifty 500 list is today's, so older periods use today's members.
 
 9) Liquidity tiers: top 10 picks among stocks that trade at least Rs 40 / 100 / 300 crore a day (median). More liquid = easier to trade, but moves less
                                  Rs 40+ cr: picks  Rs 40+ cr: all  Rs 100+ cr: picks  Rs 100+ cr: all  Rs 300+ cr: picks  Rs 300+ cr: all
-closed 4%+ away (%)                         17.55            6.44              16.62             5.91              11.75             5.74
-day range 5%+ (%)                           33.78            8.73              28.28             7.25              15.52             6.12
-average day range (%)                        4.72            2.88               4.37             2.72               3.48             2.57
-average close vs prev close (%)             -0.03            0.06              -0.02             0.06               0.07             0.05
+closed 4%+ away (%)                         17.52            6.41              16.62             5.89              11.68             5.72
+day range 5%+ (%)                           33.75            8.70              28.20             7.23              15.50             6.12
+average day range (%)                        4.72            2.88               4.36             2.72               3.48             2.57
+average close vs prev close (%)             -0.03            0.05              -0.02             0.05               0.06             0.04
 
 10) GAP CHECK: what happened from the open to the close, by the size of the opening gap (you see the gap at 9:15)
 Top 10 picks:
                  stock-days  avg open-to-close (%)  went up (%)  long, net of 0.1% cost (%)  short, net of 0.1% cost (%)  avg day range (%)
 gap                                                                                                                                        
 gap down 2%+          128.0                   0.08        55.47                       -0.02                        -0.18               6.52
-gap down 0.5-2%       485.0                  -0.15        44.54                       -0.25                         0.05               4.84
-flat                 2043.0                  -0.31        42.14                       -0.41                         0.21               4.30
-gap up 0.5-2%        1148.0                  -0.23        42.51                       -0.33                         0.13               4.93
-gap up 2%+            196.0                  -0.34        43.88                       -0.44                         0.24               6.50
+gap down 0.5-2%       488.0                  -0.14        44.88                       -0.24                         0.04               4.84
+flat                 2045.0                  -0.31        42.15                       -0.41                         0.21               4.30
+gap up 0.5-2%        1150.0                  -0.23        42.52                       -0.33                         0.13               4.92
+gap up 2%+            189.0                  -0.30        43.92                       -0.40                         0.20               6.52
 All liquid stocks:
                  stock-days  avg open-to-close (%)  went up (%)  long, net of 0.1% cost (%)  short, net of 0.1% cost (%)  avg day range (%)
 gap                                                                                                                                        
-gap down 2%+         2229.0                   0.88        65.41                        0.78                        -0.98               4.45
-gap down 0.5-2%     13554.0                   0.06        51.09                       -0.04                        -0.16               3.12
-flat                75497.0                  -0.11        44.67                       -0.21                         0.01               2.66
-gap up 0.5-2%       22428.0                  -0.03        45.23                       -0.13                        -0.07               3.15
-gap up 2%+           2930.0                   0.04        49.18                       -0.06                        -0.14               4.36
+gap down 2%+         2232.0                   0.87        65.32                        0.77                        -0.97               4.45
+gap down 0.5-2%     13560.0                   0.06        51.08                       -0.04                        -0.16               3.12
+flat                75664.0                  -0.11        44.60                       -0.21                         0.01               2.66
+gap up 0.5-2%       22423.0                  -0.04        44.99                       -0.14                        -0.06               3.15
+gap up 2%+           2777.0                   0.06        49.69                       -0.04                        -0.16               4.36
    Uses the official opening price. Real fills at the open are usually worse, so treat small edges with care.

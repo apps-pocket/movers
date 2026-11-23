@@ -412,5 +412,170 @@
    "score": 73.15
   }
  ],
- "outcomes": null
+ "outcomes": {
+  "next_date": "2026-11-23",
+  "ref": "pc",
+  "rows": {
+   "WELSPUNLIV": {
+    "gap": -0.66,
+    "oc": 0.94,
+    "cc": 0.27,
+    "range_pct": 6.36,
+    "up": 3.8,
+    "down": -2.52
+   },
+   "CUB": {
+    "gap": 0.94,
+    "oc": -2.23,
+    "cc": -1.31,
+    "range_pct": 5.17,
+    "up": 2.09,
+    "down": -3.14
+   },
+   "PFOCUS": {
+    "gap": 0.47,
+    "oc": -6.16,
+    "cc": -5.72,
+    "range_pct": 7.84,
+    "up": 0.47,
+    "down": -7.4
+   },
+   "POONAWALLA": {
+    "gap": 0.5,
+    "oc": -0.19,
+    "cc": 0.31,
+    "range_pct": 3.43,
+    "up": 1.3,
+    "down": -2.14
+   },
+   "KALYANKJIL": {
+    "gap": 0.22,
+    "oc": 2.0,
+    "cc": 2.22,
+    "range_pct": 4.81,
+    "up": 5.04,
+    "down": 0.22
+   },
+   "COFORGE": {
+    "gap": 1.02,
+    "oc": 1.63,
+    "cc": 2.66,
+    "range_pct": 2.37,
+    "up": 3.27,
+    "down": 0.88
+   },
+   "IIFL": {
+    "gap": 0.83,
+    "oc": -0.32,
+    "cc": 0.5,
+    "range_pct": 3.4,
+    "up": 2.13,
+    "down": -1.3
+   },
+   "MTARTECH": {
+    "gap": -0.5,
+    "oc": 0.99,
+    "cc": 0.49,
+    "range_pct": 5.01,
+    "up": 2.24,
+    "down": -2.75
+   },
+   "SCI": {
+    "gap": 2.28,
+    "oc": -2.74,
+    "cc": -0.52,
+    "range_pct": 3.61,
+    "up": 2.32,
+    "down": -1.37
+   },
+   "PWL": {
+    "gap": -0.62,
+    "oc": 2.76,
+    "cc": 2.12,
+    "range_pct": 4.06,
+    "up": 3.29,
+    "down": -0.74
+   },
+   "INOXWIND": {
+    "gap": 0.97,
+    "oc": -4.11,
+    "cc": -3.17,
+    "range_pct": 6.0,
+    "up": 2.6,
+    "down": -3.46
+   },
+   "URBANCO": {
+    "gap": 0.22,
+    "oc": -0.78,
+    "cc": -0.56,
+    "range_pct": 3.89,
+    "up": 0.57,
+    "down": -3.32
+   },
+   "MPHASIS": {
+    "gap": 0.6,
+    "oc": 1.39,
+    "cc": 2.0,
+    "range_pct": 2.66,
+    "up": 2.88,
+    "down": 0.21
+   },
+   "LTM": {
+    "gap": 0.45,
+    "oc": 0.71,
+    "cc": 1.17,
+    "range_pct": 2.44,
+    "up": 2.9,
+    "down": 0.45
+   },
+   "ASTERDM": {
+    "gap": 0.33,
+    "oc": 1.23,
+    "cc": 1.57,
+    "range_pct": 2.39,
+    "up": 2.17,
+    "down": -0.23
+   },
+   "VAML": {
+    "gap": 0.0,
+    "oc": -1.18,
+    "cc": -1.18,
+    "range_pct": 3.75,
+    "up": 1.09,
+    "down": -2.65
+   },
+   "GRANULES": {
+    "gap": 0.89,
+    "oc": 0.6,
+    "cc": 1.5,
+    "range_pct": 3.77,
+    "up": 2.46,
+    "down": -1.34
+   },
+   "BLUESTARCO": {
+    "gap": -0.11,
+    "oc": -0.22,
+    "cc": -0.33,
+    "range_pct": 2.0,
+    "up": 1.51,
+    "down": -0.49
+   },
+   "NATIONALUM": {
+    "gap": 0.59,
+    "oc": -2.08,
+    "cc": -1.5,
+    "range_pct": 3.03,
+    "up": 0.86,
+    "down": -2.19
+   },
+   "TATACHEM": {
+    "gap": 1.05,
+    "oc": 0.73,
+    "cc": 1.78,
+    "range_pct": 4.17,
+    "up": 4.49,
+    "down": 0.27
+   }
+  }
+ }
 }
