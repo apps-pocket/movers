@@ -412,5 +412,170 @@
    "score": 72.38
   }
  ],
- "outcomes": null
+ "outcomes": {
+  "next_date": "2026-11-25",
+  "ref": "pc",
+  "rows": {
+   "APLAPOLLO": {
+    "gap": -10.0,
+    "oc": -1.8,
+    "cc": -11.62,
+    "range_pct": 13.76,
+    "up": -7.25,
+    "down": -19.63
+   },
+   "POLICYBZR": {
+    "gap": 5.87,
+    "oc": -2.53,
+    "cc": 3.19,
+    "range_pct": 5.48,
+    "up": 8.02,
+    "down": 2.21
+   },
+   "MANAPPURAM": {
+    "gap": 0.35,
+    "oc": -1.64,
+    "cc": -1.29,
+    "range_pct": 2.96,
+    "up": 0.83,
+    "down": -2.14
+   },
+   "KAYNES": {
+    "gap": 1.28,
+    "oc": -5.17,
+    "cc": -3.95,
+    "range_pct": 5.67,
+    "up": 1.33,
+    "down": -4.41
+   },
+   "RVNL": {
+    "gap": 1.02,
+    "oc": -1.01,
+    "cc": -0.01,
+    "range_pct": 3.45,
+    "up": 2.89,
+    "down": -0.59
+   },
+   "WELSPUNLIV": {
+    "gap": 0.81,
+    "oc": 1.12,
+    "cc": 1.94,
+    "range_pct": 2.83,
+    "up": 2.98,
+    "down": 0.13
+   },
+   "INOXWIND": {
+    "gap": 1.36,
+    "oc": -3.8,
+    "cc": -2.5,
+    "range_pct": 4.15,
+    "up": 1.45,
+    "down": -2.76
+   },
+   "CUB": {
+    "gap": -0.1,
+    "oc": 0.69,
+    "cc": 0.59,
+    "range_pct": 3.9,
+    "up": 1.41,
+    "down": -2.49
+   },
+   "PFOCUS": {
+    "gap": -0.27,
+    "oc": 1.27,
+    "cc": 0.99,
+    "range_pct": 5.51,
+    "up": 2.26,
+    "down": -3.23
+   },
+   "KALYANKJIL": {
+    "gap": 1.27,
+    "oc": -3.76,
+    "cc": -2.53,
+    "range_pct": 5.82,
+    "up": 1.46,
+    "down": -4.43
+   },
+   "BSOFT": {
+    "gap": 1.66,
+    "oc": -3.63,
+    "cc": -2.03,
+    "range_pct": 4.68,
+    "up": 2.1,
+    "down": -2.66
+   },
+   "PAGEIND": {
+    "gap": 1.13,
+    "oc": 1.2,
+    "cc": 2.34,
+    "range_pct": 2.58,
+    "up": 3.02,
+    "down": 0.42
+   },
+   "CRAFTSMAN": {
+    "gap": 0.5,
+    "oc": 0.75,
+    "cc": 1.25,
+    "range_pct": 3.48,
+    "up": 1.55,
+    "down": -1.95
+   },
+   "PWL": {
+    "gap": 0.53,
+    "oc": -3.45,
+    "cc": -2.94,
+    "range_pct": 4.06,
+    "up": 0.74,
+    "down": -3.34
+   },
+   "ACMESOLAR": {
+    "gap": 0.19,
+    "oc": 1.12,
+    "cc": 1.31,
+    "range_pct": 2.79,
+    "up": 1.43,
+    "down": -1.36
+   },
+   "PVRINOX": {
+    "gap": -0.45,
+    "oc": 0.95,
+    "cc": 0.49,
+    "range_pct": 2.71,
+    "up": 1.02,
+    "down": -1.68
+   },
+   "BBOX": {
+    "gap": 1.6,
+    "oc": -1.69,
+    "cc": -0.12,
+    "range_pct": 4.42,
+    "up": 2.85,
+    "down": -1.64
+   },
+   "TATASTEEL": {
+    "gap": 0.1,
+    "oc": -2.37,
+    "cc": -2.27,
+    "range_pct": 5.03,
+    "up": 1.17,
+    "down": -3.87
+   },
+   "JSWINFRA": {
+    "gap": 0.98,
+    "oc": 0.84,
+    "cc": 1.82,
+    "range_pct": 3.15,
+    "up": 2.22,
+    "down": -0.96
+   },
+   "SANSERA": {
+    "gap": 1.1,
+    "oc": 0.43,
+    "cc": 1.53,
+    "range_pct": 3.58,
+    "up": 2.4,
+    "down": -1.22
+   }
+  }
+ }
 }
