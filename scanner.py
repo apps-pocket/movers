@@ -40,7 +40,7 @@ CFG = dict(
     exclude_words=("ETF", "BEES", "LIQUID"),  # funds are not stocks
     history_days=260,
     # Tomorrow's Movers universe: liquid, broadly traded stocks only
-    min_median_turnover_cr=40,  # median daily traded value over 60 days, in crore rupees
+    min_median_turnover_cr=100, # median daily traded value over 60 days, in crore rupees (Rs 40 crore gave the same lift but more thin stocks)
     median_days=60,
     min_trades=10000,           # average number of trades per day (many different buyers and sellers)
     use_nifty500=True,          # keep only Nifty 500 members when the list can be fetched
@@ -402,8 +402,9 @@ def at_price_limit(c, h, l, ret):
     return bool(at_extreme and any(abs(abs(ret) - b) <= 0.35 for b in (5, 10, 20)))
 
 
-def movers_table(P, asof, cfg=CFG):
-    """All liquid stocks on one day with their features and scores (several score variants)."""
+def movers_features(P, asof, cfg=CFG, min_cr=None):
+    """Features of all liquid stocks on one day (before ranking)."""
+    min_cr = cfg["min_median_turnover_cr"] if min_cr is None else min_cr
     asof = np.datetime64(asof)
     use_list = cfg.get("use_nifty500", True) and len(SECTORS) >= 300
     rows = []
@@ -420,7 +421,7 @@ def movers_table(P, asof, cfg=CFG):
         trades = np.nanmean(nt[-20:]) if np.isfinite(nt[-20:]).any() else np.nan
         ref = a["pc"][i - 1]
         ref = float(ref) if np.isfinite(ref) and ref > 0 else float(c[-2])
-        if c[-1] < cfg["min_price"] or not med_tv >= cfg["min_median_turnover_cr"] or avg <= 0 \
+        if c[-1] < cfg["min_price"] or not med_tv >= min_cr or avg <= 0 \
                 or avg / c[-1] * 100 < cfg["min_avg_range_pct"]:
             continue
         if np.isfinite(trades) and trades < cfg["min_trades"]:
@@ -437,9 +438,12 @@ def movers_table(P, asof, cfg=CFG):
                      "avg_range_pct": avg / c[-1] * 100, "tight6": (h[-6:].max() - l[-6:].min()) / c[-1] * 100,
                      "median_turnover_cr": med_tv, "trades": trades, "sector": SECTORS.get(sym),
                      "delivery_ratio": dl[-1] / dlavg if np.isfinite(dl[-1]) and np.isfinite(dlavg) and dlavg > 0 else np.nan})
-    if not rows:
-        return pd.DataFrame()
-    df = pd.DataFrame(rows)
+    return pd.DataFrame(rows)
+
+
+def rank_scores(df, cfg=CFG):
+    """Add the score variants (ranks are taken inside this group of stocks)."""
+    df = df.copy()
     r = lambda col: df[col].rank(pct=True)
     r_vol, r_rng, r_ret, r_t6, r_atr = r("vol_ratio"), r("range_ratio"), df.today_ret.abs().rank(pct=True), r("tight6"), r("avg_range_pct")
     df["score_current"] = (r_vol + r_rng + r_ret + r_t6) / 4 * 100
@@ -448,6 +452,11 @@ def movers_table(P, asof, cfg=CFG):
     df["score_activity"] = (r_vol + r_rng + r_ret) / 3 * 100
     df["score"] = df["score_" + cfg["variant"]]
     return df
+
+
+def movers_table(P, asof, cfg=CFG):
+    df = movers_features(P, asof, cfg)
+    return df if df.empty else rank_scores(df, cfg)
 
 
 def pick_top(df, col, n, cap=0):
@@ -609,6 +618,19 @@ def _metrics(rows):
         "average close vs prev close (%)": x.cc.mean()}).round(2)
 
 
+def _gap_stats(rows):
+    """Open-to-close results by size of the opening gap (feeds the dashboard's Gap lookup)."""
+    x = pd.DataFrame(rows)
+    edges = [-99, -5, -3, -2, -1, -0.5, 0.5, 1, 2, 3, 5, 99]
+    out = []
+    for lo, hi in zip(edges[:-1], edges[1:]):
+        y = x[(x.gap >= lo) & (x.gap < hi)]
+        if len(y) >= 30:
+            out.append({"lo": lo, "hi": hi, "n": int(len(y)), "avg_oc": round(float(y.oc.mean()), 2),
+                        "pos_pct": round(float((y.oc > 0).mean() * 100), 1)})
+    return out
+
+
 def scorecard(P, dates, n=60, quiet=False):
     """How did the nightly lists really do on the NEXT day, compared with all liquid stocks?"""
     ds = [str(d) for d in dates]
@@ -616,13 +638,19 @@ def scorecard(P, dates, n=60, quiet=False):
     keys = list(VARIANTS) + ["selected"]
     per = {k: [] for k in keys}
     base, sizes, picks_info, last_days = [], [], [], {}
-    tiers, tier_base = {100: [], 300: []}, {100: [], 300: []}
+    tier_list = (40, 100, 300)
+    tiers, tier_base = {t: [] for t in tier_list}, {t: [] for t in tier_list}
+    widest = min(min(tier_list), CFG["min_median_turnover_cr"])
     for k in range(len(ds) - n - 1, len(ds) - 1):
         d, nd = ds[k], ds[k + 1]
-        df = movers_table(P, d)
+        wide = movers_features(P, d, CFG, min_cr=widest)
+        if wide.empty:
+            continue
+        df = wide[wide.median_turnover_cr >= CFG["min_median_turnover_cr"]]
         if df.empty:
             continue
-        res = mover_outcomes(P, df[["symbol", "close"]].to_dict("records"), nd)
+        df = rank_scores(df)
+        res = mover_outcomes(P, wide[["symbol", "close"]].to_dict("records"), nd)
         df = df[df.symbol.isin(res)]
         if len(df) < 10:
             continue
@@ -636,9 +664,10 @@ def scorecard(P, dates, n=60, quiet=False):
             for rank, sym in enumerate(top.symbol, 1):
                 per[key].append(dict(res[sym], rank=rank, today_ret=float(info.loc[sym, "today_ret"]),
                                      sector=info.loc[sym, "sector"], adv=adv, day=d))
-        for thr in tiers:
-            dft = df[df.median_turnover_cr >= thr]
+        for thr in tier_list:
+            dft = wide[(wide.median_turnover_cr >= thr) & wide.symbol.isin(res)]
             if len(dft) >= 15:
+                dft = rank_scores(dft)
                 tp = pick_top(dft, "score_" + CFG["variant"], 10, CFG["sector_cap"])
                 tiers[thr] += [dict(res[x], rank=r) for r, x in enumerate(tp.symbol, 1)]
                 tier_base[thr] += [res[x] for x in dft.symbol]
@@ -703,16 +732,17 @@ def scorecard(P, dates, n=60, quiet=False):
     bdf = pd.DataFrame(base)
     qf = lambda x: pd.PeriodIndex(pd.to_datetime(x.day), freq="Q").astype(str)
     qs = lambda x: pd.Series({"picks": len(x), "closed 4%+ away (%)": (x.cc.abs() >= 4).mean() * 100,
-                              "day range 5%+ (%)": (x.range_pct >= 5).mean() * 100, "avg close vs prev (%)": x.cc.mean()}).round(2)
+                              "day range 5%+ (%)": (x.range_pct >= 5).mean() * 100, "avg close vs prev (%)": x.cc.mean(),
+                              "avg open-to-close (%)": x.oc.mean()}).round(2)
     qt = sel.groupby(qf(sel)).apply(qs).join(bdf.groupby(qf(bdf)).apply(qs), rsuffix=" | all")
     qt["lift 4%+"] = (qt["closed 4%+ away (%)"] / qt["closed 4%+ away (%) | all"].replace(0, np.nan)).round(1)
     w(qt[["picks", "closed 4%+ away (%)", "closed 4%+ away (%) | all", "lift 4%+", "day range 5%+ (%)", "day range 5%+ (%) | all",
-          "avg close vs prev (%)", "avg close vs prev (%) | all"]].to_string())
+          "avg close vs prev (%)", "avg close vs prev (%) | all", "avg open-to-close (%)", "avg open-to-close (%) | all"]].to_string())
     w("   Look for big, repeated differences across quarters, not small ones. The Nifty 500 list is today's, so older periods use today's members.")
-    w("\n9) Liquidity tiers: top 10 picks among stocks that trade at least Rs 40 / 100 / 300 crore a day (median). More liquid = easier to trade, but moves less")
+    w(f"\n9) Liquidity tiers: top 10 picks among stocks that trade at least Rs 40 / 100 / 300 crore a day (median). The list uses Rs {CFG['min_median_turnover_cr']}+. More liquid = easier to trade, but moves less")
     c4 = ["closed 4%+ away (%)", "day range 5%+ (%)", "average day range (%)", "average close vs prev close (%)"]
-    rows = {"Rs 40+ cr: picks": tab[sel_name][c4], "Rs 40+ cr: all": tab["all liquid stocks"][c4]}
-    for thr in (100, 300):
+    rows = {}
+    for thr in tier_list:
         pk = [r for r in tiers[thr] if r["rank"] <= 10]
         if pk:
             rows[f"Rs {thr}+ cr: picks"] = _metrics(pk)[c4]
@@ -734,13 +764,13 @@ def scorecard(P, dates, n=60, quiet=False):
     w("   Uses the official opening price. Real fills at the open are usually worse, so treat small edges with care.")
     txt = "\n".join(L)
     OUT.mkdir(exist_ok=True)
-    (OUT / "evaluation.txt").write_text(txt, encoding="utf-8")
+    (OUT / "scorecard.txt").write_text(txt, encoding="utf-8")
+    write_evaluation()
     if len(sizes) >= 15:  # dashboard tiles: numbers from the real lists of this universe
         f = OUT / "stats.json"
         st = json.loads(f.read_text()) if f.exists() else {}
-        for k in ("gap_table", "movers_gap_table"):
-            st.setdefault(k, DEFAULT_STATS[k])
-        st.update({"list_rates_10": _rates(top10s["selected"]), "list_rates": _rates(per["selected"]),
+        st.update({"gap_table": _gap_stats(base), "movers_gap_table": _gap_stats(top10s["selected"]),
+                   "list_rates_10": _rates(top10s["selected"]), "list_rates": _rates(per["selected"]),
                    "universe_rates": _rates(base), "asof": ds[-1], "sc_version": SCORECARD_VERSION,
                    "source": f"scorecard of {len(sizes)} past lists, liquid universe"})
         f.write_text(json.dumps(st, indent=1))
@@ -749,8 +779,147 @@ def scorecard(P, dates, n=60, quiet=False):
     return txt
 
 
-SCORECARD_VERSION = "5"  # change this when the scorecard gets new sections, so it is recalculated once
-RULES = "movers-v4: Nifty 500 liquid universe, score volatility+surge, max 3 per sector"
+FADE_ENTRIES = ("09:15", "09:20", "09:30", "09:45", "10:15")
+FADE_STOPS = (1.0, 1.5, 2.0)
+
+
+def write_evaluation():
+    """evaluation.txt = scorecard + fade test (this is what the run page shows)."""
+    parts = [(OUT / n).read_text(encoding="utf-8") for n in ("scorecard.txt", "fade_report.txt") if (OUT / n).exists()]
+    (OUT / "evaluation.txt").write_text("\n\n".join(parts), encoding="utf-8")
+
+
+def fetch_1m(symbols, day):
+    import yfinance as yf
+    tick = [x + ".NS" for x in symbols]
+    raw = yf.download(tick, start=day.isoformat(), end=(day + timedelta(days=1)).isoformat(), interval="1m",
+                      group_by="ticker", auto_adjust=False, progress=False, threads=True)
+    res = {}
+    for sym, t in zip(symbols, tick):
+        try:
+            d = raw[t].dropna(subset=["Close"])
+        except Exception:
+            continue
+        if len(d):
+            res[sym] = d
+    return res
+
+
+def _mins(t):
+    h, m = t.split(":")
+    return int(h) * 60 + int(m)
+
+
+def fade_row(sym, d1, day, official_close, rank, list_date):
+    d = d1.copy()
+    d.index = pd.to_datetime(d.index)
+    if d.index.tz is not None:
+        d.index = d.index.tz_convert("Asia/Kolkata").tz_localize(None)
+    d = d[np.array([x == day for x in d.index.date])]
+    mm = np.asarray(d.index.hour * 60 + d.index.minute)
+    keep = (mm >= 555) & (mm <= 930)
+    d, mm = d[keep], mm[keep]
+    if len(d) < 200:
+        return None
+    op, hi, lo, cl = d.Open.values, d.High.values, d.Low.values, d.Close.values
+    exit_i = np.where(mm <= _mins("15:15"))[0][-1]
+    exit_p = cl[exit_i]
+    row = dict(list_date=list_date, day=str(day), symbol=sym, rank=rank, open=round(float(op[0]), 2),
+               gap=round(float((op[0] / official_close - 1) * 100), 2) if official_close else np.nan)
+    for e in FADE_ENTRIES:
+        idx = np.where(mm >= _mins(e))[0]
+        if not len(idx) or idx[0] >= exit_i:
+            continue
+        i = idx[0]
+        entry = op[i]
+        raw = (exit_p / entry - 1) * 100
+        row[f"r{e}"] = round(float(raw), 3)
+        if e in ("09:20", "09:30"):
+            Hh, Ll = hi[i:exit_i + 1].max(), lo[i:exit_i + 1].min()
+            for k in FADE_STOPS:  # gross results (costs are taken off in the report); a stop counts as hit if price reaches it
+                row[f"s{e}_S{k}"] = -k if Hh >= entry * (1 + k / 100) else round(float(-raw), 3)
+                row[f"l{e}_S{k}"] = -k if Ll <= entry * (1 - k / 100) else round(float(raw), 3)
+    return row
+
+
+def fade_report(ev):
+    cost = CFG.get("fade_cost", 0.1)
+    if ev is None or ev.empty:
+        return "FADE TEST (real intraday prices): no data yet."
+    L = []
+    w = L.append
+    w(f"FADE TEST with real 1-minute prices: top 10 picks of each list, {ev.day.nunique()} trading days, {len(ev)} stock-days. "
+      f"Costs {cost}% per round trip. Everything is closed at 15:15.")
+    w("Short = sell at the entry time and buy back at 15:15. Long = buy and sell at 15:15. Yahoo keeps only about 4 weeks of 1-minute data, so this grows week by week.")
+    rows = []
+    for e in FADE_ENTRIES:
+        c = f"r{e}"
+        if c in ev:
+            x = ev[c].dropna()
+            rows.append({"entry time": e + (" (official open)" if e == "09:15" else ""), "trades": len(x),
+                         "long avg % (net)": x.mean() - cost, "short avg % (net)": -x.mean() - cost,
+                         "short win %": ((-x - cost) > 0).mean() * 100})
+    w("\n11) Does the fade survive a realistic entry time? (all picks)")
+    w(pd.DataFrame(rows).round(2).to_string(index=False))
+    rows = []
+    for side, pre in (("short", "s"), ("long", "l")):
+        for e in ("09:20", "09:30"):
+            for k in FADE_STOPS:
+                c = f"{pre}{e}_S{k}"
+                if c in ev:
+                    g = ev[c].dropna()
+                    rows.append({"side": side, "entry": e, "stop %": k, "trades": len(g), "avg % (net)": (g - cost).mean(),
+                                 "win %": ((g - cost) > 0).mean() * 100, "stopped out %": (g == -k).mean() * 100})
+    w("\n12) With a stop-loss (the stop counts as hit if price reaches it at any time)")
+    w(pd.DataFrame(rows).round(2).to_string(index=False))
+    if "r09:20" in ev and ev.gap.notna().any():
+        x = ev.dropna(subset=["r09:20", "gap"])
+        b = pd.cut(x.gap, [-100, -2, -0.5, 0.5, 2, 100], labels=["gap down 2%+", "gap down 0.5-2%", "flat", "gap up 0.5-2%", "gap up 2%+"])
+        t = x.groupby(b, observed=True)["r09:20"].agg(trades="count", short_net=lambda v: (-v - cost).mean(),
+                                                     short_win=lambda v: ((-v - cost) > 0).mean() * 100)
+        w("\n13) Short at 09:20 by opening gap")
+        w(t.round(2).to_string())
+    days = sorted(ev.day.unique())
+    if len(days) >= 6 and "r09:20" in ev:
+        h = len(days) // 2
+        a_, b_ = ev[ev.day.isin(days[:h])]["r09:20"].dropna(), ev[ev.day.isin(days[h:])]["r09:20"].dropna()
+        w(f"\nStability, short at 09:20 (net): first half of the days {(-a_ - cost).mean():+.2f}% ({len(a_)} trades), "
+          f"second half {(-b_ - cost).mean():+.2f}% ({len(b_)} trades)")
+    w("   A few weeks of data is a small sample. Stock-days on the same day move together, so treat this as a hint, not proof.")
+    return "\n".join(L)
+
+
+def fade_update(top=10):
+    """Test the open-to-close fade with real intraday prices; remembers earlier days (Yahoo only keeps about 30 days)."""
+    hist = [json.loads(f.read_text()) for f in sorted((OUT / "history").glob("*.json"))]
+    hist = [h for h in hist if "movers" in h]
+    f = OUT / "fade_events.csv"
+    old = pd.read_csv(f) if f.exists() else pd.DataFrame()
+    done = set(old.day.astype(str)) if len(old) else set()
+    rows = []
+    for a, b in zip(hist[:-1], hist[1:]):
+        day = date.fromisoformat(b["asof"])
+        if str(day) in done or (date.today() - day).days > 28:
+            continue
+        picks = a["movers"][:top]
+        data = fetch_1m([m["symbol"] for m in picks], day)
+        for rank, m in enumerate(picks, 1):
+            if m["symbol"] in data:
+                r = fade_row(m["symbol"], data[m["symbol"]], day, m.get("official_close") or m.get("close"), rank, a["asof"])
+                if r:
+                    rows.append(r)
+    ev = pd.concat([old, pd.DataFrame(rows)], ignore_index=True) if rows else old
+    if rows:
+        ev.to_csv(f, index=False)
+    txt = fade_report(ev)
+    (OUT / "fade_report.txt").write_text(txt, encoding="utf-8")
+    write_evaluation()
+    print(txt.split("\n")[0])
+    return txt
+
+
+SCORECARD_VERSION = "7"  # change this when the scorecard gets new sections, so it is recalculated once
+RULES = "movers-v5: Nifty 500, median traded value Rs 100 crore, score volatility+surge, max 3 per sector"
 
 
 def ensure_rules(P, dates):
@@ -791,6 +960,10 @@ def nightly(P, dates):
             scorecard(P, dates, 400, quiet=True)
     except Exception as e:
         print("Scorecard skipped:", e)
+    try:
+        fade_update()
+    except Exception as e:
+        print("Fade test skipped:", str(e)[:120])
 
 
 def backfill(P, dates, n):
@@ -1031,6 +1204,7 @@ if __name__ == "__main__":
     ap.add_argument("--close", choices=["last", "official"], default="last",
                     help="which closing price to use: last traded price (default) or NSE official close")
     ap.add_argument("--backfill", type=int, default=0, help="save movers lists for the last N past days (fills History)")
+    ap.add_argument("--fade", action="store_true", help="test the open-to-close fade with real 1-minute prices (needs saved lists)")
     ap.add_argument("--evaluate", type=int, default=0, help="scorecard: how the nightly lists did on the next day (last N days)")
     ap.add_argument("--study", action="store_true", help="research mode: which features predict next-day moves")
     ap.add_argument("--history", type=int, default=CFG["history_days"],
@@ -1055,7 +1229,9 @@ if __name__ == "__main__":
     P = prep(data)
     dates = sorted(data["date"].dt.date.unique())
     load_sectors(fetch=not a.offline)
-    if a.evaluate:
+    if a.fade:
+        fade_update()
+    elif a.evaluate:
         scorecard(P, dates, a.evaluate)
     elif a.backfill:
         backfill(P, dates, a.backfill)
