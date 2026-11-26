@@ -1,6 +1,6 @@
 {
  "asof": "2026-09-17",
- "generated_at": "22 Nov 2026, 06:39 PM IST",
+ "generated_at": "26 Nov 2026, 10:03 PM IST",
  "market": {
   "stocks_scanned": 2179,
   "pct_above_50dma": 30.8,
@@ -8,7 +8,7 @@
   "mood": "Weak",
   "pct_above_20ema": 25.6,
   "breadth_5d_change": -11.6,
-  "liquid_stocks": 298
+  "liquid_stocks": 185
  },
  "movers": [
   {
@@ -29,27 +29,7 @@
    "trades": 75041.35,
    "sector": "Capital Goods",
    "delivery_ratio": 0.41,
-   "score": 94.46
-  },
-  {
-   "symbol": "KIRLOSENG",
-   "close": 2120.0,
-   "open": 2036.0,
-   "high": 2159.0,
-   "low": 2025.1,
-   "prev_close": 2040.5,
-   "official_close": 2120.6,
-   "volume": 663959.0,
-   "today_ret": 3.9,
-   "vol_ratio": 1.5,
-   "range_today_pct": 6.32,
-   "avg_range_pct": 4.58,
-   "tight6": 18.07,
-   "median_turnover_cr": 94.55,
-   "trades": 40806.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 1.07,
-   "score": 92.11
+   "score": 95.54
   },
   {
    "symbol": "APARINDS",
@@ -69,67 +49,7 @@
    "trades": 33304.35,
    "sector": "Capital Goods",
    "delivery_ratio": 1.14,
-   "score": 90.6
-  },
-  {
-   "symbol": "CHENNPETRO",
-   "close": 1414.5,
-   "open": 1456.0,
-   "high": 1519.6,
-   "low": 1402.0,
-   "prev_close": 1456.0,
-   "official_close": 1414.1,
-   "volume": 1890830.0,
-   "today_ret": -2.85,
-   "vol_ratio": 0.92,
-   "range_today_pct": 8.31,
-   "avg_range_pct": 4.89,
-   "tight6": 19.48,
-   "median_turnover_cr": 190.41,
-   "trades": 65355.65,
-   "sector": "Oil Gas & Consumable Fuels",
-   "delivery_ratio": 0.97,
-   "score": 90.52
-  },
-  {
-   "symbol": "PINELABS",
-   "close": 183.85,
-   "open": 185.78,
-   "high": 194.49,
-   "low": 182.85,
-   "prev_close": 185.71,
-   "official_close": 184.48,
-   "volume": 47871043.0,
-   "today_ret": -1.0,
-   "vol_ratio": 1.04,
-   "range_today_pct": 6.33,
-   "avg_range_pct": 4.59,
-   "tight6": 31.41,
-   "median_turnover_cr": 221.37,
-   "trades": 206801.85,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.45,
-   "score": 89.26
-  },
-  {
-   "symbol": "IFCI",
-   "close": 77.05,
-   "open": 75.21,
-   "high": 80.97,
-   "low": 75.21,
-   "prev_close": 75.06,
-   "official_close": 77.09,
-   "volume": 176897944.0,
-   "today_ret": 2.65,
-   "vol_ratio": 1.42,
-   "range_today_pct": 7.48,
-   "avg_range_pct": 7.6,
-   "tight6": 26.67,
-   "median_turnover_cr": 230.29,
-   "trades": 304816.6,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.62,
-   "score": 86.91
+   "score": 91.89
   },
   {
    "symbol": "POLICYBZR",
@@ -149,27 +69,87 @@
    "trades": 51052.35,
    "sector": "Financial Services",
    "delivery_ratio": 0.79,
-   "score": 86.91
+   "score": 90.14
   },
   {
-   "symbol": "WELSPUNLIV",
-   "close": 212.25,
-   "open": 201.59,
-   "high": 213.81,
-   "low": 201.0,
-   "prev_close": 202.82,
-   "official_close": 212.25,
-   "volume": 5153292.0,
-   "today_ret": 4.65,
-   "vol_ratio": 0.97,
-   "range_today_pct": 6.04,
-   "avg_range_pct": 3.46,
-   "tight6": 8.95,
-   "median_turnover_cr": 44.9,
-   "trades": 45747.5,
-   "sector": "Textiles",
-   "delivery_ratio": 0.91,
-   "score": 82.89
+   "symbol": "PINELABS",
+   "close": 183.85,
+   "open": 185.78,
+   "high": 194.49,
+   "low": 182.85,
+   "prev_close": 185.71,
+   "official_close": 184.48,
+   "volume": 47871043.0,
+   "today_ret": -1.0,
+   "vol_ratio": 1.04,
+   "range_today_pct": 6.33,
+   "avg_range_pct": 4.59,
+   "tight6": 31.41,
+   "median_turnover_cr": 221.37,
+   "trades": 206801.85,
+   "sector": "Financial Services",
+   "delivery_ratio": 0.45,
+   "score": 89.59
+  },
+  {
+   "symbol": "CHENNPETRO",
+   "close": 1414.5,
+   "open": 1456.0,
+   "high": 1519.6,
+   "low": 1402.0,
+   "prev_close": 1456.0,
+   "official_close": 1414.1,
+   "volume": 1890830.0,
+   "today_ret": -2.85,
+   "vol_ratio": 0.92,
+   "range_today_pct": 8.31,
+   "avg_range_pct": 4.89,
+   "tight6": 19.48,
+   "median_turnover_cr": 190.41,
+   "trades": 65355.65,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 0.97,
+   "score": 89.32
+  },
+  {
+   "symbol": "IFCI",
+   "close": 77.05,
+   "open": 75.21,
+   "high": 80.97,
+   "low": 75.21,
+   "prev_close": 75.06,
+   "official_close": 77.09,
+   "volume": 176897944.0,
+   "today_ret": 2.65,
+   "vol_ratio": 1.42,
+   "range_today_pct": 7.48,
+   "avg_range_pct": 7.6,
+   "tight6": 26.67,
+   "median_turnover_cr": 230.29,
+   "trades": 304816.6,
+   "sector": "Financial Services",
+   "delivery_ratio": 0.62,
+   "score": 86.76
+  },
+  {
+   "symbol": "KAYNES",
+   "close": 3520.0,
+   "open": 3402.0,
+   "high": 3562.0,
+   "low": 3395.0,
+   "prev_close": 3385.0,
+   "official_close": 3520.0,
+   "volume": 1242077.0,
+   "today_ret": 3.99,
+   "vol_ratio": 1.14,
+   "range_today_pct": 4.74,
+   "avg_range_pct": 3.98,
+   "tight6": 10.16,
+   "median_turnover_cr": 354.29,
+   "trades": 70538.45,
+   "sector": "Capital Goods",
+   "delivery_ratio": 0.56,
+   "score": 86.08
   },
   {
    "symbol": "REDINGTON",
@@ -189,47 +169,7 @@
    "trades": 97101.1,
    "sector": "Services",
    "delivery_ratio": 1.09,
-   "score": 82.55
-  },
-  {
-   "symbol": "FLUOROCHEM",
-   "close": 4461.0,
-   "open": 4533.6,
-   "high": 4616.9,
-   "low": 4432.6,
-   "prev_close": 4533.6,
-   "official_close": 4471.8,
-   "volume": 184050.0,
-   "today_ret": -1.6,
-   "vol_ratio": 1.27,
-   "range_today_pct": 4.13,
-   "avg_range_pct": 3.41,
-   "tight6": 10.21,
-   "median_turnover_cr": 56.12,
-   "trades": 21626.6,
-   "sector": "Chemicals",
-   "delivery_ratio": 1.02,
-   "score": 80.54
-  },
-  {
-   "symbol": "LODHA",
-   "close": 1103.1,
-   "open": 1080.0,
-   "high": 1116.9,
-   "low": 1078.0,
-   "prev_close": 1087.4,
-   "official_close": 1103.1,
-   "volume": 2157472.0,
-   "today_ret": 1.44,
-   "vol_ratio": 1.41,
-   "range_today_pct": 3.53,
-   "avg_range_pct": 3.78,
-   "tight6": 15.03,
-   "median_turnover_cr": 202.3,
-   "trades": 37091.5,
-   "sector": "Realty",
-   "delivery_ratio": 1.32,
-   "score": 79.28
+   "score": 82.7
   },
   {
    "symbol": "GLAND",
@@ -249,7 +189,27 @@
    "trades": 44555.3,
    "sector": "Healthcare",
    "delivery_ratio": 1.17,
-   "score": 78.86
+   "score": 82.03
+  },
+  {
+   "symbol": "LODHA",
+   "close": 1103.1,
+   "open": 1080.0,
+   "high": 1116.9,
+   "low": 1078.0,
+   "prev_close": 1087.4,
+   "official_close": 1103.1,
+   "volume": 2157472.0,
+   "today_ret": 1.44,
+   "vol_ratio": 1.41,
+   "range_today_pct": 3.53,
+   "avg_range_pct": 3.78,
+   "tight6": 15.03,
+   "median_turnover_cr": 202.3,
+   "trades": 37091.5,
+   "sector": "Realty",
+   "delivery_ratio": 1.32,
+   "score": 79.73
   },
   {
    "symbol": "SONACOMS",
@@ -269,47 +229,7 @@
    "trades": 40085.85,
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 1.05,
-   "score": 75.34
-  },
-  {
-   "symbol": "ZENSARTECH",
-   "close": 440.05,
-   "open": 450.0,
-   "high": 450.15,
-   "low": 431.6,
-   "prev_close": 450.15,
-   "official_close": 441.85,
-   "volume": 2456285.0,
-   "today_ret": -2.24,
-   "vol_ratio": 0.74,
-   "range_today_pct": 4.22,
-   "avg_range_pct": 3.61,
-   "tight6": 13.38,
-   "median_turnover_cr": 51.08,
-   "trades": 60779.75,
-   "sector": "Information Technology",
-   "delivery_ratio": 0.47,
-   "score": 73.57
-  },
-  {
-   "symbol": "BLUESTARCO",
-   "close": 1553.0,
-   "open": 1499.9,
-   "high": 1558.0,
-   "low": 1492.0,
-   "prev_close": 1504.0,
-   "official_close": 1553.0,
-   "volume": 517440.0,
-   "today_ret": 3.26,
-   "vol_ratio": 1.0,
-   "range_today_pct": 4.25,
-   "avg_range_pct": 2.74,
-   "tight6": 8.55,
-   "median_turnover_cr": 49.74,
-   "trades": 27122.55,
-   "sector": "Consumer Durables",
-   "delivery_ratio": 0.9,
-   "score": 73.07
+   "score": 78.24
   },
   {
    "symbol": "TCS",
@@ -329,47 +249,7 @@
    "trades": 99719.75,
    "sector": "Information Technology",
    "delivery_ratio": 0.74,
-   "score": 70.89
-  },
-  {
-   "symbol": "RKFORGE",
-   "close": 703.0,
-   "open": 686.0,
-   "high": 714.7,
-   "low": 681.05,
-   "prev_close": 688.8,
-   "official_close": 705.45,
-   "volume": 420271.0,
-   "today_ret": 2.06,
-   "vol_ratio": 0.55,
-   "range_today_pct": 4.79,
-   "avg_range_pct": 3.6,
-   "tight6": 11.19,
-   "median_turnover_cr": 52.44,
-   "trades": 24174.8,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 0.95,
-   "score": 70.72
-  },
-  {
-   "symbol": "KIMS",
-   "close": 798.0,
-   "open": 766.65,
-   "high": 799.05,
-   "low": 763.05,
-   "prev_close": 766.65,
-   "official_close": 791.85,
-   "volume": 1082406.0,
-   "today_ret": 4.09,
-   "vol_ratio": 2.16,
-   "range_today_pct": 4.51,
-   "avg_range_pct": 2.46,
-   "tight6": 5.52,
-   "median_turnover_cr": 40.3,
-   "trades": 24737.25,
-   "sector": "Healthcare",
-   "delivery_ratio": 1.1,
-   "score": 70.13
+   "score": 74.32
   },
   {
    "symbol": "PRESTIGE",
@@ -389,27 +269,147 @@
    "trades": 21459.05,
    "sector": "Realty",
    "delivery_ratio": 1.3,
-   "score": 68.96
+   "score": 72.57
   },
   {
-   "symbol": "TATACOMM",
-   "close": 1796.9,
-   "open": 1810.0,
-   "high": 1831.5,
-   "low": 1771.2,
-   "prev_close": 1799.3,
-   "official_close": 1791.6,
-   "volume": 310186.0,
-   "today_ret": -0.13,
-   "vol_ratio": 1.19,
-   "range_today_pct": 3.36,
-   "avg_range_pct": 2.58,
-   "tight6": 5.38,
-   "median_turnover_cr": 43.66,
-   "trades": 25797.5,
-   "sector": "Telecommunication",
-   "delivery_ratio": 0.85,
-   "score": 68.12
+   "symbol": "TMPV",
+   "close": 314.5,
+   "open": 301.0,
+   "high": 319.8,
+   "low": 299.75,
+   "prev_close": 301.0,
+   "official_close": 314.5,
+   "volume": 11903808.0,
+   "today_ret": 4.49,
+   "vol_ratio": 1.42,
+   "range_today_pct": 6.38,
+   "avg_range_pct": 2.28,
+   "tight6": 7.52,
+   "median_turnover_cr": 264.82,
+   "trades": 83469.5,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 0.63,
+   "score": 69.46
+  },
+  {
+   "symbol": "HYUNDAI",
+   "close": 2160.0,
+   "open": 2150.0,
+   "high": 2232.1,
+   "low": 2143.0,
+   "prev_close": 2155.0,
+   "official_close": 2160.0,
+   "volume": 686888.0,
+   "today_ret": 0.23,
+   "vol_ratio": 0.98,
+   "range_today_pct": 4.12,
+   "avg_range_pct": 2.49,
+   "tight6": 4.7,
+   "median_turnover_cr": 138.99,
+   "trades": 46679.3,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 0.87,
+   "score": 68.38
+  },
+  {
+   "symbol": "SOLARINDS",
+   "close": 18815.0,
+   "open": 18900.0,
+   "high": 19075.0,
+   "low": 18590.0,
+   "prev_close": 18900.0,
+   "official_close": 18815.0,
+   "volume": 214606.0,
+   "today_ret": -0.45,
+   "vol_ratio": 0.97,
+   "range_today_pct": 2.58,
+   "avg_range_pct": 3.64,
+   "tight6": 22.43,
+   "median_turnover_cr": 188.36,
+   "trades": 42388.35,
+   "sector": "Chemicals",
+   "delivery_ratio": 0.83,
+   "score": 68.24
+  },
+  {
+   "symbol": "ZYDUSLIFE",
+   "close": 1135.1,
+   "open": 1103.5,
+   "high": 1139.9,
+   "low": 1100.1,
+   "prev_close": 1107.5,
+   "official_close": 1135.1,
+   "volume": 1086138.0,
+   "today_ret": 2.49,
+   "vol_ratio": 0.87,
+   "range_today_pct": 3.51,
+   "avg_range_pct": 2.66,
+   "tight6": 6.34,
+   "median_turnover_cr": 122.74,
+   "trades": 29688.15,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.95,
+   "score": 66.76
+  },
+  {
+   "symbol": "GMRAIRPORT",
+   "close": 95.04,
+   "open": 92.46,
+   "high": 95.72,
+   "low": 92.46,
+   "prev_close": 92.46,
+   "official_close": 95.04,
+   "volume": 11555139.0,
+   "today_ret": 2.79,
+   "vol_ratio": 0.9,
+   "range_today_pct": 3.43,
+   "avg_range_pct": 2.61,
+   "tight6": 7.09,
+   "median_turnover_cr": 115.98,
+   "trades": 49495.35,
+   "sector": "Services",
+   "delivery_ratio": 0.96,
+   "score": 66.49
+  },
+  {
+   "symbol": "TATASTEEL",
+   "close": 187.29,
+   "open": 183.0,
+   "high": 189.49,
+   "low": 182.87,
+   "prev_close": 183.0,
+   "official_close": 187.29,
+   "volume": 29397693.0,
+   "today_ret": 2.34,
+   "vol_ratio": 0.96,
+   "range_today_pct": 3.53,
+   "avg_range_pct": 2.45,
+   "tight6": 5.33,
+   "median_turnover_cr": 441.07,
+   "trades": 148045.35,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 1.0,
+   "score": 65.68
+  },
+  {
+   "symbol": "OIL",
+   "close": 477.4,
+   "open": 485.0,
+   "high": 491.0,
+   "low": 474.25,
+   "prev_close": 487.6,
+   "official_close": 477.4,
+   "volume": 1708044.0,
+   "today_ret": -2.09,
+   "vol_ratio": 0.76,
+   "range_today_pct": 3.51,
+   "avg_range_pct": 2.71,
+   "tight6": 8.42,
+   "median_turnover_cr": 122.8,
+   "trades": 33458.0,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 0.92,
+   "score": 65.14
   }
  ],
  "outcomes": {
@@ -424,14 +424,6 @@
     "up": 9.04,
     "down": -0.35
    },
-   "KIRLOSENG": {
-    "gap": -0.65,
-    "oc": 2.29,
-    "cc": 1.62,
-    "range_pct": 3.0,
-    "up": 2.32,
-    "down": -0.66
-   },
    "APARINDS": {
     "gap": -0.01,
     "oc": 5.57,
@@ -439,30 +431,6 @@
     "range_pct": 7.5,
     "up": 7.18,
     "down": -0.31
-   },
-   "CHENNPETRO": {
-    "gap": -0.01,
-    "oc": 0.07,
-    "cc": 0.06,
-    "range_pct": 3.32,
-    "up": 1.63,
-    "down": -1.7
-   },
-   "PINELABS": {
-    "gap": 0.28,
-    "oc": 4.95,
-    "cc": 5.24,
-    "range_pct": 8.37,
-    "up": 7.68,
-    "down": -0.72
-   },
-   "IFCI": {
-    "gap": 0.61,
-    "oc": -1.42,
-    "cc": -0.82,
-    "range_pct": 3.31,
-    "up": 1.14,
-    "down": -2.19
    },
    "POLICYBZR": {
     "gap": 0.28,
@@ -472,13 +440,37 @@
     "up": 1.87,
     "down": -1.25
    },
-   "WELSPUNLIV": {
-    "gap": 0.0,
-    "oc": 0.83,
-    "cc": 0.83,
-    "range_pct": 2.14,
-    "up": 1.77,
-    "down": -0.37
+   "PINELABS": {
+    "gap": 0.28,
+    "oc": 4.95,
+    "cc": 5.24,
+    "range_pct": 8.37,
+    "up": 7.68,
+    "down": -0.72
+   },
+   "CHENNPETRO": {
+    "gap": -0.01,
+    "oc": 0.07,
+    "cc": 0.06,
+    "range_pct": 3.32,
+    "up": 1.63,
+    "down": -1.7
+   },
+   "IFCI": {
+    "gap": 0.61,
+    "oc": -1.42,
+    "cc": -0.82,
+    "range_pct": 3.31,
+    "up": 1.14,
+    "down": -2.19
+   },
+   "KAYNES": {
+    "gap": 0.23,
+    "oc": -0.37,
+    "cc": -0.14,
+    "range_pct": 3.71,
+    "up": 2.44,
+    "down": -1.28
    },
    "REDINGTON": {
     "gap": 1.22,
@@ -488,13 +480,13 @@
     "up": 3.27,
     "down": -0.96
    },
-   "FLUOROCHEM": {
-    "gap": 0.41,
-    "oc": 2.43,
-    "cc": 2.84,
-    "range_pct": 2.76,
-    "up": 3.18,
-    "down": 0.41
+   "GLAND": {
+    "gap": -0.02,
+    "oc": 1.47,
+    "cc": 1.45,
+    "range_pct": 2.55,
+    "up": 2.41,
+    "down": -0.13
    },
    "LODHA": {
     "gap": 0.64,
@@ -504,14 +496,6 @@
     "up": 4.14,
     "down": 0.5
    },
-   "GLAND": {
-    "gap": -0.02,
-    "oc": 1.47,
-    "cc": 1.45,
-    "range_pct": 2.55,
-    "up": 2.41,
-    "down": -0.13
-   },
    "SONACOMS": {
     "gap": 0.3,
     "oc": 3.56,
@@ -519,22 +503,6 @@
     "range_pct": 4.08,
     "up": 4.38,
     "down": 0.3
-   },
-   "ZENSARTECH": {
-    "gap": 0.12,
-    "oc": -1.22,
-    "cc": -1.1,
-    "range_pct": 2.45,
-    "up": 0.45,
-    "down": -2.0
-   },
-   "BLUESTARCO": {
-    "gap": -0.12,
-    "oc": -1.25,
-    "cc": -1.37,
-    "range_pct": 2.56,
-    "up": 1.19,
-    "down": -1.37
    },
    "TCS": {
     "gap": -0.58,
@@ -544,22 +512,6 @@
     "up": -0.58,
     "down": -4.05
    },
-   "RKFORGE": {
-    "gap": 0.5,
-    "oc": 2.22,
-    "cc": 2.74,
-    "range_pct": 3.18,
-    "up": 3.2,
-    "down": 0.0
-   },
-   "KIMS": {
-    "gap": 0.2,
-    "oc": 2.05,
-    "cc": 2.25,
-    "range_pct": 4.41,
-    "up": 3.43,
-    "down": -0.99
-   },
    "PRESTIGE": {
     "gap": 0.48,
     "oc": -0.82,
@@ -568,13 +520,61 @@
     "up": 2.19,
     "down": -0.35
    },
-   "TATACOMM": {
-    "gap": 0.18,
-    "oc": -1.38,
-    "cc": -1.21,
-    "range_pct": 3.44,
-    "up": 0.75,
-    "down": -2.7
+   "TMPV": {
+    "gap": -1.56,
+    "oc": -1.87,
+    "cc": -3.4,
+    "range_pct": 2.75,
+    "up": -1.43,
+    "down": -4.13
+   },
+   "HYUNDAI": {
+    "gap": 0.74,
+    "oc": 1.51,
+    "cc": 2.26,
+    "range_pct": 2.45,
+    "up": 2.26,
+    "down": -0.21
+   },
+   "SOLARINDS": {
+    "gap": 0.19,
+    "oc": -1.56,
+    "cc": -1.38,
+    "range_pct": 2.79,
+    "up": 1.41,
+    "down": -1.38
+   },
+   "ZYDUSLIFE": {
+    "gap": 1.37,
+    "oc": 0.81,
+    "cc": 2.19,
+    "range_pct": 1.7,
+    "up": 2.84,
+    "down": 1.11
+   },
+   "GMRAIRPORT": {
+    "gap": 0.49,
+    "oc": 3.97,
+    "cc": 4.48,
+    "range_pct": 4.07,
+    "up": 4.48,
+    "down": 0.39
+   },
+   "TATASTEEL": {
+    "gap": -0.48,
+    "oc": -0.46,
+    "cc": -0.93,
+    "range_pct": 1.3,
+    "up": 0.36,
+    "down": -0.93
+   },
+   "OIL": {
+    "gap": 0.34,
+    "oc": -0.69,
+    "cc": -0.36,
+    "range_pct": 2.25,
+    "up": 1.13,
+    "down": -1.13
    }
   }
  }

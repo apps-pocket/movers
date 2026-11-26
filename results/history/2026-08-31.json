@@ -1,6 +1,6 @@
 {
  "asof": "2026-08-31",
- "generated_at": "22 Nov 2026, 06:39 PM IST",
+ "generated_at": "26 Nov 2026, 10:03 PM IST",
  "market": {
   "stocks_scanned": 2154,
   "pct_above_50dma": 48.1,
@@ -8,7 +8,7 @@
   "mood": "Weak",
   "pct_above_20ema": 43.8,
   "breadth_5d_change": -0.9,
-  "liquid_stocks": 302
+  "liquid_stocks": 189
  },
  "movers": [
   {
@@ -29,7 +29,7 @@
    "trades": 107348.05,
    "sector": "Media Entertainment & Publication",
    "delivery_ratio": 0.67,
-   "score": 97.35
+   "score": 97.22
   },
   {
    "symbol": "ADANIENSOL",
@@ -49,27 +49,7 @@
    "trades": 68757.05,
    "sector": "Power",
    "delivery_ratio": 1.68,
-   "score": 94.45
-  },
-  {
-   "symbol": "GABRIEL",
-   "close": 1451.0,
-   "open": 1374.9,
-   "high": 1460.8,
-   "low": 1336.2,
-   "prev_close": 1367.6,
-   "official_close": 1437.9,
-   "volume": 896312.0,
-   "today_ret": 6.1,
-   "vol_ratio": 2.63,
-   "range_today_pct": 8.59,
-   "avg_range_pct": 3.82,
-   "tight6": 9.97,
-   "median_turnover_cr": 42.8,
-   "trades": 23292.45,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 1.03,
-   "score": 92.3
+   "score": 95.37
   },
   {
    "symbol": "KAYNES",
@@ -89,7 +69,7 @@
    "trades": 80713.2,
    "sector": "Capital Goods",
    "delivery_ratio": 1.33,
-   "score": 89.9
+   "score": 88.62
   },
   {
    "symbol": "ACUTAAS",
@@ -109,7 +89,7 @@
    "trades": 31396.9,
    "sector": "Healthcare",
    "delivery_ratio": 1.24,
-   "score": 87.09
+   "score": 85.45
   },
   {
    "symbol": "ATHERENERG",
@@ -129,27 +109,7 @@
    "trades": 152448.65,
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 1.07,
-   "score": 86.26
-  },
-  {
-   "symbol": "ACMESOLAR",
-   "close": 408.0,
-   "open": 399.0,
-   "high": 411.0,
-   "low": 382.9,
-   "prev_close": 393.7,
-   "official_close": 401.95,
-   "volume": 3008269.0,
-   "today_ret": 3.63,
-   "vol_ratio": 1.5,
-   "range_today_pct": 6.89,
-   "avg_range_pct": 3.48,
-   "tight6": 8.63,
-   "median_turnover_cr": 62.53,
-   "trades": 37589.55,
-   "sector": "Power",
-   "delivery_ratio": 1.27,
-   "score": 84.35
+   "score": 84.92
   },
   {
    "symbol": "LENSKART",
@@ -169,27 +129,7 @@
    "trades": 132479.45,
    "sector": "Consumer Services",
    "delivery_ratio": 1.1,
-   "score": 82.95
-  },
-  {
-   "symbol": "TARIL",
-   "close": 312.0,
-   "open": 317.05,
-   "high": 326.95,
-   "low": 309.1,
-   "prev_close": 303.45,
-   "official_close": 313.8,
-   "volume": 11756303.0,
-   "today_ret": 2.82,
-   "vol_ratio": 8.67,
-   "range_today_pct": 5.72,
-   "avg_range_pct": 2.82,
-   "tight6": 8.99,
-   "median_turnover_cr": 55.29,
-   "trades": 27360.35,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.3,
-   "score": 80.79
+   "score": 84.39
   },
   {
    "symbol": "ANGELONE",
@@ -209,87 +149,7 @@
    "trades": 43853.2,
    "sector": "Financial Services",
    "delivery_ratio": 1.25,
-   "score": 80.38
-  },
-  {
-   "symbol": "CRAFTSMAN",
-   "close": 11428.5,
-   "open": 11118.0,
-   "high": 11500.0,
-   "low": 10925.0,
-   "prev_close": 11118.0,
-   "official_close": 11198.5,
-   "volume": 221148.0,
-   "today_ret": 2.79,
-   "vol_ratio": 5.89,
-   "range_today_pct": 5.03,
-   "avg_range_pct": 2.84,
-   "tight6": 10.06,
-   "median_turnover_cr": 44.12,
-   "trades": 12427.0,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 1.2,
-   "score": 79.8
-  },
-  {
-   "symbol": "SYRMA",
-   "close": 1445.0,
-   "open": 1474.3,
-   "high": 1474.3,
-   "low": 1392.6,
-   "prev_close": 1474.3,
-   "official_close": 1437.0,
-   "volume": 1596920.0,
-   "today_ret": -1.99,
-   "vol_ratio": 1.38,
-   "range_today_pct": 5.65,
-   "avg_range_pct": 3.38,
-   "tight6": 7.78,
-   "median_turnover_cr": 140.37,
-   "trades": 47856.15,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.98,
-   "score": 78.89
-  },
-  {
-   "symbol": "TEJASNET",
-   "close": 559.0,
-   "open": 550.15,
-   "high": 566.8,
-   "low": 539.15,
-   "prev_close": 550.15,
-   "official_close": 559.75,
-   "volume": 6707173.0,
-   "today_ret": 1.61,
-   "vol_ratio": 2.12,
-   "range_today_pct": 4.95,
-   "avg_range_pct": 2.95,
-   "tight6": 13.8,
-   "median_turnover_cr": 101.48,
-   "trades": 55188.0,
-   "sector": "Telecommunication",
-   "delivery_ratio": 0.7,
-   "score": 78.56
-  },
-  {
-   "symbol": "IFCI",
-   "close": 89.26,
-   "open": 90.2,
-   "high": 92.14,
-   "low": 88.11,
-   "prev_close": 89.96,
-   "official_close": 89.7,
-   "volume": 50607497.0,
-   "today_ret": -0.78,
-   "vol_ratio": 1.56,
-   "range_today_pct": 4.51,
-   "avg_range_pct": 3.51,
-   "tight6": 13.16,
-   "median_turnover_cr": 244.86,
-   "trades": 86334.35,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.87,
-   "score": 78.06
+   "score": 83.6
   },
   {
    "symbol": "ADANIGREEN",
@@ -309,87 +169,47 @@
    "trades": 34270.3,
    "sector": "Power",
    "delivery_ratio": 1.78,
-   "score": 77.98
+   "score": 82.67
   },
   {
-   "symbol": "ENGINERSIN",
-   "close": 263.0,
-   "open": 254.0,
-   "high": 263.55,
-   "low": 252.91,
-   "prev_close": 253.72,
-   "official_close": 261.87,
-   "volume": 6249458.0,
-   "today_ret": 3.66,
-   "vol_ratio": 2.2,
-   "range_today_pct": 4.05,
-   "avg_range_pct": 3.34,
-   "tight6": 7.62,
-   "median_turnover_cr": 48.58,
-   "trades": 35872.6,
-   "sector": "Construction",
-   "delivery_ratio": 0.95,
-   "score": 77.73
+   "symbol": "ADANIPOWER",
+   "close": 198.0,
+   "open": 212.37,
+   "high": 213.13,
+   "low": 198.0,
+   "prev_close": 212.63,
+   "official_close": 198.0,
+   "volume": 53907969.0,
+   "today_ret": -6.88,
+   "vol_ratio": 3.16,
+   "range_today_pct": 7.64,
+   "avg_range_pct": 2.6,
+   "tight6": 9.8,
+   "median_turnover_cr": 466.68,
+   "trades": 86946.05,
+   "sector": "Power",
+   "delivery_ratio": 1.64,
+   "score": 81.48
   },
   {
-   "symbol": "BSE",
-   "close": 3282.0,
-   "open": 3405.0,
-   "high": 3408.0,
-   "low": 3216.3,
-   "prev_close": 3405.0,
-   "official_close": 3282.0,
-   "volume": 6123157.0,
-   "today_ret": -3.61,
-   "vol_ratio": 1.33,
-   "range_today_pct": 5.84,
-   "avg_range_pct": 3.14,
-   "tight6": 5.9,
-   "median_turnover_cr": 1178.55,
-   "trades": 196826.6,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.98,
-   "score": 77.48
-  },
-  {
-   "symbol": "CEMPRO",
-   "close": 1227.0,
-   "open": 1275.0,
-   "high": 1275.0,
-   "low": 1206.2,
-   "prev_close": 1268.1,
-   "official_close": 1225.6,
-   "volume": 471498.0,
-   "today_ret": -3.24,
-   "vol_ratio": 1.19,
-   "range_today_pct": 5.61,
-   "avg_range_pct": 4.2,
-   "tight6": 7.32,
-   "median_turnover_cr": 66.77,
-   "trades": 19741.4,
-   "sector": "Construction",
-   "delivery_ratio": 1.21,
-   "score": 77.32
-  },
-  {
-   "symbol": "WOCKPHARMA",
-   "close": 1885.0,
-   "open": 1974.9,
-   "high": 1977.1,
-   "low": 1872.0,
-   "prev_close": 1977.1,
-   "official_close": 1883.7,
-   "volume": 852543.0,
-   "today_ret": -4.66,
-   "vol_ratio": 1.19,
-   "range_today_pct": 5.58,
-   "avg_range_pct": 3.79,
-   "tight6": 9.41,
-   "median_turnover_cr": 126.82,
-   "trades": 35880.1,
-   "sector": "Healthcare",
-   "delivery_ratio": 1.23,
-   "score": 77.32
+   "symbol": "TEJASNET",
+   "close": 559.0,
+   "open": 550.15,
+   "high": 566.8,
+   "low": 539.15,
+   "prev_close": 550.15,
+   "official_close": 559.75,
+   "volume": 6707173.0,
+   "today_ret": 1.61,
+   "vol_ratio": 2.12,
+   "range_today_pct": 4.95,
+   "avg_range_pct": 2.95,
+   "tight6": 13.8,
+   "median_turnover_cr": 101.48,
+   "trades": 55188.0,
+   "sector": "Telecommunication",
+   "delivery_ratio": 0.7,
+   "score": 80.95
   },
   {
    "symbol": "LODHA",
@@ -409,7 +229,187 @@
    "trades": 30253.65,
    "sector": "Realty",
    "delivery_ratio": 1.54,
-   "score": 76.9
+   "score": 80.42
+  },
+  {
+   "symbol": "BSE",
+   "close": 3282.0,
+   "open": 3405.0,
+   "high": 3408.0,
+   "low": 3216.3,
+   "prev_close": 3405.0,
+   "official_close": 3282.0,
+   "volume": 6123157.0,
+   "today_ret": -3.61,
+   "vol_ratio": 1.33,
+   "range_today_pct": 5.84,
+   "avg_range_pct": 3.14,
+   "tight6": 5.9,
+   "median_turnover_cr": 1178.55,
+   "trades": 196826.6,
+   "sector": "Financial Services",
+   "delivery_ratio": 0.98,
+   "score": 78.04
+  },
+  {
+   "symbol": "SYRMA",
+   "close": 1445.0,
+   "open": 1474.3,
+   "high": 1474.3,
+   "low": 1392.6,
+   "prev_close": 1474.3,
+   "official_close": 1437.0,
+   "volume": 1596920.0,
+   "today_ret": -1.99,
+   "vol_ratio": 1.38,
+   "range_today_pct": 5.65,
+   "avg_range_pct": 3.38,
+   "tight6": 7.78,
+   "median_turnover_cr": 140.37,
+   "trades": 47856.15,
+   "sector": "Capital Goods",
+   "delivery_ratio": 0.98,
+   "score": 78.04
+  },
+  {
+   "symbol": "IFCI",
+   "close": 89.26,
+   "open": 90.2,
+   "high": 92.14,
+   "low": 88.11,
+   "prev_close": 89.96,
+   "official_close": 89.7,
+   "volume": 50607497.0,
+   "today_ret": -0.78,
+   "vol_ratio": 1.56,
+   "range_today_pct": 4.51,
+   "avg_range_pct": 3.51,
+   "tight6": 13.16,
+   "median_turnover_cr": 244.86,
+   "trades": 86334.35,
+   "sector": "Financial Services",
+   "delivery_ratio": 0.87,
+   "score": 76.19
+  },
+  {
+   "symbol": "PRESTIGE",
+   "close": 1633.0,
+   "open": 1592.0,
+   "high": 1633.0,
+   "low": 1542.0,
+   "prev_close": 1588.0,
+   "official_close": 1633.0,
+   "volume": 698835.0,
+   "today_ret": 2.83,
+   "vol_ratio": 1.45,
+   "range_today_pct": 5.57,
+   "avg_range_pct": 2.74,
+   "tight6": 6.45,
+   "median_turnover_cr": 109.77,
+   "trades": 19934.55,
+   "sector": "Realty",
+   "delivery_ratio": 1.27,
+   "score": 75.93
+  },
+  {
+   "symbol": "WOCKPHARMA",
+   "close": 1885.0,
+   "open": 1974.9,
+   "high": 1977.1,
+   "low": 1872.0,
+   "prev_close": 1977.1,
+   "official_close": 1883.7,
+   "volume": 852543.0,
+   "today_ret": -4.66,
+   "vol_ratio": 1.19,
+   "range_today_pct": 5.58,
+   "avg_range_pct": 3.79,
+   "tight6": 9.41,
+   "median_turnover_cr": 126.82,
+   "trades": 35880.1,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.23,
+   "score": 74.34
+  },
+  {
+   "symbol": "TDPOWERSYS",
+   "close": 778.4,
+   "open": 760.0,
+   "high": 792.4,
+   "low": 751.4,
+   "prev_close": 752.7,
+   "official_close": 777.0,
+   "volume": 3155375.0,
+   "today_ret": 3.41,
+   "vol_ratio": 1.65,
+   "range_today_pct": 5.27,
+   "avg_range_pct": 7.63,
+   "tight6": 9.57,
+   "median_turnover_cr": 121.36,
+   "trades": 79208.95,
+   "sector": "Capital Goods",
+   "delivery_ratio": 1.34,
+   "score": 71.16
+  },
+  {
+   "symbol": "ETERNAL",
+   "close": 328.1,
+   "open": 328.8,
+   "high": 332.95,
+   "low": 315.8,
+   "prev_close": 328.0,
+   "official_close": 328.1,
+   "volume": 272151922.0,
+   "today_ret": 0.03,
+   "vol_ratio": 10.85,
+   "range_today_pct": 5.23,
+   "avg_range_pct": 2.17,
+   "tight6": 5.23,
+   "median_turnover_cr": 862.94,
+   "trades": 149210.35,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.57,
+   "score": 69.97
+  },
+  {
+   "symbol": "NATIONALUM",
+   "close": 381.5,
+   "open": 390.0,
+   "high": 392.0,
+   "low": 377.15,
+   "prev_close": 394.95,
+   "official_close": 381.5,
+   "volume": 11959002.0,
+   "today_ret": -3.41,
+   "vol_ratio": 1.42,
+   "range_today_pct": 3.89,
+   "avg_range_pct": 2.8,
+   "tight6": 7.3,
+   "median_turnover_cr": 276.67,
+   "trades": 78574.5,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 1.71,
+   "score": 69.18
+  },
+  {
+   "symbol": "AUROPHARMA",
+   "close": 1717.0,
+   "open": 1648.6,
+   "high": 1717.0,
+   "low": 1635.1,
+   "prev_close": 1645.3,
+   "official_close": 1717.0,
+   "volume": 2416718.0,
+   "today_ret": 4.36,
+   "vol_ratio": 2.43,
+   "range_today_pct": 4.77,
+   "avg_range_pct": 2.23,
+   "tight6": 6.88,
+   "median_turnover_cr": 135.19,
+   "trades": 35371.7,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.95,
+   "score": 69.18
   }
  ],
  "outcomes": {
@@ -431,14 +431,6 @@
     "range_pct": 4.95,
     "up": 1.9,
     "down": -3.11
-   },
-   "GABRIEL": {
-    "gap": 0.84,
-    "oc": -1.72,
-    "cc": -0.9,
-    "range_pct": 4.5,
-    "up": 2.09,
-    "down": -2.45
    },
    "KAYNES": {
     "gap": -0.18,
@@ -464,14 +456,6 @@
     "up": 1.53,
     "down": -2.68
    },
-   "ACMESOLAR": {
-    "gap": -0.98,
-    "oc": 1.01,
-    "cc": 0.01,
-    "range_pct": 3.15,
-    "up": 1.21,
-    "down": -1.92
-   },
    "LENSKART": {
     "gap": 0.24,
     "oc": -0.45,
@@ -479,14 +463,6 @@
     "range_pct": 3.13,
     "up": 1.3,
     "down": -1.84
-   },
-   "TARIL": {
-    "gap": -0.51,
-    "oc": -1.04,
-    "cc": -1.55,
-    "range_pct": 2.75,
-    "up": 0.08,
-    "down": -2.66
    },
    "ANGELONE": {
     "gap": 0.0,
@@ -496,21 +472,21 @@
     "up": 0.47,
     "down": -2.23
    },
-   "CRAFTSMAN": {
-    "gap": 0.2,
-    "oc": -0.3,
-    "cc": -0.1,
+   "ADANIGREEN": {
+    "gap": 0.42,
+    "oc": 3.69,
+    "cc": 4.12,
     "range_pct": 4.44,
-    "up": 2.67,
-    "down": -1.77
+    "up": 4.63,
+    "down": 0.17
    },
-   "SYRMA": {
-    "gap": -0.14,
-    "oc": 0.91,
-    "cc": 0.77,
-    "range_pct": 2.81,
-    "up": 1.53,
-    "down": -1.27
+   "ADANIPOWER": {
+    "gap": 2.02,
+    "oc": 1.17,
+    "cc": 3.21,
+    "range_pct": 2.22,
+    "up": 3.93,
+    "down": 1.67
    },
    "TEJASNET": {
     "gap": 0.0,
@@ -520,29 +496,13 @@
     "up": 1.81,
     "down": -4.18
    },
-   "IFCI": {
-    "gap": 0.27,
-    "oc": -3.18,
-    "cc": -2.92,
-    "range_pct": 4.38,
-    "up": 0.55,
-    "down": -3.85
-   },
-   "ADANIGREEN": {
-    "gap": 0.42,
-    "oc": 3.69,
-    "cc": 4.12,
-    "range_pct": 4.44,
-    "up": 4.63,
-    "down": 0.17
-   },
-   "ENGINERSIN": {
-    "gap": 0.43,
-    "oc": 6.73,
-    "cc": 7.19,
-    "range_pct": 11.1,
-    "up": 10.61,
-    "down": -0.54
+   "LODHA": {
+    "gap": 1.36,
+    "oc": -1.73,
+    "cc": -0.39,
+    "range_pct": 4.26,
+    "up": 2.77,
+    "down": -1.55
    },
    "BSE": {
     "gap": 0.55,
@@ -552,13 +512,29 @@
     "up": 0.7,
     "down": -1.87
    },
-   "CEMPRO": {
-    "gap": 1.57,
-    "oc": -0.23,
-    "cc": 1.34,
-    "range_pct": 3.53,
-    "up": 2.23,
-    "down": -1.35
+   "SYRMA": {
+    "gap": -0.14,
+    "oc": 0.91,
+    "cc": 0.77,
+    "range_pct": 2.81,
+    "up": 1.53,
+    "down": -1.27
+   },
+   "IFCI": {
+    "gap": 0.27,
+    "oc": -3.18,
+    "cc": -2.92,
+    "range_pct": 4.38,
+    "up": 0.55,
+    "down": -3.85
+   },
+   "PRESTIGE": {
+    "gap": -2.2,
+    "oc": -1.7,
+    "cc": -3.86,
+    "range_pct": 3.06,
+    "up": -2.2,
+    "down": -5.19
    },
    "WOCKPHARMA": {
     "gap": 0.0,
@@ -568,13 +544,37 @@
     "up": 0.22,
     "down": -2.68
    },
-   "LODHA": {
-    "gap": 1.36,
-    "oc": -1.73,
-    "cc": -0.39,
-    "range_pct": 4.26,
-    "up": 2.77,
+   "TDPOWERSYS": {
+    "gap": 0.19,
+    "oc": -2.76,
+    "cc": -2.57,
+    "range_pct": 3.84,
+    "up": 0.5,
+    "down": -3.35
+   },
+   "ETERNAL": {
+    "gap": -0.94,
+    "oc": 0.85,
+    "cc": -0.11,
+    "range_pct": 1.97,
+    "up": 0.4,
     "down": -1.55
+   },
+   "NATIONALUM": {
+    "gap": 0.39,
+    "oc": -2.87,
+    "cc": -2.49,
+    "range_pct": 3.96,
+    "up": 0.59,
+    "down": -3.38
+   },
+   "AUROPHARMA": {
+    "gap": -0.99,
+    "oc": -0.98,
+    "cc": -1.96,
+    "range_pct": 1.71,
+    "up": -0.98,
+    "down": -2.67
    }
   }
  }

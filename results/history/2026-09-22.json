@@ -1,6 +1,6 @@
 {
  "asof": "2026-09-22",
- "generated_at": "22 Nov 2026, 06:39 PM IST",
+ "generated_at": "26 Nov 2026, 10:03 PM IST",
  "market": {
   "stocks_scanned": 2201,
   "pct_above_50dma": 35.3,
@@ -8,7 +8,7 @@
   "mood": "Weak",
   "pct_above_20ema": 35.4,
   "breadth_5d_change": 15.5,
-  "liquid_stocks": 298
+  "liquid_stocks": 183
  },
  "movers": [
   {
@@ -29,7 +29,7 @@
    "trades": 47203.3,
    "sector": "Oil Gas & Consumable Fuels",
    "delivery_ratio": 0.85,
-   "score": 97.48
+   "score": 97.54
   },
   {
    "symbol": "CUPID",
@@ -49,7 +49,7 @@
    "trades": 112224.35,
    "sector": "Fast Moving Consumer Goods",
    "delivery_ratio": 0.59,
-   "score": 96.56
+   "score": 97.13
   },
   {
    "symbol": "PINELABS",
@@ -69,7 +69,7 @@
    "trades": 235147.4,
    "sector": "Financial Services",
    "delivery_ratio": 0.44,
-   "score": 95.3
+   "score": 95.49
   },
   {
    "symbol": "APARINDS",
@@ -89,67 +89,7 @@
    "trades": 37836.75,
    "sector": "Capital Goods",
    "delivery_ratio": 1.2,
-   "score": 93.79
-  },
-  {
-   "symbol": "ENGINERSIN",
-   "close": 300.6,
-   "open": 286.7,
-   "high": 304.95,
-   "low": 281.5,
-   "prev_close": 285.25,
-   "official_close": 302.55,
-   "volume": 23538487.0,
-   "today_ret": 5.38,
-   "vol_ratio": 3.7,
-   "range_today_pct": 7.8,
-   "avg_range_pct": 3.72,
-   "tight6": 17.08,
-   "median_turnover_cr": 47.69,
-   "trades": 73655.7,
-   "sector": "Construction",
-   "delivery_ratio": 0.53,
-   "score": 93.2
-  },
-  {
-   "symbol": "ACMESOLAR",
-   "close": 455.3,
-   "open": 460.0,
-   "high": 476.9,
-   "low": 441.55,
-   "prev_close": 458.1,
-   "official_close": 458.65,
-   "volume": 3701858.0,
-   "today_ret": -0.61,
-   "vol_ratio": 1.37,
-   "range_today_pct": 7.76,
-   "avg_range_pct": 4.16,
-   "tight6": 16.42,
-   "median_turnover_cr": 56.74,
-   "trades": 58888.15,
-   "sector": "Power",
-   "delivery_ratio": 0.88,
-   "score": 92.2
-  },
-  {
-   "symbol": "KAYNES",
-   "close": 3455.0,
-   "open": 3599.0,
-   "high": 3599.0,
-   "low": 3425.0,
-   "prev_close": 3650.0,
-   "official_close": 3455.0,
-   "volume": 3022938.0,
-   "today_ret": -5.34,
-   "vol_ratio": 2.81,
-   "range_today_pct": 5.04,
-   "avg_range_pct": 4.25,
-   "tight6": 11.03,
-   "median_turnover_cr": 358.05,
-   "trades": 76729.75,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.83,
-   "score": 92.11
+   "score": 94.95
   },
   {
    "symbol": "MEESHO",
@@ -169,7 +109,7 @@
    "trades": 144940.55,
    "sector": "Consumer Services",
    "delivery_ratio": 0.32,
-   "score": 92.11
+   "score": 93.44
   },
   {
    "symbol": "ACUTAAS",
@@ -189,27 +129,27 @@
    "trades": 40389.55,
    "sector": "Healthcare",
    "delivery_ratio": 1.04,
-   "score": 92.03
+   "score": 93.17
   },
   {
-   "symbol": "SANSERA",
-   "close": 4615.5,
-   "open": 4489.9,
-   "high": 4630.0,
-   "low": 4393.3,
-   "prev_close": 4297.0,
-   "official_close": 4586.5,
-   "volume": 914987.0,
-   "today_ret": 7.41,
-   "vol_ratio": 4.81,
-   "range_today_pct": 5.13,
-   "avg_range_pct": 3.52,
-   "tight6": 17.98,
-   "median_turnover_cr": 72.55,
-   "trades": 32348.65,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 0.63,
-   "score": 90.27
+   "symbol": "KAYNES",
+   "close": 3455.0,
+   "open": 3599.0,
+   "high": 3599.0,
+   "low": 3425.0,
+   "prev_close": 3650.0,
+   "official_close": 3455.0,
+   "volume": 3022938.0,
+   "today_ret": -5.34,
+   "vol_ratio": 2.81,
+   "range_today_pct": 5.04,
+   "avg_range_pct": 4.25,
+   "tight6": 11.03,
+   "median_turnover_cr": 358.05,
+   "trades": 76729.75,
+   "sector": "Capital Goods",
+   "delivery_ratio": 0.83,
+   "score": 93.17
   },
   {
    "symbol": "SYRMA",
@@ -229,7 +169,7 @@
    "trades": 95520.15,
    "sector": "Capital Goods",
    "delivery_ratio": 0.64,
-   "score": 89.85
+   "score": 90.98
   },
   {
    "symbol": "SOLARINDS",
@@ -249,67 +189,7 @@
    "trades": 47156.3,
    "sector": "Chemicals",
    "delivery_ratio": 1.02,
-   "score": 87.33
-  },
-  {
-   "symbol": "CRAFTSMAN",
-   "close": 10606.0,
-   "open": 11006.0,
-   "high": 11018.0,
-   "low": 10556.0,
-   "prev_close": 11006.0,
-   "official_close": 10602.0,
-   "volume": 81543.0,
-   "today_ret": -3.63,
-   "vol_ratio": 1.29,
-   "range_today_pct": 4.36,
-   "avg_range_pct": 4.2,
-   "tight6": 11.71,
-   "median_turnover_cr": 40.46,
-   "trades": 16588.3,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 1.36,
-   "score": 84.82
-  },
-  {
-   "symbol": "JSWINFRA",
-   "close": 369.05,
-   "open": 351.45,
-   "high": 375.5,
-   "low": 351.3,
-   "prev_close": 349.6,
-   "official_close": 367.6,
-   "volume": 17124150.0,
-   "today_ret": 5.56,
-   "vol_ratio": 4.69,
-   "range_today_pct": 6.56,
-   "avg_range_pct": 2.97,
-   "tight6": 15.61,
-   "median_turnover_cr": 91.01,
-   "trades": 63193.75,
-   "sector": "Services",
-   "delivery_ratio": 0.59,
-   "score": 83.14
-  },
-  {
-   "symbol": "CUB",
-   "close": 227.84,
-   "open": 234.9,
-   "high": 235.78,
-   "low": 226.0,
-   "prev_close": 234.94,
-   "official_close": 227.21,
-   "volume": 2192380.0,
-   "today_ret": -3.02,
-   "vol_ratio": 0.93,
-   "range_today_pct": 4.29,
-   "avg_range_pct": 3.79,
-   "tight6": 9.89,
-   "median_turnover_cr": 51.61,
-   "trades": 39278.25,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.1,
-   "score": 81.12
+   "score": 88.93
   },
   {
    "symbol": "REDINGTON",
@@ -329,47 +209,7 @@
    "trades": 88198.7,
    "sector": "Services",
    "delivery_ratio": 1.05,
-   "score": 81.04
-  },
-  {
-   "symbol": "WELSPUNLIV",
-   "close": 223.5,
-   "open": 215.4,
-   "high": 224.0,
-   "low": 215.32,
-   "prev_close": 215.87,
-   "official_close": 221.51,
-   "volume": 5107266.0,
-   "today_ret": 3.53,
-   "vol_ratio": 1.28,
-   "range_today_pct": 3.88,
-   "avg_range_pct": 3.16,
-   "tight6": 12.66,
-   "median_turnover_cr": 49.55,
-   "trades": 40238.25,
-   "sector": "Textiles",
-   "delivery_ratio": 1.04,
-   "score": 80.45
-  },
-  {
-   "symbol": "RKFORGE",
-   "close": 715.0,
-   "open": 719.4,
-   "high": 741.0,
-   "low": 712.1,
-   "prev_close": 716.5,
-   "official_close": 716.25,
-   "volume": 660677.0,
-   "today_ret": -0.21,
-   "vol_ratio": 0.92,
-   "range_today_pct": 4.04,
-   "avg_range_pct": 3.64,
-   "tight6": 11.45,
-   "median_turnover_cr": 52.44,
-   "trades": 23974.8,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 0.75,
-   "score": 79.19
+   "score": 82.51
   },
   {
    "symbol": "SWIGGY",
@@ -389,27 +229,187 @@
    "trades": 103000.45,
    "sector": "Consumer Services",
    "delivery_ratio": 1.19,
-   "score": 76.76
+   "score": 80.6
   },
   {
-   "symbol": "CONCOR",
-   "close": 467.0,
-   "open": 489.5,
-   "high": 489.5,
-   "low": 466.7,
-   "prev_close": 487.05,
-   "official_close": 467.0,
-   "volume": 2828067.0,
-   "today_ret": -4.12,
-   "vol_ratio": 2.29,
-   "range_today_pct": 4.88,
-   "avg_range_pct": 2.71,
-   "tight6": 8.1,
-   "median_turnover_cr": 57.13,
-   "trades": 22259.15,
-   "sector": "Services",
+   "symbol": "VAML",
+   "close": 424.6,
+   "open": 415.8,
+   "high": 430.75,
+   "low": 415.15,
+   "prev_close": 413.05,
+   "official_close": 425.35,
+   "volume": 8507810.0,
+   "today_ret": 2.8,
+   "vol_ratio": 1.16,
+   "range_today_pct": 3.67,
+   "avg_range_pct": 2.91,
+   "tight6": 6.97,
+   "median_turnover_cr": 374.83,
+   "trades": 100244.95,
+   "sector": "Metals & Mining",
    "delivery_ratio": 0.95,
-   "score": 76.43
+   "score": 78.55
+  },
+  {
+   "symbol": "ATHERENERG",
+   "close": 1543.8,
+   "open": 1614.0,
+   "high": 1621.8,
+   "low": 1538.0,
+   "prev_close": 1593.0,
+   "official_close": 1543.8,
+   "volume": 3426121.0,
+   "today_ret": -3.09,
+   "vol_ratio": 0.63,
+   "range_today_pct": 5.43,
+   "avg_range_pct": 4.22,
+   "tight6": 9.13,
+   "median_turnover_cr": 509.71,
+   "trades": 134871.5,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.16,
+   "score": 78.28
+  },
+  {
+   "symbol": "HCLTECH",
+   "close": 1270.4,
+   "open": 1280.0,
+   "high": 1286.1,
+   "low": 1240.3,
+   "prev_close": 1281.0,
+   "official_close": 1270.4,
+   "volume": 2680986.0,
+   "today_ret": -0.83,
+   "vol_ratio": 1.13,
+   "range_today_pct": 3.61,
+   "avg_range_pct": 2.71,
+   "tight6": 4.31,
+   "median_turnover_cr": 358.69,
+   "trades": 72896.15,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.69,
+   "score": 76.23
+  },
+  {
+   "symbol": "OIL",
+   "close": 467.0,
+   "open": 476.6,
+   "high": 479.15,
+   "low": 463.25,
+   "prev_close": 478.35,
+   "official_close": 467.0,
+   "volume": 2648023.0,
+   "today_ret": -2.37,
+   "vol_ratio": 1.12,
+   "range_today_pct": 3.4,
+   "avg_range_pct": 2.81,
+   "tight6": 6.67,
+   "median_turnover_cr": 117.95,
+   "trades": 34854.7,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 0.82,
+   "score": 75.96
+  },
+  {
+   "symbol": "DIXON",
+   "close": 13084.0,
+   "open": 13364.0,
+   "high": 13434.0,
+   "low": 12996.0,
+   "prev_close": 13350.0,
+   "official_close": 13084.0,
+   "volume": 400815.0,
+   "today_ret": -1.99,
+   "vol_ratio": 1.12,
+   "range_today_pct": 3.35,
+   "avg_range_pct": 2.83,
+   "tight6": 5.54,
+   "median_turnover_cr": 561.66,
+   "trades": 49630.3,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 0.83,
+   "score": 75.55
+  },
+  {
+   "symbol": "WOCKPHARMA",
+   "close": 2191.0,
+   "open": 2205.9,
+   "high": 2247.0,
+   "low": 2176.8,
+   "prev_close": 2187.3,
+   "official_close": 2185.4,
+   "volume": 1006397.0,
+   "today_ret": 0.17,
+   "vol_ratio": 0.83,
+   "range_today_pct": 3.2,
+   "avg_range_pct": 4.08,
+   "tight6": 12.77,
+   "median_turnover_cr": 124.42,
+   "trades": 63434.5,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.87,
+   "score": 73.77
+  },
+  {
+   "symbol": "BANDHANBNK",
+   "close": 184.7,
+   "open": 180.0,
+   "high": 185.11,
+   "low": 179.9,
+   "prev_close": 179.0,
+   "official_close": 184.7,
+   "volume": 22278301.0,
+   "today_ret": 3.18,
+   "vol_ratio": 2.34,
+   "range_today_pct": 2.82,
+   "avg_range_pct": 2.65,
+   "tight6": 8.54,
+   "median_turnover_cr": 143.38,
+   "trades": 48191.1,
+   "sector": "Financial Services",
+   "delivery_ratio": 1.26,
+   "score": 73.63
+  },
+  {
+   "symbol": "OFSS",
+   "close": 10989.0,
+   "open": 10962.0,
+   "high": 11111.0,
+   "low": 10835.0,
+   "prev_close": 10911.0,
+   "official_close": 10989.0,
+   "volume": 232724.0,
+   "today_ret": 0.71,
+   "vol_ratio": 0.98,
+   "range_today_pct": 2.51,
+   "avg_range_pct": 3.2,
+   "tight6": 11.5,
+   "median_turnover_cr": 282.03,
+   "trades": 35644.6,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.82,
+   "score": 72.13
+  },
+  {
+   "symbol": "LTM",
+   "close": 4158.3,
+   "open": 4187.1,
+   "high": 4187.1,
+   "low": 4094.0,
+   "prev_close": 4280.0,
+   "official_close": 4158.3,
+   "volume": 995608.0,
+   "today_ret": -2.84,
+   "vol_ratio": 2.67,
+   "range_today_pct": 2.24,
+   "avg_range_pct": 3.01,
+   "tight6": 11.42,
+   "median_turnover_cr": 150.88,
+   "trades": 32949.9,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.77,
+   "score": 71.99
   }
  ],
  "outcomes": {
@@ -448,30 +448,6 @@
     "up": 2.78,
     "down": -2.38
    },
-   "ENGINERSIN": {
-    "gap": -0.38,
-    "oc": 1.61,
-    "cc": 1.22,
-    "range_pct": 5.52,
-    "up": 2.3,
-    "down": -3.21
-   },
-   "ACMESOLAR": {
-    "gap": 0.64,
-    "oc": -1.36,
-    "cc": -0.73,
-    "range_pct": 6.67,
-    "up": 3.87,
-    "down": -2.85
-   },
-   "KAYNES": {
-    "gap": 0.14,
-    "oc": -0.06,
-    "cc": 0.09,
-    "range_pct": 2.04,
-    "up": 1.27,
-    "down": -0.77
-   },
    "MEESHO": {
     "gap": 1.17,
     "oc": -2.47,
@@ -488,13 +464,13 @@
     "up": 1.94,
     "down": -1.45
    },
-   "SANSERA": {
-    "gap": 0.06,
-    "oc": 0.65,
-    "cc": 0.71,
-    "range_pct": 4.65,
-    "up": 3.42,
-    "down": -1.23
+   "KAYNES": {
+    "gap": 0.14,
+    "oc": -0.06,
+    "cc": 0.09,
+    "range_pct": 2.04,
+    "up": 1.27,
+    "down": -0.77
    },
    "SYRMA": {
     "gap": 0.49,
@@ -512,30 +488,6 @@
     "up": 2.41,
     "down": -1.33
    },
-   "CRAFTSMAN": {
-    "gap": -0.02,
-    "oc": 0.64,
-    "cc": 0.62,
-    "range_pct": 4.54,
-    "up": 3.66,
-    "down": -0.88
-   },
-   "JSWINFRA": {
-    "gap": 0.38,
-    "oc": -1.46,
-    "cc": -1.09,
-    "range_pct": 2.17,
-    "up": 0.71,
-    "down": -1.47
-   },
-   "CUB": {
-    "gap": -0.09,
-    "oc": 0.0,
-    "cc": -0.09,
-    "range_pct": 2.68,
-    "up": 1.58,
-    "down": -1.1
-   },
    "REDINGTON": {
     "gap": 0.63,
     "oc": -3.63,
@@ -543,22 +495,6 @@
     "range_pct": 5.42,
     "up": 2.23,
     "down": -3.23
-   },
-   "WELSPUNLIV": {
-    "gap": 3.47,
-    "oc": -2.49,
-    "cc": 0.9,
-    "range_pct": 5.23,
-    "up": 5.19,
-    "down": -0.23
-   },
-   "RKFORGE": {
-    "gap": -0.31,
-    "oc": -0.21,
-    "cc": -0.52,
-    "range_pct": 2.46,
-    "up": 0.95,
-    "down": -1.5
    },
    "SWIGGY": {
     "gap": 0.09,
@@ -568,13 +504,77 @@
     "up": 1.97,
     "down": -2.61
    },
-   "CONCOR": {
-    "gap": 0.43,
-    "oc": -0.93,
-    "cc": -0.5,
-    "range_pct": 2.24,
-    "up": 1.42,
-    "down": -0.82
+   "VAML": {
+    "gap": 0.09,
+    "oc": 2.88,
+    "cc": 2.97,
+    "range_pct": 3.57,
+    "up": 3.67,
+    "down": 0.09
+   },
+   "ATHERENERG": {
+    "gap": 0.01,
+    "oc": -2.89,
+    "cc": -2.88,
+    "range_pct": 3.97,
+    "up": 0.08,
+    "down": -3.89
+   },
+   "HCLTECH": {
+    "gap": -0.03,
+    "oc": -1.05,
+    "cc": -1.08,
+    "range_pct": 2.35,
+    "up": 0.74,
+    "down": -1.61
+   },
+   "OIL": {
+    "gap": 0.0,
+    "oc": 0.64,
+    "cc": 0.64,
+    "range_pct": 1.04,
+    "up": 0.95,
+    "down": -0.09
+   },
+   "DIXON": {
+    "gap": 0.0,
+    "oc": 0.89,
+    "cc": 0.89,
+    "range_pct": 1.49,
+    "up": 1.27,
+    "down": -0.22
+   },
+   "WOCKPHARMA": {
+    "gap": 0.62,
+    "oc": 6.09,
+    "cc": 6.75,
+    "range_pct": 8.09,
+    "up": 7.99,
+    "down": -0.15
+   },
+   "BANDHANBNK": {
+    "gap": 0.68,
+    "oc": 2.92,
+    "cc": 3.62,
+    "range_pct": 3.93,
+    "up": 4.49,
+    "down": 0.54
+   },
+   "OFSS": {
+    "gap": 0.0,
+    "oc": -1.27,
+    "cc": -1.27,
+    "range_pct": 2.47,
+    "up": 0.76,
+    "down": -1.71
+   },
+   "LTM": {
+    "gap": 0.04,
+    "oc": -1.8,
+    "cc": -1.76,
+    "range_pct": 3.19,
+    "up": 0.78,
+    "down": -2.42
    }
   }
  }

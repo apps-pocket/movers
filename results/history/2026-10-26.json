@@ -1,6 +1,6 @@
 {
  "asof": "2026-10-26",
- "generated_at": "22 Nov 2026, 06:39 PM IST",
+ "generated_at": "26 Nov 2026, 10:03 PM IST",
  "market": {
   "stocks_scanned": 2268,
   "pct_above_50dma": 11.9,
@@ -8,7 +8,7 @@
   "mood": "Weak",
   "pct_above_20ema": 11.6,
   "breadth_5d_change": -23.2,
-  "liquid_stocks": 297
+  "liquid_stocks": 176
  },
  "movers": [
   {
@@ -29,27 +29,7 @@
    "trades": 116652.5,
    "sector": "Oil Gas & Consumable Fuels",
    "delivery_ratio": 0.38,
-   "score": 96.89
-  },
-  {
-   "symbol": "SWIGGY",
-   "close": 185.75,
-   "open": 176.0,
-   "high": 191.55,
-   "low": 174.2,
-   "prev_close": 176.0,
-   "official_close": 185.75,
-   "volume": 56517089.0,
-   "today_ret": 5.54,
-   "vol_ratio": 3.35,
-   "range_today_pct": 9.34,
-   "avg_range_pct": 5.4,
-   "tight6": 33.0,
-   "median_turnover_cr": 333.83,
-   "trades": 83683.55,
-   "sector": "Consumer Services",
-   "delivery_ratio": 0.71,
-   "score": 94.87
+   "score": 97.02
   },
   {
    "symbol": "NETWEB",
@@ -69,7 +49,27 @@
    "trades": 124154.6,
    "sector": "Information Technology",
    "delivery_ratio": 0.95,
-   "score": 94.53
+   "score": 95.17
+  },
+  {
+   "symbol": "SWIGGY",
+   "close": 185.75,
+   "open": 176.0,
+   "high": 191.55,
+   "low": 174.2,
+   "prev_close": 176.0,
+   "official_close": 185.75,
+   "volume": 56517089.0,
+   "today_ret": 5.54,
+   "vol_ratio": 3.35,
+   "range_today_pct": 9.34,
+   "avg_range_pct": 5.4,
+   "tight6": 33.0,
+   "median_turnover_cr": 333.83,
+   "trades": 83683.55,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.71,
+   "score": 95.03
   },
   {
    "symbol": "ATHERENERG",
@@ -89,47 +89,7 @@
    "trades": 94226.95,
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 0.67,
-   "score": 92.51
-  },
-  {
-   "symbol": "GRAPHITE",
-   "close": 734.6,
-   "open": 683.65,
-   "high": 745.0,
-   "low": 677.1,
-   "prev_close": 689.05,
-   "official_close": 736.05,
-   "volume": 2078549.0,
-   "today_ret": 6.61,
-   "vol_ratio": 1.96,
-   "range_today_pct": 9.24,
-   "avg_range_pct": 4.26,
-   "tight6": 13.67,
-   "median_turnover_cr": 78.43,
-   "trades": 39511.3,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.57,
-   "score": 89.48
-  },
-  {
-   "symbol": "TATACHEM",
-   "close": 596.6,
-   "open": 581.0,
-   "high": 632.0,
-   "low": 581.0,
-   "prev_close": 576.8,
-   "official_close": 595.45,
-   "volume": 11685458.0,
-   "today_ret": 3.43,
-   "vol_ratio": 6.99,
-   "range_today_pct": 8.55,
-   "avg_range_pct": 4.09,
-   "tight6": 12.91,
-   "median_turnover_cr": 42.18,
-   "trades": 52826.75,
-   "sector": "Chemicals",
-   "delivery_ratio": 0.26,
-   "score": 89.31
+   "score": 94.03
   },
   {
    "symbol": "HSCL",
@@ -149,27 +109,7 @@
    "trades": 48578.0,
    "sector": "Chemicals",
    "delivery_ratio": 0.67,
-   "score": 89.06
-  },
-  {
-   "symbol": "TDPOWERSYS",
-   "close": 692.0,
-   "open": 646.0,
-   "high": 693.0,
-   "low": 631.55,
-   "prev_close": 639.55,
-   "official_close": 688.35,
-   "volume": 4606958.0,
-   "today_ret": 8.2,
-   "vol_ratio": 1.22,
-   "range_today_pct": 8.88,
-   "avg_range_pct": 6.06,
-   "tight6": 20.89,
-   "median_turnover_cr": 175.86,
-   "trades": 128396.25,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.87,
-   "score": 88.72
+   "score": 91.34
   },
   {
    "symbol": "APARINDS",
@@ -189,7 +129,27 @@
    "trades": 40479.5,
    "sector": "Capital Goods",
    "delivery_ratio": 1.0,
-   "score": 88.38
+   "score": 89.63
+  },
+  {
+   "symbol": "TDPOWERSYS",
+   "close": 692.0,
+   "open": 646.0,
+   "high": 693.0,
+   "low": 631.55,
+   "prev_close": 639.55,
+   "official_close": 688.35,
+   "volume": 4606958.0,
+   "today_ret": 8.2,
+   "vol_ratio": 1.22,
+   "range_today_pct": 8.88,
+   "avg_range_pct": 6.06,
+   "tight6": 20.89,
+   "median_turnover_cr": 175.86,
+   "trades": 128396.25,
+   "sector": "Capital Goods",
+   "delivery_ratio": 0.87,
+   "score": 88.92
   },
   {
    "symbol": "CHENNPETRO",
@@ -209,127 +169,27 @@
    "trades": 126658.0,
    "sector": "Oil Gas & Consumable Fuels",
    "delivery_ratio": 0.59,
-   "score": 87.79
+   "score": 87.64
   },
   {
-   "symbol": "CARTRADE",
-   "close": 2805.0,
-   "open": 2800.0,
-   "high": 2867.5,
-   "low": 2664.4,
-   "prev_close": 2820.3,
-   "official_close": 2822.1,
-   "volume": 485466.0,
-   "today_ret": -0.54,
-   "vol_ratio": 1.51,
-   "range_today_pct": 7.24,
-   "avg_range_pct": 5.05,
-   "tight6": 14.08,
-   "median_turnover_cr": 81.64,
-   "trades": 40905.65,
-   "sector": "Consumer Services",
-   "delivery_ratio": 1.11,
-   "score": 87.04
-  },
-  {
-   "symbol": "BELRISE",
-   "close": 203.19,
-   "open": 204.5,
-   "high": 205.59,
-   "low": 194.19,
-   "prev_close": 204.06,
-   "official_close": 202.44,
-   "volume": 6964251.0,
-   "today_ret": -0.43,
-   "vol_ratio": 2.81,
-   "range_today_pct": 5.61,
-   "avg_range_pct": 4.69,
-   "tight6": 20.8,
-   "median_turnover_cr": 71.96,
-   "trades": 44370.1,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 1.3,
-   "score": 84.68
-  },
-  {
-   "symbol": "AEGISLOG",
-   "close": 1296.0,
-   "open": 1225.0,
-   "high": 1306.7,
-   "low": 1207.9,
-   "prev_close": 1247.2,
-   "official_close": 1291.1,
-   "volume": 979064.0,
-   "today_ret": 3.91,
-   "vol_ratio": 1.04,
-   "range_today_pct": 7.62,
-   "avg_range_pct": 5.76,
-   "tight6": 17.06,
-   "median_turnover_cr": 106.13,
-   "trades": 57345.0,
-   "sector": "Oil Gas & Consumable Fuels",
-   "delivery_ratio": 0.69,
-   "score": 83.84
-  },
-  {
-   "symbol": "CUB",
-   "close": 207.85,
-   "open": 219.67,
-   "high": 219.8,
-   "low": 206.8,
-   "prev_close": 222.02,
-   "official_close": 207.98,
-   "volume": 4317846.0,
-   "today_ret": -6.38,
-   "vol_ratio": 1.81,
-   "range_today_pct": 6.25,
-   "avg_range_pct": 3.83,
-   "tight6": 12.36,
-   "median_turnover_cr": 48.65,
-   "trades": 50007.8,
-   "sector": "Financial Services",
-   "delivery_ratio": 0.84,
-   "score": 82.91
-  },
-  {
-   "symbol": "ACUTAAS",
-   "close": 3355.0,
-   "open": 3136.2,
-   "high": 3364.8,
-   "low": 3136.2,
-   "prev_close": 3137.7,
-   "official_close": 3348.8,
-   "volume": 1244552.0,
-   "today_ret": 6.93,
-   "vol_ratio": 3.62,
-   "range_today_pct": 6.81,
-   "avg_range_pct": 3.54,
-   "tight6": 8.34,
-   "median_turnover_cr": 97.94,
-   "trades": 48367.05,
-   "sector": "Healthcare",
-   "delivery_ratio": 1.08,
-   "score": 82.49
-  },
-  {
-   "symbol": "RKFORGE",
-   "close": 605.0,
-   "open": 590.0,
-   "high": 607.7,
-   "low": 571.1,
-   "prev_close": 591.1,
-   "official_close": 604.85,
-   "volume": 867240.0,
-   "today_ret": 2.35,
-   "vol_ratio": 1.58,
-   "range_today_pct": 6.05,
-   "avg_range_pct": 4.16,
-   "tight6": 21.44,
-   "median_turnover_cr": 46.63,
-   "trades": 24769.9,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 0.99,
-   "score": 81.99
+   "symbol": "KEI",
+   "close": 3899.5,
+   "open": 3720.0,
+   "high": 3912.0,
+   "low": 3685.2,
+   "prev_close": 3725.0,
+   "official_close": 3899.5,
+   "volume": 943498.0,
+   "today_ret": 4.68,
+   "vol_ratio": 2.05,
+   "range_today_pct": 5.82,
+   "avg_range_pct": 4.02,
+   "tight6": 25.04,
+   "median_turnover_cr": 174.66,
+   "trades": 41361.0,
+   "sector": "Capital Goods",
+   "delivery_ratio": 1.25,
+   "score": 85.37
   },
   {
    "symbol": "MANAPPURAM",
@@ -349,7 +209,47 @@
    "trades": 39716.5,
    "sector": "Financial Services",
    "delivery_ratio": 0.89,
-   "score": 80.81
+   "score": 84.66
+  },
+  {
+   "symbol": "AEGISLOG",
+   "close": 1296.0,
+   "open": 1225.0,
+   "high": 1306.7,
+   "low": 1207.9,
+   "prev_close": 1247.2,
+   "official_close": 1291.1,
+   "volume": 979064.0,
+   "today_ret": 3.91,
+   "vol_ratio": 1.04,
+   "range_today_pct": 7.62,
+   "avg_range_pct": 5.76,
+   "tight6": 17.06,
+   "median_turnover_cr": 106.13,
+   "trades": 57345.0,
+   "sector": "Oil Gas & Consumable Fuels",
+   "delivery_ratio": 0.69,
+   "score": 83.52
+  },
+  {
+   "symbol": "COFORGE",
+   "close": 1993.0,
+   "open": 1844.2,
+   "high": 1997.6,
+   "low": 1812.2,
+   "prev_close": 1900.5,
+   "official_close": 1993.0,
+   "volume": 4823894.0,
+   "today_ret": 4.87,
+   "vol_ratio": 2.13,
+   "range_today_pct": 9.3,
+   "avg_range_pct": 3.3,
+   "tight6": 9.3,
+   "median_turnover_cr": 372.14,
+   "trades": 84865.3,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.9,
+   "score": 81.68
   },
   {
    "symbol": "REDINGTON",
@@ -369,47 +269,147 @@
    "trades": 71192.55,
    "sector": "Services",
    "delivery_ratio": 1.09,
-   "score": 79.38
+   "score": 81.53
   },
   {
-   "symbol": "CYIENT",
-   "close": 1237.2,
-   "open": 1220.5,
-   "high": 1277.0,
-   "low": 1201.4,
-   "prev_close": 1233.0,
-   "official_close": 1242.9,
-   "volume": 1780621.0,
-   "today_ret": 0.34,
+   "symbol": "AUBANK",
+   "close": 869.0,
+   "open": 884.0,
+   "high": 899.3,
+   "low": 845.4,
+   "prev_close": 932.9,
+   "official_close": 869.0,
+   "volume": 8689891.0,
+   "today_ret": -6.85,
+   "vol_ratio": 4.83,
+   "range_today_pct": 6.2,
+   "avg_range_pct": 3.15,
+   "tight6": 18.16,
+   "median_turnover_cr": 131.91,
+   "trades": 59844.55,
+   "sector": "Financial Services",
+   "delivery_ratio": 0.78,
+   "score": 78.84
+  },
+  {
+   "symbol": "ADANIGREEN",
+   "close": 1250.0,
+   "open": 1185.1,
+   "high": 1250.0,
+   "low": 1175.0,
+   "prev_close": 1185.1,
+   "official_close": 1250.0,
+   "volume": 2068809.0,
+   "today_ret": 5.48,
+   "vol_ratio": 0.85,
+   "range_today_pct": 6.0,
+   "avg_range_pct": 3.88,
+   "tight6": 11.86,
+   "median_turnover_cr": 173.69,
+   "trades": 56411.4,
+   "sector": "Power",
+   "delivery_ratio": 1.0,
+   "score": 76.42
+  },
+  {
+   "symbol": "ADANIPOWER",
+   "close": 186.55,
+   "open": 182.04,
+   "high": 186.6,
+   "low": 177.74,
+   "prev_close": 182.04,
+   "official_close": 186.55,
+   "volume": 23091797.0,
+   "today_ret": 2.48,
    "vol_ratio": 1.01,
-   "range_today_pct": 6.11,
-   "avg_range_pct": 4.34,
-   "tight6": 12.12,
-   "median_turnover_cr": 50.28,
-   "trades": 80489.75,
-   "sector": "Information Technology",
-   "delivery_ratio": 0.5,
-   "score": 78.7
+   "range_today_pct": 4.75,
+   "avg_range_pct": 3.82,
+   "tight6": 12.29,
+   "median_turnover_cr": 322.93,
+   "trades": 117968.4,
+   "sector": "Power",
+   "delivery_ratio": 0.67,
+   "score": 74.29
   },
   {
-   "symbol": "SCI",
-   "close": 246.55,
-   "open": 238.0,
-   "high": 251.0,
-   "low": 234.65,
-   "prev_close": 237.8,
-   "official_close": 246.9,
-   "volume": 2718334.0,
-   "today_ret": 3.68,
-   "vol_ratio": 0.86,
-   "range_today_pct": 6.63,
-   "avg_range_pct": 4.26,
-   "tight6": 21.96,
-   "median_turnover_cr": 48.28,
-   "trades": 46406.1,
-   "sector": "Services",
-   "delivery_ratio": 0.89,
-   "score": 77.44
+   "symbol": "INFY",
+   "close": 1166.0,
+   "open": 1115.0,
+   "high": 1166.0,
+   "low": 1107.0,
+   "prev_close": 1153.8,
+   "official_close": 1166.0,
+   "volume": 25964569.0,
+   "today_ret": 1.06,
+   "vol_ratio": 1.73,
+   "range_today_pct": 5.06,
+   "avg_range_pct": 3.13,
+   "tight6": 13.7,
+   "median_turnover_cr": 989.7,
+   "trades": 236089.25,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.96,
+   "score": 74.01
+  },
+  {
+   "symbol": "LTF",
+   "close": 241.1,
+   "open": 235.75,
+   "high": 241.65,
+   "low": 229.2,
+   "prev_close": 237.5,
+   "official_close": 241.1,
+   "volume": 7960603.0,
+   "today_ret": 1.52,
+   "vol_ratio": 1.01,
+   "range_today_pct": 5.16,
+   "avg_range_pct": 3.39,
+   "tight6": 14.43,
+   "median_turnover_cr": 115.48,
+   "trades": 56094.95,
+   "sector": "Financial Services",
+   "delivery_ratio": 1.01,
+   "score": 73.15
+  },
+  {
+   "symbol": "SAIL",
+   "close": 169.8,
+   "open": 164.1,
+   "high": 170.04,
+   "low": 162.11,
+   "prev_close": 164.34,
+   "official_close": 169.8,
+   "volume": 15762490.0,
+   "today_ret": 3.32,
+   "vol_ratio": 1.0,
+   "range_today_pct": 4.67,
+   "avg_range_pct": 3.55,
+   "tight6": 6.72,
+   "median_turnover_cr": 259.34,
+   "trades": 65897.05,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 1.05,
+   "score": 71.31
+  },
+  {
+   "symbol": "LENSKART",
+   "close": 650.05,
+   "open": 626.05,
+   "high": 654.8,
+   "low": 622.7,
+   "prev_close": 626.45,
+   "official_close": 651.2,
+   "volume": 4308854.0,
+   "today_ret": 3.77,
+   "vol_ratio": 1.02,
+   "range_today_pct": 4.94,
+   "avg_range_pct": 3.28,
+   "tight6": 6.09,
+   "median_turnover_cr": 329.82,
+   "trades": 97523.1,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.07,
+   "score": 71.02
   }
  ],
  "outcomes": {
@@ -424,14 +424,6 @@
     "up": 4.21,
     "down": -1.77
    },
-   "SWIGGY": {
-    "gap": 1.27,
-    "oc": 0.45,
-    "cc": 1.72,
-    "range_pct": 3.72,
-    "up": 3.47,
-    "down": -0.3
-   },
    "NETWEB": {
     "gap": 1.26,
     "oc": 0.28,
@@ -439,6 +431,14 @@
     "range_pct": 5.73,
     "up": 4.63,
     "down": -1.17
+   },
+   "SWIGGY": {
+    "gap": 1.27,
+    "oc": 0.45,
+    "cc": 1.72,
+    "range_pct": 3.72,
+    "up": 3.47,
+    "down": -0.3
    },
    "ATHERENERG": {
     "gap": 2.03,
@@ -448,22 +448,6 @@
     "up": 8.06,
     "down": 2.03
    },
-   "GRAPHITE": {
-    "gap": 0.54,
-    "oc": 0.54,
-    "cc": 1.08,
-    "range_pct": 4.43,
-    "up": 3.25,
-    "down": -1.2
-   },
-   "TATACHEM": {
-    "gap": -0.92,
-    "oc": 1.36,
-    "cc": 0.43,
-    "range_pct": 3.22,
-    "up": 2.07,
-    "down": -1.12
-   },
    "HSCL": {
     "gap": 0.66,
     "oc": 2.72,
@@ -471,14 +455,6 @@
     "range_pct": 4.34,
     "up": 4.28,
     "down": -0.09
-   },
-   "TDPOWERSYS": {
-    "gap": 0.44,
-    "oc": -0.92,
-    "cc": -0.49,
-    "range_pct": 4.78,
-    "up": 3.75,
-    "down": -1.05
    },
    "APARINDS": {
     "gap": 1.01,
@@ -488,6 +464,14 @@
     "up": 4.71,
     "down": 0.23
    },
+   "TDPOWERSYS": {
+    "gap": 0.44,
+    "oc": -0.92,
+    "cc": -0.49,
+    "range_pct": 4.78,
+    "up": 3.75,
+    "down": -1.05
+   },
    "CHENNPETRO": {
     "gap": 0.35,
     "oc": 2.5,
@@ -496,53 +480,13 @@
     "up": 3.98,
     "down": -0.35
    },
-   "CARTRADE": {
-    "gap": -0.32,
-    "oc": 0.35,
-    "cc": 0.02,
-    "range_pct": 2.38,
-    "up": 0.85,
-    "down": -1.53
-   },
-   "BELRISE": {
-    "gap": 0.29,
-    "oc": 4.77,
-    "cc": 5.07,
-    "range_pct": 6.74,
-    "up": 7.04,
-    "down": 0.29
-   },
-   "AEGISLOG": {
-    "gap": -4.73,
-    "oc": -2.43,
-    "cc": -7.05,
-    "range_pct": 5.41,
-    "up": -4.5,
-    "down": -9.66
-   },
-   "CUB": {
+   "KEI": {
     "gap": 0.0,
-    "oc": 2.89,
-    "cc": 2.89,
-    "range_pct": 5.02,
-    "up": 5.02,
-    "down": 0.0
-   },
-   "ACUTAAS": {
-    "gap": 0.48,
-    "oc": 12.81,
-    "cc": 13.35,
-    "range_pct": 16.03,
-    "up": 16.46,
-    "down": 0.35
-   },
-   "RKFORGE": {
-    "gap": 0.06,
-    "oc": 2.69,
-    "cc": 2.75,
-    "range_pct": 5.08,
-    "up": 4.46,
-    "down": -0.63
+    "oc": -0.74,
+    "cc": -0.74,
+    "range_pct": 2.38,
+    "up": 1.64,
+    "down": -0.74
    },
    "MANAPPURAM": {
     "gap": 0.0,
@@ -552,6 +496,22 @@
     "up": 1.1,
     "down": -0.68
    },
+   "AEGISLOG": {
+    "gap": -4.73,
+    "oc": -2.43,
+    "cc": -7.05,
+    "range_pct": 5.41,
+    "up": -4.5,
+    "down": -9.66
+   },
+   "COFORGE": {
+    "gap": -0.7,
+    "oc": 0.91,
+    "cc": 0.2,
+    "range_pct": 2.82,
+    "up": 0.79,
+    "down": -2.01
+   },
    "REDINGTON": {
     "gap": 0.44,
     "oc": -2.67,
@@ -560,21 +520,61 @@
     "up": 1.09,
     "down": -2.74
    },
-   "CYIENT": {
-    "gap": -0.29,
-    "oc": -4.38,
-    "cc": -4.66,
-    "range_pct": 5.17,
-    "up": -0.29,
-    "down": -5.45
+   "AUBANK": {
+    "gap": 0.0,
+    "oc": -2.42,
+    "cc": -2.42,
+    "range_pct": 3.44,
+    "up": 1.02,
+    "down": -2.42
    },
-   "SCI": {
-    "gap": 0.45,
-    "oc": -1.35,
-    "cc": -0.91,
-    "range_pct": 6.17,
-    "up": 4.5,
-    "down": -1.7
+   "ADANIGREEN": {
+    "gap": -0.16,
+    "oc": 3.29,
+    "cc": 3.12,
+    "range_pct": 3.87,
+    "up": 3.12,
+    "down": -0.74
+   },
+   "ADANIPOWER": {
+    "gap": -0.41,
+    "oc": 1.56,
+    "cc": 1.15,
+    "range_pct": 2.18,
+    "up": 1.39,
+    "down": -0.78
+   },
+   "INFY": {
+    "gap": -1.2,
+    "oc": 0.96,
+    "cc": -0.26,
+    "range_pct": 3.17,
+    "up": -0.02,
+    "down": -3.15
+   },
+   "LTF": {
+    "gap": -0.29,
+    "oc": 0.17,
+    "cc": -0.12,
+    "range_pct": 1.73,
+    "up": 0.64,
+    "down": -1.08
+   },
+   "SAIL": {
+    "gap": -0.41,
+    "oc": 1.24,
+    "cc": 0.82,
+    "range_pct": 4.1,
+    "up": 2.44,
+    "down": -1.64
+   },
+   "LENSKART": {
+    "gap": 0.18,
+    "oc": 2.71,
+    "cc": 2.89,
+    "range_pct": 3.99,
+    "up": 3.81,
+    "down": -0.18
    }
   }
  }

@@ -1,0 +1,37 @@
+FADE TEST with real 1-minute prices: top 10 picks of each list, 19 trading days, 190 stock-days. Costs 0.1% per round trip. Everything is closed at 15:15.
+Short = sell at the entry time and buy back at 15:15. Long = buy and sell at 15:15. Yahoo keeps only about 4 weeks of 1-minute data, so this grows week by week.
+
+11) Does the fade survive a realistic entry time? (all picks)
+           entry time  trades  long avg % (net)  short avg % (net)  short win %
+09:15 (official open)     190             -0.16              -0.04        50.00
+                09:20     190              0.00              -0.20        51.05
+                09:30     190             -0.05              -0.15        51.58
+                09:45     190             -0.11              -0.09        51.58
+                10:15     190             -0.20               0.00        55.26
+
+12) With a stop-loss (the stop counts as hit if price reaches it at any time)
+ side entry  stop %  trades  avg % (net)  win %  stopped out %
+short 09:20     1.0     190         0.02  35.26          60.00
+short 09:20     1.5     190         0.01  43.16          47.37
+short 09:20     2.0     190         0.01  47.37          36.32
+short 09:30     1.0     190         0.02  37.37          58.42
+short 09:30     1.5     190         0.06  46.84          42.63
+short 09:30     2.0     190         0.04  50.00          31.05
+ long 09:20     1.0     190         0.12  34.21          60.00
+ long 09:20     1.5     190         0.12  40.00          45.79
+ long 09:20     2.0     190         0.12  42.11          31.58
+ long 09:30     1.0     190         0.12  37.37          55.79
+ long 09:30     1.5     190         0.02  40.00          43.16
+ long 09:30     2.0     190        -0.04  42.11          32.63
+
+13) Short at 09:20 by opening gap
+                 trades  short_net  short_win
+gap                                          
+gap down 2%+          7      -1.74      57.14
+gap down 0.5-2%      48      -0.73      43.75
+flat                 57       0.07      47.37
+gap up 0.5-2%        70      -0.09      54.29
+gap up 2%+            8       1.48      87.50
+
+Stability, short at 09:20 (net): first half of the days -0.66% (90 trades), second half +0.22% (100 trades)
+   A few weeks of data is a small sample. Stock-days on the same day move together, so treat this as a hint, not proof.

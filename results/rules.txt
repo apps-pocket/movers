@@ -1,1 +1,1 @@
-movers-v4: Nifty 500 liquid universe, score volatility+surge, max 3 per sector
+movers-v5: Nifty 500, median traded value Rs 100 crore, score volatility+surge, max 3 per sector

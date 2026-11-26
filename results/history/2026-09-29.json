@@ -1,6 +1,6 @@
 {
  "asof": "2026-09-29",
- "generated_at": "22 Nov 2026, 06:39 PM IST",
+ "generated_at": "26 Nov 2026, 10:03 PM IST",
  "market": {
   "stocks_scanned": 2210,
   "pct_above_50dma": 27.2,
@@ -8,29 +8,9 @@
   "mood": "Weak",
   "pct_above_20ema": 24.4,
   "breadth_5d_change": -11.0,
-  "liquid_stocks": 291
+  "liquid_stocks": 179
  },
  "movers": [
-  {
-   "symbol": "KIRLOSENG",
-   "close": 2376.7,
-   "open": 2141.2,
-   "high": 2444.0,
-   "low": 2124.3,
-   "prev_close": 2141.2,
-   "official_close": 2402.0,
-   "volume": 5298949.0,
-   "today_ret": 11.0,
-   "vol_ratio": 11.96,
-   "range_today_pct": 13.45,
-   "avg_range_pct": 4.65,
-   "tight6": 15.05,
-   "median_turnover_cr": 86.41,
-   "trades": 52434.0,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.45,
-   "score": 97.68
-  },
   {
    "symbol": "TDPOWERSYS",
    "close": 795.0,
@@ -49,27 +29,7 @@
    "trades": 83084.9,
    "sector": "Capital Goods",
    "delivery_ratio": 1.43,
-   "score": 96.82
-  },
-  {
-   "symbol": "SANSERA",
-   "close": 4448.4,
-   "open": 4380.0,
-   "high": 4550.0,
-   "low": 4154.6,
-   "prev_close": 4457.2,
-   "official_close": 4362.2,
-   "volume": 1016129.0,
-   "today_ret": -0.2,
-   "vol_ratio": 3.61,
-   "range_today_pct": 8.89,
-   "avg_range_pct": 4.25,
-   "tight6": 13.24,
-   "median_turnover_cr": 77.91,
-   "trades": 45180.8,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 1.08,
-   "score": 93.38
+   "score": 96.23
   },
   {
    "symbol": "AZAD",
@@ -89,7 +49,7 @@
    "trades": 43761.8,
    "sector": "Capital Goods",
    "delivery_ratio": 0.48,
-   "score": 93.21
+   "score": 94.69
   },
   {
    "symbol": "CUPID",
@@ -109,7 +69,7 @@
    "trades": 125927.1,
    "sector": "Fast Moving Consumer Goods",
    "delivery_ratio": 1.59,
-   "score": 92.87
+   "score": 93.02
   },
   {
    "symbol": "VAML",
@@ -129,67 +89,7 @@
    "trades": 98361.8,
    "sector": "Metals & Mining",
    "delivery_ratio": 1.14,
-   "score": 88.32
-  },
-  {
-   "symbol": "PIRAMALFIN",
-   "close": 2089.4,
-   "open": 2142.0,
-   "high": 2174.4,
-   "low": 2057.2,
-   "prev_close": 2149.0,
-   "official_close": 2127.5,
-   "volume": 1703600.0,
-   "today_ret": -2.77,
-   "vol_ratio": 3.93,
-   "range_today_pct": 5.61,
-   "avg_range_pct": 4.45,
-   "tight6": 22.45,
-   "median_turnover_cr": 61.7,
-   "trades": 35350.25,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.13,
-   "score": 88.14
-  },
-  {
-   "symbol": "THANGAMAYL",
-   "close": 5189.5,
-   "open": 5010.0,
-   "high": 5262.0,
-   "low": 4916.5,
-   "prev_close": 5011.5,
-   "official_close": 5204.5,
-   "volume": 177094.0,
-   "today_ret": 3.55,
-   "vol_ratio": 1.99,
-   "range_today_pct": 6.66,
-   "avg_range_pct": 3.66,
-   "tight6": 8.34,
-   "median_turnover_cr": 69.26,
-   "trades": 14201.35,
-   "sector": "Consumer Durables",
-   "delivery_ratio": 1.07,
-   "score": 85.14
-  },
-  {
-   "symbol": "POLICYBZR",
-   "close": 1081.0,
-   "open": 1162.1,
-   "high": 1162.3,
-   "low": 1077.0,
-   "prev_close": 1151.3,
-   "official_close": 1081.0,
-   "volume": 19346053.0,
-   "today_ret": -6.11,
-   "vol_ratio": 3.72,
-   "range_today_pct": 7.89,
-   "avg_range_pct": 8.34,
-   "tight6": 76.59,
-   "median_turnover_cr": 196.62,
-   "trades": 124952.7,
-   "sector": "Financial Services",
-   "delivery_ratio": 1.07,
-   "score": 82.9
+   "score": 91.9
   },
   {
    "symbol": "LTM",
@@ -209,7 +109,47 @@
    "trades": 32458.95,
    "sector": "Information Technology",
    "delivery_ratio": 1.32,
-   "score": 82.39
+   "score": 86.73
+  },
+  {
+   "symbol": "WELCORP",
+   "close": 2829.0,
+   "open": 2712.3,
+   "high": 2900.0,
+   "low": 2680.5,
+   "prev_close": 2739.7,
+   "official_close": 2842.0,
+   "volume": 3094471.0,
+   "today_ret": 3.26,
+   "vol_ratio": 1.38,
+   "range_today_pct": 7.76,
+   "avg_range_pct": 5.02,
+   "tight6": 7.95,
+   "median_turnover_cr": 239.83,
+   "trades": 126440.2,
+   "sector": "Capital Goods",
+   "delivery_ratio": 1.12,
+   "score": 82.96
+  },
+  {
+   "symbol": "POLICYBZR",
+   "close": 1081.0,
+   "open": 1162.1,
+   "high": 1162.3,
+   "low": 1077.0,
+   "prev_close": 1151.3,
+   "official_close": 1081.0,
+   "volume": 19346053.0,
+   "today_ret": -6.11,
+   "vol_ratio": 3.72,
+   "range_today_pct": 7.89,
+   "avg_range_pct": 8.34,
+   "tight6": 76.59,
+   "median_turnover_cr": 196.62,
+   "trades": 124952.7,
+   "sector": "Financial Services",
+   "delivery_ratio": 1.07,
+   "score": 82.12
   },
   {
    "symbol": "CHENNPETRO",
@@ -229,27 +169,7 @@
    "trades": 74577.7,
    "sector": "Oil Gas & Consumable Fuels",
    "delivery_ratio": 0.76,
-   "score": 81.96
-  },
-  {
-   "symbol": "ACUTAAS",
-   "close": 3317.9,
-   "open": 3290.0,
-   "high": 3340.0,
-   "low": 3202.1,
-   "prev_close": 3214.4,
-   "official_close": 3304.1,
-   "volume": 999485.0,
-   "today_ret": 3.22,
-   "vol_ratio": 3.1,
-   "range_today_pct": 4.16,
-   "avg_range_pct": 3.67,
-   "tight6": 8.53,
-   "median_turnover_cr": 91.77,
-   "trades": 44367.9,
-   "sector": "Healthcare",
-   "delivery_ratio": 0.95,
-   "score": 79.9
+   "score": 80.73
   },
   {
    "symbol": "MRPL",
@@ -269,27 +189,7 @@
    "trades": 66207.15,
    "sector": "Oil Gas & Consumable Fuels",
    "delivery_ratio": 0.69,
-   "score": 79.3
-  },
-  {
-   "symbol": "MEESHO",
-   "close": 222.49,
-   "open": 216.83,
-   "high": 226.41,
-   "low": 211.77,
-   "prev_close": 216.83,
-   "official_close": 223.21,
-   "volume": 31046538.0,
-   "today_ret": 2.61,
-   "vol_ratio": 1.21,
-   "range_today_pct": 6.58,
-   "avg_range_pct": 4.32,
-   "tight6": 14.82,
-   "median_turnover_cr": 258.79,
-   "trades": 163046.8,
-   "sector": "Consumer Services",
-   "delivery_ratio": 1.07,
-   "score": 77.84
+   "score": 79.47
   },
   {
    "symbol": "LTF",
@@ -309,67 +209,67 @@
    "trades": 52040.05,
    "sector": "Financial Services",
    "delivery_ratio": 1.14,
-   "score": 74.14
+   "score": 78.21
   },
   {
-   "symbol": "ASTERDM",
-   "close": 735.45,
-   "open": 745.0,
-   "high": 751.95,
-   "low": 718.5,
-   "prev_close": 747.35,
-   "official_close": 733.95,
-   "volume": 4132919.0,
-   "today_ret": -1.59,
-   "vol_ratio": 3.72,
-   "range_today_pct": 4.55,
-   "avg_range_pct": 2.77,
-   "tight6": 8.36,
-   "median_turnover_cr": 65.95,
-   "trades": 44710.4,
-   "sector": "Healthcare",
-   "delivery_ratio": 1.06,
-   "score": 73.88
+   "symbol": "MEESHO",
+   "close": 222.49,
+   "open": 216.83,
+   "high": 226.41,
+   "low": 211.77,
+   "prev_close": 216.83,
+   "official_close": 223.21,
+   "volume": 31046538.0,
+   "today_ret": 2.61,
+   "vol_ratio": 1.21,
+   "range_today_pct": 6.58,
+   "avg_range_pct": 4.32,
+   "tight6": 14.82,
+   "median_turnover_cr": 258.79,
+   "trades": 163046.8,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.07,
+   "score": 76.4
   },
   {
-   "symbol": "LODHA",
-   "close": 1106.6,
-   "open": 1121.0,
-   "high": 1128.0,
-   "low": 1096.3,
-   "prev_close": 1117.1,
-   "official_close": 1106.6,
-   "volume": 7960815.0,
-   "today_ret": -0.94,
-   "vol_ratio": 4.83,
-   "range_today_pct": 2.86,
-   "avg_range_pct": 3.62,
-   "tight6": 7.34,
-   "median_turnover_cr": 180.72,
-   "trades": 38907.3,
-   "sector": "Realty",
-   "delivery_ratio": 1.63,
-   "score": 70.96
+   "symbol": "AMBER",
+   "close": 6606.5,
+   "open": 6915.5,
+   "high": 7001.0,
+   "low": 6606.5,
+   "prev_close": 6990.0,
+   "official_close": 6606.5,
+   "volume": 286219.0,
+   "today_ret": -5.49,
+   "vol_ratio": 2.59,
+   "range_today_pct": 5.97,
+   "avg_range_pct": 2.5,
+   "tight6": 8.45,
+   "median_turnover_cr": 133.29,
+   "trades": 18116.75,
+   "sector": "Consumer Durables",
+   "delivery_ratio": 1.24,
+   "score": 74.3
   },
   {
-   "symbol": "NEULANDLAB",
-   "close": 21365.0,
-   "open": 21690.0,
-   "high": 21920.0,
-   "low": 21170.0,
-   "prev_close": 21440.0,
-   "official_close": 21375.0,
-   "volume": 83910.0,
-   "today_ret": -0.35,
-   "vol_ratio": 1.91,
-   "range_today_pct": 3.51,
-   "avg_range_pct": 3.39,
-   "tight6": 8.75,
-   "median_turnover_cr": 91.01,
-   "trades": 16547.85,
-   "sector": "Healthcare",
-   "delivery_ratio": 1.14,
-   "score": 70.96
+   "symbol": "BSE",
+   "close": 3200.0,
+   "open": 3100.0,
+   "high": 3200.0,
+   "low": 3100.0,
+   "prev_close": 3097.5,
+   "official_close": 3200.0,
+   "volume": 30101047.0,
+   "today_ret": 3.31,
+   "vol_ratio": 7.0,
+   "range_today_pct": 3.12,
+   "avg_range_pct": 3.04,
+   "tight6": 7.28,
+   "median_turnover_cr": 1259.2,
+   "trades": 187090.65,
+   "sector": "Financial Services",
+   "delivery_ratio": 1.87,
+   "score": 73.6
   },
   {
    "symbol": "VMM",
@@ -389,41 +289,133 @@
    "trades": 47062.3,
    "sector": "Consumer Services",
    "delivery_ratio": 0.93,
-   "score": 69.42
+   "score": 73.46
   },
   {
-   "symbol": "KPITTECH",
-   "close": 519.7,
-   "open": 510.25,
-   "high": 519.7,
-   "low": 495.5,
-   "prev_close": 509.0,
-   "official_close": 519.7,
-   "volume": 3351279.0,
-   "today_ret": 2.1,
-   "vol_ratio": 2.24,
-   "range_today_pct": 4.66,
-   "avg_range_pct": 2.64,
-   "tight6": 8.54,
-   "median_turnover_cr": 90.24,
-   "trades": 30896.1,
+   "symbol": "LODHA",
+   "close": 1106.6,
+   "open": 1121.0,
+   "high": 1128.0,
+   "low": 1096.3,
+   "prev_close": 1117.1,
+   "official_close": 1106.6,
+   "volume": 7960815.0,
+   "today_ret": -0.94,
+   "vol_ratio": 4.83,
+   "range_today_pct": 2.86,
+   "avg_range_pct": 3.62,
+   "tight6": 7.34,
+   "median_turnover_cr": 180.72,
+   "trades": 38907.3,
+   "sector": "Realty",
+   "delivery_ratio": 1.63,
+   "score": 72.49
+  },
+  {
+   "symbol": "SONACOMS",
+   "close": 815.65,
+   "open": 808.0,
+   "high": 827.8,
+   "low": 797.7,
+   "prev_close": 807.9,
+   "official_close": 815.65,
+   "volume": 4300310.0,
+   "today_ret": 0.96,
+   "vol_ratio": 2.07,
+   "range_today_pct": 3.69,
+   "avg_range_pct": 2.78,
+   "tight6": 5.27,
+   "median_turnover_cr": 157.76,
+   "trades": 48651.75,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.19,
+   "score": 72.07
+  },
+  {
+   "symbol": "ADANIPOWER",
+   "close": 196.3,
+   "open": 196.3,
+   "high": 199.84,
+   "low": 192.45,
+   "prev_close": 196.14,
+   "official_close": 196.3,
+   "volume": 33801685.0,
+   "today_ret": 0.08,
+   "vol_ratio": 1.77,
+   "range_today_pct": 3.76,
+   "avg_range_pct": 2.79,
+   "tight6": 8.94,
+   "median_turnover_cr": 367.39,
+   "trades": 88143.2,
+   "sector": "Power",
+   "delivery_ratio": 1.2,
+   "score": 70.95
+  },
+  {
+   "symbol": "HCLTECH",
+   "close": 1222.0,
+   "open": 1252.6,
+   "high": 1261.0,
+   "low": 1222.0,
+   "prev_close": 1252.6,
+   "official_close": 1222.0,
+   "volume": 5604932.0,
+   "today_ret": -2.44,
+   "vol_ratio": 2.29,
+   "range_today_pct": 3.19,
+   "avg_range_pct": 2.81,
+   "tight6": 5.25,
+   "median_turnover_cr": 341.42,
+   "trades": 73100.3,
    "sector": "Information Technology",
-   "delivery_ratio": 1.55,
-   "score": 69.33
+   "delivery_ratio": 1.44,
+   "score": 70.53
+  },
+  {
+   "symbol": "GLAND",
+   "close": 2985.0,
+   "open": 2896.6,
+   "high": 3024.0,
+   "low": 2896.6,
+   "prev_close": 2896.0,
+   "official_close": 2989.7,
+   "volume": 876878.0,
+   "today_ret": 3.07,
+   "vol_ratio": 1.45,
+   "range_today_pct": 4.27,
+   "avg_range_pct": 2.98,
+   "tight6": 4.99,
+   "median_turnover_cr": 111.47,
+   "trades": 46142.55,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.85,
+   "score": 70.39
+  },
+  {
+   "symbol": "INDUSTOWER",
+   "close": 367.55,
+   "open": 359.0,
+   "high": 373.05,
+   "low": 358.2,
+   "prev_close": 360.0,
+   "official_close": 367.55,
+   "volume": 8836110.0,
+   "today_ret": 2.1,
+   "vol_ratio": 2.01,
+   "range_today_pct": 4.04,
+   "avg_range_pct": 2.53,
+   "tight6": 8.98,
+   "median_turnover_cr": 162.89,
+   "trades": 50653.7,
+   "sector": "Telecommunication",
+   "delivery_ratio": 0.88,
+   "score": 69.27
   }
  ],
  "outcomes": {
   "next_date": "2026-09-30",
   "ref": "pc",
   "rows": {
-   "KIRLOSENG": {
-    "gap": -1.83,
-    "oc": -1.65,
-    "cc": -3.46,
-    "range_pct": 5.03,
-    "up": -1.75,
-    "down": -6.69
-   },
    "TDPOWERSYS": {
     "gap": 0.73,
     "oc": -0.26,
@@ -431,14 +423,6 @@
     "range_pct": 3.94,
     "up": 3.04,
     "down": -0.93
-   },
-   "SANSERA": {
-    "gap": 2.01,
-    "oc": 1.24,
-    "cc": 3.27,
-    "range_pct": 5.7,
-    "up": 4.79,
-    "down": -1.03
    },
    "AZAD": {
     "gap": 0.92,
@@ -464,21 +448,21 @@
     "up": -0.16,
     "down": -5.51
    },
-   "PIRAMALFIN": {
-    "gap": -1.39,
-    "oc": -3.1,
-    "cc": -4.44,
-    "range_pct": 5.51,
-    "up": 0.0,
-    "down": -5.43
+   "LTM": {
+    "gap": 1.12,
+    "oc": 1.64,
+    "cc": 2.77,
+    "range_pct": 3.97,
+    "up": 5.13,
+    "down": 1.12
    },
-   "THANGAMAYL": {
-    "gap": 0.12,
-    "oc": -2.6,
-    "cc": -2.49,
-    "range_pct": 3.65,
-    "up": 0.68,
-    "down": -2.97
+   "WELCORP": {
+    "gap": -1.41,
+    "oc": -2.9,
+    "cc": -4.27,
+    "range_pct": 4.81,
+    "up": -0.22,
+    "down": -4.96
    },
    "POLICYBZR": {
     "gap": 0.56,
@@ -488,14 +472,6 @@
     "up": 1.57,
     "down": -4.59
    },
-   "LTM": {
-    "gap": 1.12,
-    "oc": 1.64,
-    "cc": 2.77,
-    "range_pct": 3.97,
-    "up": 5.13,
-    "down": 1.12
-   },
    "CHENNPETRO": {
     "gap": 0.77,
     "oc": -1.1,
@@ -503,14 +479,6 @@
     "range_pct": 5.13,
     "up": 4.55,
     "down": -0.62
-   },
-   "ACUTAAS": {
-    "gap": 0.91,
-    "oc": -1.95,
-    "cc": -1.06,
-    "range_pct": 2.67,
-    "up": 1.21,
-    "down": -1.49
    },
    "MRPL": {
     "gap": 0.5,
@@ -520,14 +488,6 @@
     "up": 5.33,
     "down": -5.33
    },
-   "MEESHO": {
-    "gap": -0.09,
-    "oc": 1.57,
-    "cc": 1.47,
-    "range_pct": 5.15,
-    "up": 3.35,
-    "down": -1.8
-   },
    "LTF": {
     "gap": 0.35,
     "oc": -2.57,
@@ -536,29 +496,29 @@
     "up": 0.81,
     "down": -2.27
    },
-   "ASTERDM": {
-    "gap": 0.15,
-    "oc": -5.31,
-    "cc": -5.17,
-    "range_pct": 6.5,
-    "up": 0.76,
-    "down": -5.75
+   "MEESHO": {
+    "gap": -0.09,
+    "oc": 1.57,
+    "cc": 1.47,
+    "range_pct": 5.15,
+    "up": 3.35,
+    "down": -1.8
    },
-   "LODHA": {
-    "gap": -0.33,
-    "oc": 2.9,
-    "cc": 2.57,
-    "range_pct": 3.92,
-    "up": 2.57,
-    "down": -1.34
+   "AMBER": {
+    "gap": 0.49,
+    "oc": 0.5,
+    "cc": 1.0,
+    "range_pct": 2.55,
+    "up": 2.72,
+    "down": 0.16
    },
-   "NEULANDLAB": {
-    "gap": 0.0,
-    "oc": 1.05,
-    "cc": 1.05,
-    "range_pct": 1.87,
-    "up": 1.05,
-    "down": -0.82
+   "BSE": {
+    "gap": -1.91,
+    "oc": -1.49,
+    "cc": -3.37,
+    "range_pct": 2.36,
+    "up": -1.59,
+    "down": -3.91
    },
    "VMM": {
     "gap": -2.03,
@@ -568,13 +528,53 @@
     "up": -1.63,
     "down": -4.2
    },
-   "KPITTECH": {
-    "gap": -1.68,
-    "oc": -2.32,
-    "cc": -3.96,
-    "range_pct": 3.7,
-    "up": -0.33,
-    "down": -3.96
+   "LODHA": {
+    "gap": -0.33,
+    "oc": 2.9,
+    "cc": 2.57,
+    "range_pct": 3.92,
+    "up": 2.57,
+    "down": -1.34
+   },
+   "SONACOMS": {
+    "gap": 0.77,
+    "oc": 0.98,
+    "cc": 1.76,
+    "range_pct": 2.51,
+    "up": 2.62,
+    "down": 0.09
+   },
+   "ADANIPOWER": {
+    "gap": 1.22,
+    "oc": 2.67,
+    "cc": 3.92,
+    "range_pct": 2.94,
+    "up": 4.17,
+    "down": 1.2
+   },
+   "HCLTECH": {
+    "gap": 0.57,
+    "oc": 0.08,
+    "cc": 0.65,
+    "range_pct": 2.57,
+    "up": 2.82,
+    "down": 0.23
+   },
+   "GLAND": {
+    "gap": 0.01,
+    "oc": -2.84,
+    "cc": -2.83,
+    "range_pct": 4.54,
+    "up": 0.6,
+    "down": -3.94
+   },
+   "INDUSTOWER": {
+    "gap": 0.76,
+    "oc": 0.77,
+    "cc": 1.54,
+    "range_pct": 2.01,
+    "up": 2.31,
+    "down": 0.29
    }
   }
  }

@@ -1,6 +1,6 @@
 {
  "asof": "2026-09-25",
- "generated_at": "22 Nov 2026, 06:39 PM IST",
+ "generated_at": "26 Nov 2026, 10:03 PM IST",
  "market": {
   "stocks_scanned": 2202,
   "pct_above_50dma": 35.5,
@@ -8,7 +8,7 @@
   "mood": "Weak",
   "pct_above_20ema": 33.8,
   "breadth_5d_change": -1.9,
-  "liquid_stocks": 295
+  "liquid_stocks": 182
  },
  "movers": [
   {
@@ -29,27 +29,7 @@
    "trades": 97127.6,
    "sector": "Financial Services",
    "delivery_ratio": 0.61,
-   "score": 99.07
-  },
-  {
-   "symbol": "ENGINERSIN",
-   "close": 313.35,
-   "open": 297.0,
-   "high": 318.9,
-   "low": 295.05,
-   "prev_close": 296.65,
-   "official_close": 315.65,
-   "volume": 19615591.0,
-   "today_ret": 5.63,
-   "vol_ratio": 2.5,
-   "range_today_pct": 7.61,
-   "avg_range_pct": 4.01,
-   "tight6": 17.68,
-   "median_turnover_cr": 50.79,
-   "trades": 88343.6,
-   "sector": "Construction",
-   "delivery_ratio": 0.52,
-   "score": 93.73
+   "score": 99.45
   },
   {
    "symbol": "MEESHO",
@@ -69,27 +49,7 @@
    "trades": 152231.9,
    "sector": "Consumer Services",
    "delivery_ratio": 0.83,
-   "score": 92.88
-  },
-  {
-   "symbol": "BALRAMCHIN",
-   "close": 686.0,
-   "open": 663.0,
-   "high": 697.0,
-   "low": 657.85,
-   "prev_close": 659.4,
-   "official_close": 685.8,
-   "volume": 4511284.0,
-   "today_ret": 4.03,
-   "vol_ratio": 1.07,
-   "range_today_pct": 5.71,
-   "avg_range_pct": 4.39,
-   "tight6": 6.66,
-   "median_turnover_cr": 67.85,
-   "trades": 73204.75,
-   "sector": "Fast Moving Consumer Goods",
-   "delivery_ratio": 0.55,
-   "score": 89.75
+   "score": 93.96
   },
   {
    "symbol": "PAYTM",
@@ -109,47 +69,7 @@
    "trades": 105586.1,
    "sector": "Financial Services",
    "delivery_ratio": 1.15,
-   "score": 88.73
-  },
-  {
-   "symbol": "HBLENGINE",
-   "close": 810.5,
-   "open": 779.0,
-   "high": 811.55,
-   "low": 765.95,
-   "prev_close": 775.3,
-   "official_close": 806.0,
-   "volume": 5199842.0,
-   "today_ret": 4.54,
-   "vol_ratio": 2.17,
-   "range_today_pct": 5.63,
-   "avg_range_pct": 3.3,
-   "tight6": 8.09,
-   "median_turnover_cr": 61.75,
-   "trades": 62512.15,
-   "sector": "Capital Goods",
-   "delivery_ratio": 0.72,
-   "score": 86.95
-  },
-  {
-   "symbol": "ACMESOLAR",
-   "close": 439.65,
-   "open": 446.9,
-   "high": 449.75,
-   "low": 431.5,
-   "prev_close": 446.65,
-   "official_close": 442.9,
-   "volume": 3082821.0,
-   "today_ret": -1.57,
-   "vol_ratio": 1.08,
-   "range_today_pct": 4.15,
-   "avg_range_pct": 4.45,
-   "tight6": 14.88,
-   "median_turnover_cr": 57.56,
-   "trades": 63610.5,
-   "sector": "Power",
-   "delivery_ratio": 1.47,
-   "score": 86.19
+   "score": 90.66
   },
   {
    "symbol": "OFSS",
@@ -169,27 +89,7 @@
    "trades": 37205.85,
    "sector": "Information Technology",
    "delivery_ratio": 0.36,
-   "score": 86.19
-  },
-  {
-   "symbol": "CARTRADE",
-   "close": 3001.8,
-   "open": 3070.0,
-   "high": 3122.2,
-   "low": 2970.0,
-   "prev_close": 3004.8,
-   "official_close": 3002.6,
-   "volume": 322295.0,
-   "today_ret": -0.1,
-   "vol_ratio": 0.93,
-   "range_today_pct": 5.07,
-   "avg_range_pct": 4.22,
-   "tight6": 7.58,
-   "median_turnover_cr": 97.49,
-   "trades": 37305.45,
-   "sector": "Consumer Services",
-   "delivery_ratio": 0.84,
-   "score": 85.59
+   "score": 90.25
   },
   {
    "symbol": "MCX",
@@ -209,7 +109,7 @@
    "trades": 99942.35,
    "sector": "Financial Services",
    "delivery_ratio": 0.92,
-   "score": 85.34
+   "score": 89.29
   },
   {
    "symbol": "KAYNES",
@@ -229,107 +129,47 @@
    "trades": 73170.05,
    "sector": "Capital Goods",
    "delivery_ratio": 1.1,
-   "score": 85.0
+   "score": 87.09
   },
   {
-   "symbol": "ZENTEC",
-   "close": 1687.0,
-   "open": 1649.0,
-   "high": 1695.0,
-   "low": 1613.7,
-   "prev_close": 1645.7,
-   "official_close": 1682.4,
-   "volume": 318892.0,
-   "today_ret": 2.51,
-   "vol_ratio": 1.04,
-   "range_today_pct": 4.82,
-   "avg_range_pct": 3.36,
-   "tight6": 6.89,
-   "median_turnover_cr": 54.22,
-   "trades": 23581.7,
+   "symbol": "AZAD",
+   "close": 2741.0,
+   "open": 2680.0,
+   "high": 2776.8,
+   "low": 2678.3,
+   "prev_close": 2678.3,
+   "official_close": 2728.0,
+   "volume": 438788.0,
+   "today_ret": 2.34,
+   "vol_ratio": 1.19,
+   "range_today_pct": 3.59,
+   "avg_range_pct": 4.01,
+   "tight6": 7.83,
+   "median_turnover_cr": 112.9,
+   "trades": 30452.05,
    "sector": "Capital Goods",
-   "delivery_ratio": 1.06,
-   "score": 83.14
+   "delivery_ratio": 1.11,
+   "score": 84.48
   },
   {
-   "symbol": "SANSERA",
-   "close": 4670.0,
-   "open": 4629.6,
-   "high": 4734.7,
-   "low": 4570.0,
-   "prev_close": 4605.6,
-   "official_close": 4662.4,
-   "volume": 315334.0,
-   "today_ret": 1.4,
-   "vol_ratio": 1.22,
-   "range_today_pct": 3.53,
-   "avg_range_pct": 3.72,
-   "tight6": 15.55,
-   "median_turnover_cr": 75.88,
-   "trades": 38636.25,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 0.97,
-   "score": 82.37
-  },
-  {
-   "symbol": "LALPATHLAB",
-   "close": 1948.0,
-   "open": 1980.0,
-   "high": 1986.8,
-   "low": 1902.7,
-   "prev_close": 1961.3,
-   "official_close": 1952.3,
-   "volume": 452137.0,
-   "today_ret": -0.68,
-   "vol_ratio": 1.5,
-   "range_today_pct": 4.32,
-   "avg_range_pct": 2.91,
-   "tight6": 5.23,
-   "median_turnover_cr": 42.78,
-   "trades": 40949.2,
-   "sector": "Healthcare",
-   "delivery_ratio": 0.62,
-   "score": 80.08
-  },
-  {
-   "symbol": "NEULANDLAB",
-   "close": 21930.0,
-   "open": 22100.0,
-   "high": 22660.0,
-   "low": 21800.0,
-   "prev_close": 21905.0,
-   "official_close": 21890.0,
-   "volume": 41988.0,
-   "today_ret": 0.11,
-   "vol_ratio": 0.94,
-   "range_today_pct": 3.92,
-   "avg_range_pct": 3.31,
-   "tight6": 5.7,
-   "median_turnover_cr": 91.01,
-   "trades": 16406.0,
-   "sector": "Healthcare",
-   "delivery_ratio": 0.79,
-   "score": 78.56
-  },
-  {
-   "symbol": "BLUESTARCO",
-   "close": 1565.0,
-   "open": 1523.8,
-   "high": 1570.6,
-   "low": 1503.0,
-   "prev_close": 1525.0,
-   "official_close": 1565.0,
-   "volume": 570933.0,
-   "today_ret": 2.62,
-   "vol_ratio": 1.0,
-   "range_today_pct": 4.32,
-   "avg_range_pct": 3.07,
-   "tight6": 4.92,
-   "median_turnover_cr": 61.87,
-   "trades": 31740.9,
-   "sector": "Consumer Durables",
-   "delivery_ratio": 1.03,
-   "score": 78.47
+   "symbol": "ENRIN",
+   "close": 3320.0,
+   "open": 3224.0,
+   "high": 3333.0,
+   "low": 3210.3,
+   "prev_close": 3215.4,
+   "official_close": 3313.0,
+   "volume": 462792.0,
+   "today_ret": 3.25,
+   "vol_ratio": 1.14,
+   "range_today_pct": 3.7,
+   "avg_range_pct": 2.99,
+   "tight6": 7.17,
+   "median_turnover_cr": 116.41,
+   "trades": 39787.25,
+   "sector": "Capital Goods",
+   "delivery_ratio": 0.81,
+   "score": 82.14
   },
   {
    "symbol": "HYUNDAI",
@@ -349,7 +189,47 @@
    "trades": 40813.1,
    "sector": "Automobile and Auto Components",
    "delivery_ratio": 0.68,
-   "score": 76.44
+   "score": 81.59
+  },
+  {
+   "symbol": "TMPV",
+   "close": 290.45,
+   "open": 297.0,
+   "high": 297.7,
+   "low": 288.0,
+   "prev_close": 295.0,
+   "official_close": 290.45,
+   "volume": 22634929.0,
+   "today_ret": -1.54,
+   "vol_ratio": 2.59,
+   "range_today_pct": 3.34,
+   "avg_range_pct": 2.56,
+   "tight6": 7.57,
+   "median_turnover_cr": 254.75,
+   "trades": 85502.05,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.08,
+   "score": 76.37
+  },
+  {
+   "symbol": "NAUKRI",
+   "close": 1254.8,
+   "open": 1216.4,
+   "high": 1259.0,
+   "low": 1215.4,
+   "prev_close": 1224.0,
+   "official_close": 1254.8,
+   "volume": 1135428.0,
+   "today_ret": 2.52,
+   "vol_ratio": 0.82,
+   "range_today_pct": 3.47,
+   "avg_range_pct": 2.95,
+   "tight6": 9.6,
+   "median_turnover_cr": 173.64,
+   "trades": 52340.45,
+   "sector": "Consumer Services",
+   "delivery_ratio": 0.62,
+   "score": 75.27
   },
   {
    "symbol": "NETWEB",
@@ -369,7 +249,67 @@
    "trades": 98014.3,
    "sector": "Information Technology",
    "delivery_ratio": 1.23,
-   "score": 73.39
+   "score": 74.73
+  },
+  {
+   "symbol": "SONACOMS",
+   "close": 824.5,
+   "open": 818.0,
+   "high": 835.4,
+   "low": 815.4,
+   "prev_close": 816.3,
+   "official_close": 824.5,
+   "volume": 3101062.0,
+   "today_ret": 1.0,
+   "vol_ratio": 1.62,
+   "range_today_pct": 2.43,
+   "avg_range_pct": 2.69,
+   "tight6": 6.89,
+   "median_turnover_cr": 151.86,
+   "trades": 46657.85,
+   "sector": "Automobile and Auto Components",
+   "delivery_ratio": 1.07,
+   "score": 73.9
+  },
+  {
+   "symbol": "ADANIPOWER",
+   "close": 202.75,
+   "open": 200.0,
+   "high": 203.6,
+   "low": 196.1,
+   "prev_close": 199.48,
+   "official_close": 202.75,
+   "volume": 16171228.0,
+   "today_ret": 1.64,
+   "vol_ratio": 0.75,
+   "range_today_pct": 3.7,
+   "avg_range_pct": 2.83,
+   "tight6": 7.13,
+   "median_turnover_cr": 367.39,
+   "trades": 87497.4,
+   "sector": "Power",
+   "delivery_ratio": 0.6,
+   "score": 73.08
+  },
+  {
+   "symbol": "TCS",
+   "close": 2082.0,
+   "open": 2054.0,
+   "high": 2090.2,
+   "low": 2038.1,
+   "prev_close": 2087.0,
+   "official_close": 2082.0,
+   "volume": 3342195.0,
+   "today_ret": -0.24,
+   "vol_ratio": 1.12,
+   "range_today_pct": 2.5,
+   "avg_range_pct": 2.77,
+   "tight6": 6.69,
+   "median_turnover_cr": 684.28,
+   "trades": 110386.95,
+   "sector": "Information Technology",
+   "delivery_ratio": 0.94,
+   "score": 72.94
   },
   {
    "symbol": "CUPID",
@@ -392,24 +332,84 @@
    "score": 72.8
   },
   {
-   "symbol": "TMPV",
-   "close": 290.45,
-   "open": 297.0,
-   "high": 297.7,
-   "low": 288.0,
-   "prev_close": 295.0,
-   "official_close": 290.45,
-   "volume": 22634929.0,
-   "today_ret": -1.54,
-   "vol_ratio": 2.59,
-   "range_today_pct": 3.34,
-   "avg_range_pct": 2.56,
-   "tight6": 7.57,
-   "median_turnover_cr": 254.75,
-   "trades": 85502.05,
-   "sector": "Automobile and Auto Components",
-   "delivery_ratio": 1.08,
-   "score": 71.44
+   "symbol": "VAML",
+   "close": 426.0,
+   "open": 428.95,
+   "high": 435.7,
+   "low": 422.5,
+   "prev_close": 429.4,
+   "official_close": 426.75,
+   "volume": 5912626.0,
+   "today_ret": -0.79,
+   "vol_ratio": 0.79,
+   "range_today_pct": 3.1,
+   "avg_range_pct": 2.89,
+   "tight6": 7.89,
+   "median_turnover_cr": 361.11,
+   "trades": 97153.7,
+   "sector": "Metals & Mining",
+   "delivery_ratio": 0.97,
+   "score": 72.66
+  },
+  {
+   "symbol": "GLENMARK",
+   "close": 2380.0,
+   "open": 2425.0,
+   "high": 2435.2,
+   "low": 2365.7,
+   "prev_close": 2430.4,
+   "official_close": 2380.0,
+   "volume": 785299.0,
+   "today_ret": -2.07,
+   "vol_ratio": 1.64,
+   "range_today_pct": 2.92,
+   "avg_range_pct": 2.43,
+   "tight6": 4.91,
+   "median_turnover_cr": 110.74,
+   "trades": 34792.3,
+   "sector": "Healthcare",
+   "delivery_ratio": 1.11,
+   "score": 72.39
+  },
+  {
+   "symbol": "WOCKPHARMA",
+   "close": 2263.9,
+   "open": 2290.0,
+   "high": 2329.9,
+   "low": 2243.0,
+   "prev_close": 2287.7,
+   "official_close": 2265.6,
+   "volume": 689934.0,
+   "today_ret": -1.04,
+   "vol_ratio": 0.48,
+   "range_today_pct": 3.84,
+   "avg_range_pct": 4.21,
+   "tight6": 13.81,
+   "median_turnover_cr": 125.44,
+   "trades": 71272.6,
+   "sector": "Healthcare",
+   "delivery_ratio": 0.98,
+   "score": 71.29
+  },
+  {
+   "symbol": "VMM",
+   "close": 103.5,
+   "open": 105.45,
+   "high": 105.69,
+   "low": 103.0,
+   "prev_close": 105.46,
+   "official_close": 103.5,
+   "volume": 9381538.0,
+   "today_ret": -1.86,
+   "vol_ratio": 0.92,
+   "range_today_pct": 2.6,
+   "avg_range_pct": 2.64,
+   "tight6": 7.73,
+   "median_turnover_cr": 100.28,
+   "trades": 46989.0,
+   "sector": "Consumer Services",
+   "delivery_ratio": 1.06,
+   "score": 67.72
   }
  ],
  "outcomes": {
@@ -424,14 +424,6 @@
     "up": 4.07,
     "down": -2.56
    },
-   "ENGINERSIN": {
-    "gap": 0.4,
-    "oc": -1.14,
-    "cc": -0.74,
-    "range_pct": 3.91,
-    "up": 1.82,
-    "down": -2.11
-   },
    "MEESHO": {
     "gap": 0.0,
     "oc": -0.49,
@@ -439,14 +431,6 @@
     "range_pct": 3.19,
     "up": 1.57,
     "down": -1.62
-   },
-   "BALRAMCHIN": {
-    "gap": 0.76,
-    "oc": -2.03,
-    "cc": -1.28,
-    "range_pct": 4.78,
-    "up": 2.85,
-    "down": -1.97
    },
    "PAYTM": {
     "gap": -0.36,
@@ -456,22 +440,6 @@
     "up": 0.24,
     "down": -2.89
    },
-   "HBLENGINE": {
-    "gap": 0.92,
-    "oc": -3.37,
-    "cc": -2.49,
-    "range_pct": 5.86,
-    "up": 2.97,
-    "down": -2.95
-   },
-   "ACMESOLAR": {
-    "gap": -0.46,
-    "oc": -0.76,
-    "cc": -1.22,
-    "range_pct": 4.34,
-    "up": 2.16,
-    "down": -2.17
-   },
    "OFSS": {
     "gap": -0.19,
     "oc": 0.47,
@@ -479,14 +447,6 @@
     "range_pct": 2.89,
     "up": 1.3,
     "down": -1.59
-   },
-   "CARTRADE": {
-    "gap": -0.35,
-    "oc": -3.74,
-    "cc": -4.08,
-    "range_pct": 4.98,
-    "up": 0.21,
-    "down": -4.75
    },
    "MCX": {
     "gap": -0.45,
@@ -504,45 +464,21 @@
     "up": 1.23,
     "down": -1.67
    },
-   "ZENTEC": {
-    "gap": -0.44,
-    "oc": -1.94,
-    "cc": -2.37,
-    "range_pct": 2.4,
-    "up": -0.24,
-    "down": -2.63
+   "AZAD": {
+    "gap": 0.44,
+    "oc": -0.73,
+    "cc": -0.29,
+    "range_pct": 4.56,
+    "up": 2.57,
+    "down": -2.01
    },
-   "SANSERA": {
-    "gap": -0.04,
-    "oc": -4.63,
-    "cc": -4.66,
-    "range_pct": 4.85,
-    "up": -0.01,
-    "down": -4.86
-   },
-   "LALPATHLAB": {
-    "gap": 0.0,
-    "oc": 0.36,
-    "cc": 0.36,
-    "range_pct": 2.96,
+   "ENRIN": {
+    "gap": 0.6,
+    "oc": -4.05,
+    "cc": -3.47,
+    "range_pct": 4.98,
     "up": 0.66,
-    "down": -2.29
-   },
-   "NEULANDLAB": {
-    "gap": 0.0,
-    "oc": -2.08,
-    "cc": -2.08,
-    "range_pct": 2.4,
-    "up": 0.14,
-    "down": -2.26
-   },
-   "BLUESTARCO": {
-    "gap": 1.32,
-    "oc": -0.65,
-    "cc": 0.66,
-    "range_pct": 1.97,
-    "up": 1.82,
-    "down": -0.17
+    "down": -4.35
    },
    "HYUNDAI": {
     "gap": -0.47,
@@ -552,6 +488,22 @@
     "up": -0.09,
     "down": -3.52
    },
+   "TMPV": {
+    "gap": 0.0,
+    "oc": -3.0,
+    "cc": -3.0,
+    "range_pct": 3.79,
+    "up": 0.26,
+    "down": -3.53
+   },
+   "NAUKRI": {
+    "gap": -0.32,
+    "oc": 0.25,
+    "cc": -0.07,
+    "range_pct": 2.29,
+    "up": 0.65,
+    "down": -1.63
+   },
    "NETWEB": {
     "gap": 0.0,
     "oc": 0.74,
@@ -559,6 +511,30 @@
     "range_pct": 3.06,
     "up": 1.1,
     "down": -1.96
+   },
+   "SONACOMS": {
+    "gap": 0.0,
+    "oc": -2.01,
+    "cc": -2.01,
+    "range_pct": 2.77,
+    "up": 0.41,
+    "down": -2.35
+   },
+   "ADANIPOWER": {
+    "gap": 0.0,
+    "oc": -3.26,
+    "cc": -3.26,
+    "range_pct": 4.08,
+    "up": 0.44,
+    "down": -3.64
+   },
+   "TCS": {
+    "gap": 0.86,
+    "oc": -1.4,
+    "cc": -0.54,
+    "range_pct": 2.33,
+    "up": 0.86,
+    "down": -1.49
    },
    "CUPID": {
     "gap": 0.04,
@@ -568,13 +544,37 @@
     "up": 0.93,
     "down": -3.19
    },
-   "TMPV": {
+   "VAML": {
+    "gap": -0.04,
+    "oc": -1.37,
+    "cc": -1.41,
+    "range_pct": 2.84,
+    "up": 0.0,
+    "down": -2.84
+   },
+   "GLENMARK": {
     "gap": 0.0,
-    "oc": -3.0,
-    "cc": -3.0,
+    "oc": -2.28,
+    "cc": -2.28,
+    "range_pct": 3.58,
+    "up": 0.53,
+    "down": -3.05
+   },
+   "WOCKPHARMA": {
+    "gap": 0.06,
+    "oc": -3.44,
+    "cc": -3.38,
     "range_pct": 3.79,
-    "up": 0.26,
-    "down": -3.53
+    "up": 0.06,
+    "down": -3.73
+   },
+   "VMM": {
+    "gap": 0.47,
+    "oc": -3.06,
+    "cc": -2.6,
+    "range_pct": 3.64,
+    "up": 0.47,
+    "down": -3.19
    }
   }
  }
