@@ -147,7 +147,6 @@ DIVISLAB,Healthcare
 DIXON,Consumer Durables
 LALPATHLAB,Healthcare
 DRREDDY,Healthcare
-DUMMYHEG,Capital Goods
 EIDPARRY,Fast Moving Consumer Goods
 EIHOTEL,Consumer Services
 EMBASSY,Realty
@@ -202,6 +201,7 @@ HDFCAMC,Financial Services
 HDFCBANK,Financial Services
 HDFCLIFE,Financial Services
 HEGAM,Capital Goods
+HEGRAPHITE,Capital Goods
 HFCL,Telecommunication
 HAVELLS,Consumer Durables
 HEROMOTOCO,Automobile and Auto Components
